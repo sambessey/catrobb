@@ -1,0 +1,295 @@
+
+Mixed Model Analysis
+Notes
+Output Created		05-JAN-2019 17:58:45
+Comments
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	<none>
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED RBTot BY PASEtert2 WITH Age Sex EDUpos Time TimeSqr
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Age Sex EDUpos Time TimeSqr PASEtert2 | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.14
+	Elapsed Time	00:00:01.00
+
+
+Fixed Effects
+Estimates of Fixed Effectsa
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval
+						Lower Bound	Upper Bound
+Intercept	116.798372	7.139038	879.488	16.361	.000	102.786833	130.809912
+Age	-.228805	.102035	883.170	-2.242	.025	-.429065	-.028546
+Sex	-4.598367	.793727	832.991	-5.793	.000	-6.156307	-3.040428
+EDUpos	7.078136	.792542	831.230	8.931	.000	5.522517	8.633754
+Time	2.530327	.281644	1958.401	8.984	.000	1.977974	3.082681
+TimeSqr	-.393812	.063939	1894.392	-6.159	.000	-.519211	-.268413
+[PASEtert2=1.00]	-.419792	.972542	833.128	-.432	.666	-2.328712	1.489128
+[PASEtert2=2.00]	-.805266	.963822	829.915	-.835	.404	-2.697082	1.086550
+[PASEtert2=3.00]	0b	0	.	.	.	.	.
+a Dependent Variable: Global Cog.
+b This parameter is set to zero because it is redundant.
+
+
+Mixed Model Analysis
+Notes
+Output Created		05-JAN-2019 17:59:23
+Comments
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	<none>
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED RBIMI BY PASEtert2 WITH Age Sex EDUpos Time TimeSqr
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Age Sex EDUpos Time TimeSqr PASEtert2 | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.12
+	Elapsed Time	00:00:01.00
+
+Warnings
+The covariance structure for random effect with only one level will be changed to Identity.
+
+
+Fixed Effects
+Estimates of Fixed Effectsa
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval
+						Lower Bound	Upper Bound
+Intercept	109.162425	7.172721	833.825	15.219	.000	95.083713	123.241137
+Age	-.085003	.102589	839.394	-.829	.408	-.286364	.116358
+Sex	-7.255078	.789434	752.065	-9.190	.000	-8.804835	-5.705322
+EDUpos	6.469624	.788002	750.153	8.210	.000	4.922672	8.016576
+Time	3.997819	.366068	1999.624	10.921	.000	3.279903	4.715734
+TimeSqr	-.614442	.083562	1905.591	-7.353	.000	-.778324	-.450560
+[PASEtert2=1.00]	-.225549	.967295	752.038	-.233	.816	-2.124469	1.673370
+[PASEtert2=2.00]	-.384299	.958061	748.594	-.401	.688	-2.265106	1.496508
+[PASEtert2=3.00]	0b	0	.	.	.	.	.
+a Dependent Variable: Immediate memory.
+b This parameter is set to zero because it is redundant.
+
+
+Covariance Parameters
+
+Mixed Model Analysis
+Notes
+Output Created		05-JAN-2019 17:59:50
+Comments
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	<none>
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED RBVSI BY PASEtert2 WITH Age Sex EDUpos Time TimeSqr
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Age Sex EDUpos Time TimeSqr PASEtert2 | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.10
+	Elapsed Time	00:00:00.00
+
+
+Fixed Effects
+Estimates of Fixed Effectsa
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval
+						Lower Bound	Upper Bound
+Intercept	112.324917	7.634793	886.101	14.712	.000	97.340531	127.309303
+Age	-.265070	.109248	892.992	-2.426	.015	-.479482	-.050658
+Sex	3.309479	.833854	773.190	3.969	.000	1.672593	4.946365
+EDUpos	4.844518	.832208	771.427	5.821	.000	3.210858	6.478179
+Time	.179038	.439968	2094.416	.407	.684	-.683782	1.041858
+TimeSqr	-.199853	.100755	1995.124	-1.984	.047	-.397450	-.002256
+[PASEtert2=1.00]	-2.024270	1.021711	772.924	-1.981	.048	-4.029928	-.018612
+[PASEtert2=2.00]	-.529584	1.011669	769.858	-.523	.601	-2.515540	1.456373
+[PASEtert2=3.00]	0b	0	.	.	.	.	.
+a Dependent Variable: Visuospatial.
+b This parameter is set to zero because it is redundant.
+
+
+Covariance Parameters
+
+Mixed Model Analysis
+Notes
+Output Created		05-JAN-2019 18:00:22
+Comments
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	<none>
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED RBLI BY PASEtert2 WITH Age Sex EDUpos Time TimeSqr
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Age Sex EDUpos Time TimeSqr PASEtert2 | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.10
+	Elapsed Time	00:00:00.00
+
+
+Fixed Effects
+Estimates of Fixed Effectsa
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval
+						Lower Bound	Upper Bound
+Intercept	113.661644	6.393534	878.888	17.778	.000	101.113268	126.210021
+Age	-.142595	.091490	885.839	-1.559	.119	-.322158	.036967
+Sex	-4.953002	.697788	763.956	-7.098	.000	-6.322811	-3.583192
+EDUpos	3.597256	.696402	762.233	5.165	.000	2.230162	4.964350
+Time	.482571	.371959	2092.390	1.297	.195	-.246877	1.212019
+TimeSqr	-.036513	.085204	1992.091	-.429	.668	-.203610	.130584
+[PASEtert2=1.00]	.990409	.854990	763.665	1.158	.247	-.688000	2.668817
+[PASEtert2=2.00]	.191196	.846568	760.686	.226	.821	-1.470692	1.853083
+[PASEtert2=3.00]	0b	0	.	.	.	.	.
+a Dependent Variable: Language.
+b This parameter is set to zero because it is redundant.
+
+
+Covariance Parameters
+
+Mixed Model Analysis
+Notes
+Output Created		05-JAN-2019 18:01:18
+Comments
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	<none>
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED RBAI BY PASEtert2 WITH Age Sex EDUpos Time TimeSqr
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Age Sex EDUpos Time TimeSqr PASEtert2 | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.12
+	Elapsed Time	00:00:00.00
+
+
+Fixed Effects
+Estimates of Fixed Effectsa
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval
+						Lower Bound	Upper Bound
+Intercept	108.456050	8.597469	907.465	12.615	.000	91.582815	125.329285
+Age	-.097897	.122876	911.107	-.797	.426	-.339050	.143255
+Sex	-1.853239	.956271	861.751	-1.938	.053	-3.730133	.023654
+EDUpos	5.678408	.954859	859.986	5.947	.000	3.804281	7.552536
+Time	2.219245	.334145	1980.305	6.642	.000	1.563932	2.874557
+TimeSqr	-.243337	.075839	1919.005	-3.209	.001	-.392071	-.094602
+[PASEtert2=1.00]	1.190384	1.171704	861.893	1.016	.310	-1.109343	3.490111
+[PASEtert2=2.00]	-.947268	1.161233	858.672	-.816	.415	-3.226456	1.331921
+[PASEtert2=3.00]	0b	0	.	.	.	.	.
+a Dependent Variable: Attention.
+b This parameter is set to zero because it is redundant.
+
+
+Covariance Parameters
+
+Mixed Model Analysis
+Notes
+Output Created		05-JAN-2019 18:01:54
+Comments
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	<none>
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED RBDMI BY PASEtert2 WITH Age Sex EDUpos Time TimeSqr
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Age Sex EDUpos Time TimeSqr PASEtert2 | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.10
+	Elapsed Time	00:00:00.00
+
+
+Fixed Effects
+Estimates of Fixed Effectsa
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval
+						Lower Bound	Upper Bound
+Intercept	118.444189	6.142927	821.083	19.281	.000	106.386499	130.501879
+Age	-.254183	.087835	825.829	-2.894	.004	-.426588	-.081778
+Sex	-4.383179	.679076	755.767	-6.455	.000	-5.716280	-3.050079
+EDUpos	4.173344	.677928	753.875	6.156	.000	2.842494	5.504194
+Time	3.413854	.285906	1953.248	11.940	.000	2.853141	3.974567
+TimeSqr	-.551766	.065120	1868.249	-8.473	.000	-.679482	-.424049
+[PASEtert2=1.00]	-.968277	.832072	755.833	-1.164	.245	-2.601725	.665170
+[PASEtert2=2.00]	-.862771	.824312	752.394	-1.047	.296	-2.480996	.755455
+[PASEtert2=3.00]	0b	0	.	.	.	.	.
+a Dependent Variable: Delayed memory.
+b This parameter is set to zero because it is redundant.
+
+
+Covariance Parameters
+
+Mixed Model Analysis
+Notes
+Output Created		05-JAN-2019 18:02:14
+Comments
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	<none>
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED EXECI BY PASEtert2 WITH Age Sex EDUpos Time TimeSqr
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Age Sex EDUpos Time TimeSqr PASEtert2 | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.06
+	Elapsed Time	00:00:00.00
+
+
+Fixed Effects
+Estimates of Fixed Effectsa
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval
+						Lower Bound	Upper Bound
+Intercept	134.620957	11.014574	728.848	12.222	.000	112.996879	156.245035
+Age	-.283922	.158656	731.420	-1.790	.074	-.595397	.027553
+Sex	-.060656	1.100657	651.087	-.055	.956	-2.221922	2.100609
+EDUpos	-1.779024	1.092269	652.304	-1.629	.104	-3.923811	.365764
+Time	.360847	.558100	711.244	.647	.518	-.734873	1.456566
+TimeSqr	.088003	.146939	698.282	.599	.549	-.200492	.376499
+[PASEtert2=1.00]	-1.662184	1.353450	649.144	-1.228	.220	-4.319852	.995484
+[PASEtert2=2.00]	.722478	1.326879	655.438	.544	.586	-1.882969	3.327924
+[PASEtert2=3.00]	0b	0	.	.	.	.	.
+a Dependent Variable: Executive function.
+b This parameter is set to zero because it is redundant.
+
+
+Covariance Parameters

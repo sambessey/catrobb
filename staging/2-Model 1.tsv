@@ -1,0 +1,42 @@
+Model 1		
+Attention		Sig
+[PASEtert2=2.00] * Time	0.09 [-1.50, 1.69]	0.91
+[PASEtert2=2.00] * TimeSqr	-0.03 [-0.39, 0.33]	0.88
+[PASEtert2=1.00] * Time	0.29 [-1.33, 1.91]	0.72
+[PASEtert2=1.00] * TimeSqr	-0.11 [-0.48, 0.25]	0.54
+Model 1		
+Delayed memory		Sig
+[PASEtert2=2.00] * Time	0.93 [-0.44, 2.29]	0.18
+[PASEtert2=2.00] * TimeSqr	-0.27 [-0.58, 0.04]	0.08
+[PASEtert2=1.00] * Time	0.49 [-0.89, 1.88]	0.48
+[PASEtert2=1.00] * TimeSqr	-0.17 [-0.48, 0.14]	0.29
+Model 1		
+Executive function		Sig
+[PASEtert2=2.00] * Time	0.25 [-2.45, 2.94]	0.86
+[PASEtert2=2.00] * TimeSqr	-0.08 [-0.79, 0.63]	0.82
+[PASEtert2=1.00] * Time	0.38 [-2.35, 3.11]	0.79
+[PASEtert2=1.00] * TimeSqr	-0.16 [-0.88, 0.55]	0.65
+Model 1		
+Global Cog		Sig
+[PASEtert2=2.00] * Time	0.47 [-0.88, 1.81]	0.49
+[PASEtert2=2.00] * TimeSqr	-0.11 [-0.41, 0.19]	0.48
+[PASEtert2=1.00] * Time	0.73 [-0.64, 2.09]	0.30
+[PASEtert2=1.00] * TimeSqr	-0.16 [-0.47, 0.14]	0.30
+Model 1		
+Immediate memory		Sig
+[PASEtert2=2.00] * Time	0.79 [-0.96, 2.54]	0.38
+[PASEtert2=2.00] * TimeSqr	-0.13 [-0.53, 0.27]	0.52
+[PASEtert2=1.00] * Time	0.30 [-1.47, 2.08]	0.74
+[PASEtert2=1.00] * TimeSqr	-0.09 [-0.49, 0.31]	0.66
+Model 1		
+Language		Sig
+[PASEtert2=2.00] * Time	0.45 [-1.33, 2.22]	0.62
+[PASEtert2=2.00] * TimeSqr	-0.07 [-0.47, 0.33]	0.73
+[PASEtert2=1.00] * Time	0.74 [-1.06, 2.54]	0.42
+[PASEtert2=1.00] * TimeSqr	-0.08 [-0.49, 0.33]	0.69
+Model 1		
+Visuospatial		Sig
+[PASEtert2=2.00] * Time	-0.13 [-2.24, 1.97]	0.90
+[PASEtert2=2.00] * TimeSqr	0.06 [-0.42, 0.54]	0.80
+[PASEtert2=1.00] * Time	0.25 [-1.87, 2.38]	0.81
+[PASEtert2=1.00] * TimeSqr	0.03 [-0.45, 0.52]	0.89
