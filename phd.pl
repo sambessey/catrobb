@@ -19,15 +19,15 @@ my@prefixArr=();
 my @finalOutputOrderRows=();
 my @finalOutputOrder =();
 my $conffile="";
+my $regParam="";
+my $permitWrite = "Y";
 print "Please enter a config file: ";
 $conffile = <>;
 chomp ($conffile);
 my %config = do 'config/'.$conffile;
-my @testArr = ();
-push @testArr, $config{finalOutputOrderRows};
-print "Please enter a Model name (i.e. Model 1): ";
-$modelId = <>;
-chomp ($modelId);
+my @listOfFiles = ($config{file1},$config{file2});
+my @listOfTables = ($config{thistable1},$config{thistable2});
+$modelId = $config{modelName};
 #############
 #############
 ######################################## MAKE EDITS HERE #######################
@@ -49,9 +49,8 @@ $expectInputs = <>;
 chomp ($expectInputs);
 while ($bothDone < $expectInputs)
 {
-  print "Please enter your INPUT file (It should be in the input directory): ";
-  my $tempInput = <>;
-  chomp ($tempInput);
+#  print "Please enter your INPUT file (It should be in the input directory): ";
+  my $tempInput = @listOfFiles[$bothDone];
   $file = "input/".$tempInput;
   print "Is this file 'below the separator'? ";
   $gcurve = <>;
@@ -111,13 +110,48 @@ while ($bothDone < $expectInputs)
       $_ =~ s/\t\t\t\t\t\t//g;
       if($flag==1)
       {
+      #  print "FLAG IS1-Here:".$_;
+        if (@listOfTables[$bothDone] ne "" && $_!~m/95\%\ Confidence\ Interval[\t\n]/)
+        {
+          print "\n\n\n\nMATCH FOUND!!!!!".@listOfTables[$bothDone]."?\n\n\n\n\n\n\n";
+          my $tableID = @listOfTables[$bothDone];
+          if ($_=~m/\Q$tableID/)
+          {
+            $permitWrite ="Y";
+            $_=~ s/$tableID//g;
+          }
+          else {
+          if ($_=~m/^[\w\-]/)
+          {
+            $permitWrite ="N";
+            if ($_=~m/Dependent Variable/)
+            {
+              $permitWrite ="Y";
+            }
+          }
+        }
+#          if ($permitWrite eq "Y")
+#          {
+#            print "YES".$_;
+#          }
+#          else
+#          {
+#            print "NO".$_;
+#          }
+        }
+        #next unless $_ =~m/\-99/;
+        #print "HEY\n";
         if ($_ =~m/\w\.* Dependent Variable\:\ (.*)?/)
         {
           $depVar = $1;
-          $depVar =~ s/[^a-zA-Z0-9 ]//g
+          $depVar =~ s/[^a-zA-Z0-9 ]//g;
         }
-      #  print $prefix.$_;
-        $cleanBuffer .= $prefix.$_;
+
+        $_=~ s/^\t([a-zA-Z0-9\[].*)/$1/g;
+        if ($permitWrite eq "Y")
+        {
+          $cleanBuffer .= $prefix.$_;
+        }
       }
 
     }
@@ -180,6 +214,7 @@ while ($bothDone < $expectInputs)
       close (OUT);
     }
     $bothDone++;
+    $permitWrite = "Y";
 }
 print Dumper \%consolidated;
 print "\n\nRAW DATA OBJECT OUTPUT ABOVE - DON'T FORGET TO CHECK FOR ERRORS!\n\n";
@@ -199,7 +234,7 @@ for my $pfx (@prefixArr) {
     print FINAL $hashMeasure."\t";
     for $hashDepVar( @finalOutputOrder )
     {
-      print $hashDepVar.$thing.$hashMeasure.":".$consolidated{$hashDepVar}{$pfx.$hashMeasure}."\n";
+      #print $hashDepVar.$thing.$hashMeasure.":".$consolidated{$hashDepVar}{$pfx.$hashMeasure}."\n";
       print FINAL "$consolidated{$hashDepVar}{$pfx.$hashMeasure}\t";
     }
     print FINAL "\n";

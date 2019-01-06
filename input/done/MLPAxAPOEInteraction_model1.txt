@@ -1,0 +1,693 @@
+﻿MIXED RBTot BY MLPAPos4 WITH Age Sex EDUpos Time TimeSqr APOE4Car
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Age Sex EDUpos Time TimeSqr MLPAPos4 APOE4Car MLPAPos4*APOE4Car | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+
+
+Mixed Model Analysis
+Notes		
+Output Created		07-JAN-2019 00:25:44
+Comments		
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	<none>
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED RBTot BY MLPAPos4 WITH Age Sex EDUpos Time TimeSqr APOE4Car
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Age Sex EDUpos Time TimeSqr MLPAPos4 APOE4Car MLPAPos4*APOE4Car | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.13
+	Elapsed Time	00:00:00.00
+
+Warnings
+The covariance structure for random effect with only one level will be changed to Identity.
+
+Model Dimensiona					
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables
+Fixed Effects	Intercept	1		1	
+	Age	1		1	
+	Sex	1		1	
+	EDUpos	1		1	
+	Time	1		1	
+	TimeSqr	1		1	
+	MLPAPos4	2		1	
+	APOE4Car	1		1	
+	MLPAPos4 * APOE4Car	2		1	
+Random Effects	Intercept	1	Identity	1	DummyID
+Residual				1	
+Total		12		11	
+a Dependent Variable: Global Cog.					
+
+Information Criteriaa	
+-2 Log Likelihood	18530.949
+Akaike's Information Criterion (AIC)	18552.949
+Hurvich and Tsai's Criterion (AICC)	18553.053
+Bozdogan's Criterion (CAIC)	18628.171
+Schwarz's Bayesian Criterion (BIC)	18617.171
+The information criteria are displayed in smaller-is-better form.	
+a Dependent Variable: Global Cog.	
+
+
+Fixed Effects
+Type III Tests of Fixed Effectsa				
+Source	Numerator df	Denominator df	F	Sig.
+Intercept	1	805.090	270.930	.000
+Age	1	804.429	6.088	.014
+Sex	1	742.102	31.014	.000
+EDUpos	1	740.333	70.413	.000
+Time	1	1828.259	69.800	.000
+TimeSqr	1	1777.642	31.433	.000
+MLPAPos4	1	738.066	12.331	.000
+APOE4Car	1	741.641	9.904	.002
+MLPAPos4 * APOE4Car	1	740.971	.183	.669
+a Dependent Variable: Global Cog.				
+
+Estimates of Fixed Effectsa							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	118.311119	7.292058	804.466	16.225	.000	103.997413	132.624825
+Age	-.259005	.104971	804.429	-2.467	.014	-.465055	-.052956
+Sex	-4.685803	.841408	742.102	-5.569	.000	-6.337627	-3.033979
+EDUpos	7.014375	.835914	740.333	8.391	.000	5.373331	8.655420
+Time	2.436452	.291629	1828.259	8.355	.000	1.864492	3.008412
+TimeSqr	-.370885	.066152	1777.642	-5.607	.000	-.500630	-.241140
+[MLPAPos4=.00]	3.499167	.996466	738.066	3.512	.000	1.542922	5.455411
+[MLPAPos4=1.00]	0b	0	.	.	.	.	.
+APOE4Car	-2.742210	1.196844	747.504	-2.291	.022	-5.091786	-.392635
+[MLPAPos4=.00] * APOE4Car	-.865949	2.023106	740.971	-.428	.669	-4.837651	3.105753
+[MLPAPos4=1.00] * APOE4Car	0b	0	.	.	.	.	.
+a Dependent Variable: Global Cog.							
+b This parameter is set to zero because it is redundant.							
+
+
+Covariance Parameters
+Estimates of Covariance Parametersa			
+Parameter		Estimate	Std. Error
+Residual		45.564849	1.567421
+Intercept [subject = DummyID]	Variance	116.234747	7.091978
+a Dependent Variable: Global Cog.			
+
+MIXED RBIMI BY MLPAPos4 WITH Age Sex EDUpos Time TimeSqr APOE4Car
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Age Sex EDUpos Time TimeSqr MLPAPos4 APOE4Car MLPAPos4*APOE4Car | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+
+
+Mixed Model Analysis
+Notes		
+Output Created		07-JAN-2019 00:25:58
+Comments		
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	<none>
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED RBIMI BY MLPAPos4 WITH Age Sex EDUpos Time TimeSqr APOE4Car
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Age Sex EDUpos Time TimeSqr MLPAPos4 APOE4Car MLPAPos4*APOE4Car | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.14
+	Elapsed Time	00:00:01.00
+
+Warnings
+The covariance structure for random effect with only one level will be changed to Identity.
+
+Model Dimensiona					
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables
+Fixed Effects	Intercept	1		1	
+	Age	1		1	
+	Sex	1		1	
+	EDUpos	1		1	
+	Time	1		1	
+	TimeSqr	1		1	
+	MLPAPos4	2		1	
+	APOE4Car	1		1	
+	MLPAPos4 * APOE4Car	2		1	
+Random Effects	Intercept	1	Identity	1	DummyID
+Residual				1	
+Total		12		11	
+a Dependent Variable: Immediate memory.					
+
+Information Criteriaa	
+-2 Log Likelihood	19448.430
+Akaike's Information Criterion (AIC)	19470.430
+Hurvich and Tsai's Criterion (AICC)	19470.535
+Bozdogan's Criterion (CAIC)	19545.652
+Schwarz's Bayesian Criterion (BIC)	19534.652
+The information criteria are displayed in smaller-is-better form.	
+a Dependent Variable: Immediate memory.	
+
+
+Fixed Effects
+Type III Tests of Fixed Effectsa				
+Source	Numerator df	Denominator df	F	Sig.
+Intercept	1	781.768	239.411	.000
+Age	1	780.495	1.352	.245
+Sex	1	675.350	73.234	.000
+EDUpos	1	673.345	57.173	.000
+Time	1	1858.841	105.302	.000
+TimeSqr	1	1786.713	46.009	.000
+MLPAPos4	1	670.460	4.234	.040
+APOE4Car	1	672.992	5.238	.022
+MLPAPos4 * APOE4Car	1	672.180	.000	.998
+a Dependent Variable: Immediate memory.				
+
+Estimates of Fixed Effectsa							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	111.728626	7.283093	780.874	15.341	.000	97.431866	126.025386
+Age	-.121913	.104839	780.495	-1.163	.245	-.327713	.083886
+Sex	-7.086256	.828060	675.350	-8.558	.000	-8.712137	-5.460375
+EDUpos	6.217979	.822346	673.345	7.561	.000	4.603309	7.832649
+Time	3.866756	.376816	1858.841	10.262	.000	3.127729	4.605783
+TimeSqr	-.582466	.085872	1786.713	-6.783	.000	-.750885	-.414046
+[MLPAPos4=.00]	2.016084	.979794	670.460	2.058	.040	.092251	3.939917
+[MLPAPos4=1.00]	0b	0	.	.	.	.	.
+APOE4Car	-2.274650	1.179112	680.570	-1.929	.054	-4.589784	.040485
+[MLPAPos4=.00] * APOE4Car	.005346	1.990234	672.180	.003	.998	-3.902477	3.913168
+[MLPAPos4=1.00] * APOE4Car	0b	0	.	.	.	.	.
+a Dependent Variable: Immediate memory.							
+b This parameter is set to zero because it is redundant.							
+
+
+Covariance Parameters
+Estimates of Covariance Parametersa			
+Parameter		Estimate	Std. Error
+Residual		78.110980	2.723553
+Intercept [subject = DummyID]	Variance	98.935077	7.181740
+a Dependent Variable: Immediate memory.			
+
+MIXED RBVSI BY MLPAPos4 WITH Age Sex EDUpos Time TimeSqr APOE4Car
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Age Sex EDUpos Time TimeSqr MLPAPos4 APOE4Car MLPAPos4*APOE4Car | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+
+
+Mixed Model Analysis
+Notes		
+Output Created		07-JAN-2019 00:26:13
+Comments		
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	<none>
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED RBVSI BY MLPAPos4 WITH Age Sex EDUpos Time TimeSqr APOE4Car
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Age Sex EDUpos Time TimeSqr MLPAPos4 APOE4Car MLPAPos4*APOE4Car | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.14
+	Elapsed Time	00:00:00.00
+
+Warnings
+The covariance structure for random effect with only one level will be changed to Identity.
+
+Model Dimensiona					
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables
+Fixed Effects	Intercept	1		1	
+	Age	1		1	
+	Sex	1		1	
+	EDUpos	1		1	
+	Time	1		1	
+	TimeSqr	1		1	
+	MLPAPos4	2		1	
+	APOE4Car	1		1	
+	MLPAPos4 * APOE4Car	2		1	
+Random Effects	Intercept	1	Identity	1	DummyID
+Residual				1	
+Total		12		11	
+a Dependent Variable: Visuospatial.					
+
+Information Criteriaa	
+-2 Log Likelihood	20231.567
+Akaike's Information Criterion (AIC)	20253.567
+Hurvich and Tsai's Criterion (AICC)	20253.672
+Bozdogan's Criterion (CAIC)	20328.789
+Schwarz's Bayesian Criterion (BIC)	20317.789
+The information criteria are displayed in smaller-is-better form.	
+a Dependent Variable: Visuospatial.	
+
+
+Fixed Effects
+Type III Tests of Fixed Effectsa				
+Source	Numerator df	Denominator df	F	Sig.
+Intercept	1	829.499	199.430	.000
+Age	1	827.755	4.823	.028
+Sex	1	691.549	10.275	.001
+EDUpos	1	689.604	29.469	.000
+Time	1	1926.833	.128	.721
+TimeSqr	1	1852.112	3.505	.061
+MLPAPos4	1	686.542	7.190	.008
+APOE4Car	1	687.480	1.018	.313
+MLPAPos4 * APOE4Car	1	686.676	.002	.964
+a Dependent Variable: Visuospatial.				
+
+Estimates of Fixed Effectsa							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	109.824337	7.872677	828.461	13.950	.000	94.371597	125.277076
+Age	-.248870	.113322	827.755	-2.196	.028	-.471302	-.026439
+Sex	2.842583	.886792	691.549	3.205	.001	1.101455	4.583711
+EDUpos	4.779981	.880522	689.604	5.429	.000	3.051156	6.508806
+Time	.162154	.453307	1926.833	.358	.721	-.726871	1.051178
+TimeSqr	-.193861	.103546	1852.112	-1.872	.061	-.396939	.009217
+[MLPAPos4=.00]	2.812455	1.048837	686.542	2.681	.008	.753142	4.871767
+[MLPAPos4=1.00]	0b	0	.	.	.	.	.
+APOE4Car	-1.120957	1.263256	695.586	-.887	.375	-3.601208	1.359294
+[MLPAPos4=.00] * APOE4Car	.097387	2.130666	686.676	.046	.964	-4.086014	4.280789
+[MLPAPos4=1.00] * APOE4Car	0b	0	.	.	.	.	.
+a Dependent Variable: Visuospatial.							
+b This parameter is set to zero because it is redundant.							
+
+
+Covariance Parameters
+Estimates of Covariance Parametersa			
+Parameter		Estimate	Std. Error
+Residual		114.704884	3.949570
+Intercept [subject = DummyID]	Variance	104.121195	8.056423
+a Dependent Variable: Visuospatial.			
+
+MIXED RBLI BY MLPAPos4 WITH Age Sex EDUpos Time TimeSqr APOE4Car
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Age Sex EDUpos Time TimeSqr MLPAPos4 APOE4Car MLPAPos4*APOE4Car | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+
+
+Mixed Model Analysis
+Notes		
+Output Created		07-JAN-2019 00:26:26
+Comments		
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	<none>
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED RBLI BY MLPAPos4 WITH Age Sex EDUpos Time TimeSqr APOE4Car
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Age Sex EDUpos Time TimeSqr MLPAPos4 APOE4Car MLPAPos4*APOE4Car | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.12
+	Elapsed Time	00:00:00.00
+
+Warnings
+The covariance structure for random effect with only one level will be changed to Identity.
+
+Model Dimensiona					
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables
+Fixed Effects	Intercept	1		1	
+	Age	1		1	
+	Sex	1		1	
+	EDUpos	1		1	
+	Time	1		1	
+	TimeSqr	1		1	
+	MLPAPos4	2		1	
+	APOE4Car	1		1	
+	MLPAPos4 * APOE4Car	2		1	
+Random Effects	Intercept	1	Identity	1	DummyID
+Residual				1	
+Total		12		11	
+a Dependent Variable: Language.					
+
+Information Criteriaa	
+-2 Log Likelihood	19389.379
+Akaike's Information Criterion (AIC)	19411.379
+Hurvich and Tsai's Criterion (AICC)	19411.483
+Bozdogan's Criterion (CAIC)	19486.600
+Schwarz's Bayesian Criterion (BIC)	19475.600
+The information criteria are displayed in smaller-is-better form.	
+a Dependent Variable: Language.	
+
+
+Fixed Effects
+Type III Tests of Fixed Effectsa				
+Source	Numerator df	Denominator df	F	Sig.
+Intercept	1	831.838	317.730	.000
+Age	1	829.974	3.258	.071
+Sex	1	686.476	47.658	.000
+EDUpos	1	684.594	25.818	.000
+Time	1	1934.909	1.273	.259
+TimeSqr	1	1859.728	.032	.859
+MLPAPos4	1	681.553	5.976	.015
+APOE4Car	1	681.946	5.448	.020
+MLPAPos4 * APOE4Car	1	681.167	.490	.484
+a Dependent Variable: Language.				
+
+Estimates of Fixed Effectsa							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	115.791227	6.552491	830.775	17.671	.000	102.929843	128.652612
+Age	-.170255	.094317	829.974	-1.805	.071	-.355384	.014874
+Sex	-5.082714	.736257	686.476	-6.903	.000	-6.528300	-3.637128
+EDUpos	3.714433	.731023	684.594	5.081	.000	2.279117	5.149750
+Time	.436157	.386587	1934.909	1.128	.259	-.322014	1.194328
+TimeSqr	-.015745	.088354	1859.728	-.178	.859	-.189029	.157539
+[MLPAPos4=.00]	2.128564	.870707	681.553	2.445	.015	.418972	3.838155
+[MLPAPos4=1.00]	0b	0	.	.	.	.	.
+APOE4Car	-1.440590	1.048894	690.017	-1.373	.170	-3.499996	.618816
+[MLPAPos4=.00] * APOE4Car	-1.237556	1.768800	681.167	-.700	.484	-4.710510	2.235399
+[MLPAPos4=1.00] * APOE4Car	0b	0	.	.	.	.	.
+a Dependent Variable: Language.							
+b This parameter is set to zero because it is redundant.							
+
+
+Covariance Parameters
+Estimates of Covariance Parametersa			
+Parameter		Estimate	Std. Error
+Residual		83.728801	2.882268
+Intercept [subject = DummyID]	Variance	70.096146	5.563878
+a Dependent Variable: Language.			
+
+MIXED RBAI BY MLPAPos4 WITH Age Sex EDUpos Time TimeSqr APOE4Car
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Age Sex EDUpos Time TimeSqr MLPAPos4 APOE4Car MLPAPos4*APOE4Car | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+
+
+Mixed Model Analysis
+Notes		
+Output Created		07-JAN-2019 00:26:53
+Comments		
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	<none>
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED RBAI BY MLPAPos4 WITH Age Sex EDUpos Time TimeSqr APOE4Car
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Age Sex EDUpos Time TimeSqr MLPAPos4 APOE4Car MLPAPos4*APOE4Car | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.12
+	Elapsed Time	00:00:00.00
+
+Warnings
+The covariance structure for random effect with only one level will be changed to Identity.
+
+Model Dimensiona					
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables
+Fixed Effects	Intercept	1		1	
+	Age	1		1	
+	Sex	1		1	
+	EDUpos	1		1	
+	Time	1		1	
+	TimeSqr	1		1	
+	MLPAPos4	2		1	
+	APOE4Car	1		1	
+	MLPAPos4 * APOE4Car	2		1	
+Random Effects	Intercept	1	Identity	1	DummyID
+Residual				1	
+Total		12		11	
+a Dependent Variable: Attention.					
+
+Information Criteriaa	
+-2 Log Likelihood	19408.957
+Akaike's Information Criterion (AIC)	19430.957
+Hurvich and Tsai's Criterion (AICC)	19431.061
+Bozdogan's Criterion (CAIC)	19506.178
+Schwarz's Bayesian Criterion (BIC)	19495.178
+The information criteria are displayed in smaller-is-better form.	
+a Dependent Variable: Attention.	
+
+
+Fixed Effects
+Type III Tests of Fixed Effectsa				
+Source	Numerator df	Denominator df	F	Sig.
+Intercept	1	829.750	162.926	.000
+Age	1	829.107	1.088	.297
+Sex	1	767.947	3.133	.077
+EDUpos	1	766.179	36.750	.000
+Time	1	1848.018	34.463	.000
+TimeSqr	1	1799.670	6.995	.008
+MLPAPos4	1	763.925	6.302	.012
+APOE4Car	1	767.545	5.652	.018
+MLPAPos4 * APOE4Car	1	766.878	.317	.573
+a Dependent Variable: Attention.				
+
+Estimates of Fixed Effectsa							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	110.526873	8.774703	829.133	12.596	.000	93.303629	127.750117
+Age	-.131725	.126314	829.107	-1.043	.297	-.379658	.116208
+Sex	-1.793434	1.013197	767.947	-1.770	.077	-3.782399	.195531
+EDUpos	6.102169	1.006603	766.179	6.062	.000	4.126141	8.078197
+Time	2.025242	.344986	1848.018	5.871	.000	1.348640	2.701845
+TimeSqr	-.206926	.078236	1799.670	-2.645	.008	-.360370	-.053482
+[MLPAPos4=.00]	3.012441	1.199971	763.925	2.510	.012	.656810	5.368073
+[MLPAPos4=1.00]	0b	0	.	.	.	.	.
+APOE4Car	-2.202315	1.441109	773.370	-1.528	.127	-5.031265	.626635
+[MLPAPos4=.00] * APOE4Car	-1.372019	2.436193	766.878	-.563	.573	-6.154417	3.410379
+[MLPAPos4=1.00] * APOE4Car	0b	0	.	.	.	.	.
+a Dependent Variable: Attention.							
+b This parameter is set to zero because it is redundant.							
+
+
+Covariance Parameters
+Estimates of Covariance Parametersa			
+Parameter		Estimate	Std. Error
+Residual		63.676054	2.173678
+Intercept [subject = DummyID]	Variance	169.555314	10.092790
+a Dependent Variable: Attention.			
+
+MIXED RBDMI BY MLPAPos4 WITH Age Sex EDUpos Time TimeSqr APOE4Car
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Age Sex EDUpos Time TimeSqr MLPAPos4 APOE4Car MLPAPos4*APOE4Car | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+
+
+Mixed Model Analysis
+Notes		
+Output Created		07-JAN-2019 00:27:07
+Comments		
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	<none>
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED RBDMI BY MLPAPos4 WITH Age Sex EDUpos Time TimeSqr APOE4Car
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Age Sex EDUpos Time TimeSqr MLPAPos4 APOE4Car MLPAPos4*APOE4Car | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.13
+	Elapsed Time	00:00:00.00
+
+Warnings
+The covariance structure for random effect with only one level will be changed to Identity.
+
+Model Dimensiona					
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables
+Fixed Effects	Intercept	1		1	
+	Age	1		1	
+	Sex	1		1	
+	EDUpos	1		1	
+	Time	1		1	
+	TimeSqr	1		1	
+	MLPAPos4	2		1	
+	APOE4Car	1		1	
+	MLPAPos4 * APOE4Car	2		1	
+Random Effects	Intercept	1	Identity	1	DummyID
+Residual				1	
+Total		12		11	
+a Dependent Variable: Delayed memory.					
+
+Information Criteriaa	
+-2 Log Likelihood	18355.571
+Akaike's Information Criterion (AIC)	18377.571
+Hurvich and Tsai's Criterion (AICC)	18377.676
+Bozdogan's Criterion (CAIC)	18452.793
+Schwarz's Bayesian Criterion (BIC)	18441.793
+The information criteria are displayed in smaller-is-better form.	
+a Dependent Variable: Delayed memory.	
+
+
+Fixed Effects
+Type III Tests of Fixed Effectsa				
+Source	Numerator df	Denominator df	F	Sig.
+Intercept	1	758.577	369.780	.000
+Age	1	757.602	9.531	.002
+Sex	1	672.874	34.776	.000
+EDUpos	1	670.939	26.283	.000
+Time	1	1815.348	127.716	.000
+TimeSqr	1	1749.214	64.739	.000
+MLPAPos4	1	668.300	4.106	.043
+APOE4Car	1	671.487	7.596	.006
+MLPAPos4 * APOE4Car	1	670.723	.176	.675
+a Dependent Variable: Delayed memory.				
+
+Estimates of Fixed Effectsa							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	119.908758	6.278185	757.801	19.099	.000	107.584058	132.233459
+Age	-.279004	.090375	757.602	-3.087	.002	-.456419	-.101589
+Sex	-4.236618	.718426	672.874	-5.897	.000	-5.647245	-2.825991
+EDUpos	3.658261	.713574	670.939	5.127	.000	2.257154	5.059367
+Time	3.340669	.295604	1815.348	11.301	.000	2.760909	3.920428
+TimeSqr	-.541002	.067238	1749.214	-8.046	.000	-.672878	-.409126
+[MLPAPos4=.00]	1.723182	.850372	668.300	2.026	.043	.053459	3.392905
+[MLPAPos4=1.00]	0b	0	.	.	.	.	.
+APOE4Car	-2.736758	1.022592	678.376	-2.676	.008	-4.744583	-.728932
+[MLPAPos4=.00] * APOE4Car	.725327	1.727069	670.723	.420	.675	-2.665786	4.116440
+[MLPAPos4=1.00] * APOE4Car	0b	0	.	.	.	.	.
+a Dependent Variable: Delayed memory.							
+b This parameter is set to zero because it is redundant.							
+
+
+Covariance Parameters
+Estimates of Covariance Parametersa			
+Parameter		Estimate	Std. Error
+Residual		47.542985	1.666554
+Intercept [subject = DummyID]	Variance	78.866676	5.440160
+a Dependent Variable: Delayed memory.			
+
+MIXED EXECI BY MLPAPos4 WITH Age Sex EDUpos Time TimeSqr APOE4Car
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Age Sex EDUpos Time TimeSqr MLPAPos4 APOE4Car MLPAPos4*APOE4Car | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+
+
+Mixed Model Analysis
+Notes		
+Output Created		07-JAN-2019 00:27:19
+Comments		
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	<none>
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED EXECI BY MLPAPos4 WITH Age Sex EDUpos Time TimeSqr APOE4Car
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Age Sex EDUpos Time TimeSqr MLPAPos4 APOE4Car MLPAPos4*APOE4Car | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.10
+	Elapsed Time	00:00:01.00
+
+Warnings
+The covariance structure for random effect with only one level will be changed to Identity.
+
+Model Dimensiona					
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables
+Fixed Effects	Intercept	1		1	
+	Age	1		1	
+	Sex	1		1	
+	EDUpos	1		1	
+	Time	1		1	
+	TimeSqr	1		1	
+	MLPAPos4	2		1	
+	APOE4Car	1		1	
+	MLPAPos4 * APOE4Car	2		1	
+Random Effects	Intercept	1	Identity	1	DummyID
+Residual				1	
+Total		12		11	
+a Dependent Variable: Executive function.					
+
+Information Criteriaa	
+-2 Log Likelihood	10045.469
+Akaike's Information Criterion (AIC)	10067.469
+Hurvich and Tsai's Criterion (AICC)	10067.682
+Bozdogan's Criterion (CAIC)	10134.936
+Schwarz's Bayesian Criterion (BIC)	10123.936
+The information criteria are displayed in smaller-is-better form.	
+a Dependent Variable: Executive function.	
+
+
+Fixed Effects
+Type III Tests of Fixed Effectsa				
+Source	Numerator df	Denominator df	F	Sig.
+Intercept	1	691.204	140.468	.000
+Age	1	691.080	3.197	.074
+Sex	1	604.494	.154	.695
+EDUpos	1	606.798	3.191	.075
+Time	1	666.662	1.117	.291
+TimeSqr	1	655.198	.028	.866
+MLPAPos4	1	607.642	8.772	.003
+APOE4Car	1	594.206	1.848	.174
+MLPAPos4 * APOE4Car	1	593.525	2.006	.157
+a Dependent Variable: Executive function.				
+
+Estimates of Fixed Effectsa							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	134.391842	11.481580	691.888	11.705	.000	111.848924	156.934761
+Age	-.297118	.166161	691.080	-1.788	.074	-.623359	.029123
+Sex	-.455402	1.160681	604.494	-.392	.695	-2.734858	1.824055
+EDUpos	-2.036725	1.140161	606.798	-1.786	.075	-4.275866	.202416
+Time	.614193	.581104	666.662	1.057	.291	-.526821	1.755207
+TimeSqr	.025774	.152914	655.198	.169	.866	-.274486	.326033
+[MLPAPos4=.00]	4.008099	1.353299	607.642	2.962	.003	1.350388	6.665811
+[MLPAPos4=1.00]	0b	0	.	.	.	.	.
+APOE4Car	.089597	1.667879	602.111	.054	.957	-3.185971	3.365165
+[MLPAPos4=.00] * APOE4Car	-3.953053	2.791380	593.525	-1.416	.157	-9.435237	1.529131
+[MLPAPos4=1.00] * APOE4Car	0b	0	.	.	.	.	.
+a Dependent Variable: Executive function.							
+b This parameter is set to zero because it is redundant.							
+
+
+Covariance Parameters
+Estimates of Covariance Parametersa			
+Parameter		Estimate	Std. Error
+Residual		85.099021	4.852665
+Intercept [subject = DummyID]	Variance	152.366418	11.826277
+a Dependent Variable: Executive function.			
+

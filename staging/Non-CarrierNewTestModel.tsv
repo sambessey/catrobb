@@ -1,0 +1,35 @@
+NewTestModel		
+Attention		Sig
+[MLPAPos4=.00]	2.10 [-0.12, 4.32]x	0.06
+Time	1.74 [0.84, 2.64]***	0.00
+TimeSqr	-0.15 [-0.35, 0.05]	0.14
+NewTestModel		
+Delayed memory		Sig
+[MLPAPos4=.00]	2.03 [0.39, 3.67]*	0.01
+Time	3.66 [2.87, 4.44]***	0.00
+TimeSqr	-0.60 [-0.78, -0.43]***	0.00
+NewTestModel		
+Executive function		Sig
+[MLPAPos4=.00]	2.82 [0.20, 5.44]*	0.04
+Time	-0.05 [-1.59, 1.48]	0.95
+TimeSqr	0.14 [-0.26, 0.55]	0.48
+NewTestModel		
+Global Cog		Sig
+[MLPAPos4=.00]	2.81 [0.99, 4.62]**	0.00
+Time	2.55 [1.79, 3.32]***	0.00
+TimeSqr	-0.42 [-0.59, -0.25]***	0.00
+NewTestModel		
+Immediate memory		Sig
+[MLPAPos4=.00]	2.60 [0.66, 4.55]**	0.01
+Time	4.96 [3.98, 5.95]***	0.00
+TimeSqr	-0.84 [-1.06, -0.62]***	0.00
+NewTestModel		
+Language		Sig
+[MLPAPos4=.00]	1.35 [-0.46, 3.16]	0.14
+Time	0.12 [-0.89, 1.13]	0.81
+TimeSqr	0.02 [-0.21, 0.25]	0.86
+NewTestModel		
+Visuospatial		Sig
+[MLPAPos4=.00]	2.15 [0.01, 4.29]*	0.05
+Time	-0.10 [-1.30, 1.10]	0.87
+TimeSqr	-0.14 [-0.41, 0.13]	0.32
