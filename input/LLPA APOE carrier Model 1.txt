@@ -1,0 +1,1497 @@
+SORT CASES  BY APOE4Car.							
+SPLIT FILE SEPARATE BY APOE4Car.							
+MIXED RBTot BY PASEtert2 WITH Sex EDUpos Time Age TimeSqr							
+"  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,"							
+"    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)"							
+  /FIXED=Sex EDUpos Age Time TimeSqr PASEtert2 | SSTYPE(3)							
+  /METHOD=ML							
+  /PRINT=SOLUTION							
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).							
+							
+							
+Mixed Model Analysis							
+							
+Notes							
+Output Created		06-JAN-2019 13:59:32					
+Comments							
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav					
+	Active Dataset	DataSet1					
+	Filter	<none>					
+	Weight	<none>					
+	Split File	APOE4Car					
+	N of Rows in Working Data File	5406					
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.					
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.					
+Syntax		"MIXED RBTot BY PASEtert2 WITH Sex EDUpos Time Age TimeSqr
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex EDUpos Age Time TimeSqr PASEtert2 | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN)."					
+Resources	Processor Time	00:00:00.16					
+	Elapsed Time	00:00:01.00					
+							
+Warnings							
+The covariance structure for random effect with only one level will be changed to Identity.							
+The covariance structure for random effect with only one level will be changed to Identity.							
+The covariance structure for random effect with only one level will be changed to Identity.							
+							
+							
+APOE4Car = -99							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		10		10			
+a. APOE4Car = -99							
+b. Dependent Variable: Global Cog.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	902.647						
+Akaike's Information Criterion (AIC)	922.647						
+Hurvich and Tsai's Criterion (AICC)	924.594						
+Bozdogan's Criterion (CAIC)	960.850						
+Schwarz's Bayesian Criterion (BIC)	950.850						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = -99							
+b. Dependent Variable: Global Cog.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	58.960	9.109	0.004			
+Sex	1	70.028	6.939	0.010			
+EDUpos	1	67.201	14.590	0.000			
+Age	1	58.819	0.090	0.766			
+Time	1	64.841	2.222	0.141			
+TimeSqr	1	52.485	0.129	0.721			
+PASEtert2	2	64.755	0.246	0.783			
+a. APOE4Car = -99							
+b. Dependent Variable: Global Cog.							
+							
+c. This parameter is set to zero because it is redundant.							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		46.917639	10.404109				
+Intercept [subject = DummyID]	Variance	53.975210	18.246180				
+a. APOE4Car = -99							
+b. Dependent Variable: Global Cog.							
+							
+							
+APOE4Car = non-carrier							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		10		10			
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Global Cog.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	14224.689						
+Akaike's Information Criterion (AIC)	14244.689						
+Hurvich and Tsai's Criterion (AICC)	14244.802						
+Bozdogan's Criterion (CAIC)	14310.419						
+Schwarz's Bayesian Criterion (BIC)	14300.419						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Global Cog.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	608.924	193.043	0.000			
+Sex	1	566.616	24.048	0.000			
+EDUpos	1	566.818	48.357	0.000			
+Age	1	607.343	2.181	0.140			
+Time	1	1389.005	57.490	0.000			
+TimeSqr	1	1351.852	26.677	0.000			
+PASEtert2	2	565.594	0.678	0.508			
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Global Cog.							
+							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		45.549880	1.796379				
+Intercept [subject = DummyID]	Variance	117.463533	8.187248				
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Global Cog.							
+							
+							
+APOE4Car = Carrier							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		10		10			
+a. APOE4Car = Carrier							
+b. Dependent Variable: Global Cog.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	4893.453						
+Akaike's Information Criterion (AIC)	4913.453						
+Hurvich and Tsai's Criterion (AICC)	4913.786						
+Bozdogan's Criterion (CAIC)	4968.555						
+Schwarz's Bayesian Criterion (BIC)	4958.555						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = Carrier							
+b. Dependent Variable: Global Cog.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	203.455	77.864	0.000			
+Sex	1	192.380	2.780	0.097			
+EDUpos	1	189.891	16.175	0.000			
+Age	1	204.900	7.216	0.008			
+Time	1	494.245	17.277	0.000			
+TimeSqr	1	479.646	8.879	0.003			
+PASEtert2	2	191.293	0.474	0.623			
+a. APOE4Car = Carrier							
+b. Dependent Variable: Global Cog.							
+							
+"Estimates of Fixed Effectsa,b"							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	139.511609	16.159946	201.883	8.633	0.000	107.647681	171.375537
+Sex	-2.838491	1.702270	192.380	-1.667	0.097	-6.196000	0.519017
+EDUpos	6.801008	1.691028	189.891	4.022	0.000	3.465396	10.136621
+Age	-0.615808	0.229241	204.900	-2.686	0.008	-1.067781	-0.163835
+Time	2.320654	0.558311	494.245	4.157	0.000	1.223698	3.417611
+TimeSqr	-0.368225	0.123572	479.646	-2.980	0.003	-0.611034	-0.125415
+[PASEtert2=1.00]	1.914596	2.165079	189.355	0.884	0.378	-2.356177	6.185368
+[PASEtert2=2.00]	0.338216	2.095221	192.831	0.161	0.872	-3.794277	4.470709
+[PASEtert2=3.00]	0c	0					
+a. APOE4Car = Carrier							
+b. Dependent Variable: Global Cog.							
+c. This parameter is set to zero because it is redundant.							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		44.377059	2.935325				
+Intercept [subject = DummyID]	Variance	120.970599	14.330012				
+a. APOE4Car = Carrier							
+b. Dependent Variable: Global Cog.							
+							
+MIXED RBIMI BY PASEtert2 WITH Sex EDUpos Time Age TimeSqr							
+"  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,"							
+"    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)"							
+  /FIXED=Sex EDUpos Age Time TimeSqr PASEtert2 | SSTYPE(3)							
+  /METHOD=ML							
+  /PRINT=SOLUTION							
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).							
+							
+							
+Mixed Model Analysis							
+							
+Notes							
+Output Created		06-JAN-2019 13:59:48					
+Comments							
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav					
+	Active Dataset	DataSet1					
+	Filter	<none>					
+	Weight	<none>					
+	Split File	APOE4Car					
+	N of Rows in Working Data File	5406					
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.					
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.					
+Syntax		"MIXED RBIMI BY PASEtert2 WITH Sex EDUpos Time Age TimeSqr
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex EDUpos Age Time TimeSqr PASEtert2 | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN)."					
+Resources	Processor Time	00:00:00.16					
+	Elapsed Time	00:00:01.00					
+							
+Warnings							
+The covariance structure for random effect with only one level will be changed to Identity.							
+The covariance structure for random effect with only one level will be changed to Identity.							
+The covariance structure for random effect with only one level will be changed to Identity.							
+							
+							
+APOE4Car = -99							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		10		10			
+a. APOE4Car = -99							
+b. Dependent Variable: Immediate memory.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	983.719						
+Akaike's Information Criterion (AIC)	1003.719						
+Hurvich and Tsai's Criterion (AICC)	1005.666						
+Bozdogan's Criterion (CAIC)	1041.922						
+Schwarz's Bayesian Criterion (BIC)	1031.922						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = -99							
+b. Dependent Variable: Immediate memory.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	60.914	2.629	0.110			
+Sex	1	70.822	10.936	0.001			
+EDUpos	1	68.274	12.505	0.001			
+Age	1	60.798	0.541	0.465			
+Time	1	62.782	3.531	0.065			
+TimeSqr	1	51.829	0.970	0.329			
+PASEtert2	2	66.196	0.389	0.679			
+a. APOE4Car = -99							
+b. Dependent Variable: Immediate memory.							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		85.832714	18.926131				
+Intercept [subject = DummyID]	Variance	112.708317	35.370590				
+a. APOE4Car = -99							
+b. Dependent Variable: Immediate memory.							
+							
+							
+APOE4Car = non-carrier							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		10		10			
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Immediate memory.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	14897.733						
+Akaike's Information Criterion (AIC)	14917.733						
+Hurvich and Tsai's Criterion (AICC)	14917.847						
+Bozdogan's Criterion (CAIC)	14983.463						
+Schwarz's Bayesian Criterion (BIC)	14973.463						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Immediate memory.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	596.771	170.111	0.000			
+Sex	1	523.512	51.455	0.000			
+EDUpos	1	524.187	38.037	0.000			
+Age	1	593.959	0.034	0.855			
+Time	1	1419.580	78.834	0.000			
+TimeSqr	1	1367.320	31.204	0.000			
+PASEtert2	2	522.238	0.721	0.487			
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Immediate memory.							
+							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		77.177254	3.074883				
+Intercept [subject = DummyID]	Variance	97.797796	8.056237				
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Immediate memory.							
+							
+							
+APOE4Car = Carrier							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		10		10			
+a. APOE4Car = Carrier							
+b. Dependent Variable: Immediate memory.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	5163.893						
+Akaike's Information Criterion (AIC)	5183.893						
+Hurvich and Tsai's Criterion (AICC)	5184.226						
+Bozdogan's Criterion (CAIC)	5238.996						
+Schwarz's Bayesian Criterion (BIC)	5228.996						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = Carrier							
+b. Dependent Variable: Immediate memory.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	190.897	78.245	0.000			
+Sex	1	168.739	18.855	0.000			
+EDUpos	1	165.446	15.653	0.000			
+Age	1	193.280	5.134	0.025			
+Time	1	505.050	30.771	0.000			
+TimeSqr	1	481.544	18.341	0.000			
+PASEtert2	2	167.214	0.418	0.659			
+a. APOE4Car = Carrier							
+b. Dependent Variable: Immediate memory.							
+							
+"Estimates of Fixed Effectsa,b"							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	135.403176	15.653815	188.125	8.650	0.000	104.523612	166.282741
+Sex	-7.072362	1.628756	168.739	-4.342	0.000	-10.287727	-3.856998
+EDUpos	6.383670	1.613521	165.446	3.956	0.000	3.197925	9.569416
+Age	-0.504840	0.222806	193.280	-2.266	0.025	-0.944283	-0.065398
+Time	4.134850	0.745403	505.050	5.547	0.000	2.670378	5.599322
+TimeSqr	-0.711166	0.166057	481.544	-4.283	0.000	-1.037452	-0.384879
+[PASEtert2=1.00]	1.862595	2.064102	164.122	0.902	0.368	-2.213023	5.938214
+[PASEtert2=2.00]	1.259281	2.005443	168.925	0.628	0.531	-2.699677	5.218239
+[PASEtert2=3.00]	0c	0					
+a. APOE4Car = Carrier							
+b. Dependent Variable: Immediate memory.							
+c. This parameter is set to zero because it is redundant.							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		81.853155	5.507398				
+Intercept [subject = DummyID]	Variance	94.586474	13.919782				
+a. APOE4Car = Carrier							
+b. Dependent Variable: Immediate memory.							
+							
+MIXED RBVSI BY PASEtert2 WITH Sex EDUpos Time Age TimeSqr							
+"  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,"							
+"    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)"							
+  /FIXED=Sex EDUpos Age Time TimeSqr PASEtert2 | SSTYPE(3)							
+  /METHOD=ML							
+  /PRINT=SOLUTION							
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).							
+							
+							
+Mixed Model Analysis							
+							
+Notes							
+Output Created		06-JAN-2019 13:59:59					
+Comments							
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav					
+	Active Dataset	DataSet1					
+	Filter	<none>					
+	Weight	<none>					
+	Split File	APOE4Car					
+	N of Rows in Working Data File	5406					
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.					
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.					
+Syntax		"MIXED RBVSI BY PASEtert2 WITH Sex EDUpos Time Age TimeSqr
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex EDUpos Age Time TimeSqr PASEtert2 | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN)."					
+Resources	Processor Time	00:00:00.15					
+	Elapsed Time	00:00:00.00					
+							
+Warnings							
+The covariance structure for random effect with only one level will be changed to Identity.							
+The covariance structure for random effect with only one level will be changed to Identity.							
+The covariance structure for random effect with only one level will be changed to Identity.							
+							
+							
+APOE4Car = -99							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		10		10			
+a. APOE4Car = -99							
+b. Dependent Variable: Visuospatial.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	985.648						
+Akaike's Information Criterion (AIC)	1005.648						
+Hurvich and Tsai's Criterion (AICC)	1007.595						
+Bozdogan's Criterion (CAIC)	1043.851						
+Schwarz's Bayesian Criterion (BIC)	1033.851						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = -99							
+b. Dependent Variable: Visuospatial.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	22.697	9.853	0.005			
+Sex	1	50.435	2.654	0.110			
+EDUpos	1	44.055	2.510	0.120			
+Age	1	22.011	0.018	0.894			
+Time	1	121.434	0.485	0.487			
+TimeSqr	1	96.174	0.343	0.560			
+PASEtert2	2	29.687	0.866	0.431			
+a. APOE4Car = -99							
+b. Dependent Variable: Visuospatial.							
+							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		157.451525	34.409293				
+Intercept [subject = DummyID]	Variance	8.717214	30.365300				
+a. APOE4Car = -99							
+b. Dependent Variable: Visuospatial.							
+							
+							
+APOE4Car = non-carrier							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		10		10			
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Visuospatial.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	15474.075						
+Akaike's Information Criterion (AIC)	15494.075						
+Hurvich and Tsai's Criterion (AICC)	15494.189						
+Bozdogan's Criterion (CAIC)	15559.805						
+Schwarz's Bayesian Criterion (BIC)	15549.805						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Visuospatial.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	621.117	163.741	0.000			
+Sex	1	524.818	7.550	0.006			
+EDUpos	1	525.915	26.752	0.000			
+Age	1	617.385	3.890	0.049			
+Time	1	1463.919	0.075	0.784			
+TimeSqr	1	1409.451	2.806	0.094			
+PASEtert2	2	523.486	1.683	0.187			
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Visuospatial.							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		112.674717	4.453017				
+Intercept [subject = DummyID]	Variance	99.481623	8.917595				
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Visuospatial.							
+							
+							
+APOE4Car = Carrier							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		10		10			
+a. APOE4Car = Carrier							
+b. Dependent Variable: Visuospatial.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	5415.108						
+Akaike's Information Criterion (AIC)	5435.108						
+Hurvich and Tsai's Criterion (AICC)	5435.440						
+Bozdogan's Criterion (CAIC)	5490.210						
+Schwarz's Bayesian Criterion (BIC)	5480.210						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = Carrier							
+b. Dependent Variable: Visuospatial.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	202.295	46.714	0.000			
+Sex	1	175.584	6.666	0.011			
+EDUpos	1	172.078	3.382	0.068			
+Age	1	204.998	2.747	0.099			
+Time	1	520.469	0.389	0.533			
+TimeSqr	1	496.579	1.692	0.194			
+PASEtert2	2	173.925	1.221	0.297			
+a. APOE4Car = Carrier							
+b. Dependent Variable: Visuospatial.							
+							
+"Estimates of Fixed Effectsa,b"							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	120.708959	17.972863	199.075	6.716	0.000	85.267336	156.150583
+Sex	4.808437	1.862435	175.584	2.582	0.011	1.132798	8.484076
+EDUpos	3.390653	1.843700	172.078	1.839	0.068	-0.248526	7.029833
+Age	-0.424399	0.256059	204.998	-1.657	0.099	-0.929247	0.080449
+Time	0.570386	0.914263	520.469	0.624	0.533	-1.225713	2.366485
+TimeSqr	-0.265384	0.204020	496.579	-1.301	0.194	-0.666232	0.135464
+[PASEtert2=1.00]	-1.061101	2.357813	170.417	-0.450	0.653	-5.715380	3.593179
+[PASEtert2=2.00]	2.261079	2.293211	175.582	0.986	0.325	-2.264727	6.786884
+[PASEtert2=3.00]	0c	0					
+a. APOE4Car = Carrier							
+b. Dependent Variable: Visuospatial.							
+c. This parameter is set to zero because it is redundant.							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		124.291853	8.249074				
+Intercept [subject = DummyID]	Variance	117.450322	17.672409				
+a. APOE4Car = Carrier							
+b. Dependent Variable: Visuospatial.							
+							
+MIXED RBLI BY PASEtert2 WITH Sex EDUpos Time Age TimeSqr							
+"  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,"							
+"    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)"							
+  /FIXED=Sex EDUpos Age Time TimeSqr PASEtert2 | SSTYPE(3)							
+  /METHOD=ML							
+  /PRINT=SOLUTION							
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).							
+							
+							
+Mixed Model Analysis							
+							
+Notes							
+Output Created		06-JAN-2019 14:00:10					
+Comments							
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav					
+	Active Dataset	DataSet1					
+	Filter	<none>					
+	Weight	<none>					
+	Split File	APOE4Car					
+	N of Rows in Working Data File	5406					
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.					
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.					
+Syntax		"MIXED RBLI BY PASEtert2 WITH Sex EDUpos Time Age TimeSqr
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex EDUpos Age Time TimeSqr PASEtert2 | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN)."					
+Resources	Processor Time	00:00:00.15					
+	Elapsed Time	00:00:01.00					
+							
+Warnings							
+The covariance structure for random effect with only one level will be changed to Identity.							
+The covariance structure for random effect with only one level will be changed to Identity.							
+The covariance structure for random effect with only one level will be changed to Identity.							
+							
+							
+APOE4Car = -99							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		10		10			
+a. APOE4Car = -99							
+b. Dependent Variable: Language.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	955.202						
+Akaike's Information Criterion (AIC)	975.202						
+Hurvich and Tsai's Criterion (AICC)	977.149						
+Bozdogan's Criterion (CAIC)	1013.405						
+Schwarz's Bayesian Criterion (BIC)	1003.405						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = -99							
+b. Dependent Variable: Language.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	62.112	3.722	0.058			
+Sex	1	76.292	6.383	0.014			
+EDUpos	1	72.813	1.563	0.215			
+Age	1	61.888	1.129	0.292			
+Time	1	79.688	0.052	0.820			
+TimeSqr	1	63.493	0.000	0.991			
+PASEtert2	2	69.242	0.042	0.959			
+a. APOE4Car = -99							
+b. Dependent Variable: Language.							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		80.609438	16.522534				
+Intercept [subject = DummyID]	Variance	65.827334	24.232276				
+a. APOE4Car = -99							
+b. Dependent Variable: Language.							
+							
+							
+APOE4Car = non-carrier							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		10		10			
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Language.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	14881.900						
+Akaike's Information Criterion (AIC)	14901.900						
+Hurvich and Tsai's Criterion (AICC)	14902.013						
+Bozdogan's Criterion (CAIC)	14967.630						
+Schwarz's Bayesian Criterion (BIC)	14957.630						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Language.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	620.933	246.023	0.000			
+Sex	1	514.967	41.318	0.000			
+EDUpos	1	516.257	14.465	0.000			
+Age	1	616.809	1.095	0.296			
+Time	1	1472.809	2.079	0.150			
+TimeSqr	1	1418.163	0.326	0.568			
+PASEtert2	2	513.653	0.239	0.788			
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Language.							
+							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		85.795226	3.393103				
+Intercept [subject = DummyID]	Variance	65.137401	6.155322				
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Language.							
+							
+							
+APOE4Car = Carrier							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		10		10			
+a. APOE4Car = Carrier							
+b. Dependent Variable: Language.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	5097.497						
+Akaike's Information Criterion (AIC)	5117.497						
+Hurvich and Tsai's Criterion (AICC)	5117.830						
+Bozdogan's Criterion (CAIC)	5172.600						
+Schwarz's Bayesian Criterion (BIC)	5162.600						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = Carrier							
+b. Dependent Variable: Language.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	207.552	82.179	0.000			
+Sex	1	183.055	3.450	0.065			
+EDUpos	1	179.535	9.318	0.003			
+Age	1	210.129	4.209	0.041			
+Time	1	521.164	0.013	0.909			
+TimeSqr	1	498.557	0.169	0.682			
+PASEtert2	2	181.414	1.925	0.149			
+a. APOE4Car = Carrier							
+b. Dependent Variable: Language.							
+							
+"Estimates of Fixed Effectsa,b"							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	130.188172	14.670569	204.531	8.874	0.000	101.263234	159.113111
+Sex	-2.831870	1.524589	183.055	-1.857	0.065	-5.839896	0.176156
+EDUpos	4.609257	1.509992	179.535	3.053	0.003	1.629642	7.588873
+Age	-0.428506	0.208872	210.129	-2.052	0.041	-0.840260	-0.016753
+Time	-0.081365	0.713404	521.164	-0.114	0.909	-1.482866	1.320136
+TimeSqr	0.065289	0.159012	498.557	0.411	0.682	-0.247128	0.377706
+[PASEtert2=1.00]	2.949796	1.931483	178.045	1.527	0.128	-0.861749	6.761341
+[PASEtert2=2.00]	-0.304065	1.877204	183.196	-0.162	0.872	-4.007785	3.399654
+[PASEtert2=3.00]	0c	0					
+a. APOE4Car = Carrier							
+b. Dependent Variable: Language.							
+c. This parameter is set to zero because it is redundant.							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		75.192144	4.961226				
+Intercept [subject = DummyID]	Variance	81.606023	11.610982				
+a. APOE4Car = Carrier							
+b. Dependent Variable: Language.							
+							
+MIXED RBAI BY PASEtert2 WITH Sex EDUpos Time Age TimeSqr							
+"  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,"							
+"    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)"							
+  /FIXED=Sex EDUpos Age Time TimeSqr PASEtert2 | SSTYPE(3)							
+  /METHOD=ML							
+  /PRINT=SOLUTION							
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).							
+							
+							
+Mixed Model Analysis							
+							
+Notes							
+Output Created		06-JAN-2019 14:00:33					
+Comments							
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav					
+	Active Dataset	DataSet1					
+	Filter	<none>					
+	Weight	<none>					
+	Split File	APOE4Car					
+	N of Rows in Working Data File	5406					
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.					
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.					
+Syntax		"MIXED RBAI BY PASEtert2 WITH Sex EDUpos Time Age TimeSqr
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex EDUpos Age Time TimeSqr PASEtert2 | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN)."					
+Resources	Processor Time	00:00:00.14					
+	Elapsed Time	00:00:01.00					
+							
+Warnings							
+The covariance structure for random effect with only one level will be changed to Identity.							
+The covariance structure for random effect with only one level will be changed to Identity.							
+The covariance structure for random effect with only one level will be changed to Identity.							
+							
+							
+APOE4Car = -99							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		10		10			
+a. APOE4Car = -99							
+b. Dependent Variable: Attention.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	967.902						
+Akaike's Information Criterion (AIC)	987.902						
+Hurvich and Tsai's Criterion (AICC)	989.849						
+Bozdogan's Criterion (CAIC)	1026.105						
+Schwarz's Bayesian Criterion (BIC)	1016.105						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = -99							
+b. Dependent Variable: Attention.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	65.228	12.820	0.001			
+Sex	1	74.411	2.117	0.150			
+EDUpos	1	72.055	1.032	0.313			
+Age	1	65.123	1.131	0.291			
+Time	1	64.970	5.050	0.028			
+TimeSqr	1	54.692	0.517	0.475			
+PASEtert2	2	70.188	0.347	0.708			
+a. APOE4Car = -99							
+b. Dependent Variable: Attention.							
+							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		73.356628	15.576826				
+Intercept [subject = DummyID]	Variance	103.876700	29.997580				
+a. APOE4Car = -99							
+b. Dependent Variable: Attention.							
+							
+							
+APOE4Car = non-carrier							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		10		10			
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Attention.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	14889.269						
+Akaike's Information Criterion (AIC)	14909.269						
+Hurvich and Tsai's Criterion (AICC)	14909.382						
+Bozdogan's Criterion (CAIC)	14974.999						
+Schwarz's Bayesian Criterion (BIC)	14964.999						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Attention.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	630.918	120.464	0.000			
+Sex	1	589.800	1.125	0.289			
+EDUpos	1	589.984	25.475	0.000			
+Age	1	629.386	0.348	0.556			
+Time	1	1406.573	23.665	0.000			
+TimeSqr	1	1371.476	4.832	0.028			
+PASEtert2	2	588.787	0.690	0.502			
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Attention.							
+							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		63.116176	2.466649				
+Intercept [subject = DummyID]	Variance	172.331203	11.659699				
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Attention.							
+							
+							
+APOE4Car = Carrier							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		10		10			
+a. APOE4Car = Carrier							
+b. Dependent Variable: Attention.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	5125.973						
+Akaike's Information Criterion (AIC)	5145.973						
+Hurvich and Tsai's Criterion (AICC)	5146.306						
+Bozdogan's Criterion (CAIC)	5201.076						
+Schwarz's Bayesian Criterion (BIC)	5191.076						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = Carrier							
+b. Dependent Variable: Attention.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	209.293	41.368	0.000			
+Sex	1	197.585	0.733	0.393			
+EDUpos	1	194.992	7.256	0.008			
+Age	1	210.808	1.169	0.281			
+Time	1	500.482	13.550	0.000			
+TimeSqr	1	485.750	3.695	0.055			
+PASEtert2	2	196.450	2.318	0.101			
+a. APOE4Car = Carrier							
+b. Dependent Variable: Attention.							
+							
+"Estimates of Fixed Effectsa,b"							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	119.426448	18.975247	207.641	6.294	0.000	82.017611	156.835285
+Sex	-1.710548	1.997951	197.585	-0.856	0.393	-5.650594	2.229498
+EDUpos	5.345672	1.984521	194.992	2.694	0.008	1.431790	9.259554
+Age	-0.291058	0.269214	210.808	-1.081	0.281	-0.821754	0.239638
+Time	2.455220	0.667000	500.482	3.681	0.000	1.144756	3.765684
+TimeSqr	-0.283857	0.147669	485.750	-1.922	0.055	-0.574006	0.006292
+[PASEtert2=1.00]	3.430967	2.540781	194.417	1.350	0.178	-1.580066	8.441999
+[PASEtert2=2.00]	-1.541817	2.459210	198.046	-0.627	0.531	-6.391415	3.307780
+[PASEtert2=3.00]	0c	0					
+a. APOE4Car = Carrier							
+b. Dependent Variable: Attention.							
+c. This parameter is set to zero because it is redundant.							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		63.426695	4.169057				
+Intercept [subject = DummyID]	Variance	165.685505	19.442309				
+a. APOE4Car = Carrier							
+b. Dependent Variable: Attention.							
+							
+MIXED RBDMI BY PASEtert2 WITH Sex EDUpos Time Age TimeSqr							
+"  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,"							
+"    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)"							
+  /FIXED=Sex EDUpos Age Time TimeSqr PASEtert2 | SSTYPE(3)							
+  /METHOD=ML							
+  /PRINT=SOLUTION							
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).							
+							
+							
+Mixed Model Analysis							
+							
+Notes							
+Output Created		06-JAN-2019 14:00:44					
+Comments							
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav					
+	Active Dataset	DataSet1					
+	Filter	<none>					
+	Weight	<none>					
+	Split File	APOE4Car					
+	N of Rows in Working Data File	5406					
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.					
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.					
+Syntax		"MIXED RBDMI BY PASEtert2 WITH Sex EDUpos Time Age TimeSqr
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex EDUpos Age Time TimeSqr PASEtert2 | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN)."					
+Resources	Processor Time	00:00:00.16					
+	Elapsed Time	00:00:01.00					
+							
+Warnings							
+The covariance structure for random effect with only one level will be changed to Identity.							
+The covariance structure for random effect with only one level will be changed to Identity.							
+The covariance structure for random effect with only one level will be changed to Identity.							
+							
+							
+APOE4Car = -99							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		10		10			
+a. APOE4Car = -99							
+b. Dependent Variable: Delayed memory.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	922.717						
+Akaike's Information Criterion (AIC)	942.717						
+Hurvich and Tsai's Criterion (AICC)	944.664						
+Bozdogan's Criterion (CAIC)	980.920						
+Schwarz's Bayesian Criterion (BIC)	970.920						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = -99							
+b. Dependent Variable: Delayed memory.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	36.700	11.905	0.001			
+Sex	1	54.678	4.781	0.033			
+EDUpos	1	50.075	12.406	0.001			
+Age	1	36.384	0.005	0.946			
+Time	1	73.833	4.316	0.041			
+TimeSqr	1	49.952	0.777	0.382			
+PASEtert2	2	44.509	1.851	0.169			
+a. APOE4Car = -99							
+b. Dependent Variable: Delayed memory.							
+							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		70.862447	18.015198				
+Intercept [subject = DummyID]	Variance	36.209721	24.281378				
+a. APOE4Car = -99							
+b. Dependent Variable: Delayed memory.							
+							
+							
+APOE4Car = non-carrier							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		10		10			
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Delayed memory.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	13973.068						
+Akaike's Information Criterion (AIC)	13993.068						
+Hurvich and Tsai's Criterion (AICC)	13993.182						
+Bozdogan's Criterion (CAIC)	14058.799						
+Schwarz's Bayesian Criterion (BIC)	14048.799						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Delayed memory.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	601.879	294.920	0.000			
+Sex	1	534.669	37.929	0.000			
+EDUpos	1	535.236	17.150	0.000			
+Age	1	599.312	2.946	0.087			
+Time	1	1416.496	101.423	0.000			
+TimeSqr	1	1366.581	49.611	0.000			
+PASEtert2	2	533.417	1.153	0.316			
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Delayed memory.							
+							
+c. This parameter is set to zero because it is redundant.							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		46.566508	1.849764				
+Intercept [subject = DummyID]	Variance	66.782455	5.297664				
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Delayed memory.							
+							
+							
+APOE4Car = Carrier							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		10		10			
+a. APOE4Car = Carrier							
+b. Dependent Variable: Delayed memory.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	4922.769						
+Akaike's Information Criterion (AIC)	4942.769						
+Hurvich and Tsai's Criterion (AICC)	4943.102						
+Bozdogan's Criterion (CAIC)	4997.871						
+Schwarz's Bayesian Criterion (BIC)	4987.871						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = Carrier							
+b. Dependent Variable: Delayed memory.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	181.963	79.680	0.000			
+Sex	1	170.753	2.310	0.130			
+EDUpos	1	168.323	9.434	0.002			
+Age	1	183.407	7.977	0.005			
+Time	1	475.244	34.412	0.000			
+TimeSqr	1	458.725	19.539	0.000			
+PASEtert2	2	169.687	0.066	0.936			
+a. APOE4Car = Carrier							
+b. Dependent Variable: Delayed memory.							
+							
+"Estimates of Fixed Effectsa,b"							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	141.070080	16.094388	180.387	8.765	0.000	109.312599	172.827562
+Sex	-2.574437	1.693774	170.753	-1.520	0.130	-5.917870	0.768995
+EDUpos	5.166702	1.682165	168.323	3.071	0.002	1.845842	8.487561
+Age	-0.644994	0.228375	183.407	-2.824	0.005	-1.095575	-0.194413
+Time	3.381445	0.576432	475.244	5.866	0.000	2.248774	4.514116
+TimeSqr	-0.564287	0.127658	458.725	-4.420	0.000	-0.815153	-0.313421
+[PASEtert2=1.00]	0.112164	2.153610	167.769	0.052	0.959	-4.139503	4.363832
+[PASEtert2=2.00]	0.679621	2.084857	171.176	0.326	0.745	-3.435718	4.794960
+[PASEtert2=3.00]	0c	0					
+a. APOE4Car = Carrier							
+b. Dependent Variable: Delayed memory.							
+c. This parameter is set to zero because it is redundant.							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		47.446718	3.223363				
+Intercept [subject = DummyID]	Variance	118.301565	15.138309				
+a. APOE4Car = Carrier							
+b. Dependent Variable: Delayed memory.							
+							
+MIXED EXECI BY PASEtert2 WITH Sex EDUpos Time Age TimeSqr							
+"  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,"							
+"    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)"							
+  /FIXED=Sex EDUpos Age Time TimeSqr PASEtert2 | SSTYPE(3)							
+  /METHOD=ML							
+  /PRINT=SOLUTION							
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).							
+							
+							
+Mixed Model Analysis							
+							
+Notes							
+Output Created		06-JAN-2019 14:00:54					
+Comments							
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav					
+	Active Dataset	DataSet1					
+	Filter	<none>					
+	Weight	<none>					
+	Split File	APOE4Car					
+	N of Rows in Working Data File	5406					
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.					
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.					
+Syntax		"MIXED EXECI BY PASEtert2 WITH Sex EDUpos Time Age TimeSqr
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex EDUpos Age Time TimeSqr PASEtert2 | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN)."					
+Resources	Processor Time	00:00:00.12					
+	Elapsed Time	00:00:01.00					
+							
+Warnings							
+The covariance structure for random effect with only one level will be changed to Identity.							
+The covariance structure for random effect with only one level will be changed to Identity.							
+The covariance structure for random effect with only one level will be changed to Identity.							
+							
+							
+APOE4Car = -99							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		10		10			
+a. APOE4Car = -99							
+b. Dependent Variable: Executive function.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	323.979						
+Akaike's Information Criterion (AIC)	343.979						
+Hurvich and Tsai's Criterion (AICC)	350.646						
+Bozdogan's Criterion (CAIC)	371.821						
+Schwarz's Bayesian Criterion (BIC)	361.821						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = -99							
+b. Dependent Variable: Executive function.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	25.832	7.805	0.010			
+Sex	1	27.924	0.410	0.527			
+EDUpos	1	27.495	0.164	0.689			
+Age	1	25.715	0.230	0.636			
+Time	1	18.147	5.299	0.033			
+TimeSqr	1	17.603	6.309	0.022			
+PASEtert2	2	26.100	3.344	0.051			
+a. APOE4Car = -99							
+b. Dependent Variable: Executive function.							
+							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		39.925868	14.031772				
+Intercept [subject = DummyID]	Variance	76.832952	31.000262				
+a. APOE4Car = -99							
+b. Dependent Variable: Executive function.							
+							
+							
+APOE4Car = non-carrier							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		10		10			
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Executive function.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	7790.886						
+Akaike's Information Criterion (AIC)	7810.886						
+Hurvich and Tsai's Criterion (AICC)	7811.116						
+Bozdogan's Criterion (CAIC)	7869.649						
+Schwarz's Bayesian Criterion (BIC)	7859.649						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Executive function.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	534.946	111.886	0.000			
+Sex	1	471.568	0.267	0.605			
+EDUpos	1	472.820	6.719	0.010			
+Age	1	533.900	2.077	0.150			
+Time	1	506.315	1.869	0.172			
+TimeSqr	1	497.439	0.124	0.725			
+PASEtert2	2	471.252	0.711	0.492			
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Executive function.							
+							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		87.856108	5.761268				
+Intercept [subject = DummyID]	Variance	151.733330	13.578223				
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Executive function.							
+							
+							
+APOE4Car = Carrier							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		10		10			
+a. APOE4Car = Carrier							
+b. Dependent Variable: Executive function.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	2579.134						
+Akaike's Information Criterion (AIC)	2599.134						
+Hurvich and Tsai's Criterion (AICC)	2599.830						
+Bozdogan's Criterion (CAIC)	2647.033						
+Schwarz's Bayesian Criterion (BIC)	2637.033						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = Carrier							
+b. Dependent Variable: Executive function.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	169.106	35.831	0.000			
+Sex	1	150.853	1.150	0.285			
+EDUpos	1	151.326	0.968	0.327			
+Age	1	169.516	1.566	0.213			
+Time	1	182.565	0.320	0.572			
+TimeSqr	1	179.355	1.644	0.201			
+PASEtert2	2	150.256	0.898	0.410			
+a. APOE4Car = Carrier							
+b. Dependent Variable: Executive function.							
+							
+"Estimates of Fixed Effectsa,b"							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	138.959327	23.453935	168.010	5.925	0.000	92.656936	185.261719
+Sex	2.375854	2.215128	150.853	1.073	0.285	-2.000828	6.752536
+EDUpos	2.134969	2.169554	151.326	0.984	0.327	-2.151558	6.421497
+Age	-0.428280	0.342287	169.516	-1.251	0.213	-1.103974	0.247414
+Time	-0.600561	1.062150	182.565	-0.565	0.572	-2.696227	1.495106
+TimeSqr	0.350690	0.273521	179.355	1.282	0.201	-0.189043	0.890423
+[PASEtert2=1.00]	0.084782	2.803406	147.330	0.030	0.976	-5.455300	5.624865
+[PASEtert2=2.00]	3.074126	2.777864	149.508	1.107	0.270	-2.414817	8.563069
+[PASEtert2=3.00]	0c	0					
+a. APOE4Car = Carrier							
+b. Dependent Variable: Executive function.							
+c. This parameter is set to zero because it is redundant.							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		74.767229	8.097502				
+Intercept [subject = DummyID]	Variance	140.475105	21.128057				
+a. APOE4Car = Carrier							
+b. Dependent Variable: Executive function.							

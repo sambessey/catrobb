@@ -1,0 +1,1963 @@
+SORT CASES  BY APOE4Car.							
+SPLIT FILE SEPARATE BY APOE4Car.							
+MIXED RBTot BY PASEtert2 WITH Sex EDUpos BMI Hypertension Hypercholes Diabetes Time Age TimeSqr							
+"  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,"							
+"    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)"							
+  /FIXED=Sex EDUpos BMI Hypertension Hypercholes Diabetes Age Time TimeSqr PASEtert2 | SSTYPE(3)							
+  /METHOD=ML							
+  /PRINT=SOLUTION							
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).							
+							
+							
+Mixed Model Analysis							
+							
+Notes							
+Output Created		06-JAN-2019 11:45:30					
+Comments							
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav					
+	Active Dataset	DataSet1					
+	Filter	<none>					
+	Weight	<none>					
+	Split File	APOE4Car					
+	N of Rows in Working Data File	5406					
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.					
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.					
+Syntax		"MIXED RBTot BY PASEtert2 WITH Sex EDUpos BMI Hypertension Hypercholes Diabetes Time Age TimeSqr
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex EDUpos BMI Hypertension Hypercholes Diabetes Age Time TimeSqr PASEtert2 | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN)."					
+Resources	Processor Time	00:00:00.20					
+	Elapsed Time	00:00:01.00					
+							
+Warnings							
+The covariance structure for random effect with only one level will be changed to Identity.							
+The covariance structure for random effect with only one level will be changed to Identity.							
+The covariance structure for random effect with only one level will be changed to Identity.							
+							
+							
+APOE4Car = -99							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	BMI	1		1			
+	Hypertension	1		1			
+	Hypercholes	1		1			
+	Diabetes	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		14		14			
+a. APOE4Car = -99							
+b. Dependent Variable: Global Cog.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	834.782						
+Akaike's Information Criterion (AIC)	862.782						
+Hurvich and Tsai's Criterion (AICC)	866.940						
+Bozdogan's Criterion (CAIC)	915.332						
+Schwarz's Bayesian Criterion (BIC)	901.332						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = -99							
+b. Dependent Variable: Global Cog.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	42.741	11.926	0.001			
+Sex	1	63.827	4.289	0.042			
+EDUpos	1	47.912	8.854	0.005			
+BMI	1	57.431	0.000	0.994			
+Hypertension	1	46.965	0.042	0.839			
+Hypercholes	1	44.865	0.038	0.847			
+Diabetes	1	46.000	10.032	0.003			
+Age	1	43.108	0.078	0.782			
+Time	1	50.993	2.685	0.107			
+TimeSqr	1	37.259	0.245	0.624			
+PASEtert2	2	47.621	0.718	0.493			
+a. APOE4Car = -99							
+b. Dependent Variable: Global Cog.							
+							
+"Estimates of Fixed Effectsa,b"							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	108.103002	30.995330	42.587	3.488	0.001	45.577430	170.628575
+Sex	-4.783639	2.309802	63.827	-2.071	0.042	-9.398240	-0.169038
+EDUpos	6.820880	2.292329	47.912	2.976	0.005	2.211624	11.430137
+BMI	-0.002277	0.306842	57.431	-0.007	0.994	-0.616617	0.612063
+Hypertension	0.540081	2.648687	46.965	0.204	0.839	-4.788494	5.868655
+Hypercholes	0.667297	3.428671	44.865	0.195	0.847	-6.238975	7.573570
+Diabetes	-10.974316	3.464762	46.000	-3.167	0.003	-17.948517	-4.000114
+Age	-0.118271	0.424355	43.108	-0.279	0.782	-0.974004	0.737461
+Time	3.522204	2.149351	50.993	1.639	0.107	-0.792812	7.837221
+TimeSqr	-0.306569	0.619637	37.259	-0.495	0.624	-1.561778	0.948639
+[PASEtert2=1.00]	-1.841640	2.444997	54.318	-0.753	0.455	-6.742907	3.059627
+[PASEtert2=2.00]	1.309454	2.727528	46.438	0.480	0.633	-4.179379	6.798287
+[PASEtert2=3.00]	0c	0					
+a. APOE4Car = -99							
+b. Dependent Variable: Global Cog.							
+c. This parameter is set to zero because it is redundant.							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		50.936315	13.936648				
+Intercept [subject = DummyID]	Variance	34.859812	20.210750				
+a. APOE4Car = -99							
+b. Dependent Variable: Global Cog.							
+							
+							
+APOE4Car = non-carrier							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	BMI	1		1			
+	Hypertension	1		1			
+	Hypercholes	1		1			
+	Diabetes	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		14		14			
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Global Cog.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	13608.954						
+Akaike's Information Criterion (AIC)	13636.954						
+Hurvich and Tsai's Criterion (AICC)	13637.181						
+Bozdogan's Criterion (CAIC)	13728.396						
+Schwarz's Bayesian Criterion (BIC)	13714.396						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Global Cog.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	578.181	204.936	0.000			
+Sex	1	545.719	18.083	0.000			
+EDUpos	1	543.615	46.747	0.000			
+BMI	1	542.971	10.864	0.001			
+Hypertension	1	547.395	0.005	0.942			
+Hypercholes	1	544.897	0.032	0.859			
+Diabetes	1	561.820	0.936	0.334			
+Age	1	586.339	1.250	0.264			
+Time	1	1340.861	57.115	0.000			
+TimeSqr	1	1304.537	26.875	0.000			
+PASEtert2	2	543.331	1.275	0.280			
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Global Cog.							
+							
+"Estimates of Fixed Effectsa,b"							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	121.752848	8.536576	575.839	14.262	0.000	104.986226	138.519470
+Sex	-4.176214	0.982090	545.719	-4.252	0.000	-6.105354	-2.247075
+EDUpos	6.485191	0.948522	543.615	6.837	0.000	4.621974	8.348409
+BMI	-0.366318	0.111138	542.971	-3.296	0.001	-0.584632	-0.148005
+Hypertension	-0.075672	1.044563	547.395	-0.072	0.942	-2.127516	1.976171
+Hypercholes	-0.255409	1.432990	544.897	-0.178	0.859	-3.070271	2.559452
+Diabetes	-1.837667	1.899694	561.820	-0.967	0.334	-5.569037	1.893703
+Age	-0.131021	0.117190	586.339	-1.118	0.264	-0.361185	0.099142
+Time	2.572285	0.340364	1340.861	7.557	0.000	1.904582	3.239988
+TimeSqr	-0.404041	0.077939	1304.537	-5.184	0.000	-0.556940	-0.251142
+[PASEtert2=1.00]	-1.265683	1.158041	544.501	-1.093	0.275	-3.540457	1.009091
+[PASEtert2=2.00]	-1.778013	1.144123	543.421	-1.554	0.121	-4.025459	0.469433
+[PASEtert2=3.00]	0c	0					
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Global Cog.							
+c. This parameter is set to zero because it is redundant.							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		45.718430	1.837599				
+Intercept [subject = DummyID]	Variance	107.850213	7.757753				
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Global Cog.							
+							
+							
+APOE4Car = Carrier							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	BMI	1		1			
+	Hypertension	1		1			
+	Hypercholes	1		1			
+	Diabetes	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		14		14			
+a. APOE4Car = Carrier							
+b. Dependent Variable: Global Cog.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	4726.333						
+Akaike's Information Criterion (AIC)	4754.333						
+Hurvich and Tsai's Criterion (AICC)	4754.993						
+Bozdogan's Criterion (CAIC)	4831.054						
+Schwarz's Bayesian Criterion (BIC)	4817.054						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = Carrier							
+b. Dependent Variable: Global Cog.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	201.460	77.579	0.000			
+Sex	1	190.553	0.520	0.472			
+EDUpos	1	187.252	17.454	0.000			
+BMI	1	202.306	5.781	0.017			
+Hypertension	1	193.563	4.376	0.038			
+Hypercholes	1	194.401	0.123	0.726			
+Diabetes	1	191.031	0.315	0.575			
+Age	1	204.223	5.977	0.015			
+Time	1	481.560	14.631	0.000			
+TimeSqr	1	466.925	7.478	0.006			
+PASEtert2	2	188.175	0.663	0.517			
+a. APOE4Car = Carrier							
+b. Dependent Variable: Global Cog.							
+							
+"Estimates of Fixed Effectsa,b"							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	150.546462	17.431296	200.114	8.637	0.000	116.173875	184.919048
+Sex	-1.215940	1.685924	190.553	-0.721	0.472	-4.541410	2.109531
+EDUpos	6.916920	1.655656	187.252	4.178	0.000	3.650786	10.183054
+BMI	-0.494431	0.205638	202.306	-2.404	0.017	-0.899900	-0.088962
+Hypertension	-3.755983	1.795398	193.563	-2.092	0.038	-7.297039	-0.214928
+Hypercholes	0.811233	2.310638	194.401	0.351	0.726	-3.745905	5.368371
+Diabetes	1.796703	3.198851	191.031	0.562	0.575	-4.512902	8.106308
+Age	-0.582626	0.238307	204.223	-2.445	0.015	-1.052485	-0.112768
+Time	2.150596	0.562248	481.560	3.825	0.000	1.045832	3.255359
+TimeSqr	-0.340278	0.124433	466.925	-2.735	0.006	-0.584796	-0.095760
+[PASEtert2=1.00]	1.583894	2.121369	185.510	0.747	0.456	-2.601216	5.769004
+[PASEtert2=2.00]	-0.632881	2.062589	189.506	-0.307	0.759	-4.701464	3.435701
+[PASEtert2=3.00]	0c	0					
+a. APOE4Car = Carrier							
+b. Dependent Variable: Global Cog.							
+c. This parameter is set to zero because it is redundant.							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		43.591831	2.922999				
+Intercept [subject = DummyID]	Variance	111.577016	13.435413				
+a. APOE4Car = Carrier							
+b. Dependent Variable: Global Cog.							
+							
+MIXED RBIMI BY PASEtert2 WITH Sex EDUpos BMI Hypertension Hypercholes Diabetes Time Age TimeSqr							
+"  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,"							
+"    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)"							
+  /FIXED=Sex EDUpos BMI Hypertension Hypercholes Diabetes Age Time TimeSqr PASEtert2 | SSTYPE(3)							
+  /METHOD=ML							
+  /PRINT=SOLUTION							
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).							
+							
+							
+Mixed Model Analysis							
+							
+Notes							
+Output Created		06-JAN-2019 11:45:39					
+Comments							
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav					
+	Active Dataset	DataSet1					
+	Filter	<none>					
+	Weight	<none>					
+	Split File	APOE4Car					
+	N of Rows in Working Data File	5406					
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.					
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.					
+Syntax		"MIXED RBIMI BY PASEtert2 WITH Sex EDUpos BMI Hypertension Hypercholes Diabetes Time Age TimeSqr
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex EDUpos BMI Hypertension Hypercholes Diabetes Age Time TimeSqr PASEtert2 | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN)."					
+Resources	Processor Time	00:00:00.22					
+	Elapsed Time	00:00:01.00					
+							
+Warnings							
+The covariance structure for random effect with only one level will be changed to Identity.							
+The covariance structure for random effect with only one level will be changed to Identity.							
+The covariance structure for random effect with only one level will be changed to Identity.							
+							
+							
+APOE4Car = -99							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	BMI	1		1			
+	Hypertension	1		1			
+	Hypercholes	1		1			
+	Diabetes	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		14		14			
+a. APOE4Car = -99							
+b. Dependent Variable: Immediate memory.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	902.280						
+Akaike's Information Criterion (AIC)	930.280						
+Hurvich and Tsai's Criterion (AICC)	934.438						
+Bozdogan's Criterion (CAIC)	982.830						
+Schwarz's Bayesian Criterion (BIC)	968.830						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = -99							
+b. Dependent Variable: Immediate memory.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	50.194	3.896	0.054			
+Sex	1	70.463	8.831	0.004			
+EDUpos	1	55.321	9.944	0.003			
+BMI	1	64.498	1.680	0.200			
+Hypertension	1	54.601	0.143	0.707			
+Hypercholes	1	52.376	0.005	0.944			
+Diabetes	1	53.496	16.128	0.000			
+Age	1	50.632	0.009	0.926			
+Time	1	56.656	3.858	0.054			
+TimeSqr	1	43.100	0.790	0.379			
+PASEtert2	2	55.202	0.239	0.788			
+a. APOE4Car = -99							
+b. Dependent Variable: Immediate memory.							
+							
+"Estimates of Fixed Effectsa,b"							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	83.323016	41.786901	50.045	1.994	0.052	-0.606565	167.252598
+Sex	-9.231789	3.106582	70.463	-2.972	0.004	-15.426955	-3.036622
+EDUpos	9.738598	3.088277	55.321	3.153	0.003	3.550359	15.926837
+BMI	0.535274	0.412944	64.498	1.296	0.200	-0.289554	1.360102
+Hypertension	1.348990	3.568744	54.601	0.378	0.707	-5.804107	8.502087
+Hypercholes	-0.327240	4.620965	52.376	-0.071	0.944	-9.598298	8.943817
+Diabetes	-18.750098	4.668912	53.496	-4.016	0.000	-28.112723	-9.387472
+Age	0.053690	0.572058	50.632	0.094	0.926	-1.094967	1.202347
+Time	5.608971	2.855563	56.656	1.964	0.054	-0.109949	11.327891
+TimeSqr	-0.730169	0.821662	43.100	-0.889	0.379	-2.387097	0.926760
+[PASEtert2=1.00]	1.006806	3.291510	61.611	0.306	0.761	-5.573655	7.587266
+[PASEtert2=2.00]	-1.506736	3.675228	54.033	-0.410	0.683	-8.875021	5.861550
+[PASEtert2=3.00]	0c	0					
+a. APOE4Car = -99							
+b. Dependent Variable: Immediate memory.							
+c. This parameter is set to zero because it is redundant.							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		89.172123	22.292003				
+Intercept [subject = DummyID]	Variance	65.588936	32.363334				
+a. APOE4Car = -99							
+b. Dependent Variable: Immediate memory.							
+							
+							
+APOE4Car = non-carrier							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	BMI	1		1			
+	Hypertension	1		1			
+	Hypercholes	1		1			
+	Diabetes	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		14		14			
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Immediate memory.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	14286.684						
+Akaike's Information Criterion (AIC)	14314.684						
+Hurvich and Tsai's Criterion (AICC)	14314.911						
+Bozdogan's Criterion (CAIC)	14406.126						
+Schwarz's Bayesian Criterion (BIC)	14392.126						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Immediate memory.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	561.118	157.349	0.000			
+Sex	1	505.019	44.216	0.000			
+EDUpos	1	502.804	36.092	0.000			
+BMI	1	502.690	2.327	0.128			
+Hypertension	1	509.139	0.798	0.372			
+Hypercholes	1	506.880	0.536	0.465			
+Diabetes	1	529.049	0.365	0.546			
+Age	1	572.844	0.048	0.826			
+Time	1	1366.319	74.935	0.000			
+TimeSqr	1	1317.529	28.902	0.000			
+PASEtert2	2	501.969	0.976	0.378			
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Immediate memory.							
+							
+"Estimates of Fixed Effectsa,b"							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	107.507717	8.594502	557.454	12.509	0.000	90.626150	124.389284
+Sex	-6.513402	0.979535	505.019	-6.649	0.000	-8.437868	-4.588936
+EDUpos	5.680520	0.945542	502.804	6.008	0.000	3.822820	7.538221
+BMI	-0.168968	0.110777	502.690	-1.525	0.128	-0.386610	0.048675
+Hypertension	0.931553	1.042544	509.139	0.894	0.372	-1.116665	2.979771
+Hypercholes	-1.046025	1.429360	506.880	-0.732	0.465	-3.854224	1.762174
+Diabetes	1.149458	1.903771	529.049	0.604	0.546	-2.590421	4.889336
+Age	0.025968	0.118317	572.844	0.219	0.826	-0.206421	0.258357
+Time	3.793590	0.438236	1366.319	8.657	0.000	2.933902	4.653277
+TimeSqr	-0.541708	0.100763	1317.529	-5.376	0.000	-0.739382	-0.344035
+[PASEtert2=1.00]	-1.431349	1.154634	503.466	-1.240	0.216	-3.699844	0.837146
+[PASEtert2=2.00]	-1.342283	1.140505	502.905	-1.177	0.240	-3.583024	0.898459
+[PASEtert2=3.00]	0c	0					
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Immediate memory.							
+c. This parameter is set to zero because it is redundant.							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		77.683619	3.154189				
+Intercept [subject = DummyID]	Variance	94.464609	7.999671				
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Immediate memory.							
+							
+							
+APOE4Car = Carrier							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	BMI	1		1			
+	Hypertension	1		1			
+	Hypercholes	1		1			
+	Diabetes	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		14		14			
+a. APOE4Car = Carrier							
+b. Dependent Variable: Immediate memory.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	4980.829						
+Akaike's Information Criterion (AIC)	5008.829						
+Hurvich and Tsai's Criterion (AICC)	5009.488						
+Bozdogan's Criterion (CAIC)	5085.549						
+Schwarz's Bayesian Criterion (BIC)	5071.549						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = Carrier							
+b. Dependent Variable: Immediate memory.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	185.917	72.688	0.000			
+Sex	1	165.911	12.030	0.001			
+EDUpos	1	161.754	15.564	0.000			
+BMI	1	184.252	2.341	0.128			
+Hypertension	1	170.413	2.016	0.157			
+Hypercholes	1	170.932	1.263	0.263			
+Diabetes	1	167.512	0.016	0.899			
+Age	1	190.414	4.358	0.038			
+Time	1	487.958	27.937	0.000			
+TimeSqr	1	464.812	16.414	0.000			
+PASEtert2	2	162.677	0.338	0.714			
+a. APOE4Car = Carrier							
+b. Dependent Variable: Immediate memory.							
+							
+"Estimates of Fixed Effectsa,b"							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	143.422501	17.166230	183.671	8.355	0.000	109.554148	177.290854
+Sex	-5.696442	1.642367	165.911	-3.468	0.001	-8.939074	-2.453810
+EDUpos	6.341998	1.607568	161.754	3.945	0.000	3.167471	9.516525
+BMI	-0.310282	0.202775	184.252	-1.530	0.128	-0.710342	0.089778
+Hypertension	-2.491142	1.754570	170.413	-1.420	0.157	-5.954631	0.972348
+Hypercholes	-2.538846	2.259473	170.932	-1.124	0.263	-6.998909	1.921217
+Diabetes	0.396452	3.118797	167.512	0.127	0.899	-5.760762	6.553665
+Age	-0.491911	0.235647	190.414	-2.087	0.038	-0.956724	-0.027098
+Time	3.913406	0.740401	487.958	5.286	0.000	2.458637	5.368174
+TimeSqr	-0.667903	0.164854	464.812	-4.051	0.000	-0.991854	-0.343951
+[PASEtert2=1.00]	1.520639	2.055510	158.797	0.740	0.461	-2.539026	5.580304
+[PASEtert2=2.00]	0.232356	2.006772	163.963	0.116	0.908	-3.730092	4.194804
+[PASEtert2=3.00]	0c	0					
+a. APOE4Car = Carrier							
+b. Dependent Variable: Immediate memory.							
+c. This parameter is set to zero because it is redundant.							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		77.993488	5.337141				
+Intercept [subject = DummyID]	Variance	91.171691	13.593322				
+a. APOE4Car = Carrier							
+b. Dependent Variable: Immediate memory.							
+							
+MIXED RBVSI BY PASEtert2 WITH Sex EDUpos BMI Hypertension Hypercholes Diabetes Time Age TimeSqr							
+"  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,"							
+"    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)"							
+  /FIXED=Sex EDUpos BMI Hypertension Hypercholes Diabetes Age Time TimeSqr PASEtert2 | SSTYPE(3)							
+  /METHOD=ML							
+  /PRINT=SOLUTION							
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).							
+							
+							
+Mixed Model Analysis							
+							
+Notes							
+Output Created		06-JAN-2019 11:45:48					
+Comments							
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav					
+	Active Dataset	DataSet1					
+	Filter	<none>					
+	Weight	<none>					
+	Split File	APOE4Car					
+	N of Rows in Working Data File	5406					
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.					
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.					
+Syntax		"MIXED RBVSI BY PASEtert2 WITH Sex EDUpos BMI Hypertension Hypercholes Diabetes Time Age TimeSqr
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex EDUpos BMI Hypertension Hypercholes Diabetes Age Time TimeSqr PASEtert2 | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN)."					
+Resources	Processor Time	00:00:00.23					
+	Elapsed Time	00:00:01.00					
+							
+Warnings							
+The covariance structure for random effect with only one level will be changed to Identity.							
+"For split file APOE4Car = -99, the final Hessian matrix is not positive definite although all convergence criteria are satisfied. The MIXED procedure continues despite this warning. Validity of subsequent results cannot be ascertained."							
+The covariance structure for random effect with only one level will be changed to Identity.							
+The covariance structure for random effect with only one level will be changed to Identity.							
+							
+							
+APOE4Car = -99							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	BMI	1		1			
+	Hypertension	1		1			
+	Hypercholes	1		1			
+	Diabetes	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		14		14			
+a. APOE4Car = -99							
+b. Dependent Variable: Visuospatial.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	919.223						
+Akaike's Information Criterion (AIC)	947.223						
+Hurvich and Tsai's Criterion (AICC)	951.382						
+Bozdogan's Criterion (CAIC)	999.774						
+Schwarz's Bayesian Criterion (BIC)	985.774						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = -99							
+b. Dependent Variable: Visuospatial.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	116.000	14.999	0.000			
+Sex	1	116	2.240	0.137			
+EDUpos	1	116.000	0.327	0.568			
+BMI	1	116	1.839	0.178			
+Hypertension	1	116	0.821	0.367			
+Hypercholes	1	116.000	0.002	0.966			
+Diabetes	1	116.000	3.327	0.071			
+Age	1	116.000	0.969	0.327			
+Time	1	116	0.284	0.595			
+TimeSqr	1	116	0.162	0.688			
+PASEtert2	2	116	0.954	0.388			
+a. APOE4Car = -99							
+b. Dependent Variable: Visuospatial.							
+							
+"Estimates of Fixed Effectsa,b"							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	142.868770	36.713874	116.000	3.891	0.000	70.152316	215.585223
+Sex	4.466795	2.984551	116	1.497	0.137	-1.444485	10.378075
+EDUpos	1.604413	2.804805	116.000	0.572	0.568	-3.950856	7.159682
+BMI	-0.526785	0.388463	116	-1.356	0.178	-1.296185	0.242615
+Hypertension	2.861945	3.158601	116	0.906	0.367	-3.394061	9.117952
+Hypercholes	-0.175707	4.099306	116.000	-0.043	0.966	-8.294900	7.943485
+Diabetes	-7.602484	4.168229	116.000	-1.824	0.071	-15.858187	0.653218
+Age	-0.492833	0.500651	116.000	-0.984	0.327	-1.484435	0.498769
+Time	-1.809556	3.396548	116	-0.533	0.595	-8.536848	4.917736
+TimeSqr	0.415653	1.033096	116	0.402	0.688	-1.630523	2.461829
+[PASEtert2=1.00]	-1.011219	3.049721	116	-0.332	0.741	-7.051576	5.029138
+[PASEtert2=2.00]	3.220543	3.257442	116	0.989	0.325	-3.231231	9.672317
+[PASEtert2=3.00]	0c	0					
+a. APOE4Car = -99							
+b. Dependent Variable: Visuospatial.							
+c. This parameter is set to zero because it is redundant.							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		161.816401	21.247534				
+Intercept [subject = DummyID]	Variance	.000000c	0.000000				
+a. APOE4Car = -99							
+b. Dependent Variable: Visuospatial.							
+c. This covariance parameter is redundant.							
+							
+							
+APOE4Car = non-carrier							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	BMI	1		1			
+	Hypertension	1		1			
+	Hypercholes	1		1			
+	Diabetes	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		14		14			
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Visuospatial.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	14816.354						
+Akaike's Information Criterion (AIC)	14844.354						
+Hurvich and Tsai's Criterion (AICC)	14844.581						
+Bozdogan's Criterion (CAIC)	14935.796						
+Schwarz's Bayesian Criterion (BIC)	14921.796						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Visuospatial.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	580.993	180.992	0.000			
+Sex	1	503.384	9.709	0.002			
+EDUpos	1	501.426	23.851	0.000			
+BMI	1	502.198	12.842	0.000			
+Hypertension	1	509.949	0.125	0.724			
+Hypercholes	1	508.399	0.042	0.837			
+Diabetes	1	533.146	1.039	0.309			
+Age	1	595.037	3.130	0.077			
+Time	1	1409.997	0.026	0.871			
+TimeSqr	1	1359.872	2.772	0.096			
+PASEtert2	2	500.061	2.245	0.107			
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Visuospatial.							
+							
+"Estimates of Fixed Effectsa,b"							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	121.419206	9.019775	576.282	13.461	0.000	103.703564	139.134847
+Sex	3.177919	1.019876	503.384	3.116	0.002	1.174182	5.181657
+EDUpos	4.806561	0.984194	501.426	4.884	0.000	2.872908	6.740214
+BMI	-0.413226	0.115309	502.198	-3.584	0.000	-0.639774	-0.186678
+Hypertension	-0.383415	1.086263	509.949	-0.353	0.724	-2.517517	1.750687
+Hypercholes	-0.305954	1.488903	508.399	-0.205	0.837	-3.231115	2.619207
+Diabetes	-2.027471	1.989286	533.146	-1.019	0.309	-5.935272	1.880330
+Age	-0.220127	0.124419	595.037	-1.769	0.077	-0.464480	0.024227
+Time	0.084781	0.523724	1409.997	0.162	0.871	-0.942582	1.112144
+TimeSqr	-0.201004	0.120727	1359.872	-1.665	0.096	-0.437836	0.035828
+[PASEtert2=1.00]	-2.488998	1.201914	501.671	-2.071	0.039	-4.850402	-0.127593
+[PASEtert2=2.00]	-1.689796	1.187178	501.988	-1.423	0.155	-4.022245	0.642653
+[PASEtert2=3.00]	0c	0					
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Visuospatial.							
+c. This parameter is set to zero because it is redundant.							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		112.870646	4.547759				
+Intercept [subject = DummyID]	Variance	91.844532	8.606008				
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Visuospatial.							
+							
+							
+APOE4Car = Carrier							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	BMI	1		1			
+	Hypertension	1		1			
+	Hypercholes	1		1			
+	Diabetes	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		14		14			
+a. APOE4Car = Carrier							
+b. Dependent Variable: Visuospatial.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	5246.647						
+Akaike's Information Criterion (AIC)	5274.647						
+Hurvich and Tsai's Criterion (AICC)	5275.306						
+Bozdogan's Criterion (CAIC)	5351.367						
+Schwarz's Bayesian Criterion (BIC)	5337.367						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = Carrier							
+b. Dependent Variable: Visuospatial.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	201.704	48.119	0.000			
+Sex	1	176.029	11.064	0.001			
+EDUpos	1	171.534	3.544	0.061			
+BMI	1	197.916	7.646	0.006			
+Hypertension	1	181.329	3.355	0.069			
+Hypercholes	1	181.606	1.047	0.308			
+Diabetes	1	178.306	0.000	0.993			
+Age	1	207.146	1.941	0.165			
+Time	1	509.256	0.142	0.706			
+TimeSqr	1	485.574	1.044	0.307			
+PASEtert2	2	172.394	0.771	0.464			
+a. APOE4Car = Carrier							
+b. Dependent Variable: Visuospatial.							
+							
+"Estimates of Fixed Effectsa,b"							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	134.394590	19.715665	198.943	6.817	0.000	95.516088	173.273091
+Sex	6.241387	1.876384	176.029	3.326	0.001	2.538282	9.944492
+EDUpos	3.453455	1.834359	171.534	1.883	0.061	-0.167368	7.074279
+BMI	-0.643937	0.232883	197.916	-2.765	0.006	-1.103187	-0.184687
+Hypertension	-3.676508	2.007275	181.329	-1.832	0.069	-7.637129	0.284112
+Hypercholes	2.645383	2.585182	181.606	1.023	0.308	-2.455473	7.746239
+Diabetes	0.033095	3.565096	178.306	0.009	0.993	-7.002115	7.068305
+Age	-0.377679	0.271120	207.146	-1.393	0.165	-0.912187	0.156830
+Time	0.350639	0.929254	509.256	0.377	0.706	-1.475005	2.176283
+TimeSqr	-0.211859	0.207388	485.574	-1.022	0.307	-0.619347	0.195629
+[PASEtert2=1.00]	-0.947629	2.343217	167.849	-0.404	0.686	-5.573604	3.678346
+[PASEtert2=2.00]	1.715558	2.291277	173.515	0.749	0.455	-2.806803	6.237920
+[PASEtert2=3.00]	0c	0					
+a. APOE4Car = Carrier							
+b. Dependent Variable: Visuospatial.							
+c. This parameter is set to zero because it is redundant.							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		124.419960	8.347503				
+Intercept [subject = DummyID]	Variance	110.683183	16.976973				
+a. APOE4Car = Carrier							
+b. Dependent Variable: Visuospatial.							
+							
+MIXED RBLI BY PASEtert2 WITH Sex EDUpos BMI Hypertension Hypercholes Diabetes Time Age TimeSqr							
+"  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,"							
+"    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)"							
+  /FIXED=Sex EDUpos BMI Hypertension Hypercholes Diabetes Age Time TimeSqr PASEtert2 | SSTYPE(3)							
+  /METHOD=ML							
+  /PRINT=SOLUTION							
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).							
+							
+							
+Mixed Model Analysis							
+							
+Notes							
+Output Created		06-JAN-2019 11:45:57					
+Comments							
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav					
+	Active Dataset	DataSet1					
+	Filter	<none>					
+	Weight	<none>					
+	Split File	APOE4Car					
+	N of Rows in Working Data File	5406					
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.					
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.					
+Syntax		"MIXED RBLI BY PASEtert2 WITH Sex EDUpos BMI Hypertension Hypercholes Diabetes Time Age TimeSqr
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex EDUpos BMI Hypertension Hypercholes Diabetes Age Time TimeSqr PASEtert2 | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN)."					
+Resources	Processor Time	00:00:00.21					
+	Elapsed Time	00:00:01.00					
+							
+Warnings							
+The covariance structure for random effect with only one level will be changed to Identity.							
+The covariance structure for random effect with only one level will be changed to Identity.							
+The covariance structure for random effect with only one level will be changed to Identity.							
+							
+							
+APOE4Car = -99							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	BMI	1		1			
+	Hypertension	1		1			
+	Hypercholes	1		1			
+	Diabetes	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		14		14			
+a. APOE4Car = -99							
+b. Dependent Variable: Language.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	871.153						
+Akaike's Information Criterion (AIC)	899.153						
+Hurvich and Tsai's Criterion (AICC)	903.311						
+Bozdogan's Criterion (CAIC)	951.703						
+Schwarz's Bayesian Criterion (BIC)	937.703						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = -99							
+b. Dependent Variable: Language.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	62.568	0.432	0.513			
+Sex	1	75.541	4.596	0.035			
+EDUpos	1	65.885	2.124	0.150			
+BMI	1	71.755	5.310	0.024			
+Hypertension	1	66.399	0.408	0.525			
+Hypercholes	1	64.280	0.007	0.935			
+Diabetes	1	64.959	2.586	0.113			
+Age	1	63.191	2.423	0.125			
+Time	1	54.857	2.429	0.125			
+TimeSqr	1	46.261	2.868	0.097			
+PASEtert2	2	66.534	0.889	0.416			
+a. APOE4Car = -99							
+b. Dependent Variable: Language.							
+							
+"Estimates of Fixed Effectsa,b"							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	28.290932	39.118263	62.500	0.723	0.472	-49.892912	106.474777
+Sex	-6.128071	2.858550	75.541	-2.144	0.035	-11.821926	-0.434216
+EDUpos	4.192987	2.876998	65.885	1.457	0.150	-1.551311	9.937286
+BMI	0.879637	0.381733	71.755	2.304	0.024	0.118622	1.640652
+Hypertension	-2.122959	3.324487	66.399	-0.639	0.525	-8.759767	4.513849
+Hypercholes	0.353076	4.315475	64.280	0.082	0.935	-8.267354	8.973505
+Diabetes	-7.004391	4.355883	64.959	-1.608	0.113	-15.703794	1.695012
+Age	0.832931	0.535102	63.191	1.557	0.125	-0.236323	1.902184
+Time	-3.630032	2.329186	54.857	-1.558	0.125	-8.298098	1.038034
+TimeSqr	1.118512	0.660499	46.261	1.693	0.097	-0.210803	2.447826
+[PASEtert2=1.00]	-2.695093	3.049175	70.259	-0.884	0.380	-8.776087	3.385902
+[PASEtert2=2.00]	-4.420670	3.425954	65.811	-1.290	0.201	-11.261175	2.419834
+[PASEtert2=3.00]	0c	0					
+a. APOE4Car = -99							
+b. Dependent Variable: Language.							
+c. This parameter is set to zero because it is redundant.							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		55.709609	12.753710				
+Intercept [subject = DummyID]	Variance	72.766330	23.045245				
+a. APOE4Car = -99							
+b. Dependent Variable: Language.							
+							
+							
+APOE4Car = non-carrier							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	BMI	1		1			
+	Hypertension	1		1			
+	Hypercholes	1		1			
+	Diabetes	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		14		14			
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Language.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	14248.440						
+Akaike's Information Criterion (AIC)	14276.440						
+Hurvich and Tsai's Criterion (AICC)	14276.667						
+Bozdogan's Criterion (CAIC)	14367.882						
+Schwarz's Bayesian Criterion (BIC)	14353.882						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Language.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	586.673	226.127	0.000			
+Sex	1	503.366	36.153	0.000			
+EDUpos	1	501.514	12.143	0.001			
+BMI	1	502.572	1.137	0.287			
+Hypertension	1	510.592	0.234	0.628			
+Hypercholes	1	509.276	0.959	0.328			
+Diabetes	1	534.451	2.837	0.093			
+Age	1	601.213	0.424	0.515			
+Time	1	1420.466	2.143	0.143			
+TimeSqr	1	1370.909	0.403	0.525			
+PASEtert2	2	500.010	0.091	0.913			
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Language.							
+							
+"Estimates of Fixed Effectsa,b"							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	112.712194	7.592281	581.705	14.846	0.000	97.800570	127.623818
+Sex	-5.151030	0.856682	503.366	-6.013	0.000	-6.834144	-3.467917
+EDUpos	2.880664	0.826663	501.514	3.485	0.001	1.256515	4.504813
+BMI	-0.103268	0.096856	502.572	-1.066	0.287	-0.293560	0.087023
+Hypertension	-0.441871	0.912635	510.592	-0.484	0.628	-2.234854	1.351111
+Hypercholes	1.225100	1.250864	509.276	0.979	0.328	-1.232389	3.682588
+Diabetes	-2.816971	1.672452	534.451	-1.684	0.093	-6.102357	0.468414
+Age	-0.068235	0.104777	601.213	-0.651	0.515	-0.274009	0.137539
+Time	0.663452	0.453232	1420.466	1.464	0.143	-0.225625	1.552529
+TimeSqr	-0.066386	0.104536	1370.909	-0.635	0.525	-0.271453	0.138681
+[PASEtert2=1.00]	0.426974	1.009539	501.627	0.423	0.673	-1.556472	2.410420
+[PASEtert2=2.00]	0.259313	0.997175	502.221	0.260	0.795	-1.699836	2.218462
+[PASEtert2=3.00]	0c	0					
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Language.							
+c. This parameter is set to zero because it is redundant.							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		84.875478	3.412009				
+Intercept [subject = DummyID]	Variance	62.948695	6.055181				
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Language.							
+							
+							
+APOE4Car = Carrier							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	BMI	1		1			
+	Hypertension	1		1			
+	Hypercholes	1		1			
+	Diabetes	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		14		14			
+a. APOE4Car = Carrier							
+b. Dependent Variable: Language.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	4928.763						
+Akaike's Information Criterion (AIC)	4956.763						
+Hurvich and Tsai's Criterion (AICC)	4957.422						
+Bozdogan's Criterion (CAIC)	5033.483						
+Schwarz's Bayesian Criterion (BIC)	5019.483						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = Carrier							
+b. Dependent Variable: Language.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	201.644	66.646	0.000			
+Sex	1	177.968	2.278	0.133			
+EDUpos	1	173.493	11.283	0.001			
+BMI	1	198.797	0.024	0.877			
+Hypertension	1	183.046	2.234	0.137			
+Hypercholes	1	183.444	0.033	0.856			
+Diabetes	1	179.994	1.209	0.273			
+Age	1	206.780	3.087	0.080			
+Time	1	506.094	0.099	0.753			
+TimeSqr	1	483.075	0.222	0.638			
+PASEtert2	2	174.411	1.697	0.186			
+a. APOE4Car = Carrier							
+b. Dependent Variable: Language.							
+							
+"Estimates of Fixed Effectsa,b"							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	126.822117	15.869929	199.054	7.991	0.000	95.527359	158.116876
+Sex	-2.284667	1.513850	177.968	-1.509	0.133	-5.272073	0.702738
+EDUpos	4.973670	1.480706	173.493	3.359	0.001	2.051154	7.896187
+BMI	0.029020	0.187468	198.797	0.155	0.877	-0.340662	0.398701
+Hypertension	-2.419295	1.618521	183.046	-1.495	0.137	-5.612652	0.774061
+Hypercholes	-0.378897	2.084427	183.444	-0.182	0.856	-4.491430	3.733637
+Diabetes	3.161916	2.875595	179.994	1.100	0.273	-2.512298	8.836129
+Age	-0.383136	0.218071	206.780	-1.757	0.080	-0.813065	0.046792
+Time	-0.227078	0.721361	506.094	-0.315	0.753	-1.644309	1.190152
+TimeSqr	0.075806	0.160833	483.075	0.471	0.638	-0.240213	0.391825
+[PASEtert2=1.00]	2.586217	1.892258	170.043	1.367	0.174	-1.149125	6.321559
+[PASEtert2=2.00]	-0.485002	1.849089	175.651	-0.262	0.793	-4.134293	3.164289
+[PASEtert2=3.00]	0c	0					
+a. APOE4Car = Carrier							
+b. Dependent Variable: Language.							
+c. This parameter is set to zero because it is redundant.							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		74.575977	5.005231				
+Intercept [subject = DummyID]	Variance	74.368743	11.027801				
+a. APOE4Car = Carrier							
+b. Dependent Variable: Language.							
+							
+MIXED RBAI BY PASEtert2 WITH Sex EDUpos BMI Hypertension Hypercholes Diabetes Time Age TimeSqr							
+"  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,"							
+"    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)"							
+  /FIXED=Sex EDUpos BMI Hypertension Hypercholes Diabetes Age Time TimeSqr PASEtert2 | SSTYPE(3)							
+  /METHOD=ML							
+  /PRINT=SOLUTION							
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).							
+							
+							
+Mixed Model Analysis							
+							
+Notes							
+Output Created		06-JAN-2019 11:46:09					
+Comments							
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav					
+	Active Dataset	DataSet1					
+	Filter	<none>					
+	Weight	<none>					
+	Split File	APOE4Car					
+	N of Rows in Working Data File	5406					
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.					
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.					
+Syntax		"MIXED RBAI BY PASEtert2 WITH Sex EDUpos BMI Hypertension Hypercholes Diabetes Time Age TimeSqr
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex EDUpos BMI Hypertension Hypercholes Diabetes Age Time TimeSqr PASEtert2 | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN)."					
+Resources	Processor Time	00:00:00.23					
+	Elapsed Time	00:00:01.00					
+							
+Warnings							
+The covariance structure for random effect with only one level will be changed to Identity.							
+The covariance structure for random effect with only one level will be changed to Identity.							
+The covariance structure for random effect with only one level will be changed to Identity.							
+							
+							
+APOE4Car = -99							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	BMI	1		1			
+	Hypertension	1		1			
+	Hypercholes	1		1			
+	Diabetes	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		14		14			
+a. APOE4Car = -99							
+b. Dependent Variable: Attention.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	885.788						
+Akaike's Information Criterion (AIC)	913.788						
+Hurvich and Tsai's Criterion (AICC)	917.946						
+Bozdogan's Criterion (CAIC)	966.338						
+Schwarz's Bayesian Criterion (BIC)	952.338						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = -99							
+b. Dependent Variable: Attention.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	65.683	22.922	0.000			
+Sex	1	76.524	0.925	0.339			
+EDUpos	1	68.453	0.055	0.815			
+BMI	1	73.346	6.439	0.013			
+Hypertension	1	69.121	0.386	0.536			
+Hypercholes	1	67.185	0.026	0.873			
+Diabetes	1	67.736	2.179	0.145			
+Age	1	66.288	3.826	0.055			
+Time	1	54.034	9.612	0.003			
+TimeSqr	1	46.824	2.734	0.105			
+PASEtert2	2	69.163	1.017	0.367			
+a. APOE4Car = -99							
+b. Dependent Variable: Attention.							
+							
+"Estimates of Fixed Effectsa,b"							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	204.129233	42.782463	65.634	4.771	0.000	118.702400	289.556066
+Sex	-2.990880	3.110284	76.524	-0.962	0.339	-9.184861	3.203101
+EDUpos	-0.738517	3.142089	68.453	-0.235	0.815	-7.007705	5.530671
+BMI	-1.055446	0.415945	73.346	-2.537	0.013	-1.884357	-0.226535
+Hypertension	2.256125	3.629846	69.121	0.622	0.536	-4.984994	9.497245
+Hypercholes	-0.755378	4.716123	67.185	-0.160	0.873	-10.168323	8.657568
+Diabetes	-7.024452	4.758971	67.736	-1.476	0.145	-16.521502	2.472599
+Age	-1.144328	0.585044	66.288	-1.956	0.055	-2.312312	0.023656
+Time	7.454413	2.404424	54.034	3.100	0.003	2.633902	12.274925
+TimeSqr	-1.122190	0.678678	46.824	-1.653	0.105	-2.487649	0.243269
+[PASEtert2=1.00]	1.753106	3.324303	72.180	0.527	0.600	-4.873489	8.379701
+[PASEtert2=2.00]	5.315493	3.741572	68.575	1.421	0.160	-2.149564	12.780549
+[PASEtert2=3.00]	0c	0					
+a. APOE4Car = -99							
+b. Dependent Variable: Attention.							
+c. This parameter is set to zero because it is redundant.							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		58.183911	13.050770				
+Intercept [subject = DummyID]	Variance	93.051930	26.148793				
+a. APOE4Car = -99							
+b. Dependent Variable: Attention.							
+							
+							
+APOE4Car = non-carrier							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	BMI	1		1			
+	Hypertension	1		1			
+	Hypercholes	1		1			
+	Diabetes	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		14		14			
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Attention.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	14242.005						
+Akaike's Information Criterion (AIC)	14270.005						
+Hurvich and Tsai's Criterion (AICC)	14270.232						
+Bozdogan's Criterion (CAIC)	14361.446						
+Schwarz's Bayesian Criterion (BIC)	14347.446						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Attention.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	602.245	129.229	0.000			
+Sex	1	571.524	0.050	0.823			
+EDUpos	1	569.434	24.089	0.000			
+BMI	1	568.762	7.679	0.006			
+Hypertension	1	573.024	3.842	0.050			
+Hypercholes	1	570.516	0.014	0.906			
+Diabetes	1	587.003	0.798	0.372			
+Age	1	610.107	0.103	0.749			
+Time	1	1358.377	24.684	0.000			
+TimeSqr	1	1324.684	4.839	0.028			
+PASEtert2	2	569.192	1.234	0.292			
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Attention.							
+							
+"Estimates of Fixed Effectsa,b"							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	116.760207	10.364030	600.006	11.266	0.000	96.406023	137.114391
+Sex	-0.267496	1.193421	571.524	-0.224	0.823	-2.611523	2.076531
+EDUpos	5.657576	1.152709	569.434	4.908	0.000	3.393497	7.921656
+BMI	-0.374287	0.135066	568.762	-2.771	0.006	-0.639575	-0.108999
+Hypertension	-2.487996	1.269273	573.024	-1.960	0.050	-4.980991	0.005000
+Hypercholes	-0.205219	1.741400	570.516	-0.118	0.906	-3.625557	3.215119
+Diabetes	-2.060793	2.307324	587.003	-0.893	0.372	-6.592409	2.470823
+Age	-0.045577	0.142234	610.107	-0.320	0.749	-0.324904	0.233749
+Time	1.983265	0.399186	1358.377	4.968	0.000	1.200178	2.766352
+TimeSqr	-0.200980	0.091364	1324.684	-2.200	0.028	-0.380214	-0.021745
+[PASEtert2=1.00]	0.500207	1.407289	570.333	0.355	0.722	-2.263894	3.264308
+[PASEtert2=2.00]	-1.598124	1.390425	569.224	-1.149	0.251	-4.329115	1.132867
+[PASEtert2=3.00]	0c	0					
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Attention.							
+c. This parameter is set to zero because it is redundant.							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		62.714418	2.495092				
+Intercept [subject = DummyID]	Variance	161.270378	11.171097				
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Attention.							
+							
+							
+APOE4Car = Carrier							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	BMI	1		1			
+	Hypertension	1		1			
+	Hypercholes	1		1			
+	Diabetes	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		14		14			
+a. APOE4Car = Carrier							
+b. Dependent Variable: Attention.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	4946.511						
+Akaike's Information Criterion (AIC)	4974.511						
+Hurvich and Tsai's Criterion (AICC)	4975.171						
+Bozdogan's Criterion (CAIC)	5051.232						
+Schwarz's Bayesian Criterion (BIC)	5037.232						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = Carrier							
+b. Dependent Variable: Attention.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	206.440	42.343	0.000			
+Sex	1	195.500	0.000	0.990			
+EDUpos	1	192.173	6.839	0.010			
+BMI	1	207.311	7.282	0.008			
+Hypertension	1	198.528	1.479	0.225			
+Hypercholes	1	199.377	0.416	0.520			
+Diabetes	1	195.973	0.644	0.423			
+Age	1	209.213	0.625	0.430			
+Time	1	485.728	12.904	0.000			
+TimeSqr	1	471.444	3.585	0.059			
+PASEtert2	2	193.105	3.465	0.033			
+a. APOE4Car = Carrier							
+b. Dependent Variable: Attention.							
+							
+"Estimates of Fixed Effectsa,b"							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	132.094035	20.710024	205.089	6.378	0.000	91.262185	172.925886
+Sex	-0.025421	2.003285	195.500	-0.013	0.990	-3.976244	3.925402
+EDUpos	5.144932	1.967407	192.173	2.615	0.010	1.264448	9.025416
+BMI	-0.659258	0.244311	207.311	-2.698	0.008	-1.140910	-0.177605
+Hypertension	-2.594726	2.133281	198.528	-1.216	0.225	-6.801525	1.612073
+Hypercholes	1.770771	2.745457	199.377	0.645	0.520	-3.643088	7.184630
+Diabetes	-3.050524	3.800983	195.973	-0.803	0.423	-10.546606	4.445558
+Age	-0.223794	0.283117	209.213	-0.790	0.430	-0.781922	0.334334
+Time	2.387882	0.664746	485.728	3.592	0.000	1.081749	3.694015
+TimeSqr	-0.278529	0.147105	471.444	-1.893	0.059	-0.567592	0.010533
+[PASEtert2=1.00]	3.547950	2.520872	190.422	1.407	0.161	-1.424471	8.520371
+[PASEtert2=2.00]	-2.578963	2.450888	194.449	-1.052	0.294	-7.412700	2.254774
+[PASEtert2=3.00]	0c	0					
+a. APOE4Car = Carrier							
+b. Dependent Variable: Attention.							
+c. This parameter is set to zero because it is redundant.							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		60.909277	4.061324				
+Intercept [subject = DummyID]	Variance	157.811214	18.703190				
+a. APOE4Car = Carrier							
+b. Dependent Variable: Attention.							
+							
+MIXED RBDMI BY PASEtert2 WITH Sex EDUpos BMI Hypertension Hypercholes Diabetes Time Age TimeSqr							
+"  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,"							
+"    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)"							
+  /FIXED=Sex EDUpos BMI Hypertension Hypercholes Diabetes Age Time TimeSqr PASEtert2 | SSTYPE(3)							
+  /METHOD=ML							
+  /PRINT=SOLUTION							
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).							
+							
+							
+Mixed Model Analysis							
+							
+Notes							
+Output Created		06-JAN-2019 11:46:19					
+Comments							
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav					
+	Active Dataset	DataSet1					
+	Filter	<none>					
+	Weight	<none>					
+	Split File	APOE4Car					
+	N of Rows in Working Data File	5406					
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.					
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.					
+Syntax		"MIXED RBDMI BY PASEtert2 WITH Sex EDUpos BMI Hypertension Hypercholes Diabetes Time Age TimeSqr
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex EDUpos BMI Hypertension Hypercholes Diabetes Age Time TimeSqr PASEtert2 | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN)."					
+Resources	Processor Time	00:00:00.23					
+	Elapsed Time	00:00:01.00					
+							
+Warnings							
+The covariance structure for random effect with only one level will be changed to Identity.							
+The covariance structure for random effect with only one level will be changed to Identity.							
+The covariance structure for random effect with only one level will be changed to Identity.							
+							
+							
+APOE4Car = -99							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	BMI	1		1			
+	Hypertension	1		1			
+	Hypercholes	1		1			
+	Diabetes	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		14		14			
+a. APOE4Car = -99							
+b. Dependent Variable: Delayed memory.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	860.307						
+Akaike's Information Criterion (AIC)	888.307						
+Hurvich and Tsai's Criterion (AICC)	892.466						
+Bozdogan's Criterion (CAIC)	940.858						
+Schwarz's Bayesian Criterion (BIC)	926.858						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = -99							
+b. Dependent Variable: Delayed memory.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	48.094	7.254	0.010			
+Sex	1	69.986	3.730	0.058			
+EDUpos	1	53.629	8.721	0.005			
+BMI	1	63.525	0.523	0.472			
+Hypertension	1	52.461	0.264	0.609			
+Hypercholes	1	50.332	0.433	0.514			
+Diabetes	1	51.550	0.068	0.795			
+Age	1	48.435	0.000	0.985			
+Time	1	58.100	4.299	0.043			
+TimeSqr	1	43.216	1.903	0.175			
+PASEtert2	2	53.196	2.561	0.087			
+a. APOE4Car = -99							
+b. Dependent Variable: Delayed memory.							
+							
+"Estimates of Fixed Effectsa,b"							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	94.235615	34.411255	47.923	2.739	0.009	25.044268	163.426962
+Sex	-4.960991	2.568796	69.986	-1.931	0.058	-10.084312	0.162331
+EDUpos	7.519674	2.546267	53.629	2.953	0.005	2.413908	12.625441
+BMI	0.246703	0.341095	63.525	0.723	0.472	-0.434811	0.928217
+Hypertension	-1.512960	2.941827	52.461	-0.514	0.609	-7.414935	4.389015
+Hypercholes	2.504096	3.807399	50.332	0.658	0.514	-5.142041	10.150233
+Diabetes	-1.005568	3.847894	51.550	-0.261	0.795	-8.728536	6.717399
+Age	-0.008657	0.471147	48.435	-0.018	0.985	-0.955741	0.938427
+Time	4.998034	2.410514	58.100	2.073	0.043	0.173042	9.823026
+TimeSqr	-0.960053	0.695877	43.216	-1.380	0.175	-2.363220	0.443115
+[PASEtert2=1.00]	-4.382744	2.717293	60.268	-1.613	0.112	-9.817641	1.052152
+[PASEtert2=2.00]	2.012380	3.029251	51.936	0.664	0.509	-4.066435	8.091195
+[PASEtert2=3.00]	0c	0					
+a. APOE4Car = -99							
+b. Dependent Variable: Delayed memory.							
+c. This parameter is set to zero because it is redundant.							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		64.444566	16.277344				
+Intercept [subject = DummyID]	Variance	41.888553	22.735366				
+a. APOE4Car = -99							
+b. Dependent Variable: Delayed memory.							
+							
+							
+APOE4Car = non-carrier							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	BMI	1		1			
+	Hypertension	1		1			
+	Hypercholes	1		1			
+	Diabetes	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		14		14			
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Delayed memory.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	13392.019						
+Akaike's Information Criterion (AIC)	13420.019						
+Hurvich and Tsai's Criterion (AICC)	13420.246						
+Bozdogan's Criterion (CAIC)	13511.461						
+Schwarz's Bayesian Criterion (BIC)	13497.461						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Delayed memory.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	570.023	269.225	0.000			
+Sex	1	519.065	34.682	0.000			
+EDUpos	1	516.798	16.621	0.000			
+BMI	1	516.503	0.792	0.374			
+Hypertension	1	522.600	4.078	0.044			
+Hypercholes	1	520.182	0.352	0.553			
+Diabetes	1	541.629	0.155	0.694			
+Age	1	581.119	2.178	0.141			
+Time	1	1366.016	93.566	0.000			
+TimeSqr	1	1319.489	45.574	0.000			
+PASEtert2	2	516.095	1.540	0.215			
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Delayed memory.							
+							
+"Estimates of Fixed Effectsa,b"							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	114.174492	6.986474	566.624	16.342	0.000	100.451944	127.897041
+Sex	-4.699626	0.798019	519.065	-5.889	0.000	-6.267369	-3.131883
+EDUpos	3.140815	0.770406	516.798	4.077	0.000	1.627302	4.654327
+BMI	-0.080334	0.090259	516.503	-0.890	0.374	-0.257654	0.096986
+Hypertension	1.714846	0.849200	522.600	2.019	0.044	0.046581	3.383111
+Hypercholes	-0.690550	1.164406	520.182	-0.593	0.553	-2.978066	1.596966
+Diabetes	-0.609922	1.549343	541.629	-0.394	0.694	-3.653380	2.433536
+Age	-0.141844	0.096122	581.119	-1.476	0.141	-0.330632	0.046944
+Time	3.292575	0.340389	1366.016	9.673	0.000	2.624833	3.960318
+TimeSqr	-0.527914	0.078199	1319.489	-6.751	0.000	-0.681323	-0.374506
+[PASEtert2=1.00]	-0.953386	0.940738	517.555	-1.013	0.311	-2.801521	0.894748
+[PASEtert2=2.00]	-1.623634	0.929255	516.804	-1.747	0.081	-3.449215	0.201948
+[PASEtert2=3.00]	0c	0					
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Delayed memory.							
+c. This parameter is set to zero because it is redundant.							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		46.618725	1.884606				
+Intercept [subject = DummyID]	Variance	64.598977	5.237458				
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Delayed memory.							
+							
+							
+APOE4Car = Carrier							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	BMI	1		1			
+	Hypertension	1		1			
+	Hypercholes	1		1			
+	Diabetes	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		14		14			
+a. APOE4Car = Carrier							
+b. Dependent Variable: Delayed memory.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	4775.744						
+Akaike's Information Criterion (AIC)	4803.744						
+Hurvich and Tsai's Criterion (AICC)	4804.404						
+Bozdogan's Criterion (CAIC)	4880.465						
+Schwarz's Bayesian Criterion (BIC)	4866.465						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = Carrier							
+b. Dependent Variable: Delayed memory.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	177.529	70.724	0.000			
+Sex	1	166.621	1.087	0.299			
+EDUpos	1	163.438	9.572	0.002			
+BMI	1	178.210	0.155	0.694			
+Hypertension	1	169.571	3.506	0.063			
+Hypercholes	1	170.346	0.449	0.504			
+Diabetes	1	167.146	2.023	0.157			
+Age	1	180.272	7.907	0.005			
+Time	1	460.345	31.500	0.000			
+TimeSqr	1	443.658	17.854	0.000			
+PASEtert2	2	164.313	0.014	0.986			
+a. APOE4Car = Carrier							
+b. Dependent Variable: Delayed memory.							
+							
+"Estimates of Fixed Effectsa,b"							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	145.913751	17.660014	176.192	8.262	0.000	111.061369	180.766132
+Sex	-1.778795	1.706472	166.621	-1.042	0.299	-5.147889	1.590300
+EDUpos	5.182978	1.675287	163.438	3.094	0.002	1.874982	8.490975
+BMI	-0.082015	0.208377	178.210	-0.394	0.694	-0.493219	0.329188
+Hypertension	-3.403714	1.817815	169.571	-1.872	0.063	-6.992175	0.184748
+Hypercholes	1.567983	2.339671	170.346	0.670	0.504	-3.050500	6.186466
+Diabetes	4.605561	3.238001	167.146	1.422	0.157	-1.787088	10.998211
+Age	-0.679148	0.241525	180.272	-2.812	0.005	-1.155727	-0.202568
+Time	3.309755	0.589713	460.345	5.612	0.000	2.150892	4.468619
+TimeSqr	-0.551784	0.130588	443.658	-4.225	0.000	-0.808432	-0.295136
+[PASEtert2=1.00]	-0.106595	2.146141	161.716	-0.050	0.960	-4.344669	4.131479
+[PASEtert2=2.00]	0.222287	2.087509	165.575	0.106	0.915	-3.899281	4.343855
+[PASEtert2=3.00]	0c	0					
+a. APOE4Car = Carrier							
+b. Dependent Variable: Delayed memory.							
+c. This parameter is set to zero because it is redundant.							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		48.097851	3.324659				
+Intercept [subject = DummyID]	Variance	112.850852	14.815902				
+a. APOE4Car = Carrier							
+b. Dependent Variable: Delayed memory.							
+							
+MIXED EXECI BY PASEtert2 WITH Sex EDUpos BMI Hypertension Hypercholes Diabetes Time Age TimeSqr							
+"  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,"							
+"    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)"							
+  /FIXED=Sex EDUpos BMI Hypertension Hypercholes Diabetes Age Time TimeSqr PASEtert2 | SSTYPE(3)							
+  /METHOD=ML							
+  /PRINT=SOLUTION							
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).							
+							
+							
+Mixed Model Analysis							
+							
+Notes							
+Output Created		06-JAN-2019 11:46:30					
+Comments							
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav					
+	Active Dataset	DataSet1					
+	Filter	<none>					
+	Weight	<none>					
+	Split File	APOE4Car					
+	N of Rows in Working Data File	5406					
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.					
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.					
+Syntax		"MIXED EXECI BY PASEtert2 WITH Sex EDUpos BMI Hypertension Hypercholes Diabetes Time Age TimeSqr
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex EDUpos BMI Hypertension Hypercholes Diabetes Age Time TimeSqr PASEtert2 | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN)."					
+Resources	Processor Time	00:00:00.16					
+	Elapsed Time	00:00:00.00					
+							
+Warnings							
+The covariance structure for random effect with only one level will be changed to Identity.							
+The covariance structure for random effect with only one level will be changed to Identity.							
+The covariance structure for random effect with only one level will be changed to Identity.							
+							
+							
+APOE4Car = -99							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	BMI	1		1			
+	Hypertension	1		1			
+	Hypercholes	1		1			
+	Diabetes	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		14		14			
+a. APOE4Car = -99							
+b. Dependent Variable: Executive function.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	293.064						
+Akaike's Information Criterion (AIC)	321.064						
+Hurvich and Tsai's Criterion (AICC)	337.218						
+Bozdogan's Criterion (CAIC)	359.054						
+Schwarz's Bayesian Criterion (BIC)	345.054						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = -99							
+b. Dependent Variable: Executive function.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	25.519	6.144	0.020			
+Sex	1	26.843	1.010	0.324			
+EDUpos	1	25.878	0.365	0.551			
+BMI	1	25.076	0.223	0.641			
+Hypertension	1	23.053	0.000	1.000			
+Hypercholes	1	23.293	2.339	0.140			
+Diabetes	1	22.802	5.304	0.031			
+Age	1	24.626	0.241	0.628			
+Time	1	14.831	10.005	0.007			
+TimeSqr	1	14.656	12.341	0.003			
+PASEtert2	2	25.160	2.883	0.075			
+a. APOE4Car = -99							
+b. Dependent Variable: Executive function.							
+							
+"Estimates of Fixed Effectsa,b"							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	131.448671	51.917437	25.388	2.532	0.018	24.605472	238.291870
+Sex	6.040055	6.009339	26.843	1.005	0.324	-6.293458	18.373567
+EDUpos	2.668593	4.415621	25.878	0.604	0.551	-6.409936	11.747121
+BMI	0.364873	0.772287	25.076	0.472	0.641	-1.225437	1.955182
+Hypertension	-0.002955	5.362980	23.053	-0.001	1.000	-11.095723	11.089813
+Hypercholes	11.017665	7.204060	23.293	1.529	0.140	-3.874685	25.910015
+Diabetes	-18.149537	7.880620	22.802	-2.303	0.031	-34.459674	-1.839401
+Age	-0.377904	0.769570	24.626	-0.491	0.628	-1.964083	1.208275
+Time	-7.274402	2.299812	14.831	-3.163	0.007	-12.181207	-2.367597
+TimeSqr	2.379705	0.677408	14.656	3.513	0.003	0.932887	3.826522
+[PASEtert2=1.00]	-9.080495	5.087209	25.808	-1.785	0.086	-19.541189	1.380200
+[PASEtert2=2.00]	2.053570	4.865206	25.321	0.422	0.677	-7.960076	12.067216
+[PASEtert2=3.00]	0c	0					
+a. APOE4Car = -99							
+b. Dependent Variable: Executive function.							
+c. This parameter is set to zero because it is redundant.							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		34.613339	13.226822				
+Intercept [subject = DummyID]	Variance	54.860454	25.175377				
+a. APOE4Car = -99							
+b. Dependent Variable: Executive function.							
+							
+							
+APOE4Car = non-carrier							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	BMI	1		1			
+	Hypertension	1		1			
+	Hypercholes	1		1			
+	Diabetes	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		14		14			
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Executive function.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	7417.184						
+Akaike's Information Criterion (AIC)	7445.184						
+Hurvich and Tsai's Criterion (AICC)	7445.644						
+Bozdogan's Criterion (CAIC)	7526.831						
+Schwarz's Bayesian Criterion (BIC)	7512.831						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Executive function.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	512.897	120.239	0.000			
+Sex	1	450.817	0.021	0.884			
+EDUpos	1	452.278	7.837	0.005			
+BMI	1	458.094	0.524	0.470			
+Hypertension	1	456.648	2.573	0.109			
+Hypercholes	1	462.979	0.021	0.884			
+Diabetes	1	464.701	1.319	0.251			
+Age	1	515.817	2.613	0.107			
+Time	1	486.420	1.148	0.284			
+TimeSqr	1	478.671	0.057	0.812			
+PASEtert2	2	449.674	0.402	0.669			
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Executive function.							
+							
+"Estimates of Fixed Effectsa,b"							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	140.968016	12.932126	510.631	10.901	0.000	115.561295	166.374737
+Sex	-0.195779	1.346220	450.817	-0.145	0.884	-2.841426	2.449867
+EDUpos	-3.621802	1.293710	452.278	-2.800	0.005	-6.164230	-1.079373
+BMI	-0.111241	0.153720	458.094	-0.724	0.470	-0.413325	0.190842
+Hypertension	-2.322876	1.448163	456.648	-1.604	0.109	-5.168767	0.523015
+Hypercholes	0.296224	2.030423	462.979	0.146	0.884	-3.693761	4.286210
+Diabetes	-3.146010	2.739079	464.701	-1.149	0.251	-8.528526	2.236506
+Age	-0.295655	0.182908	515.817	-1.616	0.107	-0.654992	0.063682
+Time	0.728060	0.679392	486.420	1.072	0.284	-0.606845	2.062965
+TimeSqr	-0.042896	0.180331	478.671	-0.238	0.812	-0.397235	0.311442
+[PASEtert2=1.00]	-1.227439	1.597422	450.109	-0.768	0.443	-4.366770	1.911891
+[PASEtert2=2.00]	0.024781	1.560544	455.330	0.016	0.987	-3.041980	3.091542
+[PASEtert2=3.00]	0c	0					
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Executive function.							
+c. This parameter is set to zero because it is redundant.							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		86.225866	5.770768				
+Intercept [subject = DummyID]	Variance	141.213446	13.100272				
+a. APOE4Car = non-carrier							
+b. Dependent Variable: Executive function.							
+							
+							
+APOE4Car = Carrier							
+							
+"Model Dimensiona,b"							
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables		
+Fixed Effects	Intercept	1		1			
+	Sex	1		1			
+	EDUpos	1		1			
+	BMI	1		1			
+	Hypertension	1		1			
+	Hypercholes	1		1			
+	Diabetes	1		1			
+	Age	1		1			
+	Time	1		1			
+	TimeSqr	1		1			
+	PASEtert2	3		2			
+Random Effects	Intercept	1	Identity	1	DummyID		
+Residual				1			
+Total		14		14			
+a. APOE4Car = Carrier							
+b. Dependent Variable: Executive function.							
+							
+"Information Criteriaa,b"							
+-2 Log Likelihood	2500.854						
+Akaike's Information Criterion (AIC)	2528.854						
+Hurvich and Tsai's Criterion (AICC)	2530.245						
+Bozdogan's Criterion (CAIC)	2595.478						
+Schwarz's Bayesian Criterion (BIC)	2581.478						
+The information criteria are displayed in smaller-is-better form.							
+a. APOE4Car = Carrier							
+b. Dependent Variable: Executive function.							
+							
+							
+Fixed Effects							
+							
+"Type III Tests of Fixed Effectsa,b"							
+Source	Numerator df	Denominator df	F	Sig.			
+Intercept	1	160.041	27.567	0.000			
+Sex	1	145.429	2.056	0.154			
+EDUpos	1	146.459	0.475	0.492			
+BMI	1	150.847	1.420	0.235			
+Hypertension	1	147.100	0.765	0.383			
+Hypercholes	1	142.551	0.005	0.941			
+Diabetes	1	150.834	0.139	0.709			
+Age	1	161.000	0.530	0.468			
+Time	1	176.675	0.448	0.504			
+TimeSqr	1	173.622	1.607	0.207			
+PASEtert2	2	145.703	0.616	0.542			
+a. APOE4Car = Carrier							
+b. Dependent Variable: Executive function.							
+							
+"Estimates of Fixed Effectsa,b"							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	138.815024	26.762093	159.176	5.187	0.000	85.960439	191.669609
+Sex	3.294829	2.297796	145.429	1.434	0.154	-1.246559	7.836217
+EDUpos	1.529167	2.218778	146.459	0.689	0.492	-2.855790	5.914124
+BMI	-0.360147	0.302274	150.847	-1.191	0.235	-0.957385	0.237090
+Hypertension	-2.200306	2.515271	147.100	-0.875	0.383	-7.171040	2.770427
+Hypercholes	0.245266	3.326267	142.551	0.074	0.941	-6.329916	6.820448
+Diabetes	-1.572179	4.211939	150.834	-0.373	0.709	-9.894198	6.749840
+Age	-0.277623	0.381478	161.000	-0.728	0.468	-1.030969	0.475722
+Time	-0.723576	1.080740	176.675	-0.670	0.504	-2.856396	1.409245
+TimeSqr	0.352949	0.278451	173.622	1.268	0.207	-0.196635	0.902533
+[PASEtert2=1.00]	0.117982	2.830409	142.687	0.042	0.967	-5.476969	5.712933
+[PASEtert2=2.00]	2.633990	2.826872	144.764	0.932	0.353	-2.953285	8.221265
+[PASEtert2=3.00]	0c	0					
+a. APOE4Car = Carrier							
+b. Dependent Variable: Executive function.							
+c. This parameter is set to zero because it is redundant.							
+							
+							
+Covariance Parameters							
+							
+"Estimates of Covariance Parametersa,b"							
+Parameter		Estimate	Std. Error				
+Residual		75.182781	8.273452				
+Intercept [subject = DummyID]	Variance	139.983258	21.470026				
+a. APOE4Car = Carrier							
+b. Dependent Variable: Executive function.							

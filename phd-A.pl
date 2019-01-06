@@ -1,6 +1,5 @@
 #!/usr/bin/perl
 use Data::Dumper qw(Dumper);
-####THIS IS THE STRATAFIED AY APoE FILE#######
 ########################################
 ##############CLEANER CODE##############
 ########################################
@@ -13,8 +12,6 @@ my $prefix ="";
 my @searchTerms = ();
 my %consolidated;
 my $bothDone=0;
-my @legacyTerms=();
-my@prefixArr=();
 print "Please enter a Model name (i.e. Model 1): ";
 $modelId = <>;
 chomp ($modelId);
@@ -22,7 +19,7 @@ chomp ($modelId);
 #############
 ######################################## MAKE EDITS HERE #######################
 my @finalOutputOrder=("Global Cog","Immediate memory","Delayed memory","Visuospatial","Language","Attention","Executive function");
-my @finalOutputOrderCols=("[PASEtert2=2.00]","[PASEtert2=1.00]","Time","TimeSqr");
+my @finalOutputOrderCols=("[PASEtert2=2.00]","[PASEtert2=1.00]","Time","TimeSqr","[PASEtert2=2.00] * Time","[PASEtert2=2.00] * TimeSqr","[PASEtert2=1.00] * Time","[PASEtert2=1.00] * TimeSqr");
 my $finalOut = "final/".$modelId."-model.csv";
 #################################### MAKE EDITS ABOVE HERE #####################
 #############
@@ -33,31 +30,18 @@ while ($bothDone < 2)
   my $tempInput = <>;
   chomp ($tempInput);
   $file = "input/".$tempInput;
-  print "Is this file 'below the separator'? ";
+  print "Is this file is for the GROWTH CURVE section? ";
   $gcurve = <>;
   chomp($gcurve);
   if ($gcurve eq "n")
   {
     @searchTerms = ("[PASEtert2=2.00]","[PASEtert2=1.00]","Time","TimeSqr");
-    @legacyTerms = @searchTerms;
-    print "Enter a prefix (Like APoECarrier): ";
-    $prefix =<>;
-    chomp($prefix);
-    push @prefixArr, $prefix;
-    #$prefix = '1-';
+    $prefix = '1-';
   }
   if ($gcurve eq "y")
   {
-    @searchTerms = ("[PASEtert2=2.00]","[PASEtert2=1.00]","Time","TimeSqr");
-    print "Enter a prefix (Like APoEnonCarrier): ";
-    $prefix =<>;
-    chomp($prefix);
-    push @prefixArr, $prefix;
-    #$prefix = '2-';
-    if( @legacyTerms ~~ @searchTerms )
-    {
-      print "Identical terms for both runs found\n";
-    }
+    @searchTerms = ("[PASEtert2=2.00] * Time","[PASEtert2=2.00] * TimeSqr","[PASEtert2=1.00] * Time","[PASEtert2=1.00] * TimeSqr");
+    $prefix = '2-';
   }
   my $output = "staging/".$prefix.$modelId.".tsv";
   print "Set to ".$modelId;
@@ -66,10 +50,10 @@ while ($bothDone < 2)
   {
       if ($_=~m/95\%\ Confidence\ Interval[\t\n]/)
       {
-        print "Found a match\n";
+        print "Found a match";
         $flag=1;
       }
-      if ($flag == 1 && $_=~m/^\t*\n/)
+      if ($_=~m/^\n/)
       {
         $flag--;
         if ($flag==0)
@@ -88,13 +72,12 @@ while ($bothDone < 2)
       $_ =~ s/\t\t\t\t\t\t//g;
       if($flag==1)
       {
-        if ($_ =~m/\w\.* Dependent Variable\:\ (.*)?/)
+        if ($_ =~m/a Dependent Variable\:\ (.*)?\./)
         {
           $depVar = $1;
-          $depVar =~ s/[^a-zA-Z0-9 ]//g
         }
-      #  print $prefix.$_;
-        $cleanBuffer .= $prefix.$_;
+        print $_;
+        $cleanBuffer .= $_;
       }
 
     }
@@ -117,7 +100,7 @@ while ($bothDone < 2)
         chomp;
         foreach my $k (@searchTerms)
         {
-          $cleanQuery = "^".$prefix.$k;
+          $cleanQuery = "^".$k;
           $cleanQuery =~ s/([\[\]\=\*])/\\$1/g;
           $cleanQuery.="\t";
           if($_=~m/$cleanQuery/)
@@ -153,7 +136,7 @@ while ($bothDone < 2)
         my $sigCol = sprintf('%.2f', $results{$k}[5]);
         print OUT ($k."\t".$middleCol."\t".$sigCol."\n");
         $siglvl = "";
-        $consolidated.=$consolidated{$printDepVar}{ $prefix.$k } = $middleCol;
+        $consolidated.=$consolidated{$printDepVar}{ $k } = $middleCol;
       }
       close (OUT);
     }
@@ -165,25 +148,18 @@ open(FINAL, '>final/'.$modelId.'.tsv') or die $!;
 print "Writing final model file to tsv for Excel...\n";
 print FINAL "\t";
 keys %consolidated;
-my $thing="";
-for my $pfx (@prefixArr) {
-#while ($x<2)
-  #$thing = $x."-";
-  foreach my $k (@finalOutputOrder)
+foreach my $k (@finalOutputOrder)
+{
+  print FINAL $k."\t";
+}
+print FINAL "\n";
+for $hashMeasure(@finalOutputOrderCols)
+{
+  print FINAL $hashMeasure."\t";
+  for $hashDepVar( @finalOutputOrder )
   {
-    print FINAL $k."\t";
+    print FINAL "$consolidated{$hashDepVar}{$hashMeasure}\t";
   }
   print FINAL "\n";
-  for $hashMeasure(@finalOutputOrderCols)
-  {
-    print FINAL $pfx.$hashMeasure."\t";
-    for $hashDepVar( @finalOutputOrder )
-    {
-      print $hashDepVar.$thing.$hashMeasure.":".$consolidated{$hashDepVar}{$pfx.$hashMeasure}."\n";
-      print FINAL "$consolidated{$hashDepVar}{$pfx.$hashMeasure}\t";
-    }
-    print FINAL "\n";
-    #$prefix--;
-  }
 }
 print "Completed Successfully.";

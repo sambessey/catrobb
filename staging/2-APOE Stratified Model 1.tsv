@@ -1,0 +1,42 @@
+APOE Stratified Model 1		
+Attention		Sig
+[PASEtert2=2.00]	-1.19 [-3.93, 1.55]	0.39
+[PASEtert2=1.00]	0.39 [-2.38, 3.16]	0.78
+Time	1.91 [1.14, 2.68]***	0.00
+TimeSqr	-0.20 [-0.37, -0.02]*	0.03
+APOE Stratified Model 1		
+Delayed memory		Sig
+[PASEtert2=2.00]	-1.38 [-3.18, 0.42]	0.13
+[PASEtert2=1.00]	-0.88 [-2.70, 0.94]	0.34
+Time	3.35 [2.70, 4.01]***	0.00
+TimeSqr	-0.54 [-0.69, -0.39]***	0.00
+APOE Stratified Model 1		
+Executive function		Sig
+[PASEtert2=2.00]	0.13 [-2.93, 3.20]	0.93
+[PASEtert2=1.00]	-1.58 [-4.73, 1.56]	0.32
+Time	0.92 [-0.40, 2.24]	0.17
+TimeSqr	-0.06 [-0.41, 0.29]	0.72
+APOE Stratified Model 1		
+Global Cog		Sig
+[PASEtert2=2.00]	-1.25 [-3.52, 1.02]	0.28
+[PASEtert2=1.00]	-1.07 [-3.37, 1.23]	0.36
+Time	2.52 [1.87, 3.18]***	0.00
+TimeSqr	-0.39 [-0.54, -0.24]***	0.00
+APOE Stratified Model 1		
+Immediate memory		Sig
+[PASEtert2=2.00]	-0.99 [-3.20, 1.22]	0.38
+[PASEtert2=1.00]	-1.31 [-3.55, 0.93]	0.25
+Time	3.80 [2.96, 4.64]***	0.00
+TimeSqr	-0.55 [-0.74, -0.36]***	0.00
+APOE Stratified Model 1		
+Language		Sig
+[PASEtert2=2.00]	0.61 [-1.32, 2.55]	0.53
+[PASEtert2=1.00]	0.57 [-1.39, 2.53]	0.57
+Time	0.64 [-0.23, 1.52]	0.15
+TimeSqr	-0.06 [-0.26, 0.14]	0.57
+APOE Stratified Model 1		
+Visuospatial		Sig
+[PASEtert2=2.00]	-1.40 [-3.73, 0.94]	0.24
+[PASEtert2=1.00]	-2.18 [-4.54, 0.19]x	0.07
+Time	0.14 [-0.87, 1.15]	0.78
+TimeSqr	-0.20 [-0.43, 0.03]	0.09

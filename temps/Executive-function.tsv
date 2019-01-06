@@ -1,20 +1,16 @@
-Parameter	Estimate	Std. Error	df	t	Sig.	Lower Bound	Upper Bound
-Intercept	134.480856	11.039743	734.530	12.182	.000	112.807646	156.154067
-Age	-.282295	.158794	733.084	-1.778	.076	-.594041	.029451
-Sex	-.057084	1.100785	650.890	-.052	.959	-2.218602	2.104434
-EDUpos	-1.792247	1.092640	652.615	-1.640	.101	-3.937760	.353267
-Time	.142362	1.003483	714.254	.142	.887	-1.827766	2.112491
-TimeSqr	.173573	.263582	699.392	.659	.510	-.343934	.691080
-[PASEtert2=1.00]	-1.546865	1.467627	895.898	-1.054	.292	-4.427253	1.333522
-[PASEtert2=2.00]	.710920	1.436912	898.922	.495	.621	-2.109173	3.531012
-[PASEtert2=3.00]	0b	0	.	.	.	.	.
-[PASEtert2=1.00] * Time	.376714	1.390255	711.199	.271	.786	-2.352780	3.106208
-[PASEtert2=2.00] * Time	.248585	1.372706	713.001	.181	.856	-2.446444	2.943613
-[PASEtert2=3.00] * Time	0b	0	.	.	.	.	.
-[PASEtert2=1.00] * TimeSqr	-.163649	.364046	697.551	-.450	.653	-.878407	.551109
-[PASEtert2=2.00] * TimeSqr	-.081299	.362966	699.293	-.224	.823	-.793933	.631335
-[PASEtert2=3.00] * TimeSqr	0b	0	.	.	.	.	.
-a Dependent Variable: Executive function.
-b This parameter is set to zero because it is redundant.
+NonApoeParameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+NonApoeLower Bound	Upper Bound
+NonApoeIntercept	138.959327	23.453935	168.010	5.925	0.000	92.656936	185.261719
+NonApoeSex	2.375854	2.215128	150.853	1.073	0.285	-2.000828	6.752536
+NonApoeEDUpos	2.134969	2.169554	151.326	0.984	0.327	-2.151558	6.421497
+NonApoeAge	-0.428280	0.342287	169.516	-1.251	0.213	-1.103974	0.247414
+NonApoeTime	-0.600561	1.062150	182.565	-0.565	0.572	-2.696227	1.495106
+NonApoeTimeSqr	0.350690	0.273521	179.355	1.282	0.201	-0.189043	0.890423
+NonApoe[PASEtert2=1.00]	0.084782	2.803406	147.330	0.030	0.976	-5.455300	5.624865
+NonApoe[PASEtert2=2.00]	3.074126	2.777864	149.508	1.107	0.270	-2.414817	8.563069
+NonApoe[PASEtert2=3.00]	0c	0					
+NonApoea. APOE4Car = Carrier	
+NonApoeb. Dependent Variable: Executive function.	
+NonApoec. This parameter is set to zero because it is redundant.	
 
 Executive function

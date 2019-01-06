@@ -1,20 +1,16 @@
-Parameter	Estimate	Std. Error	df	t	Sig.	Lower Bound	Upper Bound
-Intercept	108.363176	8.610406	912.920	12.585	.000	91.464686	125.261666
-Age	-.096582	.122915	912.096	-.786	.432	-.337811	.144647
-Sex	-1.855400	.956082	860.946	-1.941	.053	-3.731924	.021125
-EDUpos	5.671224	.954865	859.814	5.939	.000	3.797085	7.545363
-Time	2.100934	.580552	1987.807	3.619	.000	.962381	3.239488
-TimeSqr	-.198840	.129265	1922.427	-1.538	.124	-.452354	.054674
-[PASEtert2=1.00]	1.224502	1.246621	1121.239	.982	.326	-1.221471	3.670476
-[PASEtert2=2.00]	-.966433	1.237262	1122.693	-.781	.435	-3.394038	1.461172
-[PASEtert2=3.00]	0b	0	.	.	.	.	.
-[PASEtert2=1.00] * Time	.289876	.825376	1986.405	.351	.725	-1.328818	1.908570
-[PASEtert2=2.00] * Time	.094899	.813930	1976.940	.117	.907	-1.501352	1.691149
-[PASEtert2=3.00] * Time	0b	0	.	.	.	.	.
-[PASEtert2=1.00] * TimeSqr	-.114622	.186742	1922.165	-.614	.539	-.480861	.251616
-[PASEtert2=2.00] * TimeSqr	-.027576	.183620	1916.661	-.150	.881	-.387692	.332540
-[PASEtert2=3.00] * TimeSqr	0b	0	.	.	.	.	.
-a Dependent Variable: Attention.
-b This parameter is set to zero because it is redundant.
+NonApoeParameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+NonApoeLower Bound	Upper Bound
+NonApoeIntercept	119.426448	18.975247	207.641	6.294	0.000	82.017611	156.835285
+NonApoeSex	-1.710548	1.997951	197.585	-0.856	0.393	-5.650594	2.229498
+NonApoeEDUpos	5.345672	1.984521	194.992	2.694	0.008	1.431790	9.259554
+NonApoeAge	-0.291058	0.269214	210.808	-1.081	0.281	-0.821754	0.239638
+NonApoeTime	2.455220	0.667000	500.482	3.681	0.000	1.144756	3.765684
+NonApoeTimeSqr	-0.283857	0.147669	485.750	-1.922	0.055	-0.574006	0.006292
+NonApoe[PASEtert2=1.00]	3.430967	2.540781	194.417	1.350	0.178	-1.580066	8.441999
+NonApoe[PASEtert2=2.00]	-1.541817	2.459210	198.046	-0.627	0.531	-6.391415	3.307780
+NonApoe[PASEtert2=3.00]	0c	0					
+NonApoea. APOE4Car = Carrier	
+NonApoeb. Dependent Variable: Attention.	
+NonApoec. This parameter is set to zero because it is redundant.	
 
 Attention

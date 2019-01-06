@@ -1,20 +1,16 @@
-Parameter	Estimate	Std. Error	df	t	Sig.	Lower Bound	Upper Bound
-Intercept	109.389568	7.195245	843.348	15.203	.000	95.266879	123.512258
-Age	-.085474	.102690	841.082	-.832	.405	-.287032	.116085
-Sex	-7.254873	.789537	751.063	-9.189	.000	-8.804835	-5.704910
-EDUpos	6.450551	.788371	750.001	8.182	.000	4.902874	7.998229
-Time	3.630228	.635314	2012.275	5.714	.000	2.384287	4.876169
-TimeSqr	-.541316	.142327	1910.635	-3.803	.000	-.820449	-.262183
-[PASEtert2=1.00]	-.280345	1.083481	1255.446	-.259	.796	-2.405977	1.845287
-[PASEtert2=2.00]	-.886194	1.075607	1258.618	-.824	.410	-2.996374	1.223985
-[PASEtert2=3.00]	0b	0	.	.	.	.	.
-[PASEtert2=1.00] * Time	.304343	.903353	2010.004	.337	.736	-1.467262	2.075949
-[PASEtert2=2.00] * Time	.786793	.891639	1994.209	.882	.378	-.961848	2.535434
-[PASEtert2=3.00] * Time	0b	0	.	.	.	.	.
-[PASEtert2=1.00] * TimeSqr	-.090461	.205616	1910.579	-.440	.660	-.493716	.312794
-[PASEtert2=2.00] * TimeSqr	-.129112	.202284	1901.778	-.638	.523	-.525835	.267611
-[PASEtert2=3.00] * TimeSqr	0b	0	.	.	.	.	.
-a Dependent Variable: Immediate memory.
-b This parameter is set to zero because it is redundant.
+NonApoeParameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+NonApoeLower Bound	Upper Bound
+NonApoeIntercept	135.403176	15.653815	188.125	8.650	0.000	104.523612	166.282741
+NonApoeSex	-7.072362	1.628756	168.739	-4.342	0.000	-10.287727	-3.856998
+NonApoeEDUpos	6.383670	1.613521	165.446	3.956	0.000	3.197925	9.569416
+NonApoeAge	-0.504840	0.222806	193.280	-2.266	0.025	-0.944283	-0.065398
+NonApoeTime	4.134850	0.745403	505.050	5.547	0.000	2.670378	5.599322
+NonApoeTimeSqr	-0.711166	0.166057	481.544	-4.283	0.000	-1.037452	-0.384879
+NonApoe[PASEtert2=1.00]	1.862595	2.064102	164.122	0.902	0.368	-2.213023	5.938214
+NonApoe[PASEtert2=2.00]	1.259281	2.005443	168.925	0.628	0.531	-2.699677	5.218239
+NonApoe[PASEtert2=3.00]	0c	0					
+NonApoea. APOE4Car = Carrier	
+NonApoeb. Dependent Variable: Immediate memory.	
+NonApoec. This parameter is set to zero because it is redundant.	
 
 Immediate memory

@@ -1,20 +1,16 @@
-Parameter	Estimate	Std. Error	df	t	Sig.	Lower Bound	Upper Bound
-Intercept	112.793836	7.664437	899.649	14.717	.000	97.751579	127.836093
-Age	-.269722	.109362	895.890	-2.466	.014	-.484358	-.055085
-Sex	3.311215	.833808	772.547	3.971	.000	1.674418	4.948012
-EDUpos	4.864873	.832508	771.748	5.844	.000	3.230625	6.499122
-Time	.126160	.763323	2109.516	.165	.869	-1.370783	1.623104
-TimeSqr	-.228463	.171607	2001.050	-1.331	.183	-.565010	.108083
-[PASEtert2=1.00]	-2.450774	1.186008	1487.453	-2.066	.039	-4.777200	-.124349
-[PASEtert2=2.00]	-.573511	1.177584	1492.046	-.487	.626	-2.883407	1.736386
-[PASEtert2=3.00]	0b	0	.	.	.	.	.
-[PASEtert2=1.00] * Time	.254188	1.085454	2107.125	.234	.815	-1.874485	2.382860
-[PASEtert2=2.00] * Time	-.133200	1.071978	2089.319	-.124	.901	-2.235455	1.969055
-[PASEtert2=3.00] * Time	0b	0	.	.	.	.	.
-[PASEtert2=1.00] * TimeSqr	.033918	.247914	2001.400	.137	.891	-.452278	.520115
-[PASEtert2=2.00] * TimeSqr	.061767	.243973	1991.638	.253	.800	-.416702	.540236
-[PASEtert2=3.00] * TimeSqr	0b	0	.	.	.	.	.
-a Dependent Variable: Visuospatial.
-b This parameter is set to zero because it is redundant.
+NonApoeParameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+NonApoeLower Bound	Upper Bound
+NonApoeIntercept	120.708959	17.972863	199.075	6.716	0.000	85.267336	156.150583
+NonApoeSex	4.808437	1.862435	175.584	2.582	0.011	1.132798	8.484076
+NonApoeEDUpos	3.390653	1.843700	172.078	1.839	0.068	-0.248526	7.029833
+NonApoeAge	-0.424399	0.256059	204.998	-1.657	0.099	-0.929247	0.080449
+NonApoeTime	0.570386	0.914263	520.469	0.624	0.533	-1.225713	2.366485
+NonApoeTimeSqr	-0.265384	0.204020	496.579	-1.301	0.194	-0.666232	0.135464
+NonApoe[PASEtert2=1.00]	-1.061101	2.357813	170.417	-0.450	0.653	-5.715380	3.593179
+NonApoe[PASEtert2=2.00]	2.261079	2.293211	175.582	0.986	0.325	-2.264727	6.786884
+NonApoe[PASEtert2=3.00]	0c	0					
+NonApoea. APOE4Car = Carrier	
+NonApoeb. Dependent Variable: Visuospatial.	
+NonApoec. This parameter is set to zero because it is redundant.	
 
 Visuospatial

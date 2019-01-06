@@ -1,0 +1,389 @@
+﻿
+Mixed Model Analysis
+Notes		
+Output Created		05-JAN-2019 18:10:16
+Comments		
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	<none>
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED RBTot BY PASEtert2 WITH Age Sex EDUpos Time TimeSqr BMI Hypertension Hypercholes Diabetes
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Age Sex EDUpos BMI Hypertension Hypercholes Diabetes Time TimeSqr PASEtert2 PASEtert2*Time
+    PASEtert2*TimeSqr | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.23
+	Elapsed Time	00:00:00.00
+
+
+Fixed Effects
+Estimates of Fixed Effectsa							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	122.644539	7.437978	843.583	16.489	.000	108.045424	137.243655
+Age	-.179238	.101865	855.269	-1.760	.079	-.379173	.020697
+Sex	-3.784684	.809601	804.930	-4.675	.000	-5.373862	-2.195506
+EDUpos	6.850117	.789494	800.179	8.677	.000	5.300392	8.399841
+BMI	-.326120	.093962	809.841	-3.471	.001	-.510558	-.141681
+Hypertension	-1.156220	.871812	807.031	-1.326	.185	-2.867507	.555067
+Hypercholes	-.413773	1.166996	803.650	-.355	.723	-2.704493	1.876947
+Diabetes	-2.264845	1.526294	823.773	-1.484	.138	-5.260727	.731038
+Time	2.307458	.499995	1900.936	4.615	.000	1.326861	3.288055
+TimeSqr	-.347115	.111821	1832.307	-3.104	.002	-.566425	-.127805
+[PASEtert2=1.00]	-.828170	1.032525	1073.997	-.802	.423	-2.854165	1.197825
+[PASEtert2=2.00]	-1.225029	1.027279	1077.030	-1.192	.233	-3.240723	.790666
+[PASEtert2=3.00]	0b	0	.	.	.	.	.
+[PASEtert2=1.00] * Time	.536819	.707213	1897.411	.759	.448	-.850178	1.923815
+[PASEtert2=2.00] * Time	.168533	.702068	1888.809	.240	.810	-1.208376	1.545443
+[PASEtert2=3.00] * Time	0b	0	.	.	.	.	.
+[PASEtert2=1.00] * TimeSqr	-.117234	.160463	1830.902	-.731	.465	-.431944	.197476
+[PASEtert2=2.00] * TimeSqr	-.045196	.159140	1825.706	-.284	.776	-.357311	.266919
+[PASEtert2=3.00] * TimeSqr	0b	0	.	.	.	.	.
+a Dependent Variable: Global Cog.							
+b This parameter is set to zero because it is redundant.							
+
+
+Covariance Parameters
+
+Mixed Model Analysis
+Notes		
+Output Created		05-JAN-2019 18:10:41
+Comments		
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	<none>
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED RBIMI BY PASEtert2 WITH Age Sex EDUpos Time TimeSqr BMI Hypertension Hypercholes Diabetes
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Age Sex EDUpos BMI Hypertension Hypercholes Diabetes Time TimeSqr PASEtert2 PASEtert2*Time
+    PASEtert2*TimeSqr | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.24
+	Elapsed Time	00:00:00.00
+
+
+Fixed Effects
+Estimates of Fixed Effectsa							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	110.645479	7.597527	797.580	14.563	.000	95.731970	125.558989
+Age	-.054426	.104266	814.103	-.522	.602	-.259088	.150236
+Sex	-6.718861	.820310	729.572	-8.191	.000	-8.329311	-5.108411
+EDUpos	6.283262	.799258	724.065	7.861	.000	4.714122	7.852402
+BMI	-.118316	.095309	738.581	-1.241	.215	-.305426	.068794
+Hypertension	-.121296	.883819	734.420	-.137	.891	-1.856409	1.613816
+Hypercholes	-1.572640	1.182328	730.153	-1.330	.184	-3.893809	.748529
+Diabetes	-1.327730	1.552333	758.648	-.855	.393	-4.375108	1.719648
+Time	3.782990	.647486	1941.972	5.843	.000	2.513148	5.052831
+TimeSqr	-.560560	.145614	1843.401	-3.850	.000	-.846145	-.274975
+[PASEtert2=1.00]	-.239922	1.095558	1216.657	-.219	.827	-2.389313	1.909470
+[PASEtert2=2.00]	-.960646	1.090441	1222.149	-.881	.379	-3.099989	1.178697
+[PASEtert2=3.00]	0b	0	.	.	.	.	.
+[PASEtert2=1.00] * Time	.099551	.916099	1936.550	.109	.913	-1.697094	1.896195
+[PASEtert2=2.00] * Time	.437367	.910086	1923.339	.481	.631	-1.347492	2.222227
+[PASEtert2=3.00] * Time	0b	0	.	.	.	.	.
+[PASEtert2=1.00] * TimeSqr	-.065203	.208979	1841.553	-.312	.755	-.475063	.344657
+[PASEtert2=2.00] * TimeSqr	-.066824	.207344	1833.876	-.322	.747	-.473479	.339832
+[PASEtert2=3.00] * TimeSqr	0b	0	.	.	.	.	.
+a Dependent Variable: Immediate memory.							
+b This parameter is set to zero because it is redundant.							
+
+
+Covariance Parameters
+
+Mixed Model Analysis
+Notes		
+Output Created		05-JAN-2019 18:11:00
+Comments		
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	<none>
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED RBVSI BY PASEtert2 WITH Age Sex EDUpos Time TimeSqr BMI Hypertension Hypercholes Diabetes
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Age Sex EDUpos BMI Hypertension Hypercholes Diabetes Time TimeSqr PASEtert2 PASEtert2*Time
+    PASEtert2*TimeSqr | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.22
+	Elapsed Time	00:00:00.00
+
+
+Fixed Effects
+Estimates of Fixed Effectsa							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	123.011306	7.996473	849.062	15.383	.000	107.316132	138.706479
+Age	-.238151	.109915	869.277	-2.167	.031	-.453881	-.022420
+Sex	3.985875	.856674	748.275	4.653	.000	2.304105	5.667646
+EDUpos	4.541259	.834218	742.741	5.444	.000	2.903553	6.178965
+BMI	-.449523	.099645	761.871	-4.511	.000	-.645134	-.253912
+Hypertension	-1.082517	.923584	756.357	-1.172	.242	-2.895610	.730575
+Hypercholes	-.004847	1.234969	751.693	-.004	.997	-2.429245	2.419551
+Diabetes	-2.001701	1.626482	786.827	-1.231	.219	-5.194459	1.191056
+Time	.050334	.781443	2043.799	.064	.949	-1.482175	1.582842
+TimeSqr	-.237855	.176447	1938.424	-1.348	.178	-.583902	.108191
+[PASEtert2=1.00]	-2.713689	1.192000	1468.342	-2.277	.023	-5.051894	-.375485
+[PASEtert2=2.00]	-.817585	1.186822	1476.071	-.689	.491	-3.145621	1.510452
+[PASEtert2=3.00]	0b	0	.	.	.	.	.
+[PASEtert2=1.00] * Time	.306603	1.105879	2037.724	.277	.782	-1.862169	2.475374
+[PASEtert2=2.00] * Time	-.195627	1.099230	2022.601	-.178	.859	-2.351369	1.960115
+[PASEtert2=3.00] * Time	0b	0	.	.	.	.	.
+[PASEtert2=1.00] * TimeSqr	.036461	.253248	1936.706	.144	.886	-.460206	.533128
+[PASEtert2=2.00] * TimeSqr	.108275	.251348	1928.114	.431	.667	-.384666	.601217
+[PASEtert2=3.00] * TimeSqr	0b	0	.	.	.	.	.
+a Dependent Variable: Visuospatial.							
+b This parameter is set to zero because it is redundant.							
+
+
+Covariance Parameters
+
+Mixed Model Analysis
+Notes		
+Output Created		05-JAN-2019 18:11:17
+Comments		
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	<none>
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED RBLI BY PASEtert2 WITH Age Sex EDUpos Time TimeSqr BMI Hypertension Hypercholes Diabetes
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Age Sex EDUpos BMI Hypertension Hypercholes Diabetes Time TimeSqr PASEtert2 PASEtert2*Time
+    PASEtert2*TimeSqr | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.24
+	Elapsed Time	00:00:00.00
+
+
+Fixed Effects
+Estimates of Fixed Effectsa							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	110.794695	6.732109	837.356	16.458	.000	97.580904	124.008487
+Age	-.083922	.092531	857.340	-.907	.365	-.265537	.097692
+Sex	-4.640169	.721425	738.455	-6.432	.000	-6.056457	-3.223882
+EDUpos	3.547594	.702526	732.952	5.050	.000	2.168391	4.926797
+BMI	-.014584	.083910	751.783	-.174	.862	-.179309	.150142
+Hypertension	-1.089418	.777752	746.357	-1.401	.162	-2.616260	.437424
+Hypercholes	.331436	1.039985	741.733	.319	.750	-1.710228	2.373101
+Diabetes	-2.187755	1.369542	776.416	-1.597	.111	-4.876198	.500689
+Time	.243275	.655188	2032.624	.371	.710	-1.041635	1.528184
+TimeSqr	-.015938	.147920	1926.355	-.108	.914	-.306039	.274163
+[PASEtert2=1.00]	.364804	1.002373	1448.145	.364	.716	-1.601454	2.331062
+[PASEtert2=2.00]	-.073083	.998007	1455.817	-.073	.942	-2.030769	1.884604
+[PASEtert2=3.00]	0b	0	.	.	.	.	.
+[PASEtert2=1.00] * Time	.544634	.927198	2026.502	.587	.557	-1.273727	2.362996
+[PASEtert2=2.00] * Time	.065317	.921607	2011.285	.071	.944	-1.742087	1.872722
+[PASEtert2=3.00] * Time	0b	0	.	.	.	.	.
+[PASEtert2=1.00] * TimeSqr	-.044884	.212304	1924.613	-.211	.833	-.461254	.371485
+[PASEtert2=2.00] * TimeSqr	-.002613	.210709	1915.971	-.012	.990	-.415855	.410629
+[PASEtert2=3.00] * TimeSqr	0b	0	.	.	.	.	.
+a Dependent Variable: Language.							
+b This parameter is set to zero because it is redundant.							
+
+
+Covariance Parameters
+MIXED RBAI BY PASEtert2 WITH Age Sex EDUpos Time TimeSqr BMI Hypertension Hypercholes Diabetes
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Age Sex EDUpos BMI Hypertension Hypercholes Diabetes Time TimeSqr PASEtert2 PASEtert2*Time
+    PASEtert2*TimeSqr | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+
+
+Mixed Model Analysis
+Notes		
+Output Created		05-JAN-2019 18:11:34
+Comments		
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	<none>
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED RBAI BY PASEtert2 WITH Age Sex EDUpos Time TimeSqr BMI Hypertension Hypercholes Diabetes
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Age Sex EDUpos BMI Hypertension Hypercholes Diabetes Time TimeSqr PASEtert2 PASEtert2*Time
+    PASEtert2*TimeSqr | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.23
+	Elapsed Time	00:00:00.00
+
+
+Fixed Effects
+Estimates of Fixed Effectsa							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	116.285328	8.989486	875.676	12.936	.000	98.641872	133.928784
+Age	-.049395	.123090	887.029	-.401	.688	-.290977	.192186
+Sex	-.777037	.979110	838.801	-.794	.428	-2.698829	1.144756
+EDUpos	5.334872	.954873	834.107	5.587	.000	3.460635	7.209109
+BMI	-.398255	.113626	843.465	-3.505	.000	-.621278	-.175232
+Hypertension	-2.460626	1.054309	840.738	-2.334	.020	-4.530013	-.391239
+Hypercholes	.323283	1.411367	837.420	.229	.819	-2.446949	3.093515
+Diabetes	-2.923083	1.845266	856.987	-1.584	.114	-6.544854	.698687
+Time	2.334556	.587909	1922.246	3.971	.000	1.181550	3.487562
+TimeSqr	-.244348	.131414	1858.112	-1.859	.063	-.502082	.013386
+[PASEtert2=1.00]	1.374620	1.243881	1094.036	1.105	.269	-1.066042	3.815283
+[PASEtert2=2.00]	-1.275684	1.237515	1096.899	-1.031	.303	-3.703848	1.152480
+[PASEtert2=3.00]	0b	0	.	.	.	.	.
+[PASEtert2=1.00] * Time	-.020746	.831539	1918.977	-.025	.980	-1.651562	1.610069
+[PASEtert2=2.00] * Time	-.055167	.825436	1910.987	-.067	.947	-1.674017	1.563682
+[PASEtert2=3.00] * Time	0b	0	.	.	.	.	.
+[PASEtert2=1.00] * TimeSqr	-.040014	.188576	1856.791	-.212	.832	-.409858	.329830
+[PASEtert2=2.00] * TimeSqr	-.006502	.187014	1851.937	-.035	.972	-.373282	.360277
+[PASEtert2=3.00] * TimeSqr	0b	0	.	.	.	.	.
+a Dependent Variable: Attention.							
+b This parameter is set to zero because it is redundant.							
+
+
+Covariance Parameters
+MIXED RBDMI BY PASEtert2 WITH Age Sex EDUpos Time TimeSqr BMI Hypertension Hypercholes Diabetes
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Age Sex EDUpos BMI Hypertension Hypercholes Diabetes Time TimeSqr PASEtert2 PASEtert2*Time
+    PASEtert2*TimeSqr | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+
+
+Mixed Model Analysis
+Notes		
+Output Created		05-JAN-2019 18:11:51
+Comments		
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	<none>
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED RBDMI BY PASEtert2 WITH Age Sex EDUpos Time TimeSqr BMI Hypertension Hypercholes Diabetes
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Age Sex EDUpos BMI Hypertension Hypercholes Diabetes Time TimeSqr PASEtert2 PASEtert2*Time
+    PASEtert2*TimeSqr | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.23
+	Elapsed Time	00:00:01.00
+
+
+Fixed Effects
+Estimates of Fixed Effectsa							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	118.322419	6.542663	783.143	18.085	.000	105.479187	131.165651
+Age	-.232501	.089708	797.403	-2.592	.010	-.408594	-.056409
+Sex	-4.218955	.709090	730.015	-5.950	.000	-5.611055	-2.826856
+EDUpos	4.131949	.691139	724.805	5.978	.000	2.775076	5.488823
+BMI	-.045479	.082344	736.942	-.552	.581	-.207136	.116179
+Hypertension	.116384	.763782	733.449	.152	.879	-1.383076	1.615843
+Hypercholes	-.487907	1.022023	729.570	-.477	.633	-2.494364	1.518550
+Diabetes	.108331	1.339568	754.102	.081	.936	-2.521395	2.738057
+Time	2.903177	.508408	1892.019	5.710	.000	1.906079	3.900276
+TimeSqr	-.412283	.114063	1803.083	-3.615	.000	-.635994	-.188573
+[PASEtert2=1.00]	-1.077200	.927299	1107.908	-1.162	.246	-2.896660	.742261
+[PASEtert2=2.00]	-1.158257	.922800	1112.209	-1.255	.210	-2.968881	.652368
+[PASEtert2=3.00]	0b	0	.	.	.	.	.
+[PASEtert2=1.00] * Time	.475361	.719231	1887.262	.661	.509	-.935210	1.885932
+[PASEtert2=2.00] * Time	.912279	.714285	1875.700	1.277	.202	-.488598	2.313157
+[PASEtert2=3.00] * Time	0b	0	.	.	.	.	.
+[PASEtert2=1.00] * TimeSqr	-.152014	.163691	1801.339	-.929	.353	-.473059	.169031
+[PASEtert2=2.00] * TimeSqr	-.267210	.162381	1794.528	-1.646	.100	-.585686	.051265
+[PASEtert2=3.00] * TimeSqr	0b	0	.	.	.	.	.
+a Dependent Variable: Delayed memory.							
+b This parameter is set to zero because it is redundant.							
+
+
+Covariance Parameters
+
+Mixed Model Analysis
+Notes		
+Output Created		05-JAN-2019 18:12:10
+Comments		
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	<none>
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED EXECI BY PASEtert2 WITH Age Sex EDUpos Time TimeSqr BMI Hypertension Hypercholes Diabetes
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Age Sex EDUpos BMI Hypertension Hypercholes Diabetes Time TimeSqr PASEtert2 PASEtert2*Time
+    PASEtert2*TimeSqr | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.19
+	Elapsed Time	00:00:01.00
+
+
+Fixed Effects
+Estimates of Fixed Effectsa							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	137.571079	11.339505	704.042	12.132	.000	115.307784	159.834374
+Age	-.264727	.160346	706.544	-1.651	.099	-.579539	.050086
+Sex	.593332	1.135094	622.605	.523	.601	-1.635745	2.822408
+EDUpos	-2.115978	1.096803	625.816	-1.929	.054	-4.269838	.037882
+BMI	-.126999	.133867	636.136	-.949	.343	-.389873	.135875
+Hypertension	-2.265183	1.231931	629.333	-1.839	.066	-4.684376	.154010
+Hypercholes	.144406	1.689573	629.279	.085	.932	-3.173477	3.462289
+Diabetes	-3.439169	2.207826	643.686	-1.558	.120	-7.774581	.896243
+Time	-.033289	1.016373	686.533	-.033	.974	-2.028862	1.962283
+TimeSqr	.194594	.267201	672.878	.728	.467	-.330053	.719242
+[PASEtert2=1.00]	-1.323994	1.475440	864.937	-.897	.370	-4.219857	1.571868
+[PASEtert2=2.00]	.877054	1.449588	867.764	.605	.545	-1.968055	3.722163
+[PASEtert2=3.00]	0b	0	.	.	.	.	.
+[PASEtert2=1.00] * Time	.626912	1.403015	683.283	.447	.655	-2.127828	3.381651
+[PASEtert2=2.00] * Time	-.046993	1.395045	686.171	-.034	.973	-2.786063	2.692077
+[PASEtert2=3.00] * Time	0b	0	.	.	.	.	.
+[PASEtert2=1.00] * TimeSqr	-.203208	.367956	671.097	-.552	.581	-.925692	.519276
+[PASEtert2=2.00] * TimeSqr	-.037971	.369632	673.281	-.103	.918	-.763740	.687799
+[PASEtert2=3.00] * TimeSqr	0b	0	.	.	.	.	.
+a Dependent Variable: Executive function.							
+b This parameter is set to zero because it is redundant.							
+
+
+Covariance Parameters

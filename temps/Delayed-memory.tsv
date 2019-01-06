@@ -1,20 +1,16 @@
-Parameter	Estimate	Std. Error	df	t	Sig.	Lower Bound	Upper Bound
-Intercept	118.438020	6.158578	829.937	19.231	.000	106.349800	130.526241
-Age	-.253077	.087904	828.371	-2.879	.004	-.425618	-.080537
-Sex	-4.391439	.679148	756.068	-6.466	.000	-5.724678	-3.058200
-EDUpos	4.170056	.678193	754.938	6.149	.000	2.838687	5.501424
-Time	2.948741	.496048	1965.097	5.944	.000	1.975906	3.921576
-TimeSqr	-.407418	.110865	1873.901	-3.675	.000	-.624851	-.189986
-[PASEtert2=1.00]	-.984699	.912455	1148.309	-1.079	.281	-2.774965	.805566
-[PASEtert2=2.00]	-1.053669	.905733	1150.690	-1.163	.245	-2.830742	.723405
-[PASEtert2=3.00]	0b	0	.	.	.	.	.
-[PASEtert2=1.00] * Time	.492121	.705294	1963.076	.698	.485	-.891083	1.875325
-[PASEtert2=2.00] * Time	.927917	.695897	1949.311	1.333	.183	-.436864	2.292699
-[PASEtert2=3.00] * Time	0b	0	.	.	.	.	.
-[PASEtert2=1.00] * TimeSqr	-.169143	.160163	1873.701	-1.056	.291	-.483259	.144974
-[PASEtert2=2.00] * TimeSqr	-.273757	.157536	1865.930	-1.738	.082	-.582722	.035208
-[PASEtert2=3.00] * TimeSqr	0b	0	.	.	.	.	.
-a Dependent Variable: Delayed memory.
-b This parameter is set to zero because it is redundant.
+NonApoeParameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+NonApoeLower Bound	Upper Bound
+NonApoeIntercept	141.070080	16.094388	180.387	8.765	0.000	109.312599	172.827562
+NonApoeSex	-2.574437	1.693774	170.753	-1.520	0.130	-5.917870	0.768995
+NonApoeEDUpos	5.166702	1.682165	168.323	3.071	0.002	1.845842	8.487561
+NonApoeAge	-0.644994	0.228375	183.407	-2.824	0.005	-1.095575	-0.194413
+NonApoeTime	3.381445	0.576432	475.244	5.866	0.000	2.248774	4.514116
+NonApoeTimeSqr	-0.564287	0.127658	458.725	-4.420	0.000	-0.815153	-0.313421
+NonApoe[PASEtert2=1.00]	0.112164	2.153610	167.769	0.052	0.959	-4.139503	4.363832
+NonApoe[PASEtert2=2.00]	0.679621	2.084857	171.176	0.326	0.745	-3.435718	4.794960
+NonApoe[PASEtert2=3.00]	0c	0					
+NonApoea. APOE4Car = Carrier	
+NonApoeb. Dependent Variable: Delayed memory.	
+NonApoec. This parameter is set to zero because it is redundant.	
 
 Delayed memory
