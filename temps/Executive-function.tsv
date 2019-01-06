@@ -1,21 +1,21 @@
-Non-CarrierParameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
-Non-CarrierLower Bound	Upper Bound
-Non-CarrierIntercept	134.518673	13.551189	453.040	9.927	.000	107.887685	161.149661
-Non-CarrierAge	-.295408	.193289	452.988	-1.528	.127	-.675262	.084446
-Non-CarrierSex	-1.774313	1.491015	392.162	-1.190	.235	-4.705695	1.157069
-Non-CarrierEDUpos	-3.379249	1.395406	390.869	-2.422	.016	-6.122690	-.635808
-Non-CarrierBMI	.013629	.171171	395.260	.080	.937	-.322890	.350147
-Non-CarrierHypertension	-1.504782	1.561908	396.339	-.963	.336	-4.575443	1.565878
-Non-CarrierHypercholes	1.301202	2.135249	403.933	.609	.543	-2.896386	5.498790
-Non-CarrierDiabetes	-3.765511	3.063036	401.073	-1.229	.220	-9.787122	2.256101
-Non-CarrierSmokeDichot	.634623	1.413587	391.306	.449	.654	-2.144552	3.413798
-Non-CarrierAlcohol	.014792	.046068	401.688	.321	.748	-.075771	.105356
-Non-CarrierTime	.734387	.727281	420.895	1.010	.313	-.695169	2.163942
-Non-CarrierTimeSqr	-.092611	.192900	413.938	-.480	.631	-.471796	.286575
-Non-Carrier[MLPAPos4=.00]	4.584924	1.442548	387.729	3.178	.002	1.748729	7.421119
-Non-Carrier[MLPAPos4=1.00]	0c	0	.	.	.	.	.
-Non-Carriera APOE4Car = non-carrier	
-Non-Carrierb Dependent Variable: Executive function.	
-Non-Carrierc This parameter is set to zero because it is redundant.	
+non-carrierIntercept	134.565565	13.553762	452.907	9.928	.000	107.929500	161.201630
+non-carrierAge	-.294067	.193358	453.114	-1.521	.129	-.674056	.085923
+non-carrierSex	-1.779974	1.491432	392.172	-1.193	.233	-4.712176	1.152228
+non-carrierEDUpos	-3.370287	1.396609	391.769	-2.413	.016	-6.116073	-.624502
+non-carrierTime	.338525	.948257	422.652	.357	.721	-1.525363	2.202412
+non-carrierTimeSqr	.005976	.252386	413.789	.024	.981	-.490143	.502094
+non-carrier[MLPAPos4=.00]	4.293788	1.566091	537.996	2.742	.006	1.217385	7.370192
+non-carrier[MLPAPos4=1.00]	0b	0	.	.	.	.	.
+non-carrierBMI	.012338	.171233	395.347	.072	.943	-.324303	.348979
+non-carrierHypertension	-1.516223	1.562534	396.469	-.970	.332	-4.588111	1.555665
+non-carrierHypercholes	1.328644	2.136296	404.292	.622	.534	-2.870991	5.528279
+non-carrierDiabetes	-3.741370	3.064206	401.265	-1.221	.223	-9.765273	2.282532
+non-carrier[MLPAPos4=.00] * Time	.958412	1.476019	420.023	.649	.516	-1.942893	3.859717
+non-carrier[MLPAPos4=1.00] * Time	0b	0	.	.	.	.	.
+non-carrier[MLPAPos4=.00] * TimeSqr	-.237970	.391109	413.252	-.608	.543	-1.006782	.530842
+non-carrier[MLPAPos4=1.00] * TimeSqr	0b	0	.	.	.	.	.
+non-carrierAlcohol	.014527	.046083	401.816	.315	.753	-.076068	.105122
+non-carrierSmokeDichot	.640794	1.413961	391.282	.453	.651	-2.139117	3.420704
+non-carriera Dependent Variable: Executive function.		
 
 Executive function

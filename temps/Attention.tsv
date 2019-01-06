@@ -1,21 +1,21 @@
-Non-CarrierParameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
-Non-CarrierLower Bound	Upper Bound
-Non-CarrierIntercept	111.637415	10.676498	526.884	10.456	.000	90.663683	132.611146
-Non-CarrierAge	-.022907	.147420	534.097	-.155	.877	-.312501	.266687
-Non-CarrierSex	-.797925	1.282832	503.007	-.622	.534	-3.318294	1.722444
-Non-CarrierEDUpos	5.674546	1.224792	496.780	4.633	.000	3.268136	8.080956
-Non-CarrierBMI	-.368741	.147630	498.006	-2.498	.013	-.658795	-.078686
-Non-CarrierHypertension	-2.054148	1.345250	502.537	-1.527	.127	-4.697155	.588860
-Non-CarrierHypercholes	.118867	1.800892	500.614	.066	.947	-3.419371	3.657105
-Non-CarrierDiabetes	-2.120608	2.504699	519.581	-.847	.398	-7.041189	2.799973
-Non-CarrierSmokeDichot	.737691	1.227723	499.403	.601	.548	-1.674449	3.149831
-Non-CarrierAlcohol	.033404	.040372	502.036	.827	.408	-.045915	.112722
-Non-CarrierTime	1.751870	.426620	1177.456	4.106	.000	.914851	2.588890
-Non-CarrierTimeSqr	-.167721	.097417	1147.019	-1.722	.085	-.358856	.023414
-Non-Carrier[MLPAPos4=.00]	3.174453	1.268649	494.788	2.502	.013	.681850	5.667055
-Non-Carrier[MLPAPos4=1.00]	0c	0	.	.	.	.	.
-Non-Carriera APOE4Car = non-carrier	
-Non-Carrierb Dependent Variable: Attention.	
-Non-Carrierc This parameter is set to zero because it is redundant.	
+non-carrierIntercept	111.744814	10.682183	527.014	10.461	.000	90.759927	132.729701
+non-carrierAge	-.022746	.147474	533.887	-.154	.877	-.312446	.266954
+non-carrierSex	-.801853	1.283355	502.879	-.625	.532	-3.323250	1.719545
+non-carrierEDUpos	5.675892	1.225486	497.001	4.632	.000	3.268120	8.083664
+non-carrierTime	1.521215	.551327	1182.578	2.759	.006	.439527	2.602902
+non-carrierTimeSqr	-.116489	.125773	1149.112	-.926	.355	-.363259	.130281
+non-carrier[MLPAPos4=.00]	2.912469	1.358612	657.263	2.144	.032	.244727	5.580211
+non-carrier[MLPAPos4=1.00]	0b	0	.	.	.	.	.
+non-carrierBMI	-.369572	.147708	498.106	-2.502	.013	-.659780	-.079364
+non-carrierHypertension	-2.053441	1.345806	502.437	-1.526	.128	-4.697542	.590660
+non-carrierHypercholes	.123203	1.801605	500.468	.068	.946	-3.416439	3.662844
+non-carrierDiabetes	-2.114205	2.505656	519.410	-.844	.399	-7.036671	2.808261
+non-carrier[MLPAPos4=.00] * Time	.573443	.869825	1175.329	.659	.510	-1.133140	2.280027
+non-carrier[MLPAPos4=1.00] * Time	0b	0	.	.	.	.	.
+non-carrier[MLPAPos4=.00] * TimeSqr	-.127734	.198720	1145.899	-.643	.520	-.517629	.262161
+non-carrier[MLPAPos4=1.00] * TimeSqr	0b	0	.	.	.	.	.
+non-carrierAlcohol	.033348	.040389	501.929	.826	.409	-.046003	.112700
+non-carrierSmokeDichot	.740079	1.228219	499.278	.603	.547	-1.673037	3.153194
+non-carriera Dependent Variable: Attention.		
 
 Attention

@@ -1,21 +1,21 @@
-Non-CarrierParameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
-Non-CarrierLower Bound	Upper Bound
-Non-CarrierIntercept	100.689207	8.969025	493.039	11.226	.000	83.066982	118.311431
-Non-CarrierAge	.046433	.124135	503.453	.374	.709	-.197454	.290320
-Non-CarrierSex	-7.698520	1.067672	448.960	-7.211	.000	-9.796774	-5.600265
-Non-CarrierEDUpos	5.699582	1.017092	440.276	5.604	.000	3.700623	7.698540
-Non-CarrierBMI	-.086658	.122667	443.185	-.706	.480	-.327739	.154424
-Non-CarrierHypertension	.890559	1.119633	449.760	.795	.427	-1.309802	3.090919
-Non-CarrierHypercholes	-.607428	1.498040	448.215	-.405	.685	-3.551482	2.336625
-Non-CarrierDiabetes	2.125371	2.096960	473.679	1.014	.311	-1.995124	6.245866
-Non-CarrierSmokeDichot	.563857	1.020441	443.533	.553	.581	-1.441642	2.569356
-Non-CarrierAlcohol	.054423	.033592	448.476	1.620	.106	-.011595	.120441
-Non-CarrierTime	3.821573	.468161	1185.418	8.163	.000	2.903057	4.740089
-Non-CarrierTimeSqr	-.529223	.107392	1141.346	-4.928	.000	-.739932	-.318515
-Non-Carrier[MLPAPos4=.00]	2.320381	1.052635	436.655	2.204	.028	.251519	4.389242
-Non-Carrier[MLPAPos4=1.00]	0c	0	.	.	.	.	.
-Non-Carriera APOE4Car = non-carrier	
-Non-Carrierb Dependent Variable: Immediate memory.	
-Non-Carrierc This parameter is set to zero because it is redundant.	
+non-carrierIntercept	100.192212	8.940021	493.093	11.207	.000	82.626978	117.757446
+non-carrierAge	.045954	.123700	502.968	.371	.710	-.197079	.288987
+non-carrierSex	-7.683206	1.063925	448.460	-7.222	.000	-9.774103	-5.592309
+non-carrierEDUpos	5.708159	1.013818	440.399	5.630	.000	3.715636	7.700682
+non-carrierTime	4.987793	.602891	1193.930	8.273	.000	3.804948	6.170637
+non-carrierTimeSqr	-.808273	.138237	1144.534	-5.847	.000	-1.079500	-.537046
+non-carrier[MLPAPos4=.00]	3.536992	1.184397	742.939	2.986	.003	1.211828	5.862157
+non-carrier[MLPAPos4=1.00]	0b	0	.	.	.	.	.
+non-carrierBMI	-.084077	.122261	443.017	-.688	.492	-.324360	.156207
+non-carrierHypertension	.878951	1.115728	449.352	.788	.431	-1.313741	3.071644
+non-carrierHypercholes	-.632886	1.492756	447.715	-.424	.672	-3.566564	2.300791
+non-carrierDiabetes	2.096941	2.089594	473.170	1.004	.316	-2.009091	6.202973
+non-carrier[MLPAPos4=.00] * Time	-2.915379	.952288	1181.811	-3.061	.002	-4.783743	-1.047016
+non-carrier[MLPAPos4=1.00] * Time	0b	0	.	.	.	.	.
+non-carrier[MLPAPos4=.00] * TimeSqr	.697268	.218524	1139.429	3.191	.001	.268512	1.126023
+non-carrier[MLPAPos4=1.00] * TimeSqr	0b	0	.	.	.	.	.
+non-carrierAlcohol	.054936	.033475	448.050	1.641	.101	-.010852	.120723
+non-carrierSmokeDichot	.556923	1.016851	443.049	.548	.584	-1.441528	2.555375
+non-carriera Dependent Variable: Immediate memory.		
 
 Immediate memory

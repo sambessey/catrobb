@@ -1,0 +1,35 @@
+MLPAxAPOE Model3		
+Attention		Sig
+[MLPAPos4=.00] * APOE4Car	-1.64 [-6.64, 3.36]	0.52
+Time	1.84 [1.12, 2.56]***	0.00
+TimeSqr	-0.18 [-0.34, -0.01]*	0.04
+MLPAxAPOE Model3		
+Delayed memory		Sig
+[MLPAPos4=.00] * APOE4Car	-0.17 [-3.74, 3.41]	0.93
+Time	3.26 [2.63, 3.89]***	0.00
+TimeSqr	-0.52 [-0.66, -0.38]***	0.00
+MLPAxAPOE Model3		
+Executive function		Sig
+[MLPAPos4=.00] * APOE4Car	-4.49 [-10.28, 1.29]	0.13
+Time	0.26 [-0.96, 1.48]	0.67
+TimeSqr	0.07 [-0.25, 0.39]	0.69
+MLPAxAPOE Model3		
+Global Cog		Sig
+[MLPAPos4=.00] * APOE4Car	-0.93 [-5.03, 3.18]	0.66
+Time	2.26 [1.65, 2.87]***	0.00
+TimeSqr	-0.34 [-0.48, -0.20]***	0.00
+MLPAxAPOE Model3		
+Immediate memory		Sig
+[MLPAPos4=.00] * APOE4Car	-0.68 [-4.82, 3.46]	0.75
+Time	3.86 [3.07, 4.65]***	0.00
+TimeSqr	-0.56 [-0.74, -0.38]***	0.00
+MLPAxAPOE Model3		
+Language		Sig
+[MLPAPos4=.00] * APOE4Car	-0.45 [-4.16, 3.27]	0.81
+Time	0.44 [-0.37, 1.26]	0.29
+TimeSqr	-0.04 [-0.22, 0.15]	0.71
+MLPAxAPOE Model3		
+Visuospatial		Sig
+[MLPAPos4=.00] * APOE4Car	0.75 [-3.67, 5.17]	0.74
+Time	-0.18 [-1.15, 0.78]	0.71
+TimeSqr	-0.14 [-0.36, 0.08]	0.21

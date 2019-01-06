@@ -1,0 +1,29 @@
+#############################################
+######### MLPA APoE Strat ME #########
+#############################################
+
+####INSERT THE ORDER OF THE NAME OF THIS MODEL####
+modelName => "MLPAxtime APOE stratified_Model1",
+numberOfFiles => 2,
+
+####INSERT THE ORDER OF THE ROWS TO OUTPUT HERE####
+finalOutputOrderRows => "[MLPAPos4=.00] * Time,[MLPAPos4=.00] * TimeSqr",
+
+####ENTER PREFIXES TO OUTPUT HERE####
+prefix1 => "Carrier",
+
+prefix2 => "non-carrier",
+
+####INSERT THE SEARCH TERMS & NAME FOR FILE 1 HERE####
+searchTerms1 => "[MLPAPos4=.00] * Time,[MLPAPos4=.00] * TimeSqr",
+file1 => "MLPAxtime APOE stratified_Model1.txt",
+thistable1 => "Carrier",
+
+####INSERT THE SEARCH TERMS & NAME FOR FILE 2 HERE####
+searchTerms2 => "[MLPAPos4=.00] * Time,[MLPAPos4=.00] * TimeSqr",
+file2 => "MLPAxtime APOE stratified_Model1.txt",
+thistable2 => "non-carrier",
+
+####INSERT THE ORDER OF COLUMNS HERE####
+finalOutputOrder => "Global Cog,Immediate memory,Delayed memory,Visuospatial,Language,Attention,Executive function",
+

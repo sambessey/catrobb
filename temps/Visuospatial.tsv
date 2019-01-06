@@ -1,21 +1,21 @@
-Non-CarrierParameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
-Non-CarrierLower Bound	Upper Bound
-Non-CarrierIntercept	115.478608	9.325273	516.388	12.383	.000	97.158470	133.798745
-Non-CarrierAge	-.219434	.129292	529.024	-1.697	.090	-.473422	.034554
-Non-CarrierSex	1.693562	1.100164	450.345	1.539	.124	-.468530	3.855654
-Non-CarrierEDUpos	4.924644	1.046249	440.097	4.707	.000	2.868379	6.980908
-Non-CarrierBMI	-.350310	.126273	445.097	-2.774	.006	-.598474	-.102146
-Non-CarrierHypertension	-.391299	1.154039	452.978	-.339	.735	-2.659234	1.876636
-Non-CarrierHypercholes	.856574	1.543771	452.460	.555	.579	-2.177278	3.890425
-Non-CarrierDiabetes	-1.840184	2.171098	481.318	-.848	.397	-6.106184	2.425816
-Non-CarrierSmokeDichot	1.107689	1.050339	443.530	1.055	.292	-.956571	3.171949
-Non-CarrierAlcohol	.053154	.034615	451.031	1.536	.125	-.014873	.121180
-Non-CarrierTime	-.149598	.564748	1232.365	-.265	.791	-1.257571	.958376
-Non-CarrierTimeSqr	-.169241	.129952	1186.469	-1.302	.193	-.424202	.085721
-Non-Carrier[MLPAPos4=.00]	2.528954	1.081940	434.930	2.337	.020	.402472	4.655435
-Non-Carrier[MLPAPos4=1.00]	0c	0	.	.	.	.	.
-Non-Carriera APOE4Car = non-carrier	
-Non-Carrierb Dependent Variable: Visuospatial.	
-Non-Carrierc This parameter is set to zero because it is redundant.	
+non-carrierIntercept	115.325335	9.326397	517.111	12.365	.000	97.003049	133.647621
+non-carrierAge	-.219946	.129259	529.001	-1.702	.089	-.473870	.033978
+non-carrierSex	1.700456	1.099898	450.286	1.546	.123	-.461115	3.862026
+non-carrierEDUpos	4.907589	1.046450	440.956	4.690	.000	2.850940	6.964239
+non-carrierTime	.043213	.728930	1242.958	.059	.953	-1.386857	1.473283
+non-carrierTimeSqr	-.192816	.167724	1190.553	-1.150	.251	-.521882	.136251
+non-carrier[MLPAPos4=.00]	2.930195	1.279638	891.867	2.290	.022	.418743	5.441648
+non-carrier[MLPAPos4=1.00]	0b	0	.	.	.	.	.
+non-carrierBMI	-.348330	.126276	445.446	-2.758	.006	-.596500	-.100159
+non-carrierHypertension	-.384040	1.153811	453.083	-.333	.739	-2.651525	1.883446
+non-carrierHypercholes	.858991	1.543373	452.424	.557	.578	-2.174079	3.892062
+non-carrierDiabetes	-1.850064	2.170546	481.258	-.852	.394	-6.114983	2.414854
+non-carrier[MLPAPos4=.00] * Time	-.478015	1.152419	1228.393	-.415	.678	-2.738943	1.782913
+non-carrier[MLPAPos4=1.00] * Time	0b	0	.	.	.	.	.
+non-carrier[MLPAPos4=.00] * TimeSqr	.059559	.265237	1184.632	.225	.822	-.460827	.579945
+non-carrier[MLPAPos4=1.00] * TimeSqr	0b	0	.	.	.	.	.
+non-carrierAlcohol	.052975	.034608	451.112	1.531	.127	-.015037	.120987
+non-carrierSmokeDichot	1.101122	1.050085	443.513	1.049	.295	-.962638	3.164882
+non-carriera Dependent Variable: Visuospatial.		
 
 Visuospatial

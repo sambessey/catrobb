@@ -44,9 +44,9 @@ my $finalOut = "final/".$modelId."-model.csv";
 #################################### MAKE EDITS ABOVE HERE #####################
 #############
 #############
-print "How many input files will there be?: ";
-$expectInputs = <>;
-chomp ($expectInputs);
+#print "How many input files will there be?: ";
+$expectInputs = $config{numberOfFiles};
+#chomp ($expectInputs);
 while ($bothDone < $expectInputs)
 {
 #  print "Please enter your INPUT file (It should be in the input directory): ";
@@ -88,7 +88,7 @@ while ($bothDone < $expectInputs)
   {
       if ($_=~m/95\%\ Confidence\ Interval[\t\n]/)
       {
-        print "Found a match\n";
+        #print "Found a match\n";
         $flag=1;
       }
       if ($flag == 1 && $_=~m/^\t*\n/)
@@ -113,7 +113,7 @@ while ($bothDone < $expectInputs)
       #  print "FLAG IS1-Here:".$_;
         if (@listOfTables[$bothDone] ne "" && $_!~m/95\%\ Confidence\ Interval[\t\n]/)
         {
-          print "\n\n\n\nMATCH FOUND!!!!!".@listOfTables[$bothDone]."?\n\n\n\n\n\n\n";
+          #print "\n\n\n\nMATCH FOUND!!!!!".@listOfTables[$bothDone]."?\n\n\n\n\n\n\n";
           my $tableID = @listOfTables[$bothDone];
           if ($_=~m/\Q$tableID/)
           {

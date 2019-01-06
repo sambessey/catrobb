@@ -1,0 +1,28 @@
+MLPAxtime APOE stratified_Model3		
+Attention		Sig
+[MLPAPos4=.00] * Time	1.56 [-1.60, 4.72]	0.33
+[MLPAPos4=.00] * TimeSqr	-0.23 [-0.98, 0.52]	0.55
+MLPAxtime APOE stratified_Model3		
+Delayed memory		Sig
+[MLPAPos4=.00] * Time	-0.21 [-3.02, 2.59]	0.88
+[MLPAPos4=.00] * TimeSqr	-0.01 [-0.68, 0.65]	0.97
+MLPAxtime APOE stratified_Model3		
+Executive function		Sig
+[MLPAPos4=.00] * Time	-2.29 [-7.07, 2.50]	0.35
+[MLPAPos4=.00] * TimeSqr	0.72 [-0.53, 1.97]	0.26
+MLPAxtime APOE stratified_Model3		
+Global Cog		Sig
+[MLPAPos4=.00] * Time	-0.75 [-3.38, 1.88]	0.58
+[MLPAPos4=.00] * TimeSqr	0.29 [-0.33, 0.91]	0.36
+MLPAxtime APOE stratified_Model3		
+Immediate memory		Sig
+[MLPAPos4=.00] * Time	-3.68 [-7.11, -0.24]*	0.04
+[MLPAPos4=.00] * TimeSqr	1.07 [0.25, 1.88]*	0.01
+MLPAxtime APOE stratified_Model3		
+Language		Sig
+[MLPAPos4=.00] * Time	-0.65 [-4.10, 2.80]	0.71
+[MLPAPos4=.00] * TimeSqr	0.22 [-0.60, 1.04]	0.60
+MLPAxtime APOE stratified_Model3		
+Visuospatial		Sig
+[MLPAPos4=.00] * Time	-0.28 [-4.59, 4.04]	0.90
+[MLPAPos4=.00] * TimeSqr	-0.06 [-1.09, 0.97]	0.91

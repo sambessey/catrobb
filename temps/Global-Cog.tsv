@@ -1,21 +1,23 @@
-Non-CarrierParameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
-Non-CarrierLower Bound	Upper Bound
-Non-CarrierIntercept	113.550576	8.690199	509.167	13.067	.000	96.477516	130.623636
-Non-CarrierAge	-.107127	.120030	516.764	-.892	.373	-.342934	.128681
-Non-CarrierSex	-5.731105	1.043035	483.249	-5.495	.000	-7.780550	-3.681660
-Non-CarrierEDUpos	6.411432	.995556	476.723	6.440	.000	4.455212	8.367652
-Non-CarrierBMI	-.293245	.120006	478.106	-2.444	.015	-.529050	-.057440
-Non-CarrierHypertension	.205927	1.093765	482.884	.188	.851	-1.943200	2.355054
-Non-CarrierHypercholes	.607022	1.464101	480.967	.415	.679	-2.269802	3.483846
-Non-CarrierDiabetes	-1.633811	2.038032	500.766	-.802	.423	-5.637957	2.370335
-Non-CarrierSmokeDichot	1.180752	.998060	479.435	1.183	.237	-.780361	3.141865
-Non-CarrierAlcohol	.063518	.032824	482.298	1.935	.054	-.000978	.128013
-Non-CarrierTime	2.329019	.362305	1166.444	6.428	.000	1.618177	3.039861
-Non-CarrierTimeSqr	-.354007	.082782	1133.350	-4.276	.000	-.516431	-.191583
-Non-Carrier[MLPAPos4=.00]	3.536014	1.031106	474.558	3.429	.001	1.509916	5.562112
-Non-Carrier[MLPAPos4=1.00]	0c	0	.	.	.	.	.
-Non-Carriera APOE4Car = non-carrier	
-Non-Carrierb Dependent Variable: Global Cog.	
-Non-Carrierc This parameter is set to zero because it is redundant.	
+non-carrierAPOE4Car	Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+non-carrierLower Bound	Upper Bound
+non-carrierIntercept	113.432190	8.686274	509.266	13.059	.000	96.366849	130.497531
+non-carrierAge	-.107126	.119955	516.511	-.893	.372	-.342786	.128535
+non-carrierSex	-5.728116	1.042397	483.019	-5.495	.000	-7.776309	-3.679923
+non-carrierEDUpos	6.418958	.995116	476.863	6.450	.000	4.463603	8.374312
+non-carrierTime	2.661467	.468103	1172.184	5.686	.000	1.743054	3.579879
+non-carrierTimeSqr	-.440730	.106862	1135.671	-4.124	.000	-.650398	-.231062
+non-carrier[MLPAPos4=.00]	3.815980	1.110392	652.004	3.437	.001	1.635604	5.996356
+non-carrier[MLPAPos4=1.00]	0b	0	.	.	.	.	.
+non-carrierBMI	-.292958	.119948	478.112	-2.442	.015	-.528649	-.057267
+non-carrierHypertension	.199987	1.093103	482.689	.183	.855	-1.947842	2.347816
+non-carrierHypercholes	.597651	1.463184	480.721	.408	.683	-2.277376	3.472677
+non-carrierDiabetes	-1.639635	2.036763	500.519	-.805	.421	-5.641293	2.362024
+non-carrier[MLPAPos4=.00] * Time	-.831993	.738635	1164.154	-1.126	.260	-2.281198	.617212
+non-carrier[MLPAPos4=1.00] * Time	0b	0	.	.	.	.	.
+non-carrier[MLPAPos4=.00] * TimeSqr	.216378	.168852	1132.140	1.281	.200	-.114920	.547675
+non-carrier[MLPAPos4=1.00] * TimeSqr	0b	0	.	.	.	.	.
+non-carrierAlcohol	.063735	.032804	482.094	1.943	.053	-.000721	.128192
+non-carrierSmokeDichot	1.180419	.997443	479.204	1.183	.237	-.779483	3.140321
+non-carriera Dependent Variable: Global Cog.		
 
 Global Cog

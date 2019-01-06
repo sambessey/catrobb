@@ -1,0 +1,35 @@
+MLPA_APOEStrat_ME_Model1		
+Attention		Sig
+[MLPAPos4=.00]	1.33 [-2.94, 5.60]	0.54
+Time	2.33 [0.98, 3.69]**	0.00
+TimeSqr	-0.25 [-0.55, 0.05]	0.10
+MLPA_APOEStrat_ME_Model1		
+Delayed memory		Sig
+[MLPAPos4=.00]	2.11 [-1.48, 5.70]	0.25
+Time	3.38 [2.20, 4.55]***	0.00
+TimeSqr	-0.56 [-0.82, -0.30]***	0.00
+MLPA_APOEStrat_ME_Model1		
+Executive function		Sig
+[MLPAPos4=.00]	0.39 [-4.36, 5.14]	0.87
+Time	-0.56 [-2.72, 1.59]	0.61
+TimeSqr	0.34 [-0.21, 0.90]	0.23
+MLPA_APOEStrat_ME_Model1		
+Global Cog		Sig
+[MLPAPos4=.00]	2.23 [-1.36, 5.82]	0.22
+Time	2.24 [1.11, 3.37]***	0.00
+TimeSqr	-0.34 [-0.59, -0.09]**	0.01
+MLPA_APOEStrat_ME_Model1		
+Immediate memory		Sig
+[MLPAPos4=.00]	1.35 [-2.12, 4.82]	0.44
+Time	4.17 [2.67, 5.67]***	0.00
+TimeSqr	-0.70 [-1.03, -0.36]***	0.00
+MLPA_APOEStrat_ME_Model1		
+Language		Sig
+[MLPAPos4=.00]	0.77 [-2.52, 4.05]	0.65
+Time	-0.12 [-1.57, 1.32]	0.87
+TimeSqr	0.08 [-0.24, 0.40]	0.62
+MLPA_APOEStrat_ME_Model1		
+Visuospatial		Sig
+[MLPAPos4=.00]	2.94 [-1.02, 6.90]	0.14
+Time	0.30 [-1.54, 2.14]	0.75
+TimeSqr	-0.21 [-0.62, 0.21]	0.33

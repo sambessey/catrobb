@@ -1,21 +1,21 @@
-Non-CarrierParameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
-Non-CarrierLower Bound	Upper Bound
-Non-CarrierIntercept	107.290530	7.947544	517.673	13.500	.000	91.677126	122.903934
-Non-CarrierAge	-.044365	.110214	530.523	-.403	.687	-.260874	.172144
-Non-CarrierSex	-6.401577	.936423	448.601	-6.836	.000	-8.241897	-4.561257
-Non-CarrierEDUpos	2.954144	.890338	438.227	3.318	.001	1.204280	4.704007
-Non-CarrierBMI	-.041092	.107467	443.532	-.382	.702	-.252300	.170117
-Non-CarrierHypertension	.204842	.982336	451.515	.209	.835	-1.725677	2.135361
-Non-CarrierHypercholes	1.798659	1.314071	451.182	1.369	.172	-.783800	4.381118
-Non-CarrierDiabetes	-4.146600	1.849118	480.227	-2.242	.025	-7.779961	-.513240
-Non-CarrierSmokeDichot	.979712	.893885	441.646	1.096	.274	-.777084	2.736508
-Non-CarrierAlcohol	.031413	.029463	449.499	1.066	.287	-.026490	.089317
-Non-CarrierTime	.614835	.489516	1236.482	1.256	.209	-.345539	1.575208
-Non-CarrierTimeSqr	-.062545	.112682	1190.713	-.555	.579	-.283621	.158532
-Non-Carrier[MLPAPos4=.00]	1.947915	.920606	432.870	2.116	.035	.138500	3.757329
-Non-Carrier[MLPAPos4=1.00]	0c	0	.	.	.	.	.
-Non-Carriera APOE4Car = non-carrier	
-Non-Carrierb Dependent Variable: Language.	
-Non-Carrierc This parameter is set to zero because it is redundant.	
+non-carrierIntercept	107.451135	7.953919	518.058	13.509	.000	91.825235	123.077035
+non-carrierAge	-.043965	.110259	530.121	-.399	.690	-.260562	.172632
+non-carrierSex	-6.408793	.936893	448.377	-6.840	.000	-8.250041	-4.567546
+non-carrierEDUpos	2.963779	.891201	438.969	3.326	.001	1.212229	4.715329
+non-carrierTime	.345707	.631582	1246.795	.547	.584	-.893373	1.584787
+non-carrierTimeSqr	-.012746	.145381	1194.337	-.088	.930	-.297977	.272485
+non-carrier[MLPAPos4=.00]	1.533239	1.096201	909.075	1.399	.162	-.618141	3.684618
+non-carrier[MLPAPos4=1.00]	0b	0	.	.	.	.	.
+non-carrierBMI	-.042658	.107552	443.714	-.397	.692	-.254032	.168715
+non-carrierHypertension	.201554	.982873	451.448	.205	.838	-1.730020	2.133128
+non-carrierHypercholes	1.799830	1.314706	450.956	1.369	.172	-.783882	4.383541
+non-carrierDiabetes	-4.137365	1.849956	479.954	-2.236	.026	-7.772379	-.502350
+non-carrier[MLPAPos4=.00] * Time	.669282	.998624	1231.948	.670	.503	-1.289910	2.628473
+non-carrier[MLPAPos4=1.00] * Time	0b	0	.	.	.	.	.
+non-carrier[MLPAPos4=.00] * TimeSqr	-.124712	.229915	1188.332	-.542	.588	-.575796	.326372
+non-carrier[MLPAPos4=1.00] * TimeSqr	0b	0	.	.	.	.	.
+non-carrierAlcohol	.031469	.029479	449.411	1.068	.286	-.026465	.089404
+non-carrierSmokeDichot	.985379	.894341	441.478	1.102	.271	-.772316	2.743075
+non-carriera Dependent Variable: Language.		
 
 Language

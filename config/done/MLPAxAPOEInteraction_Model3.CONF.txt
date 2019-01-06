@@ -1,0 +1,27 @@
+#############################################
+######### MLPA APoE Strat ME #########
+#############################################
+
+####INSERT THE ORDER OF THE NAME OF THIS MODEL####
+modelName => "MLPAxAPOE Model3",
+
+####INSERT THE ORDER OF THE ROWS TO OUTPUT HERE####
+finalOutputOrderRows => "[MLPAPos4=.00] * APOE4Car,Time,TimeSqr",
+
+####ENTER PREFIXES TO OUTPUT HERE####
+prefix1 => "MLPAxAPOE Model3",
+
+prefix2 => "NUL",
+
+####INSERT THE SEARCH TERMS & NAME FOR FILE 1 HERE####
+searchTerms1 => "[MLPAPos4=.00] * APOE4Car,Time,TimeSqr",
+file1 => "MLPAxAPOEInteraction_Model 3.txt",
+thistable1 => "",
+
+####INSERT THE SEARCH TERMS & NAME FOR FILE 2 HERE####
+searchTerms2 => "[MLPAPos4=.00] * APOE4Car,Time,TimeSqr",
+file2 => "MLPA_timeXinteractions_Model3.txt",
+thistable2 => "",
+
+####INSERT THE ORDER OF COLUMNS HERE####
+finalOutputOrder => "Global Cog,Immediate memory,Delayed memory,Visuospatial,Language,Attention,Executive function",

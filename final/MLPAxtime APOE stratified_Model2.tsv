@@ -1,0 +1,6 @@
+Carrier	Global Cog	Immediate memory	Delayed memory	Visuospatial	Language	Attention	Executive function	
+[MLPAPos4=.00] * Time	-1.06 [-3.53, 1.42]	-4.23 [-7.45, -1.00]*	-0.84 [-3.46, 1.79]	-0.42 [-4.51, 3.67]	-0.86 [-4.06, 2.34]	1.65 [-1.29, 4.58]	-1.71 [-6.25, 2.84]	
+[MLPAPos4=.00] * TimeSqr	0.36 [-0.22, 0.94]	1.13 [0.37, 1.89]**	0.14 [-0.48, 0.75]	0.06 [-0.91, 1.03]	0.22 [-0.54, 0.97]	-0.25 [-0.93, 0.44]	0.46 [-0.73, 1.65]	
+non-carrier	Global Cog	Immediate memory	Delayed memory	Visuospatial	Language	Attention	Executive function	
+[MLPAPos4=.00] * Time	-0.93 [-2.33, 0.46]	-2.58 [-4.36, -0.79]**	-1.28 [-2.67, 0.12]x	-0.57 [-2.69, 1.56]	0.43 [-1.43, 2.29]	0.45 [-1.19, 2.09]	1.10 [-1.67, 3.86]	
+[MLPAPos4=.00] * TimeSqr	0.24 [-0.08, 0.56]	0.64 [0.23, 1.06]**	0.29 [-0.04, 0.61]	0.06 [-0.43, 0.55]	-0.08 [-0.51, 0.35]	-0.09 [-0.47, 0.28]	-0.39 [-1.12, 0.35]	
