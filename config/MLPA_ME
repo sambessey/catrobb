@@ -1,0 +1,11 @@
+####INSERT THE ORDER OF THE ROWS TO OUTPUT HERE####
+finalOutputOrderRows => "[MLPAPos4=.00],Time,TimeSqr,[MLPAPos4=.00] * Time,[MLPAPos4=.00] * TimeSqr",
+
+####INSERT THE SEARCH TERMS FOR FILE 1 HERE####
+searchTerms1 => "[MLPAPos4=.00],Time,TimeSqr",
+
+####INSERT THE SEARCH TERMS FOR FILE 2 HERE####
+searchTerms2 => "[MLPAPos4=.00] * Time,[MLPAPos4=.00] * TimeSqr",
+
+####INSERT THE ORDER OF COLUMNS HERE####
+finalOutputOrder => "Global Cog,Immediate memory,Delayed memory,Visuospatial,Language,Attention,Executive function",

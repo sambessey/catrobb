@@ -1,0 +1,20 @@
+#############################################
+######### MLPA APoE Strat ME #########
+#############################################
+
+####INSERT THE ORDER OF THE ROWS TO OUTPUT HERE####
+finalOutputOrderRows => "[MLPAPos4=.00],Time,TimeSqr",
+
+####ENTER PREFIXES TO OUTPUT HERE####
+prefix1 => "Carrier",
+
+prefix2 => "Non-Carrier",
+
+####INSERT THE SEARCH TERMS FOR FILE 1 HERE####
+searchTerms1 => "[MLPAPos4=.00],Time,TimeSqr",
+
+####INSERT THE SEARCH TERMS FOR FILE 2 HERE####
+searchTerms2 => "[MLPAPos4=.00],Time,TimeSqr",
+
+####INSERT THE ORDER OF COLUMNS HERE####
+finalOutputOrder => "Global Cog,Immediate memory,Delayed memory,Visuospatial,Language,Attention,Executive function",

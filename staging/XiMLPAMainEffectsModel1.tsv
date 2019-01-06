@@ -1,0 +1,28 @@
+MLPAMainEffectsModel1		
+Attention		Sig
+[MLPAPos4=.00] * Time	0.81 [-0.58, 2.21]	0.25
+[MLPAPos4=.00] * TimeSqr	-0.13 [-0.45, 0.19]	0.44
+MLPAMainEffectsModel1		
+Delayed memory		Sig
+[MLPAPos4=.00] * Time	-1.29 [-2.49, -0.10]*	0.03
+[MLPAPos4=.00] * TimeSqr	0.28 [0.01, 0.56]*	0.04
+MLPAMainEffectsModel1		
+Executive function		Sig
+[MLPAPos4=.00] * Time	0.27 [-2.04, 2.57]	0.82
+[MLPAPos4=.00] * TimeSqr	-0.13 [-0.74, 0.48]	0.67
+MLPAMainEffectsModel1		
+Global Cog		Sig
+[MLPAPos4=.00] * Time	-0.90 [-2.08, 0.27]	0.13
+[MLPAPos4=.00] * TimeSqr	0.25 [-0.02, 0.52]x	0.07
+MLPAMainEffectsModel1		
+Immediate memory		Sig
+[MLPAPos4=.00] * Time	-2.92 [-4.44, -1.40]***	0.00
+[MLPAPos4=.00] * TimeSqr	0.74 [0.39, 1.09]***	0.00
+MLPAMainEffectsModel1		
+Language		Sig
+[MLPAPos4=.00] * Time	0.24 [-1.31, 1.80]	0.76
+[MLPAPos4=.00] * TimeSqr	-0.02 [-0.38, 0.34]	0.92
+MLPAMainEffectsModel1		
+Visuospatial		Sig
+[MLPAPos4=.00] * Time	-0.53 [-2.36, 1.29]	0.57
+[MLPAPos4=.00] * TimeSqr	0.05 [-0.38, 0.47]	0.83

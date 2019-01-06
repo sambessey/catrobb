@@ -1,16 +1,21 @@
-NonApoeParameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
-NonApoeLower Bound	Upper Bound
-NonApoeIntercept	135.403176	15.653815	188.125	8.650	0.000	104.523612	166.282741
-NonApoeSex	-7.072362	1.628756	168.739	-4.342	0.000	-10.287727	-3.856998
-NonApoeEDUpos	6.383670	1.613521	165.446	3.956	0.000	3.197925	9.569416
-NonApoeAge	-0.504840	0.222806	193.280	-2.266	0.025	-0.944283	-0.065398
-NonApoeTime	4.134850	0.745403	505.050	5.547	0.000	2.670378	5.599322
-NonApoeTimeSqr	-0.711166	0.166057	481.544	-4.283	0.000	-1.037452	-0.384879
-NonApoe[PASEtert2=1.00]	1.862595	2.064102	164.122	0.902	0.368	-2.213023	5.938214
-NonApoe[PASEtert2=2.00]	1.259281	2.005443	168.925	0.628	0.531	-2.699677	5.218239
-NonApoe[PASEtert2=3.00]	0c	0					
-NonApoea. APOE4Car = Carrier	
-NonApoeb. Dependent Variable: Immediate memory.	
-NonApoec. This parameter is set to zero because it is redundant.	
+Non-CarrierParameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+Non-CarrierLower Bound	Upper Bound
+Non-CarrierIntercept	100.689207	8.969025	493.039	11.226	.000	83.066982	118.311431
+Non-CarrierAge	.046433	.124135	503.453	.374	.709	-.197454	.290320
+Non-CarrierSex	-7.698520	1.067672	448.960	-7.211	.000	-9.796774	-5.600265
+Non-CarrierEDUpos	5.699582	1.017092	440.276	5.604	.000	3.700623	7.698540
+Non-CarrierBMI	-.086658	.122667	443.185	-.706	.480	-.327739	.154424
+Non-CarrierHypertension	.890559	1.119633	449.760	.795	.427	-1.309802	3.090919
+Non-CarrierHypercholes	-.607428	1.498040	448.215	-.405	.685	-3.551482	2.336625
+Non-CarrierDiabetes	2.125371	2.096960	473.679	1.014	.311	-1.995124	6.245866
+Non-CarrierSmokeDichot	.563857	1.020441	443.533	.553	.581	-1.441642	2.569356
+Non-CarrierAlcohol	.054423	.033592	448.476	1.620	.106	-.011595	.120441
+Non-CarrierTime	3.821573	.468161	1185.418	8.163	.000	2.903057	4.740089
+Non-CarrierTimeSqr	-.529223	.107392	1141.346	-4.928	.000	-.739932	-.318515
+Non-Carrier[MLPAPos4=.00]	2.320381	1.052635	436.655	2.204	.028	.251519	4.389242
+Non-Carrier[MLPAPos4=1.00]	0c	0	.	.	.	.	.
+Non-Carriera APOE4Car = non-carrier	
+Non-Carrierb Dependent Variable: Immediate memory.	
+Non-Carrierc This parameter is set to zero because it is redundant.	
 
 Immediate memory

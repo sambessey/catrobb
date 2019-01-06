@@ -1,16 +1,21 @@
-NonApoeParameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
-NonApoeLower Bound	Upper Bound
-NonApoeIntercept	138.959327	23.453935	168.010	5.925	0.000	92.656936	185.261719
-NonApoeSex	2.375854	2.215128	150.853	1.073	0.285	-2.000828	6.752536
-NonApoeEDUpos	2.134969	2.169554	151.326	0.984	0.327	-2.151558	6.421497
-NonApoeAge	-0.428280	0.342287	169.516	-1.251	0.213	-1.103974	0.247414
-NonApoeTime	-0.600561	1.062150	182.565	-0.565	0.572	-2.696227	1.495106
-NonApoeTimeSqr	0.350690	0.273521	179.355	1.282	0.201	-0.189043	0.890423
-NonApoe[PASEtert2=1.00]	0.084782	2.803406	147.330	0.030	0.976	-5.455300	5.624865
-NonApoe[PASEtert2=2.00]	3.074126	2.777864	149.508	1.107	0.270	-2.414817	8.563069
-NonApoe[PASEtert2=3.00]	0c	0					
-NonApoea. APOE4Car = Carrier	
-NonApoeb. Dependent Variable: Executive function.	
-NonApoec. This parameter is set to zero because it is redundant.	
+Non-CarrierParameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+Non-CarrierLower Bound	Upper Bound
+Non-CarrierIntercept	134.518673	13.551189	453.040	9.927	.000	107.887685	161.149661
+Non-CarrierAge	-.295408	.193289	452.988	-1.528	.127	-.675262	.084446
+Non-CarrierSex	-1.774313	1.491015	392.162	-1.190	.235	-4.705695	1.157069
+Non-CarrierEDUpos	-3.379249	1.395406	390.869	-2.422	.016	-6.122690	-.635808
+Non-CarrierBMI	.013629	.171171	395.260	.080	.937	-.322890	.350147
+Non-CarrierHypertension	-1.504782	1.561908	396.339	-.963	.336	-4.575443	1.565878
+Non-CarrierHypercholes	1.301202	2.135249	403.933	.609	.543	-2.896386	5.498790
+Non-CarrierDiabetes	-3.765511	3.063036	401.073	-1.229	.220	-9.787122	2.256101
+Non-CarrierSmokeDichot	.634623	1.413587	391.306	.449	.654	-2.144552	3.413798
+Non-CarrierAlcohol	.014792	.046068	401.688	.321	.748	-.075771	.105356
+Non-CarrierTime	.734387	.727281	420.895	1.010	.313	-.695169	2.163942
+Non-CarrierTimeSqr	-.092611	.192900	413.938	-.480	.631	-.471796	.286575
+Non-Carrier[MLPAPos4=.00]	4.584924	1.442548	387.729	3.178	.002	1.748729	7.421119
+Non-Carrier[MLPAPos4=1.00]	0c	0	.	.	.	.	.
+Non-Carriera APOE4Car = non-carrier	
+Non-Carrierb Dependent Variable: Executive function.	
+Non-Carrierc This parameter is set to zero because it is redundant.	
 
 Executive function

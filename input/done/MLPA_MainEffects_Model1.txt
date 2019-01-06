@@ -1,0 +1,644 @@
+﻿MIXED RBTot BY MLPAPos4 WITH EDUpos Time TimeSqr Sex Age
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=EDUpos Sex Age Time TimeSqr MLPAPos4 | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+
+
+Mixed Model Analysis
+Notes		
+Output Created		06-JAN-2019 22:03:58
+Comments		
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	<none>
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED RBTot BY MLPAPos4 WITH EDUpos Time TimeSqr Sex Age
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=EDUpos Sex Age Time TimeSqr MLPAPos4 | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.09
+	Elapsed Time	00:00:00.00
+
+Warnings
+The covariance structure for random effect with only one level will be changed to Identity.
+
+Model Dimensiona					
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables
+Fixed Effects	Intercept	1		1	
+	EDUpos	1		1	
+	Sex	1		1	
+	Age	1		1	
+	Time	1		1	
+	TimeSqr	1		1	
+	MLPAPos4	2		1	
+Random Effects	Intercept	1	Identity	1	DummyID
+Residual				1	
+Total		9		9	
+a Dependent Variable: Global Cog.					
+
+Information Criteriaa	
+-2 Log Likelihood	19461.510
+Akaike's Information Criterion (AIC)	19479.510
+Hurvich and Tsai's Criterion (AICC)	19479.578
+Bozdogan's Criterion (CAIC)	19541.484
+Schwarz's Bayesian Criterion (BIC)	19532.484
+The information criteria are displayed in smaller-is-better form.	
+a Dependent Variable: Global Cog.	
+
+
+Fixed Effects
+Type III Tests of Fixed Effectsa				
+Source	Numerator df	Denominator df	F	Sig.
+Intercept	1	872.523	269.911	.000
+EDUpos	1	813.682	82.003	.000
+Sex	1	816.203	37.402	.000
+Age	1	872.225	4.262	.039
+Time	1	1903.996	74.936	.000
+TimeSqr	1	1841.051	32.992	.000
+MLPAPos4	1	811.757	11.727	.001
+a Dependent Variable: Global Cog.				
+
+Estimates of Fixed Effectsa							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	114.155117	7.053143	871.542	16.185	.000	100.311987	127.998247
+EDUpos	7.218020	.797082	813.682	9.056	.000	5.653441	8.782599
+Sex	-4.889915	.799563	816.203	-6.116	.000	-6.459356	-3.320473
+Age	-.209986	.101719	872.225	-2.064	.039	-.409628	-.010344
+Time	2.485348	.287105	1903.996	8.657	.000	1.922275	3.048422
+TimeSqr	-.375508	.065376	1841.051	-5.744	.000	-.503726	-.247289
+[MLPAPos4=.00]	2.831210	.826742	811.757	3.425	.001	1.208405	4.454015
+[MLPAPos4=1.00]	0b	0	.	.	.	.	.
+a Dependent Variable: Global Cog.							
+b This parameter is set to zero because it is redundant.							
+
+
+Covariance Parameters
+Estimates of Covariance Parametersa			
+Parameter		Estimate	Std. Error
+Residual		45.580112	1.546494
+Intercept [subject = DummyID]	Variance	114.572777	6.748056
+a Dependent Variable: Global Cog.			
+
+MIXED RBIMI BY MLPAPos4 WITH EDUpos Time TimeSqr Sex Age
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=EDUpos Sex Age Time TimeSqr MLPAPos4 | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+
+
+Mixed Model Analysis
+Notes		
+Output Created		06-JAN-2019 22:04:16
+Comments		
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	<none>
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED RBIMI BY MLPAPos4 WITH EDUpos Time TimeSqr Sex Age
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=EDUpos Sex Age Time TimeSqr MLPAPos4 | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.07
+	Elapsed Time	00:00:00.00
+
+Warnings
+The covariance structure for random effect with only one level will be changed to Identity.
+
+Model Dimensiona					
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables
+Fixed Effects	Intercept	1		1	
+	EDUpos	1		1	
+	Sex	1		1	
+	Age	1		1	
+	Time	1		1	
+	TimeSqr	1		1	
+	MLPAPos4	2		1	
+Random Effects	Intercept	1	Identity	1	DummyID
+Residual				1	
+Total		9		9	
+a Dependent Variable: Immediate memory.					
+
+Information Criteriaa	
+-2 Log Likelihood	20450.670
+Akaike's Information Criterion (AIC)	20468.670
+Hurvich and Tsai's Criterion (AICC)	20468.737
+Bozdogan's Criterion (CAIC)	20530.644
+Schwarz's Bayesian Criterion (BIC)	20521.644
+The information criteria are displayed in smaller-is-better form.	
+a Dependent Variable: Immediate memory.	
+
+
+Fixed Effects
+Type III Tests of Fixed Effectsa				
+Source	Numerator df	Denominator df	F	Sig.
+Intercept	1	830.080	229.388	.000
+EDUpos	1	733.198	67.312	.000
+Sex	1	736.232	84.452	.000
+Age	1	829.245	.536	.464
+Time	1	1935.246	113.578	.000
+TimeSqr	1	1844.762	49.450	.000
+MLPAPos4	1	730.098	4.162	.042
+a Dependent Variable: Immediate memory.				
+
+Estimates of Fixed Effectsa							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	107.721460	7.186162	828.696	14.990	.000	93.616239	121.826680
+EDUpos	6.586364	.802783	733.198	8.204	.000	5.010336	8.162392
+Sex	-7.403736	.805651	736.232	-9.190	.000	-8.985384	-5.822088
+Age	-.075865	.103647	829.245	-.732	.464	-.279307	.127576
+Time	3.957454	.371338	1935.246	10.657	.000	3.229189	4.685719
+TimeSqr	-.597664	.084991	1844.762	-7.032	.000	-.764353	-.430976
+[MLPAPos4=.00]	1.698096	.832318	730.098	2.040	.042	.064074	3.332117
+[MLPAPos4=1.00]	0b	0	.	.	.	.	.
+a Dependent Variable: Immediate memory.							
+b This parameter is set to zero because it is redundant.							
+
+
+Covariance Parameters
+Estimates of Covariance Parametersa			
+Parameter		Estimate	Std. Error
+Residual		78.439834	2.705723
+Intercept [subject = DummyID]	Variance	102.584414	7.204658
+a Dependent Variable: Immediate memory.			
+
+MIXED RBVSI BY MLPAPos4 WITH EDUpos Time TimeSqr Sex Age
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=EDUpos Sex Age Time TimeSqr MLPAPos4 | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+
+
+Mixed Model Analysis
+Notes		
+Output Created		06-JAN-2019 22:04:28
+Comments		
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	<none>
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED RBVSI BY MLPAPos4 WITH EDUpos Time TimeSqr Sex Age
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=EDUpos Sex Age Time TimeSqr MLPAPos4 | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.07
+	Elapsed Time	00:00:00.00
+
+Warnings
+The covariance structure for random effect with only one level will be changed to Identity.
+
+Model Dimensiona					
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables
+Fixed Effects	Intercept	1		1	
+	EDUpos	1		1	
+	Sex	1		1	
+	Age	1		1	
+	Time	1		1	
+	TimeSqr	1		1	
+	MLPAPos4	2		1	
+Random Effects	Intercept	1	Identity	1	DummyID
+Residual				1	
+Total		9		9	
+a Dependent Variable: Visuospatial.					
+
+Information Criteriaa	
+-2 Log Likelihood	21230.886
+Akaike's Information Criterion (AIC)	21248.886
+Hurvich and Tsai's Criterion (AICC)	21248.954
+Bozdogan's Criterion (CAIC)	21310.861
+Schwarz's Bayesian Criterion (BIC)	21301.861
+The information criteria are displayed in smaller-is-better form.	
+a Dependent Variable: Visuospatial.	
+
+
+Fixed Effects
+Type III Tests of Fixed Effectsa				
+Source	Numerator df	Denominator df	F	Sig.
+Intercept	1	888.771	210.618	.000
+EDUpos	1	755.301	34.022	.000
+Sex	1	758.498	12.623	.000
+Age	1	887.285	4.714	.030
+Time	1	2031.881	.045	.832
+TimeSqr	1	1935.994	3.062	.080
+MLPAPos4	1	751.197	6.514	.011
+a Dependent Variable: Visuospatial.				
+
+Estimates of Fixed Effectsa							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	109.037647	7.607841	887.103	14.332	.000	94.106181	123.969114
+EDUpos	4.910417	.841852	755.301	5.833	.000	3.257769	6.563065
+Sex	3.002595	.845104	758.498	3.553	.000	1.343573	4.661616
+Age	-.238240	.109732	887.285	-2.171	.030	-.453605	-.022875
+Time	.094336	.445795	2031.881	.212	.832	-.779928	.968599
+TimeSqr	-.179131	.102377	1935.994	-1.750	.080	-.379912	.021649
+[MLPAPos4=.00]	2.226959	.872533	751.197	2.552	.011	.514065	3.939853
+[MLPAPos4=1.00]	0b	0	.	.	.	.	.
+a Dependent Variable: Visuospatial.							
+b This parameter is set to zero because it is redundant.							
+
+
+Covariance Parameters
+Estimates of Covariance Parametersa			
+Parameter		Estimate	Std. Error
+Residual		115.332329	3.910846
+Intercept [subject = DummyID]	Variance	101.463083	7.701461
+a Dependent Variable: Visuospatial.			
+
+MIXED RBLI BY MLPAPos4 WITH EDUpos Time TimeSqr Sex Age
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=EDUpos Sex Age Time TimeSqr MLPAPos4 | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+
+
+Mixed Model Analysis
+Notes		
+Output Created		06-JAN-2019 22:04:39
+Comments		
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	<none>
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED RBLI BY MLPAPos4 WITH EDUpos Time TimeSqr Sex Age
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=EDUpos Sex Age Time TimeSqr MLPAPos4 | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.08
+	Elapsed Time	00:00:00.00
+
+Warnings
+The covariance structure for random effect with only one level will be changed to Identity.
+
+Model Dimensiona					
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables
+Fixed Effects	Intercept	1		1	
+	EDUpos	1		1	
+	Sex	1		1	
+	Age	1		1	
+	Time	1		1	
+	TimeSqr	1		1	
+	MLPAPos4	2		1	
+Random Effects	Intercept	1	Identity	1	DummyID
+Residual				1	
+Total		9		9	
+a Dependent Variable: Language.					
+
+Information Criteriaa	
+-2 Log Likelihood	20355.018
+Akaike's Information Criterion (AIC)	20373.018
+Hurvich and Tsai's Criterion (AICC)	20373.086
+Bozdogan's Criterion (CAIC)	20434.993
+Schwarz's Bayesian Criterion (BIC)	20425.993
+The information criteria are displayed in smaller-is-better form.	
+a Dependent Variable: Language.	
+
+
+Fixed Effects
+Type III Tests of Fixed Effectsa				
+Source	Numerator df	Denominator df	F	Sig.
+Intercept	1	888.626	313.921	.000
+EDUpos	1	751.591	27.787	.000
+Sex	1	754.773	54.219	.000
+Age	1	887.064	1.801	.180
+Time	1	2036.201	1.338	.248
+TimeSqr	1	1939.777	.047	.829
+MLPAPos4	1	747.405	5.843	.016
+a Dependent Variable: Language.				
+
+Estimates of Fixed Effectsa							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	112.213494	6.398305	886.939	17.538	.000	99.655910	124.771078
+EDUpos	3.728192	.707256	751.591	5.271	.000	2.339760	5.116625
+Sex	-5.228066	.710009	754.773	-7.363	.000	-6.621893	-3.834240
+Age	-.123843	.092287	887.064	-1.342	.180	-.304968	.057283
+Time	.438781	.379389	2036.201	1.157	.248	-.305250	1.182812
+TimeSqr	-.018876	.087156	1939.777	-.217	.829	-.189805	.152054
+[MLPAPos4=.00]	1.771779	.733005	747.405	2.417	.016	.332785	3.210773
+[MLPAPos4=1.00]	0b	0	.	.	.	.	.
+a Dependent Variable: Language.							
+b This parameter is set to zero because it is redundant.							
+
+
+Covariance Parameters
+Estimates of Covariance Parametersa			
+Parameter		Estimate	Std. Error
+Residual		83.705328	2.838584
+Intercept [subject = DummyID]	Variance	70.746558	5.444336
+a Dependent Variable: Language.			
+
+MIXED RBAI BY MLPAPos4 WITH EDUpos Time TimeSqr Sex Age
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=EDUpos Sex Age Time TimeSqr MLPAPos4 | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+
+
+Mixed Model Analysis
+Notes		
+Output Created		06-JAN-2019 22:04:47
+Comments		
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	<none>
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED RBAI BY MLPAPos4 WITH EDUpos Time TimeSqr Sex Age
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=EDUpos Sex Age Time TimeSqr MLPAPos4 | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.08
+	Elapsed Time	00:00:00.00
+
+Warnings
+The covariance structure for random effect with only one level will be changed to Identity.
+
+Model Dimensiona					
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables
+Fixed Effects	Intercept	1		1	
+	EDUpos	1		1	
+	Sex	1		1	
+	Age	1		1	
+	Time	1		1	
+	TimeSqr	1		1	
+	MLPAPos4	2		1	
+Random Effects	Intercept	1	Identity	1	DummyID
+Residual				1	
+Total		9		9	
+a Dependent Variable: Attention.					
+
+Information Criteriaa	
+-2 Log Likelihood	20403.620
+Akaike's Information Criterion (AIC)	20421.620
+Hurvich and Tsai's Criterion (AICC)	20421.688
+Bozdogan's Criterion (CAIC)	20483.595
+Schwarz's Bayesian Criterion (BIC)	20474.595
+The information criteria are displayed in smaller-is-better form.	
+a Dependent Variable: Attention.	
+
+
+Fixed Effects
+Type III Tests of Fixed Effectsa				
+Source	Numerator df	Denominator df	F	Sig.
+Intercept	1	897.013	162.744	.000
+EDUpos	1	839.637	37.513	.000
+Sex	1	842.139	4.955	.026
+Age	1	896.736	.585	.445
+Time	1	1921.975	41.572	.000
+TimeSqr	1	1861.906	8.871	.003
+MLPAPos4	1	837.759	6.109	.014
+a Dependent Variable: Attention.				
+
+Estimates of Fixed Effectsa							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	107.257616	8.527108	896.049	12.578	.000	90.522186	123.993047
+EDUpos	5.905929	.964273	839.637	6.125	.000	4.013260	7.798598
+Sex	-2.153049	.967246	842.139	-2.226	.026	-4.051545	-.254552
+Age	-.094051	.122975	896.736	-.765	.445	-.335404	.147302
+Time	2.197450	.340816	1921.975	6.448	.000	1.529042	2.865859
+TimeSqr	-.231071	.077581	1861.906	-2.978	.003	-.383226	-.078915
+[MLPAPos4=.00]	2.472056	1.000178	837.759	2.472	.014	.508908	4.435205
+[MLPAPos4=1.00]	0b	0	.	.	.	.	.
+a Dependent Variable: Attention.							
+b This parameter is set to zero because it is redundant.							
+
+
+Covariance Parameters
+Estimates of Covariance Parametersa			
+Parameter		Estimate	Std. Error
+Residual		64.119169	2.159541
+Intercept [subject = DummyID]	Variance	168.829524	9.706315
+a Dependent Variable: Attention.			
+
+MIXED RBDMI BY MLPAPos4 WITH EDUpos Time TimeSqr Sex Age
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=EDUpos Sex Age Time TimeSqr MLPAPos4 | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+
+
+Mixed Model Analysis
+Notes		
+Output Created		06-JAN-2019 22:04:55
+Comments		
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	<none>
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED RBDMI BY MLPAPos4 WITH EDUpos Time TimeSqr Sex Age
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=EDUpos Sex Age Time TimeSqr MLPAPos4 | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.07
+	Elapsed Time	00:00:00.00
+
+Warnings
+The covariance structure for random effect with only one level will be changed to Identity.
+
+Model Dimensiona					
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables
+Fixed Effects	Intercept	1		1	
+	EDUpos	1		1	
+	Sex	1		1	
+	Age	1		1	
+	Time	1		1	
+	TimeSqr	1		1	
+	MLPAPos4	2		1	
+Random Effects	Intercept	1	Identity	1	DummyID
+Residual				1	
+Total		9		9	
+a Dependent Variable: Delayed memory.					
+
+Information Criteriaa	
+-2 Log Likelihood	19301.121
+Akaike's Information Criterion (AIC)	19319.121
+Hurvich and Tsai's Criterion (AICC)	19319.189
+Bozdogan's Criterion (CAIC)	19381.096
+Schwarz's Bayesian Criterion (BIC)	19372.096
+The information criteria are displayed in smaller-is-better form.	
+a Dependent Variable: Delayed memory.	
+
+
+Fixed Effects
+Type III Tests of Fixed Effectsa				
+Source	Numerator df	Denominator df	F	Sig.
+Intercept	1	813.175	376.889	.000
+EDUpos	1	732.942	35.599	.000
+Sex	1	735.792	40.799	.000
+Age	1	812.592	8.633	.003
+Time	1	1892.549	133.119	.000
+TimeSqr	1	1809.454	66.220	.000
+MLPAPos4	1	730.343	5.352	.021
+a Dependent Variable: Delayed memory.				
+
+Estimates of Fixed Effectsa							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	117.752962	6.123412	811.953	19.230	.000	105.733379	129.772546
+EDUpos	4.100352	.687226	732.942	5.967	.000	2.751186	5.449518
+Sex	-4.404548	.689566	735.792	-6.387	.000	-5.758299	-3.050797
+Age	-.259487	.088316	812.592	-2.938	.003	-.432842	-.086132
+Time	3.372090	.292266	1892.549	11.538	.000	2.798892	3.945288
+TimeSqr	-.543311	.066766	1809.454	-8.138	.000	-.674257	-.412364
+[MLPAPos4=.00]	1.648564	.712625	730.343	2.313	.021	.249525	3.047603
+[MLPAPos4=1.00]	0b	0	.	.	.	.	.
+a Dependent Variable: Delayed memory.							
+b This parameter is set to zero because it is redundant.							
+
+
+Covariance Parameters
+Estimates of Covariance Parametersa			
+Parameter		Estimate	Std. Error
+Residual		48.071939	1.665654
+Intercept [subject = DummyID]	Variance	79.049608	5.300442
+a Dependent Variable: Delayed memory.			
+
+MIXED EXECI BY MLPAPos4 WITH EDUpos Time TimeSqr Sex Age
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=EDUpos Sex Age Time TimeSqr MLPAPos4 | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+
+
+Mixed Model Analysis
+Notes		
+Output Created		06-JAN-2019 22:05:10
+Comments		
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	<none>
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED EXECI BY MLPAPos4 WITH EDUpos Time TimeSqr Sex Age
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=EDUpos Sex Age Time TimeSqr MLPAPos4 | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.06
+	Elapsed Time	00:00:00.00
+
+Warnings
+The covariance structure for random effect with only one level will be changed to Identity.
+
+Model Dimensiona					
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables
+Fixed Effects	Intercept	1		1	
+	EDUpos	1		1	
+	Sex	1		1	
+	Age	1		1	
+	Time	1		1	
+	TimeSqr	1		1	
+	MLPAPos4	2		1	
+Random Effects	Intercept	1	Identity	1	DummyID
+Residual				1	
+Total		9		9	
+a Dependent Variable: Executive function.					
+
+Information Criteriaa	
+-2 Log Likelihood	10389.857
+Akaike's Information Criterion (AIC)	10407.857
+Hurvich and Tsai's Criterion (AICC)	10407.997
+Bozdogan's Criterion (CAIC)	10463.367
+Schwarz's Bayesian Criterion (BIC)	10454.367
+The information criteria are displayed in smaller-is-better form.	
+a Dependent Variable: Executive function.	
+
+
+Fixed Effects
+Type III Tests of Fixed Effectsa				
+Source	Numerator df	Denominator df	F	Sig.
+Intercept	1	718.494	142.814	.000
+EDUpos	1	634.192	2.574	.109
+Sex	1	633.129	.075	.785
+Age	1	717.841	2.665	.103
+Time	1	687.544	.610	.435
+TimeSqr	1	675.282	.211	.646
+MLPAPos4	1	631.064	6.005	.015
+a Dependent Variable: Executive function.				
+
+Estimates of Fixed Effectsa							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	132.191204	11.182563	719.276	11.821	.000	110.236841	154.145566
+EDUpos	-1.787820	1.114316	634.192	-1.604	.109	-3.976015	.400376
+Sex	-.308383	1.128836	633.129	-.273	.785	-2.525098	1.908332
+Age	-.264570	.162067	717.841	-1.632	.103	-.582751	.053612
+Time	.444826	.569342	687.544	.781	.435	-.673033	1.562685
+TimeSqr	.068872	.150100	675.282	.459	.646	-.225846	.363591
+[MLPAPos4=.00]	2.826872	1.153604	631.064	2.450	.015	.561504	5.092240
+[MLPAPos4=1.00]	0b	0	.	.	.	.	.
+a Dependent Variable: Executive function.							
+b This parameter is set to zero because it is redundant.							
+
+
+Covariance Parameters
+Estimates of Covariance Parametersa			
+Parameter		Estimate	Std. Error
+Residual		84.218674	4.732959
+Intercept [subject = DummyID]	Variance	151.403427	11.507103
+a Dependent Variable: Executive function.			
+

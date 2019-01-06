@@ -1,16 +1,21 @@
-NonApoeParameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
-NonApoeLower Bound	Upper Bound
-NonApoeIntercept	120.708959	17.972863	199.075	6.716	0.000	85.267336	156.150583
-NonApoeSex	4.808437	1.862435	175.584	2.582	0.011	1.132798	8.484076
-NonApoeEDUpos	3.390653	1.843700	172.078	1.839	0.068	-0.248526	7.029833
-NonApoeAge	-0.424399	0.256059	204.998	-1.657	0.099	-0.929247	0.080449
-NonApoeTime	0.570386	0.914263	520.469	0.624	0.533	-1.225713	2.366485
-NonApoeTimeSqr	-0.265384	0.204020	496.579	-1.301	0.194	-0.666232	0.135464
-NonApoe[PASEtert2=1.00]	-1.061101	2.357813	170.417	-0.450	0.653	-5.715380	3.593179
-NonApoe[PASEtert2=2.00]	2.261079	2.293211	175.582	0.986	0.325	-2.264727	6.786884
-NonApoe[PASEtert2=3.00]	0c	0					
-NonApoea. APOE4Car = Carrier	
-NonApoeb. Dependent Variable: Visuospatial.	
-NonApoec. This parameter is set to zero because it is redundant.	
+Non-CarrierParameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+Non-CarrierLower Bound	Upper Bound
+Non-CarrierIntercept	115.478608	9.325273	516.388	12.383	.000	97.158470	133.798745
+Non-CarrierAge	-.219434	.129292	529.024	-1.697	.090	-.473422	.034554
+Non-CarrierSex	1.693562	1.100164	450.345	1.539	.124	-.468530	3.855654
+Non-CarrierEDUpos	4.924644	1.046249	440.097	4.707	.000	2.868379	6.980908
+Non-CarrierBMI	-.350310	.126273	445.097	-2.774	.006	-.598474	-.102146
+Non-CarrierHypertension	-.391299	1.154039	452.978	-.339	.735	-2.659234	1.876636
+Non-CarrierHypercholes	.856574	1.543771	452.460	.555	.579	-2.177278	3.890425
+Non-CarrierDiabetes	-1.840184	2.171098	481.318	-.848	.397	-6.106184	2.425816
+Non-CarrierSmokeDichot	1.107689	1.050339	443.530	1.055	.292	-.956571	3.171949
+Non-CarrierAlcohol	.053154	.034615	451.031	1.536	.125	-.014873	.121180
+Non-CarrierTime	-.149598	.564748	1232.365	-.265	.791	-1.257571	.958376
+Non-CarrierTimeSqr	-.169241	.129952	1186.469	-1.302	.193	-.424202	.085721
+Non-Carrier[MLPAPos4=.00]	2.528954	1.081940	434.930	2.337	.020	.402472	4.655435
+Non-Carrier[MLPAPos4=1.00]	0c	0	.	.	.	.	.
+Non-Carriera APOE4Car = non-carrier	
+Non-Carrierb Dependent Variable: Visuospatial.	
+Non-Carrierc This parameter is set to zero because it is redundant.	
 
 Visuospatial

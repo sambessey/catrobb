@@ -1,16 +1,21 @@
-NonApoeParameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
-NonApoeLower Bound	Upper Bound
-NonApoeIntercept	139.511609	16.159946	201.883	8.633	0.000	107.647681	171.375537
-NonApoeSex	-2.838491	1.702270	192.380	-1.667	0.097	-6.196000	0.519017
-NonApoeEDUpos	6.801008	1.691028	189.891	4.022	0.000	3.465396	10.136621
-NonApoeAge	-0.615808	0.229241	204.900	-2.686	0.008	-1.067781	-0.163835
-NonApoeTime	2.320654	0.558311	494.245	4.157	0.000	1.223698	3.417611
-NonApoeTimeSqr	-0.368225	0.123572	479.646	-2.980	0.003	-0.611034	-0.125415
-NonApoe[PASEtert2=1.00]	1.914596	2.165079	189.355	0.884	0.378	-2.356177	6.185368
-NonApoe[PASEtert2=2.00]	0.338216	2.095221	192.831	0.161	0.872	-3.794277	4.470709
-NonApoe[PASEtert2=3.00]	0c	0					
-NonApoea. APOE4Car = Carrier	
-NonApoeb. Dependent Variable: Global Cog.	
-NonApoec. This parameter is set to zero because it is redundant.	
+Non-CarrierParameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+Non-CarrierLower Bound	Upper Bound
+Non-CarrierIntercept	113.550576	8.690199	509.167	13.067	.000	96.477516	130.623636
+Non-CarrierAge	-.107127	.120030	516.764	-.892	.373	-.342934	.128681
+Non-CarrierSex	-5.731105	1.043035	483.249	-5.495	.000	-7.780550	-3.681660
+Non-CarrierEDUpos	6.411432	.995556	476.723	6.440	.000	4.455212	8.367652
+Non-CarrierBMI	-.293245	.120006	478.106	-2.444	.015	-.529050	-.057440
+Non-CarrierHypertension	.205927	1.093765	482.884	.188	.851	-1.943200	2.355054
+Non-CarrierHypercholes	.607022	1.464101	480.967	.415	.679	-2.269802	3.483846
+Non-CarrierDiabetes	-1.633811	2.038032	500.766	-.802	.423	-5.637957	2.370335
+Non-CarrierSmokeDichot	1.180752	.998060	479.435	1.183	.237	-.780361	3.141865
+Non-CarrierAlcohol	.063518	.032824	482.298	1.935	.054	-.000978	.128013
+Non-CarrierTime	2.329019	.362305	1166.444	6.428	.000	1.618177	3.039861
+Non-CarrierTimeSqr	-.354007	.082782	1133.350	-4.276	.000	-.516431	-.191583
+Non-Carrier[MLPAPos4=.00]	3.536014	1.031106	474.558	3.429	.001	1.509916	5.562112
+Non-Carrier[MLPAPos4=1.00]	0c	0	.	.	.	.	.
+Non-Carriera APOE4Car = non-carrier	
+Non-Carrierb Dependent Variable: Global Cog.	
+Non-Carrierc This parameter is set to zero because it is redundant.	
 
 Global Cog

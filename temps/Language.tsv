@@ -1,16 +1,21 @@
-NonApoeParameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
-NonApoeLower Bound	Upper Bound
-NonApoeIntercept	130.188172	14.670569	204.531	8.874	0.000	101.263234	159.113111
-NonApoeSex	-2.831870	1.524589	183.055	-1.857	0.065	-5.839896	0.176156
-NonApoeEDUpos	4.609257	1.509992	179.535	3.053	0.003	1.629642	7.588873
-NonApoeAge	-0.428506	0.208872	210.129	-2.052	0.041	-0.840260	-0.016753
-NonApoeTime	-0.081365	0.713404	521.164	-0.114	0.909	-1.482866	1.320136
-NonApoeTimeSqr	0.065289	0.159012	498.557	0.411	0.682	-0.247128	0.377706
-NonApoe[PASEtert2=1.00]	2.949796	1.931483	178.045	1.527	0.128	-0.861749	6.761341
-NonApoe[PASEtert2=2.00]	-0.304065	1.877204	183.196	-0.162	0.872	-4.007785	3.399654
-NonApoe[PASEtert2=3.00]	0c	0					
-NonApoea. APOE4Car = Carrier	
-NonApoeb. Dependent Variable: Language.	
-NonApoec. This parameter is set to zero because it is redundant.	
+Non-CarrierParameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+Non-CarrierLower Bound	Upper Bound
+Non-CarrierIntercept	107.290530	7.947544	517.673	13.500	.000	91.677126	122.903934
+Non-CarrierAge	-.044365	.110214	530.523	-.403	.687	-.260874	.172144
+Non-CarrierSex	-6.401577	.936423	448.601	-6.836	.000	-8.241897	-4.561257
+Non-CarrierEDUpos	2.954144	.890338	438.227	3.318	.001	1.204280	4.704007
+Non-CarrierBMI	-.041092	.107467	443.532	-.382	.702	-.252300	.170117
+Non-CarrierHypertension	.204842	.982336	451.515	.209	.835	-1.725677	2.135361
+Non-CarrierHypercholes	1.798659	1.314071	451.182	1.369	.172	-.783800	4.381118
+Non-CarrierDiabetes	-4.146600	1.849118	480.227	-2.242	.025	-7.779961	-.513240
+Non-CarrierSmokeDichot	.979712	.893885	441.646	1.096	.274	-.777084	2.736508
+Non-CarrierAlcohol	.031413	.029463	449.499	1.066	.287	-.026490	.089317
+Non-CarrierTime	.614835	.489516	1236.482	1.256	.209	-.345539	1.575208
+Non-CarrierTimeSqr	-.062545	.112682	1190.713	-.555	.579	-.283621	.158532
+Non-Carrier[MLPAPos4=.00]	1.947915	.920606	432.870	2.116	.035	.138500	3.757329
+Non-Carrier[MLPAPos4=1.00]	0c	0	.	.	.	.	.
+Non-Carriera APOE4Car = non-carrier	
+Non-Carrierb Dependent Variable: Language.	
+Non-Carrierc This parameter is set to zero because it is redundant.	
 
 Language
