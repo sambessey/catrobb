@@ -1,0 +1,21 @@
+MLPAxSex_Model3		
+Attention		Sig
+[MLPAPos4=.00] * Sex	0.78 [-3.35, 4.91]	0.71
+MLPAxSex_Model3		
+Delayed memory		Sig
+[MLPAPos4=.00] * Sex	0.72 [-2.23, 3.68]	0.63
+MLPAxSex_Model3		
+Executive function		Sig
+[MLPAPos4=.00] * Sex	-0.54 [-5.38, 4.29]	0.83
+MLPAxSex_Model3		
+Global Cog		Sig
+[MLPAPos4=.00] * Sex	1.46 [-1.90, 4.82]	0.39
+MLPAxSex_Model3		
+Immediate memory		Sig
+[MLPAPos4=.00] * Sex	0.92 [-2.54, 4.38]	0.60
+MLPAxSex_Model3		
+Language		Sig
+[MLPAPos4=.00] * Sex	1.31 [-1.77, 4.38]	0.41
+MLPAxSex_Model3		
+Visuospatial		Sig
+[MLPAPos4=.00] * Sex	1.36 [-2.29, 5.00]	0.47

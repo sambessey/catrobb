@@ -1,0 +1,28 @@
+MLPAxTimexAPOE_AgeStratified_Model3		
+Attention		Sig
+[MLPAPos4=.00] * Time	0.57 [-1.57, 2.71]	0.60
+[MLPAPos4=.00] * TimeSqr	-0.09 [-0.58, 0.40]	0.72
+MLPAxTimexAPOE_AgeStratified_Model3		
+Delayed memory		Sig
+[MLPAPos4=.00] * Time	-1.77 [-3.57, 0.03]x	0.05
+[MLPAPos4=.00] * TimeSqr	0.43 [0.02, 0.85]*	0.04
+MLPAxTimexAPOE_AgeStratified_Model3		
+Executive function		Sig
+[MLPAPos4=.00] * Time	0.17 [-3.12, 3.46]	0.92
+[MLPAPos4=.00] * TimeSqr	0.04 [-0.82, 0.90]	0.93
+MLPAxTimexAPOE_AgeStratified_Model3		
+Global Cog		Sig
+[MLPAPos4=.00] * Time	-0.93 [-2.75, 0.90]	0.32
+[MLPAPos4=.00] * TimeSqr	0.36 [-0.05, 0.78]	0.09
+MLPAxTimexAPOE_AgeStratified_Model3		
+Immediate memory		Sig
+[MLPAPos4=.00] * Time	-2.28 [-4.62, 0.07]x	0.06
+[MLPAPos4=.00] * TimeSqr	0.67 [0.14, 1.21]*	0.01
+MLPAxTimexAPOE_AgeStratified_Model3		
+Language		Sig
+[MLPAPos4=.00] * Time	0.50 [-1.92, 2.91]	0.69
+[MLPAPos4=.00] * TimeSqr	0.02 [-0.54, 0.58]	0.94
+MLPAxTimexAPOE_AgeStratified_Model3		
+Visuospatial		Sig
+[MLPAPos4=.00] * Time	-0.31 [-3.18, 2.56]	0.83
+[MLPAPos4=.00] * TimeSqr	0.13 [-0.53, 0.79]	0.69

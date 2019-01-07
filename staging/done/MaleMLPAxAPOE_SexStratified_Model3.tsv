@@ -1,0 +1,21 @@
+MLPAxAPOE_SexStratified_Model3		
+Attention		Sig
+[MLPAPos4=.00] * APOE4Car	-5.09 [-12.17, 1.99]	0.16
+MLPAxAPOE_SexStratified_Model3		
+Delayed memory		Sig
+[MLPAPos4=.00] * APOE4Car	0.85 [-4.99, 6.69]	0.77
+MLPAxAPOE_SexStratified_Model3		
+Executive function		Sig
+[MLPAPos4=.00] * APOE4Car	-3.93 [-12.66, 4.80]	0.38
+MLPAxAPOE_SexStratified_Model3		
+Global Cog		Sig
+[MLPAPos4=.00] * APOE4Car	-1.41 [-7.50, 4.67]	0.65
+MLPAxAPOE_SexStratified_Model3		
+Immediate memory		Sig
+[MLPAPos4=.00] * APOE4Car	1.11 [-5.48, 7.71]	0.74
+MLPAxAPOE_SexStratified_Model3		
+Language		Sig
+[MLPAPos4=.00] * APOE4Car	-3.28 [-8.52, 1.96]	0.22
+MLPAxAPOE_SexStratified_Model3		
+Visuospatial		Sig
+[MLPAPos4=.00] * APOE4Car	1.57 [-4.84, 7.98]	0.63

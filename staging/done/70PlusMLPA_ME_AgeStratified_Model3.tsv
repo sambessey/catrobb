@@ -1,0 +1,70 @@
+MLPA_ME_AgeStratified_Model3		
+Attention		Sig
+[MLPAPos4=.00]	0.00 [0.00, 0.00]***	0.00
+Time	0.00 [0.00, 0.00]***	0.00
+TimeSqr	0.00 [0.00, 0.00]***	0.00
+MLPA_ME_AgeStratified_Model3		
+Delayed memory		Sig
+[MLPAPos4=.00]	0.00 [0.00, 0.00]***	0.00
+Time	0.00 [0.00, 0.00]***	0.00
+TimeSqr	0.00 [0.00, 0.00]***	0.00
+MLPA_ME_AgeStratified_Model3		
+Executive function		Sig
+[MLPAPos4=.00]	0.00 [0.00, 0.00]***	0.00
+Time	0.00 [0.00, 0.00]***	0.00
+TimeSqr	0.00 [0.00, 0.00]***	0.00
+MLPA_ME_AgeStratified_Model3		
+Global Cog		Sig
+[MLPAPos4=.00]	0.00 [0.00, 0.00]***	0.00
+Time	0.00 [0.00, 0.00]***	0.00
+TimeSqr	0.00 [0.00, 0.00]***	0.00
+MLPA_ME_AgeStratified_Model3		
+Immediate memory		Sig
+[MLPAPos4=.00]	0.00 [0.00, 0.00]***	0.00
+Time	0.00 [0.00, 0.00]***	0.00
+TimeSqr	0.00 [0.00, 0.00]***	0.00
+MLPA_ME_AgeStratified_Model3		
+Language		Sig
+[MLPAPos4=.00]	0.00 [0.00, 0.00]***	0.00
+Time	0.00 [0.00, 0.00]***	0.00
+TimeSqr	0.00 [0.00, 0.00]***	0.00
+MLPA_ME_AgeStratified_Model3		
+Visuospatial		Sig
+[MLPAPos4=.00]	0.00 [0.00, 0.00]***	0.00
+Time	0.00 [0.00, 0.00]***	0.00
+TimeSqr	0.00 [0.00, 0.00]***	0.00
+MLPA_ME_AgeStratified_Model3		
+Attention		Sig
+[MLPAPos4=.00]	3.90 [0.48, 7.32]*	0.03
+Time	0.71 [-0.46, 1.88]	0.24
+TimeSqr	-0.08 [-0.34, 0.19]	0.57
+MLPA_ME_AgeStratified_Model3		
+Delayed memory		Sig
+[MLPAPos4=.00]	0.26 [-2.47, 3.00]	0.85
+Time	3.09 [1.99, 4.19]***	0.00
+TimeSqr	-0.56 [-0.80, -0.31]***	0.00
+MLPA_ME_AgeStratified_Model3		
+Executive function		Sig
+[MLPAPos4=.00]	2.84 [-1.39, 7.07]	0.19
+Time	-1.14 [-3.40, 1.12]	0.32
+TimeSqr	0.23 [-0.37, 0.82]	0.46
+MLPA_ME_AgeStratified_Model3		
+Global Cog		Sig
+[MLPAPos4=.00]	2.23 [-0.64, 5.10]	0.13
+Time	1.41 [0.43, 2.39]**	0.01
+TimeSqr	-0.28 [-0.50, -0.06]*	0.01
+MLPA_ME_AgeStratified_Model3		
+Immediate memory		Sig
+[MLPAPos4=.00]	1.43 [-1.62, 4.49]	0.36
+Time	3.18 [1.90, 4.47]***	0.00
+TimeSqr	-0.60 [-0.89, -0.31]***	0.00
+MLPA_ME_AgeStratified_Model3		
+Language		Sig
+[MLPAPos4=.00]	0.63 [-1.91, 3.17]	0.63
+Time	0.30 [-1.05, 1.66]	0.66
+TimeSqr	-0.09 [-0.40, 0.21]	0.56
+MLPA_ME_AgeStratified_Model3		
+Visuospatial		Sig
+[MLPAPos4=.00]	1.35 [-1.76, 4.46]	0.39
+Time	-0.90 [-2.48, 0.68]	0.26
+TimeSqr	0.04 [-0.31, 0.40]	0.81

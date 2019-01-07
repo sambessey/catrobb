@@ -1,0 +1,56 @@
+MLPAxTime_AgeStratified_Model3		
+Attention		Sig
+[MLPAPos4=.00] * Time	0.55 [-1.29, 2.39]	0.56
+[MLPAPos4=.00] * TimeSqr	-0.09 [-0.51, 0.34]	0.68
+MLPAxTime_AgeStratified_Model3		
+Delayed memory		Sig
+[MLPAPos4=.00] * Time	-1.51 [-3.06, 0.04]x	0.06
+[MLPAPos4=.00] * TimeSqr	0.34 [-0.02, 0.70]x	0.07
+MLPAxTime_AgeStratified_Model3		
+Executive function		Sig
+[MLPAPos4=.00] * Time	0.40 [-2.43, 3.23]	0.78
+[MLPAPos4=.00] * TimeSqr	0.01 [-0.73, 0.75]	0.97
+MLPAxTime_AgeStratified_Model3		
+Global Cog		Sig
+[MLPAPos4=.00] * Time	-0.83 [-2.40, 0.73]	0.30
+[MLPAPos4=.00] * TimeSqr	0.31 [-0.05, 0.67]	0.09
+MLPAxTime_AgeStratified_Model3		
+Immediate memory		Sig
+[MLPAPos4=.00] * Time	-2.71 [-4.72, -0.69]**	0.01
+[MLPAPos4=.00] * TimeSqr	0.76 [0.29, 1.23]**	0.00
+MLPAxTime_AgeStratified_Model3		
+Language		Sig
+[MLPAPos4=.00] * Time	0.56 [-1.49, 2.62]	0.59
+[MLPAPos4=.00] * TimeSqr	0.04 [-0.44, 0.52]	0.87
+MLPAxTime_AgeStratified_Model3		
+Visuospatial		Sig
+[MLPAPos4=.00] * Time	0.35 [-2.11, 2.82]	0.78
+[MLPAPos4=.00] * TimeSqr	-0.07 [-0.65, 0.50]	0.80
+MLPAxTime_AgeStratified_Model3		
+Attention		Sig
+[MLPAPos4=.00] * Time	0.55 [-1.29, 2.39]	0.56
+[MLPAPos4=.00] * TimeSqr	-0.09 [-0.51, 0.34]	0.68
+MLPAxTime_AgeStratified_Model3		
+Delayed memory		Sig
+[MLPAPos4=.00] * Time	-1.51 [-3.06, 0.04]x	0.06
+[MLPAPos4=.00] * TimeSqr	0.34 [-0.02, 0.70]x	0.07
+MLPAxTime_AgeStratified_Model3		
+Executive function		Sig
+[MLPAPos4=.00] * Time	0.40 [-2.43, 3.23]	0.78
+[MLPAPos4=.00] * TimeSqr	0.01 [-0.73, 0.75]	0.97
+MLPAxTime_AgeStratified_Model3		
+Global Cog		Sig
+[MLPAPos4=.00] * Time	-0.83 [-2.40, 0.73]	0.30
+[MLPAPos4=.00] * TimeSqr	0.31 [-0.05, 0.67]	0.09
+MLPAxTime_AgeStratified_Model3		
+Immediate memory		Sig
+[MLPAPos4=.00] * Time	-2.71 [-4.72, -0.69]**	0.01
+[MLPAPos4=.00] * TimeSqr	0.76 [0.29, 1.23]**	0.00
+MLPAxTime_AgeStratified_Model3		
+Language		Sig
+[MLPAPos4=.00] * Time	0.56 [-1.49, 2.62]	0.59
+[MLPAPos4=.00] * TimeSqr	0.04 [-0.44, 0.52]	0.87
+MLPAxTime_AgeStratified_Model3		
+Visuospatial		Sig
+[MLPAPos4=.00] * Time	0.35 [-2.11, 2.82]	0.78
+[MLPAPos4=.00] * TimeSqr	-0.07 [-0.65, 0.50]	0.80

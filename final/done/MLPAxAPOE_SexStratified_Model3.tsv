@@ -1,0 +1,4 @@
+Female	Global Cog	Immediate memory	Delayed memory	Visuospatial	Language	Attention	Executive function	
+[MLPAPos4=.00] * APOE4Car	-0.38 [-5.93, 5.17]	-2.11 [-7.43, 3.21]	-0.77 [-5.19, 3.65]	0.52 [-5.61, 6.65]	1.80 [-3.33, 6.93]	0.93 [-6.06, 7.93]	-5.26 [-12.97, 2.44]	
+Male	Global Cog	Immediate memory	Delayed memory	Visuospatial	Language	Attention	Executive function	
+[MLPAPos4=.00] * APOE4Car	-1.41 [-7.50, 4.67]	1.11 [-5.48, 7.71]	0.85 [-4.99, 6.69]	1.57 [-4.84, 7.98]	-3.28 [-8.52, 1.96]	-5.09 [-12.17, 1.99]	-3.93 [-12.66, 4.80]	

@@ -1,21 +1,32 @@
-non-carrierIntercept	115.325335	9.326397	517.111	12.365	.000	97.003049	133.647621
-non-carrierAge	-.219946	.129259	529.001	-1.702	.089	-.473870	.033978
-non-carrierSex	1.700456	1.099898	450.286	1.546	.123	-.461115	3.862026
-non-carrierEDUpos	4.907589	1.046450	440.956	4.690	.000	2.850940	6.964239
-non-carrierTime	.043213	.728930	1242.958	.059	.953	-1.386857	1.473283
-non-carrierTimeSqr	-.192816	.167724	1190.553	-1.150	.251	-.521882	.136251
-non-carrier[MLPAPos4=.00]	2.930195	1.279638	891.867	2.290	.022	.418743	5.441648
-non-carrier[MLPAPos4=1.00]	0b	0	.	.	.	.	.
-non-carrierBMI	-.348330	.126276	445.446	-2.758	.006	-.596500	-.100159
-non-carrierHypertension	-.384040	1.153811	453.083	-.333	.739	-2.651525	1.883446
-non-carrierHypercholes	.858991	1.543373	452.424	.557	.578	-2.174079	3.892062
-non-carrierDiabetes	-1.850064	2.170546	481.258	-.852	.394	-6.114983	2.414854
-non-carrier[MLPAPos4=.00] * Time	-.478015	1.152419	1228.393	-.415	.678	-2.738943	1.782913
-non-carrier[MLPAPos4=1.00] * Time	0b	0	.	.	.	.	.
-non-carrier[MLPAPos4=.00] * TimeSqr	.059559	.265237	1184.632	.225	.822	-.460827	.579945
-non-carrier[MLPAPos4=1.00] * TimeSqr	0b	0	.	.	.	.	.
-non-carrierAlcohol	.052975	.034608	451.112	1.531	.127	-.015037	.120987
-non-carrierSmokeDichot	1.101122	1.050085	443.513	1.049	.295	-.962638	3.164882
-non-carriera Dependent Variable: Visuospatial.		
+MLPAxSexxTime_Model3Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+MLPAxSexxTime_Model3Lower Bound	Upper Bound
+MLPAxSexxTime_Model3Intercept	118.490986	8.413004	740.581	14.084	.000	101.974809	135.007162
+MLPAxSexxTime_Model3Age	-.217691	.116117	757.864	-1.875	.061	-.445640	.010258
+MLPAxSexxTime_Model3Sex	3.589522	1.354284	1234.069	2.650	.008	.932568	6.246475
+MLPAxSexxTime_Model3EDUpos	4.309054	.900706	649.243	4.784	.000	2.540407	6.077702
+MLPAxSexxTime_Model3Time	.372016	.787510	1744.861	.472	.637	-1.172547	1.916578
+MLPAxSexxTime_Model3[MLPAPos4=.00]	1.080601	1.501991	1264.820	.719	.472	-1.866067	4.027270
+MLPAxSexxTime_Model3[MLPAPos4=1.00]	0b	0	.	.	.	.	.
+MLPAxSexxTime_Model3BMI	-.439404	.110448	669.630	-3.978	.000	-.656270	-.222537
+MLPAxSexxTime_Model3Hypertension	-1.385063	1.002324	659.331	-1.382	.167	-3.353194	.583068
+MLPAxSexxTime_Model3Hypercholes	.764394	1.315667	659.338	.581	.561	-1.819008	3.347796
+MLPAxSexxTime_Model3Diabetes	-1.715572	1.771181	698.388	-.969	.333	-5.193049	1.761905
+MLPAxSexxTime_Model3SmokeDichot	.615660	.907219	657.234	.679	.498	-1.165737	2.397057
+MLPAxSexxTime_Model3Alcohol	.026279	.030138	661.741	.872	.384	-.032898	.085457
+MLPAxSexxTime_Model3[MLPAPos4=.00] * Time	-.383349	1.373933	1729.825	-.279	.780	-3.078093	2.311396
+MLPAxSexxTime_Model3[MLPAPos4=1.00] * Time	0b	0	.	.	.	.	.
+MLPAxSexxTime_Model3[MLPAPos4=.00] * Sex	2.079337	2.173910	1270.603	.956	.339	-2.185511	6.344184
+MLPAxSexxTime_Model3[MLPAPos4=1.00] * Sex	0b	0	.	.	.	.	.
+MLPAxSexxTime_Model3Sex * Time	-1.164283	1.244192	1771.141	-.936	.350	-3.604522	1.275957
+MLPAxSexxTime_Model3TimeSqr	-.204672	.176900	1659.788	-1.157	.247	-.551642	.142299
+MLPAxSexxTime_Model3[MLPAPos4=.00] * TimeSqr	.167689	.319756	1661.019	.524	.600	-.459478	.794856
+MLPAxSexxTime_Model3[MLPAPos4=1.00] * TimeSqr	0b	0	.	.	.	.	.
+MLPAxSexxTime_Model3Sex * TimeSqr	.166415	.283192	1672.217	.588	.557	-.389033	.721863
+MLPAxSexxTime_Model3[MLPAPos4=.00] * Sex * Time	.454008	2.018027	1748.123	.225	.822	-3.503994	4.412009
+MLPAxSexxTime_Model3[MLPAPos4=1.00] * Sex * Time	0b	0	.	.	.	.	.
+MLPAxSexxTime_Model3[MLPAPos4=.00] * Sex * TimeSqr	-.347887	.468259	1666.189	-.743	.458	-1.266325	.570551
+MLPAxSexxTime_Model3[MLPAPos4=1.00] * Sex * TimeSqr	0b	0	.	.	.	.	.
+MLPAxSexxTime_Model3a Dependent Variable: Visuospatial.	
+MLPAxSexxTime_Model3b This parameter is set to zero because it is redundant.	
 
 Visuospatial

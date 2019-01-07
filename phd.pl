@@ -1,5 +1,6 @@
 #!/usr/bin/perl
 use Data::Dumper qw(Dumper);
+use File::Copy;
 ####THIS IS THE STRATAFIED AY APoE FILE#######
 ########################################
 ##############CLEANER CODE##############
@@ -21,6 +22,7 @@ my @finalOutputOrder =();
 my $conffile="";
 my $regParam="";
 my $permitWrite = "Y";
+my $tidy = "";
 print "Please enter a config file: ";
 $conffile = <>;
 chomp ($conffile);
@@ -240,4 +242,18 @@ for my $pfx (@prefixArr) {
     print FINAL "\n";
   }
 }
-print "Completed Successfully.";
+close (FINAL);
+print "Completed Successfully. Check if it is all OK, then we can tidy up.\n";
+print "Do you want to tidy up? ";
+$tidy = <>;
+chomp ($tidy);
+if ($tidy eq "y")
+{
+  print ("\nOK!\n");
+  move ('config/'.$conffile, 'config/checkdone/'.$conffile) or die $!;
+  my $xx;
+    while ($xx < $expectInputs)
+    {
+      move ('input/'.@listOfFiles[$xx], 'input/checkdone/'.@listOfFiles[$xx]) or die $!;
+    }
+}
