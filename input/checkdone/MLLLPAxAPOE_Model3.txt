@@ -1,0 +1,875 @@
+﻿MIXED RBTot BY MLPAvsLLPA4 WITH Sex Age EDUpos Time TimeSqr APOE4Car BMI Hypertension Hypercholes
+    Diabetes SmokeDichot Alcohol
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex Age EDUpos Time TimeSqr MLPAvsLLPA4 APOE4Car BMI Hypertension Hypercholes Diabetes
+    SmokeDichot Alcohol MLPAvsLLPA4*APOE4Car | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+
+
+Mixed Model Analysis
+Notes		
+Output Created		10-JAN-2019 19:33:02
+Comments		
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	<none>
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED RBTot BY MLPAvsLLPA4 WITH Sex Age EDUpos Time TimeSqr APOE4Car BMI Hypertension Hypercholes
+    Diabetes SmokeDichot Alcohol
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex Age EDUpos Time TimeSqr MLPAvsLLPA4 APOE4Car BMI Hypertension Hypercholes Diabetes
+    SmokeDichot Alcohol MLPAvsLLPA4*APOE4Car | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.22
+	Elapsed Time	00:00:01.00
+
+Warnings
+The covariance structure for random effect with only one level will be changed to Identity.
+
+Model Dimensiona					
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables
+Fixed Effects	Intercept	1		1	
+	Sex	1		1	
+	Age	1		1	
+	EDUpos	1		1	
+	Time	1		1	
+	TimeSqr	1		1	
+	MLPAvsLLPA4	4		3	
+	APOE4Car	1		1	
+	BMI	1		1	
+	Hypertension	1		1	
+	Hypercholes	1		1	
+	Diabetes	1		1	
+	SmokeDichot	1		1	
+	Alcohol	1		1	
+	MLPAvsLLPA4 * APOE4Car	4		3	
+Random Effects	Intercept	1	Identity	1	DummyID
+Residual				1	
+Total		22		21	
+a Dependent Variable: Global Cog.					
+
+Information Criteriaa	
+-2 Log Likelihood	15826.446
+Akaike's Information Criterion (AIC)	15868.446
+Hurvich and Tsai's Criterion (AICC)	15868.874
+Bozdogan's Criterion (CAIC)	16008.855
+Schwarz's Bayesian Criterion (BIC)	15987.855
+The information criteria are displayed in smaller-is-better form.	
+a Dependent Variable: Global Cog.	
+
+
+Fixed Effects
+Type III Tests of Fixed Effectsa				
+Source	Numerator df	Denominator df	F	Sig.
+Intercept	1	679.958	207.537	.000
+Sex	1	647.467	26.363	.000
+Age	1	691.303	2.257	.134
+EDUpos	1	638.373	55.675	.000
+Time	1	1577.031	52.901	.000
+TimeSqr	1	1531.141	23.407	.000
+MLPAvsLLPA4	3	630.615	2.524	.057
+APOE4Car	1	636.370	8.594	.003
+BMI	1	647.833	11.262	.001
+Hypertension	1	644.501	1.529	.217
+Hypercholes	1	647.496	.241	.623
+Diabetes	1	657.929	.193	.661
+SmokeDichot	1	642.894	3.335	.068
+Alcohol	1	639.964	4.133	.042
+MLPAvsLLPA4 * APOE4Car	3	637.481	.151	.929
+a Dependent Variable: Global Cog.				
+
+Estimates of Fixed Effectsa							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	114.049837	8.094821	678.193	14.089	.000	98.155914	129.943760
+Sex	4.696693	.914741	647.467	5.134	.000	2.900476	6.492910
+Age	-.163594	.108903	691.303	-1.502	.134	-.377414	.050226
+EDUpos	6.516994	.873404	638.373	7.462	.000	4.801901	8.232086
+Time	2.262900	.311124	1577.031	7.273	.000	1.652640	2.873161
+TimeSqr	-.340835	.070449	1531.141	-4.838	.000	-.479021	-.202649
+[MLPAvsLLPA4=1.00]	3.299365	1.437901	625.754	2.295	.022	.475669	6.123060
+[MLPAvsLLPA4=2.00]	2.431390	1.306821	639.505	1.861	.063	-.134788	4.997568
+[MLPAvsLLPA4=3.00]	-.070111	1.661523	631.764	-.042	.966	-3.332886	3.192665
+[MLPAvsLLPA4=4.00]	0b	0	.	.	.	.	.
+APOE4Car	-2.697960	1.353667	643.923	-1.993	.047	-5.356095	-.039824
+BMI	-.356307	.106171	647.833	-3.356	.001	-.564788	-.147825
+Hypertension	-1.191347	.963616	644.501	-1.236	.217	-3.083552	.700858
+Hypercholes	.625243	1.272956	647.496	.491	.623	-1.874378	3.124864
+Diabetes	-.756922	1.723503	657.929	-.439	.661	-4.141151	2.627306
+SmokeDichot	1.604444	.878515	642.894	1.826	.068	-.120662	3.329549
+Alcohol	.060496	.029757	639.964	2.033	.042	.002063	.118928
+[MLPAvsLLPA4=1.00] * APOE4Car	-.973090	2.947976	634.924	-.330	.741	-6.762051	4.815872
+[MLPAvsLLPA4=2.00] * APOE4Car	-.171779	2.607140	640.403	-.066	.947	-5.291354	4.947797
+[MLPAvsLLPA4=3.00] * APOE4Car	-2.058031	3.279788	638.866	-.627	.531	-8.498499	4.382437
+[MLPAvsLLPA4=4.00] * APOE4Car	0b	0	.	.	.	.	.
+a Dependent Variable: Global Cog.							
+b This parameter is set to zero because it is redundant.							
+
+
+Covariance Parameters
+Estimates of Covariance Parametersa			
+Parameter		Estimate	Std. Error
+Residual		44.505793	1.651533
+Intercept [subject = DummyID]	Variance	106.329005	7.053481
+a Dependent Variable: Global Cog.			
+
+MIXED RBIMI BY MLPAvsLLPA4 WITH Sex Age EDUpos Time TimeSqr APOE4Car BMI Hypertension Hypercholes
+    Diabetes SmokeDichot Alcohol
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex Age EDUpos Time TimeSqr MLPAvsLLPA4 APOE4Car BMI Hypertension Hypercholes Diabetes
+    SmokeDichot Alcohol MLPAvsLLPA4*APOE4Car | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+
+
+Mixed Model Analysis
+Notes		
+Output Created		10-JAN-2019 19:33:23
+Comments		
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	<none>
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED RBIMI BY MLPAvsLLPA4 WITH Sex Age EDUpos Time TimeSqr APOE4Car BMI Hypertension Hypercholes
+    Diabetes SmokeDichot Alcohol
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex Age EDUpos Time TimeSqr MLPAvsLLPA4 APOE4Car BMI Hypertension Hypercholes Diabetes
+    SmokeDichot Alcohol MLPAvsLLPA4*APOE4Car | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.22
+	Elapsed Time	00:00:01.00
+
+Warnings
+The covariance structure for random effect with only one level will be changed to Identity.
+
+Model Dimensiona					
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables
+Fixed Effects	Intercept	1		1	
+	Sex	1		1	
+	Age	1		1	
+	EDUpos	1		1	
+	Time	1		1	
+	TimeSqr	1		1	
+	MLPAvsLLPA4	4		3	
+	APOE4Car	1		1	
+	BMI	1		1	
+	Hypertension	1		1	
+	Hypercholes	1		1	
+	Diabetes	1		1	
+	SmokeDichot	1		1	
+	Alcohol	1		1	
+	MLPAvsLLPA4 * APOE4Car	4		3	
+Random Effects	Intercept	1	Identity	1	DummyID
+Residual				1	
+Total		22		21	
+a Dependent Variable: Immediate memory.					
+
+Information Criteriaa	
+-2 Log Likelihood	16659.631
+Akaike's Information Criterion (AIC)	16701.631
+Hurvich and Tsai's Criterion (AICC)	16702.059
+Bozdogan's Criterion (CAIC)	16842.040
+Schwarz's Bayesian Criterion (BIC)	16821.040
+The information criteria are displayed in smaller-is-better form.	
+a Dependent Variable: Immediate memory.	
+
+
+Fixed Effects
+Type III Tests of Fixed Effectsa				
+Source	Numerator df	Denominator df	F	Sig.
+Intercept	1	650.577	155.012	.000
+Sex	1	593.706	59.967	.000
+Age	1	667.481	.139	.710
+EDUpos	1	581.617	45.222	.000
+Time	1	1601.179	91.731	.000
+TimeSqr	1	1537.327	37.835	.000
+MLPAvsLLPA4	3	570.719	1.210	.305
+APOE4Car	1	575.290	3.957	.047
+BMI	1	596.056	1.550	.214
+Hypertension	1	591.233	.107	.744
+Hypercholes	1	595.368	.452	.502
+Diabetes	1	609.438	.972	.325
+SmokeDichot	1	587.765	.601	.439
+Alcohol	1	584.174	3.819	.051
+MLPAvsLLPA4 * APOE4Car	3	577.588	.034	.992
+a Dependent Variable: Immediate memory.				
+
+Estimates of Fixed Effectsa							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	101.182592	8.247255	647.967	12.269	.000	84.988020	117.377164
+Sex	7.158896	.924462	593.706	7.744	.000	5.343282	8.974509
+Age	-.041421	.111285	667.481	-.372	.710	-.259932	.177090
+EDUpos	5.922806	.880753	581.617	6.725	.000	4.192962	7.652650
+Time	3.868130	.403872	1601.179	9.578	.000	3.075957	4.660304
+TimeSqr	-.565025	.091859	1537.327	-6.151	.000	-.745207	-.384843
+[MLPAvsLLPA4=1.00]	2.024341	1.445629	566.016	1.400	.162	-.815111	4.863794
+[MLPAvsLLPA4=2.00]	1.247948	1.317999	581.578	.947	.344	-1.340669	3.836564
+[MLPAvsLLPA4=3.00]	-1.162079	1.672742	572.596	-.695	.488	-4.447537	2.123380
+[MLPAvsLLPA4=4.00]	0b	0	.	.	.	.	.
+APOE4Car	-2.001924	1.366690	587.224	-1.465	.144	-4.686119	.682271
+BMI	-.133641	.107326	596.056	-1.245	.214	-.344424	.077142
+Hypertension	-.318177	.973289	591.233	-.327	.744	-2.229703	1.593348
+Hypercholes	-.865166	1.286672	595.368	-.672	.502	-3.392133	1.661801
+Diabetes	1.721741	1.746380	609.438	.986	.325	-1.707913	5.151395
+SmokeDichot	.687537	.886889	587.765	.775	.439	-1.054320	2.429394
+Alcohol	.058666	.030020	584.174	1.954	.051	-.000294	.117625
+[MLPAvsLLPA4=1.00] * APOE4Car	-.406202	2.969502	574.161	-.137	.891	-6.238613	5.426209
+[MLPAvsLLPA4=2.00] * APOE4Car	-.140677	2.630366	584.284	-.053	.957	-5.306801	5.025448
+[MLPAvsLLPA4=3.00] * APOE4Car	-1.013453	3.306193	576.812	-.307	.759	-7.507097	5.480191
+[MLPAvsLLPA4=4.00] * APOE4Car	0b	0	.	.	.	.	.
+a Dependent Variable: Immediate memory.							
+b This parameter is set to zero because it is redundant.							
+
+
+Covariance Parameters
+Estimates of Covariance Parametersa			
+Parameter		Estimate	Std. Error
+Residual		76.921560	2.892444
+Intercept [subject = DummyID]	Variance	95.516935	7.499572
+a Dependent Variable: Immediate memory.			
+
+MIXED RBVSI BY MLPAvsLLPA4 WITH Sex Age EDUpos Time TimeSqr APOE4Car BMI Hypertension Hypercholes
+    Diabetes SmokeDichot Alcohol
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex Age EDUpos Time TimeSqr MLPAvsLLPA4 APOE4Car BMI Hypertension Hypercholes Diabetes
+    SmokeDichot Alcohol MLPAvsLLPA4*APOE4Car | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+
+
+Mixed Model Analysis
+Notes		
+Output Created		10-JAN-2019 19:33:30
+Comments		
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	<none>
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED RBVSI BY MLPAvsLLPA4 WITH Sex Age EDUpos Time TimeSqr APOE4Car BMI Hypertension Hypercholes
+    Diabetes SmokeDichot Alcohol
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex Age EDUpos Time TimeSqr MLPAvsLLPA4 APOE4Car BMI Hypertension Hypercholes Diabetes
+    SmokeDichot Alcohol MLPAvsLLPA4*APOE4Car | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.21
+	Elapsed Time	00:00:00.00
+
+Warnings
+The covariance structure for random effect with only one level will be changed to Identity.
+
+Model Dimensiona					
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables
+Fixed Effects	Intercept	1		1	
+	Sex	1		1	
+	Age	1		1	
+	EDUpos	1		1	
+	Time	1		1	
+	TimeSqr	1		1	
+	MLPAvsLLPA4	4		3	
+	APOE4Car	1		1	
+	BMI	1		1	
+	Hypertension	1		1	
+	Hypercholes	1		1	
+	Diabetes	1		1	
+	SmokeDichot	1		1	
+	Alcohol	1		1	
+	MLPAvsLLPA4 * APOE4Car	4		3	
+Random Effects	Intercept	1	Identity	1	DummyID
+Residual				1	
+Total		22		21	
+a Dependent Variable: Visuospatial.					
+
+Information Criteriaa	
+-2 Log Likelihood	17357.834
+Akaike's Information Criterion (AIC)	17399.834
+Hurvich and Tsai's Criterion (AICC)	17400.263
+Bozdogan's Criterion (CAIC)	17540.244
+Schwarz's Bayesian Criterion (BIC)	17519.244
+The information criteria are displayed in smaller-is-better form.	
+a Dependent Variable: Visuospatial.	
+
+
+Fixed Effects
+Type III Tests of Fixed Effectsa				
+Source	Numerator df	Denominator df	F	Sig.
+Intercept	1	685.374	199.894	.000
+Sex	1	605.041	9.785	.002
+Age	1	706.551	3.586	.059
+EDUpos	1	591.155	22.096	.000
+Time	1	1663.733	.116	.733
+TimeSqr	1	1596.897	1.653	.199
+MLPAvsLLPA4	3	578.104	1.781	.150
+APOE4Car	1	580.344	2.206	.138
+BMI	1	609.746	16.994	.000
+Hypertension	1	603.615	3.718	.054
+Hypercholes	1	608.578	.589	.443
+Diabetes	1	624.753	.245	.621
+SmokeDichot	1	598.357	1.265	.261
+Alcohol	1	594.706	.787	.375
+MLPAvsLLPA4 * APOE4Car	3	583.808	2.113	.097
+a Dependent Variable: Visuospatial.				
+
+Estimates of Fixed Effectsa							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	122.913409	8.836379	682.104	13.910	.000	105.563639	140.263180
+Sex	-3.077169	.983728	605.041	-3.128	.002	-5.009105	-1.145232
+Age	-.226285	.119488	706.551	-1.894	.059	-.460878	.008309
+EDUpos	4.398909	.935820	591.155	4.701	.000	2.560972	6.236845
+Time	-.167418	.490957	1663.733	-.341	.733	-1.130376	.795540
+TimeSqr	-.143995	.111981	1596.897	-1.286	.199	-.363641	.075651
+[MLPAvsLLPA4=1.00]	.185057	1.533045	574.249	.121	.904	-2.826002	3.196115
+[MLPAvsLLPA4=2.00]	3.126325	1.400291	589.703	2.233	.026	.376160	5.876490
+[MLPAvsLLPA4=3.00]	.178500	1.775288	580.718	.101	.920	-3.308267	3.665267
+[MLPAvsLLPA4=4.00]	0b	0	.	.	.	.	.
+APOE4Car	-.747169	1.453002	595.567	-.514	.607	-3.600799	2.106461
+BMI	-.470986	.114250	609.746	-4.122	.000	-.695358	-.246614
+Hypertension	-1.996495	1.035449	603.615	-1.928	.054	-4.030015	.037026
+Hypercholes	1.051484	1.369548	608.578	.768	.443	-1.638130	3.741098
+Diabetes	-.921827	1.861987	624.753	-.495	.621	-4.578337	2.734684
+SmokeDichot	1.060697	.943067	598.357	1.125	.261	-.791426	2.912820
+Alcohol	.028310	.031908	594.706	.887	.375	-.034356	.090975
+[MLPAvsLLPA4=1.00] * APOE4Car	3.840641	3.151742	579.973	1.219	.224	-2.349578	10.030860
+[MLPAvsLLPA4=2.00] * APOE4Car	-2.046318	2.795752	594.207	-.732	.464	-7.537075	3.444439
+[MLPAvsLLPA4=3.00] * APOE4Car	-6.388278	3.509769	580.261	-1.820	.069	-13.281676	.505121
+[MLPAvsLLPA4=4.00] * APOE4Car	0b	0	.	.	.	.	.
+a Dependent Variable: Visuospatial.							
+b This parameter is set to zero because it is redundant.							
+
+
+Covariance Parameters
+Estimates of Covariance Parametersa			
+Parameter		Estimate	Std. Error
+Residual		115.666306	4.296046
+Intercept [subject = DummyID]	Variance	97.205179	8.305506
+a Dependent Variable: Visuospatial.			
+
+MIXED RBLI BY MLPAvsLLPA4 WITH Sex Age EDUpos Time TimeSqr APOE4Car BMI Hypertension Hypercholes
+    Diabetes SmokeDichot Alcohol
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex Age EDUpos Time TimeSqr MLPAvsLLPA4 APOE4Car BMI Hypertension Hypercholes Diabetes
+    SmokeDichot Alcohol MLPAvsLLPA4*APOE4Car | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+
+
+Mixed Model Analysis
+Notes		
+Output Created		10-JAN-2019 19:33:37
+Comments		
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	<none>
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED RBLI BY MLPAvsLLPA4 WITH Sex Age EDUpos Time TimeSqr APOE4Car BMI Hypertension Hypercholes
+    Diabetes SmokeDichot Alcohol
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex Age EDUpos Time TimeSqr MLPAvsLLPA4 APOE4Car BMI Hypertension Hypercholes Diabetes
+    SmokeDichot Alcohol MLPAvsLLPA4*APOE4Car | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.21
+	Elapsed Time	00:00:00.00
+
+Warnings
+The covariance structure for random effect with only one level will be changed to Identity.
+
+Model Dimensiona					
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables
+Fixed Effects	Intercept	1		1	
+	Sex	1		1	
+	Age	1		1	
+	EDUpos	1		1	
+	Time	1		1	
+	TimeSqr	1		1	
+	MLPAvsLLPA4	4		3	
+	APOE4Car	1		1	
+	BMI	1		1	
+	Hypertension	1		1	
+	Hypercholes	1		1	
+	Diabetes	1		1	
+	SmokeDichot	1		1	
+	Alcohol	1		1	
+	MLPAvsLLPA4 * APOE4Car	4		3	
+Random Effects	Intercept	1	Identity	1	DummyID
+Residual				1	
+Total		22		21	
+a Dependent Variable: Language.					
+
+Information Criteriaa	
+-2 Log Likelihood	16637.092
+Akaike's Information Criterion (AIC)	16679.092
+Hurvich and Tsai's Criterion (AICC)	16679.521
+Bozdogan's Criterion (CAIC)	16819.502
+Schwarz's Bayesian Criterion (BIC)	16798.502
+The information criteria are displayed in smaller-is-better form.	
+a Dependent Variable: Language.	
+
+
+Fixed Effects
+Type III Tests of Fixed Effectsa				
+Source	Numerator df	Denominator df	F	Sig.
+Intercept	1	684.885	193.911	.000
+Sex	1	602.648	48.830	.000
+Age	1	706.351	.437	.509
+EDUpos	1	588.690	19.801	.000
+Time	1	1665.765	1.176	.278
+TimeSqr	1	1598.721	.148	.701
+MLPAvsLLPA4	3	575.527	3.087	.027
+APOE4Car	1	577.503	2.160	.142
+BMI	1	607.571	.111	.739
+Hypertension	1	601.344	.202	.653
+Hypercholes	1	606.355	.833	.362
+Diabetes	1	622.610	2.118	.146
+SmokeDichot	1	595.943	3.153	.076
+Alcohol	1	592.324	2.866	.091
+MLPAvsLLPA4 * APOE4Car	3	581.060	.755	.520
+a Dependent Variable: Language.				
+
+Estimates of Fixed Effectsa							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	101.930461	7.437183	681.569	13.706	.000	87.327918	116.533003
+Sex	5.782053	.827444	602.648	6.988	.000	4.157029	7.407078
+Age	-.066508	.100585	706.351	-.661	.509	-.263990	.130974
+EDUpos	3.502286	.787051	588.690	4.450	.000	1.956516	5.048055
+Time	.452461	.417169	1665.765	1.085	.278	-.365771	1.270692
+TimeSqr	-.036562	.095172	1598.721	-.384	.701	-.223238	.150114
+[MLPAvsLLPA4=1.00]	3.548093	1.289136	571.788	2.752	.006	1.016074	6.080112
+[MLPAvsLLPA4=2.00]	-.141346	1.177668	587.106	-.120	.905	-2.454302	2.171610
+[MLPAvsLLPA4=3.00]	-.662242	1.492926	578.201	-.444	.658	-3.594461	2.269977
+[MLPAvsLLPA4=4.00]	0b	0	.	.	.	.	.
+APOE4Car	-2.510718	1.222062	592.925	-2.054	.040	-4.910815	-.110621
+BMI	-.032072	.096104	607.571	-.334	.739	-.220807	.156663
+Hypertension	-.391536	.870938	601.344	-.450	.653	-2.101986	1.318913
+Hypercholes	1.051703	1.152005	606.355	.913	.362	-1.210701	3.314108
+Diabetes	-2.279807	1.566438	622.610	-1.455	.146	-5.355949	.796334
+SmokeDichot	1.408448	.793196	595.943	1.776	.076	-.149352	2.966248
+Alcohol	.045430	.026836	592.324	1.693	.091	-.007276	.098136
+[MLPAvsLLPA4=1.00] * APOE4Car	-1.317014	2.650432	577.221	-.497	.619	-6.522681	3.888654
+[MLPAvsLLPA4=2.00] * APOE4Car	1.630805	2.351370	591.758	.694	.488	-2.987241	6.248850
+[MLPAvsLLPA4=3.00] * APOE4Car	3.418840	2.951516	577.248	1.158	.247	-2.378181	9.215860
+[MLPAvsLLPA4=4.00] * APOE4Car	0b	0	.	.	.	.	.
+a Dependent Variable: Language.							
+b This parameter is set to zero because it is redundant.							
+
+
+Covariance Parameters
+Estimates of Covariance Parametersa			
+Parameter		Estimate	Std. Error
+Residual		83.631380	3.106777
+Intercept [subject = DummyID]	Variance	68.108326	5.883732
+a Dependent Variable: Language.			
+
+MIXED RBAI BY MLPAvsLLPA4 WITH Sex Age EDUpos Time TimeSqr APOE4Car BMI Hypertension Hypercholes
+    Diabetes SmokeDichot Alcohol
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex Age EDUpos Time TimeSqr MLPAvsLLPA4 APOE4Car BMI Hypertension Hypercholes Diabetes
+    SmokeDichot Alcohol MLPAvsLLPA4*APOE4Car | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+
+
+Mixed Model Analysis
+Notes		
+Output Created		10-JAN-2019 19:33:44
+Comments		
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	<none>
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED RBAI BY MLPAvsLLPA4 WITH Sex Age EDUpos Time TimeSqr APOE4Car BMI Hypertension Hypercholes
+    Diabetes SmokeDichot Alcohol
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex Age EDUpos Time TimeSqr MLPAvsLLPA4 APOE4Car BMI Hypertension Hypercholes Diabetes
+    SmokeDichot Alcohol MLPAvsLLPA4*APOE4Car | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.21
+	Elapsed Time	00:00:00.00
+
+Warnings
+The covariance structure for random effect with only one level will be changed to Identity.
+
+Model Dimensiona					
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables
+Fixed Effects	Intercept	1		1	
+	Sex	1		1	
+	Age	1		1	
+	EDUpos	1		1	
+	Time	1		1	
+	TimeSqr	1		1	
+	MLPAvsLLPA4	4		3	
+	APOE4Car	1		1	
+	BMI	1		1	
+	Hypertension	1		1	
+	Hypercholes	1		1	
+	Diabetes	1		1	
+	SmokeDichot	1		1	
+	Alcohol	1		1	
+	MLPAvsLLPA4 * APOE4Car	4		3	
+Random Effects	Intercept	1	Identity	1	DummyID
+Residual				1	
+Total		22		21	
+a Dependent Variable: Attention.					
+
+Information Criteriaa	
+-2 Log Likelihood	16592.112
+Akaike's Information Criterion (AIC)	16634.112
+Hurvich and Tsai's Criterion (AICC)	16634.541
+Bozdogan's Criterion (CAIC)	16774.521
+Schwarz's Bayesian Criterion (BIC)	16753.521
+The information criteria are displayed in smaller-is-better form.	
+a Dependent Variable: Attention.	
+
+
+Fixed Effects
+Type III Tests of Fixed Effectsa				
+Source	Numerator df	Denominator df	F	Sig.
+Intercept	1	706.359	136.516	.000
+Sex	1	675.299	.978	.323
+Age	1	717.351	.087	.768
+EDUpos	1	666.390	27.815	.000
+Time	1	1596.263	25.040	.000
+TimeSqr	1	1553.337	4.423	.036
+MLPAvsLLPA4	3	658.824	2.067	.103
+APOE4Car	1	664.645	6.196	.013
+BMI	1	675.553	12.295	.000
+Hypertension	1	672.306	3.412	.065
+Hypercholes	1	675.233	.246	.620
+Diabetes	1	685.432	1.325	.250
+SmokeDichot	1	670.811	3.807	.051
+Alcohol	1	667.929	.827	.363
+MLPAvsLLPA4 * APOE4Car	3	665.686	.590	.622
+a Dependent Variable: Attention.				
+
+Estimates of Fixed Effectsa							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	111.829006	9.843427	704.646	11.361	.000	92.503049	131.154963
+Sex	1.100847	1.113060	675.299	.989	.323	-1.084628	3.286322
+Age	-.039015	.132392	717.351	-.295	.768	-.298938	.220907
+EDUpos	5.606146	1.062976	666.390	5.274	.000	3.518960	7.693332
+Time	1.840788	.367866	1596.263	5.004	.000	1.119237	2.562339
+TimeSqr	-.175099	.083261	1553.337	-2.103	.036	-.338415	-.011782
+[MLPAvsLLPA4=1.00]	4.145855	1.750499	653.948	2.368	.018	.708579	7.583131
+[MLPAvsLLPA4=2.00]	2.035460	1.590423	667.594	1.280	.201	-1.087374	5.158295
+[MLPAvsLLPA4=3.00]	1.992012	2.022457	659.933	.985	.325	-1.979214	5.963237
+[MLPAvsLLPA4=4.00]	0b	0	.	.	.	.	.
+APOE4Car	-1.787811	1.647275	671.921	-1.085	.278	-5.022237	1.446615
+BMI	-.452994	.129189	675.553	-3.506	.000	-.706653	-.199334
+Hypertension	-2.166058	1.172609	672.306	-1.847	.065	-4.468474	.136359
+Hypercholes	.768698	1.548939	675.233	.496	.620	-2.272619	3.810014
+Diabetes	-2.413150	2.096690	685.432	-1.151	.250	-6.529856	1.703557
+SmokeDichot	2.085951	1.069089	670.811	1.951	.051	-.013211	4.185114
+Alcohol	.032934	.036214	667.929	.909	.363	-.038173	.104041
+[MLPAvsLLPA4=1.00] * APOE4Car	-3.341087	3.588103	663.187	-.931	.352	-10.386498	3.704324
+[MLPAvsLLPA4=2.00] * APOE4Car	.080788	3.172874	668.382	.025	.980	-6.149212	6.310789
+[MLPAvsLLPA4=3.00] * APOE4Car	-4.050872	3.991606	667.193	-1.015	.311	-11.888495	3.786750
+[MLPAvsLLPA4=4.00] * APOE4Car	0b	0	.	.	.	.	.
+a Dependent Variable: Attention.							
+b This parameter is set to zero because it is redundant.							
+
+
+Covariance Parameters
+Estimates of Covariance Parametersa			
+Parameter		Estimate	Std. Error
+Residual		62.075097	2.281880
+Intercept [subject = DummyID]	Variance	159.106057	10.205874
+a Dependent Variable: Attention.			
+
+MIXED RBDMI BY MLPAvsLLPA4 WITH Sex Age EDUpos Time TimeSqr APOE4Car BMI Hypertension Hypercholes
+    Diabetes SmokeDichot Alcohol
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex Age EDUpos Time TimeSqr MLPAvsLLPA4 APOE4Car BMI Hypertension Hypercholes Diabetes
+    SmokeDichot Alcohol MLPAvsLLPA4*APOE4Car | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+
+
+Mixed Model Analysis
+Notes		
+Output Created		10-JAN-2019 19:33:52
+Comments		
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	<none>
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED RBDMI BY MLPAvsLLPA4 WITH Sex Age EDUpos Time TimeSqr APOE4Car BMI Hypertension Hypercholes
+    Diabetes SmokeDichot Alcohol
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex Age EDUpos Time TimeSqr MLPAvsLLPA4 APOE4Car BMI Hypertension Hypercholes Diabetes
+    SmokeDichot Alcohol MLPAvsLLPA4*APOE4Car | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.20
+	Elapsed Time	00:00:00.00
+
+Warnings
+The covariance structure for random effect with only one level will be changed to Identity.
+
+Model Dimensiona					
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables
+Fixed Effects	Intercept	1		1	
+	Sex	1		1	
+	Age	1		1	
+	EDUpos	1		1	
+	Time	1		1	
+	TimeSqr	1		1	
+	MLPAvsLLPA4	4		3	
+	APOE4Car	1		1	
+	BMI	1		1	
+	Hypertension	1		1	
+	Hypercholes	1		1	
+	Diabetes	1		1	
+	SmokeDichot	1		1	
+	Alcohol	1		1	
+	MLPAvsLLPA4 * APOE4Car	4		3	
+Random Effects	Intercept	1	Identity	1	DummyID
+Residual				1	
+Total		22		21	
+a Dependent Variable: Delayed memory.					
+
+Information Criteriaa	
+-2 Log Likelihood	15744.807
+Akaike's Information Criterion (AIC)	15786.807
+Hurvich and Tsai's Criterion (AICC)	15787.236
+Bozdogan's Criterion (CAIC)	15927.217
+Schwarz's Bayesian Criterion (BIC)	15906.217
+The information criteria are displayed in smaller-is-better form.	
+a Dependent Variable: Delayed memory.	
+
+
+Fixed Effects
+Type III Tests of Fixed Effectsa				
+Source	Numerator df	Denominator df	F	Sig.
+Intercept	1	636.545	259.700	.000
+Sex	1	590.614	30.554	.000
+Age	1	651.097	6.115	.014
+EDUpos	1	579.739	20.016	.000
+Time	1	1568.381	104.265	.000
+TimeSqr	1	1509.051	50.987	.000
+MLPAvsLLPA4	3	570.150	1.488	.217
+APOE4Car	1	575.400	4.882	.028
+BMI	1	592.017	.114	.736
+Hypertension	1	587.848	.000	.993
+Hypercholes	1	591.504	.029	.865
+Diabetes	1	604.111	.312	.577
+SmokeDichot	1	585.218	.232	.630
+Alcohol	1	581.853	1.776	.183
+MLPAvsLLPA4 * APOE4Car	3	577.160	.084	.969
+a Dependent Variable: Delayed memory.				
+
+Estimates of Fixed Effectsa							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	112.521989	7.088235	634.294	15.874	.000	98.602744	126.441233
+Sex	4.406499	.797188	590.614	5.528	.000	2.840831	5.972168
+Age	-.236242	.095535	651.097	-2.473	.014	-.423836	-.048647
+EDUpos	3.400762	.760131	579.739	4.474	.000	1.907815	4.893709
+Time	3.266269	.319878	1568.381	10.211	.000	2.638836	3.893702
+TimeSqr	-.518645	.072634	1509.051	-7.141	.000	-.661119	-.376171
+[MLPAvsLLPA4=1.00]	1.429752	1.249053	565.295	1.145	.253	-1.023599	3.883104
+[MLPAvsLLPA4=2.00]	1.858552	1.137473	580.263	1.634	.103	-.375514	4.092617
+[MLPAvsLLPA4=3.00]	-.856675	1.444572	571.694	-.593	.553	-3.693991	1.980640
+[MLPAvsLLPA4=4.00]	0b	0	.	.	.	.	.
+APOE4Car	-2.372135	1.179025	585.472	-2.012	.045	-4.687769	-.056500
+BMI	-.031192	.092538	592.017	-.337	.736	-.212934	.150550
+Hypertension	-.006964	.839453	587.848	-.008	.993	-1.655656	1.641728
+Hypercholes	.188714	1.109431	591.504	.170	.865	-1.990190	2.367618
+Diabetes	.840210	1.504398	604.111	.559	.577	-2.114276	3.794696
+SmokeDichot	.368661	.765101	585.218	.482	.630	-1.134018	1.871340
+Alcohol	.034522	.025904	581.853	1.333	.183	-.016355	.085399
+[MLPAvsLLPA4=1.00] * APOE4Car	-.814251	2.564061	574.073	-.318	.751	-5.850337	4.221835
+[MLPAvsLLPA4=2.00] * APOE4Car	.521688	2.269707	582.147	.230	.818	-3.936123	4.979499
+[MLPAvsLLPA4=3.00] * APOE4Car	.605432	2.854134	577.442	.212	.832	-5.000317	6.211181
+[MLPAvsLLPA4=4.00] * APOE4Car	0b	0	.	.	.	.	.
+a Dependent Variable: Delayed memory.							
+b This parameter is set to zero because it is redundant.							
+
+
+Covariance Parameters
+Estimates of Covariance Parametersa			
+Parameter		Estimate	Std. Error
+Residual		47.788811	1.805582
+Intercept [subject = DummyID]	Variance	74.829950	5.616834
+a Dependent Variable: Delayed memory.			
+
+MIXED EXECI BY MLPAvsLLPA4 WITH Sex Age EDUpos Time TimeSqr APOE4Car BMI Hypertension Hypercholes
+    Diabetes SmokeDichot Alcohol
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex Age EDUpos Time TimeSqr MLPAvsLLPA4 APOE4Car BMI Hypertension Hypercholes Diabetes
+    SmokeDichot Alcohol MLPAvsLLPA4*APOE4Car | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+
+
+Mixed Model Analysis
+Notes		
+Output Created		10-JAN-2019 19:34:00
+Comments		
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	<none>
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED EXECI BY MLPAvsLLPA4 WITH Sex Age EDUpos Time TimeSqr APOE4Car BMI Hypertension Hypercholes
+    Diabetes SmokeDichot Alcohol
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex Age EDUpos Time TimeSqr MLPAvsLLPA4 APOE4Car BMI Hypertension Hypercholes Diabetes
+    SmokeDichot Alcohol MLPAvsLLPA4*APOE4Car | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.15
+	Elapsed Time	00:00:00.00
+
+Warnings
+The covariance structure for random effect with only one level will be changed to Identity.
+
+Model Dimensiona					
+		Number of Levels	Covariance Structure	Number of Parameters	Subject Variables
+Fixed Effects	Intercept	1		1	
+	Sex	1		1	
+	Age	1		1	
+	EDUpos	1		1	
+	Time	1		1	
+	TimeSqr	1		1	
+	MLPAvsLLPA4	4		3	
+	APOE4Car	1		1	
+	BMI	1		1	
+	Hypertension	1		1	
+	Hypercholes	1		1	
+	Diabetes	1		1	
+	SmokeDichot	1		1	
+	Alcohol	1		1	
+	MLPAvsLLPA4 * APOE4Car	4		3	
+Random Effects	Intercept	1	Identity	1	DummyID
+Residual				1	
+Total		22		21	
+a Dependent Variable: Executive function.					
+
+Information Criteriaa	
+-2 Log Likelihood	8551.047
+Akaike's Information Criterion (AIC)	8593.047
+Hurvich and Tsai's Criterion (AICC)	8593.927
+Bozdogan's Criterion (CAIC)	8718.550
+Schwarz's Bayesian Criterion (BIC)	8697.550
+The information criteria are displayed in smaller-is-better form.	
+a Dependent Variable: Executive function.	
+
+
+Fixed Effects
+Type III Tests of Fixed Effectsa				
+Source	Numerator df	Denominator df	F	Sig.
+Intercept	1	591.213	115.986	.000
+Sex	1	520.067	.132	.717
+Age	1	594.075	2.237	.135
+EDUpos	1	518.757	3.157	.076
+Time	1	571.047	.179	.673
+TimeSqr	1	561.210	.159	.690
+MLPAvsLLPA4	3	516.862	2.716	.044
+APOE4Car	1	502.781	1.020	.313
+BMI	1	525.181	.222	.638
+Hypertension	1	523.537	2.238	.135
+Hypercholes	1	521.689	.310	.578
+Diabetes	1	530.582	1.364	.243
+SmokeDichot	1	520.552	1.201	.274
+Alcohol	1	524.595	.638	.425
+MLPAvsLLPA4 * APOE4Car	3	506.095	.896	.443
+a Dependent Variable: Executive function.				
+
+Estimates of Fixed Effectsa							
+Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+						Lower Bound	Upper Bound
+Intercept	131.709284	12.523198	590.350	10.517	.000	107.113843	156.304725
+Sex	.475610	1.309522	520.067	.363	.717	-2.096992	3.048213
+Age	-.262114	.175261	594.075	-1.496	.135	-.606320	.082091
+EDUpos	-2.168896	1.220630	518.757	-1.777	.076	-4.566881	.229089
+Time	.262013	.619787	571.047	.423	.673	-.955328	1.479354
+TimeSqr	.065077	.163041	561.210	.399	.690	-.255168	.385322
+[MLPAvsLLPA4=1.00]	4.394650	1.965515	525.739	2.236	.026	.533421	8.255879
+[MLPAvsLLPA4=2.00]	4.136640	1.837341	510.707	2.251	.025	.526964	7.746316
+[MLPAvsLLPA4=3.00]	.677714	2.274945	518.835	.298	.766	-3.791521	5.146949
+[MLPAvsLLPA4=4.00]	0b	0	.	.	.	.	.
+APOE4Car	.778757	1.949860	516.232	.399	.690	-3.051879	4.609393
+BMI	-.071725	.152229	525.181	-.471	.638	-.370777	.227327
+Hypertension	-2.049852	1.370254	523.537	-1.496	.135	-4.741722	.642019
+Hypercholes	1.043904	1.873610	521.689	.557	.578	-2.636844	4.724651
+Diabetes	-2.901540	2.484196	530.582	-1.168	.243	-7.781606	1.978527
+SmokeDichot	1.360483	1.241548	520.552	1.096	.274	-1.078577	3.799544
+Alcohol	.033109	.041464	524.595	.798	.425	-.048347	.114564
+[MLPAvsLLPA4=1.00] * APOE4Car	-1.954814	4.215376	498.800	-.464	.643	-10.236894	6.327267
+[MLPAvsLLPA4=2.00] * APOE4Car	-5.961550	3.638167	516.849	-1.639	.102	-13.108964	1.185863
+[MLPAvsLLPA4=3.00] * APOE4Car	-1.865928	4.461439	505.499	-.418	.676	-10.631175	6.899319
+[MLPAvsLLPA4=4.00] * APOE4Car	0b	0	.	.	.	.	.
+a Dependent Variable: Executive function.							
+b This parameter is set to zero because it is redundant.							
+
+
+Covariance Parameters
+Estimates of Covariance Parametersa			
+Parameter		Estimate	Std. Error
+Residual		82.801503	5.099314
+Intercept [subject = DummyID]	Variance	146.209537	12.306157
+a Dependent Variable: Executive function.			
+

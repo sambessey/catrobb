@@ -1,0 +1,56 @@
+MLLLPAxAPOExTime_Model3.txt		
+Attention		Sig
+[MLPAvsLLPA4=3.00] * Time * APOE4Car	0.85 [-4.51, 6.21]	0.76
+[MLPAvsLLPA4=2.00] * Time * APOE4Car	-0.05 [-4.48, 4.38]	0.98
+[MLPAvsLLPA4=1.00] * Time * APOE4Car	2.43 [-2.91, 7.76]	0.37
+[MLPAvsLLPA4=3.00] * TimeSqr * APOE4Car	-0.24 [-1.44, 0.96]	0.69
+[MLPAvsLLPA4=2.00] * TimeSqr * APOE4Car	0.19 [-0.83, 1.21]	0.71
+[MLPAvsLLPA4=1.00] * TimeSqr * APOE4Car	-0.37 [-1.68, 0.95]	0.58
+MLLLPAxAPOExTime_Model3.txt		
+Delayed memory		Sig
+[MLPAvsLLPA4=3.00] * Time * APOE4Car	-5.53 [-10.17, -0.89]*	0.02
+[MLPAvsLLPA4=2.00] * Time * APOE4Car	0.80 [-3.03, 4.64]	0.68
+[MLPAvsLLPA4=1.00] * Time * APOE4Car	-1.64 [-6.27, 2.98]	0.49
+[MLPAvsLLPA4=3.00] * TimeSqr * APOE4Car	1.40 [0.36, 2.44]**	0.01
+[MLPAvsLLPA4=2.00] * TimeSqr * APOE4Car	-0.20 [-1.09, 0.69]	0.66
+[MLPAvsLLPA4=1.00] * TimeSqr * APOE4Car	0.43 [-0.72, 1.57]	0.47
+MLLLPAxAPOExTime_Model3.txt		
+Executive function		Sig
+[MLPAvsLLPA4=3.00] * Time * APOE4Car	-1.45 [-10.25, 7.34]	0.75
+[MLPAvsLLPA4=2.00] * Time * APOE4Car	-4.47 [-11.69, 2.75]	0.22
+[MLPAvsLLPA4=1.00] * Time * APOE4Car	-4.95 [-12.99, 3.08]	0.23
+[MLPAvsLLPA4=3.00] * TimeSqr * APOE4Car	0.62 [-1.65, 2.88]	0.59
+[MLPAvsLLPA4=2.00] * TimeSqr * APOE4Car	1.28 [-0.66, 3.21]	0.20
+[MLPAvsLLPA4=1.00] * TimeSqr * APOE4Car	1.60 [-0.49, 3.70]	0.13
+MLLLPAxAPOExTime_Model3.txt		
+Global Cog		Sig
+[MLPAvsLLPA4=3.00] * Time * APOE4Car	2.43 [-2.09, 6.96]	0.29
+[MLPAvsLLPA4=2.00] * Time * APOE4Car	-0.46 [-4.20, 3.27]	0.81
+[MLPAvsLLPA4=1.00] * Time * APOE4Car	1.87 [-2.64, 6.37]	0.42
+[MLPAvsLLPA4=3.00] * TimeSqr * APOE4Car	-0.25 [-1.27, 0.76]	0.62
+[MLPAvsLLPA4=2.00] * TimeSqr * APOE4Car	0.24 [-0.63, 1.10]	0.59
+[MLPAvsLLPA4=1.00] * TimeSqr * APOE4Car	-0.25 [-1.36, 0.87]	0.67
+MLLLPAxAPOExTime_Model3.txt		
+Immediate memory		Sig
+[MLPAvsLLPA4=3.00] * Time * APOE4Car	-1.33 [-7.16, 4.50]	0.65
+[MLPAvsLLPA4=2.00] * Time * APOE4Car	-1.46 [-6.28, 3.36]	0.55
+[MLPAvsLLPA4=1.00] * Time * APOE4Car	-0.69 [-6.51, 5.13]	0.82
+[MLPAvsLLPA4=3.00] * TimeSqr * APOE4Car	0.42 [-0.90, 1.73]	0.53
+[MLPAvsLLPA4=2.00] * TimeSqr * APOE4Car	0.70 [-0.42, 1.81]	0.22
+[MLPAvsLLPA4=1.00] * TimeSqr * APOE4Car	0.16 [-1.28, 1.60]	0.83
+MLLLPAxAPOExTime_Model3.txt		
+Language		Sig
+[MLPAvsLLPA4=3.00] * Time * APOE4Car	3.41 [-2.65, 9.48]	0.27
+[MLPAvsLLPA4=2.00] * Time * APOE4Car	-1.00 [-6.02, 4.02]	0.70
+[MLPAvsLLPA4=1.00] * Time * APOE4Car	0.49 [-5.57, 6.55]	0.87
+[MLPAvsLLPA4=3.00] * TimeSqr * APOE4Car	-0.80 [-2.17, 0.57]	0.25
+[MLPAvsLLPA4=2.00] * TimeSqr * APOE4Car	0.18 [-0.98, 1.35]	0.76
+[MLPAvsLLPA4=1.00] * TimeSqr * APOE4Car	-0.09 [-1.60, 1.41]	0.90
+MLLLPAxAPOExTime_Model3.txt		
+Visuospatial		Sig
+[MLPAvsLLPA4=3.00] * Time * APOE4Car	9.09 [1.96, 16.21]*	0.01
+[MLPAvsLLPA4=2.00] * Time * APOE4Car	-0.44 [-6.33, 5.46]	0.89
+[MLPAvsLLPA4=1.00] * Time * APOE4Car	4.05 [-3.07, 11.16]	0.27
+[MLPAvsLLPA4=3.00] * TimeSqr * APOE4Car	-1.46 [-3.07, 0.15]x	0.07
+[MLPAvsLLPA4=2.00] * TimeSqr * APOE4Car	-0.04 [-1.42, 1.33]	0.95
+[MLPAvsLLPA4=1.00] * TimeSqr * APOE4Car	-0.73 [-2.50, 1.04]	0.42

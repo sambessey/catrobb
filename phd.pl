@@ -104,6 +104,8 @@ while ($bothDone < $expectInputs)
           print "Writing to file ".$depVar."...\n";
           open(OUT, '>temps/'.$depVar.".tsv") or die $!;
           print OUT $cleanBuffer."\n";
+         # print $cleanBuffer;
+         # print "\n\n==========\n\n";
           $cleanBuffer ="";
           close (OUT);
         }
@@ -236,7 +238,7 @@ for my $pfx (@prefixArr) {
     print FINAL $hashMeasure."\t";
     for $hashDepVar( @finalOutputOrder )
     {
-      #print $hashDepVar.$thing.$hashMeasure.":".$consolidated{$hashDepVar}{$pfx.$hashMeasure}."\n";
+      print $hashDepVar.$thing.$hashMeasure.":".$consolidated{$hashDepVar}{$pfx.$hashMeasure}."\n";
       print FINAL "$consolidated{$hashDepVar}{$pfx.$hashMeasure}\t";
     }
     print FINAL "\n";

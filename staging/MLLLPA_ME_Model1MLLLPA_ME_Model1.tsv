@@ -1,0 +1,70 @@
+MLLLPA_ME_Model1		
+Attention		Sig
+[MLPAvsLLPA4=3.00]	0.00 [0.00, 0.00]***	0.00
+[MLPAvsLLPA4=2.00]	0.00 [0.00, 0.00]***	0.00
+[MLPAvsLLPA4=1.00]	0.00 [0.00, 0.00]***	0.00
+MLLLPA_ME_Model1		
+Delayed memory		Sig
+[MLPAvsLLPA4=3.00]	0.00 [0.00, 0.00]***	0.00
+[MLPAvsLLPA4=2.00]	0.00 [0.00, 0.00]***	0.00
+[MLPAvsLLPA4=1.00]	0.00 [0.00, 0.00]***	0.00
+MLLLPA_ME_Model1		
+Executive function		Sig
+[MLPAvsLLPA4=3.00]	0.00 [0.00, 0.00]***	0.00
+[MLPAvsLLPA4=2.00]	0.00 [0.00, 0.00]***	0.00
+[MLPAvsLLPA4=1.00]	0.00 [0.00, 0.00]***	0.00
+MLLLPA_ME_Model1		
+Global Cog		Sig
+[MLPAvsLLPA4=3.00]	0.00 [0.00, 0.00]***	0.00
+[MLPAvsLLPA4=2.00]	0.00 [0.00, 0.00]***	0.00
+[MLPAvsLLPA4=1.00]	0.00 [0.00, 0.00]***	0.00
+MLLLPA_ME_Model1		
+Immediate memory		Sig
+[MLPAvsLLPA4=3.00]	0.00 [0.00, 0.00]***	0.00
+[MLPAvsLLPA4=2.00]	0.00 [0.00, 0.00]***	0.00
+[MLPAvsLLPA4=1.00]	0.00 [0.00, 0.00]***	0.00
+MLLLPA_ME_Model1		
+Language		Sig
+[MLPAvsLLPA4=3.00]	0.00 [0.00, 0.00]***	0.00
+[MLPAvsLLPA4=2.00]	0.00 [0.00, 0.00]***	0.00
+[MLPAvsLLPA4=1.00]	0.00 [0.00, 0.00]***	0.00
+MLLLPA_ME_Model1		
+Visuospatial		Sig
+[MLPAvsLLPA4=3.00]	0.00 [0.00, 0.00]***	0.00
+[MLPAvsLLPA4=2.00]	0.00 [0.00, 0.00]***	0.00
+[MLPAvsLLPA4=1.00]	0.00 [0.00, 0.00]***	0.00
+MLLLPA_ME_Model1		
+Attention		Sig
+[MLPAvsLLPA4=3.00]	0.93 [-2.22, 4.07]	0.56
+[MLPAvsLLPA4=2.00]	1.50 [-0.96, 3.95]	0.23
+[MLPAvsLLPA4=1.00]	3.72 [0.95, 6.49]**	0.01
+MLLLPA_ME_Model1		
+Delayed memory		Sig
+[MLPAvsLLPA4=3.00]	0.12 [-2.13, 2.36]	0.92
+[MLPAvsLLPA4=2.00]	1.65 [-0.11, 3.40]x	0.07
+[MLPAvsLLPA4=1.00]	1.26 [-0.71, 3.23]	0.21
+MLLLPA_ME_Model1		
+Executive function		Sig
+[MLPAvsLLPA4=3.00]	-1.03 [-4.55, 2.49]	0.57
+[MLPAvsLLPA4=2.00]	1.95 [-0.92, 4.81]	0.18
+[MLPAvsLLPA4=1.00]	3.37 [0.20, 6.54]*	0.04
+MLLLPA_ME_Model1		
+Global Cog		Sig
+[MLPAvsLLPA4=3.00]	-0.17 [-2.77, 2.44]	0.90
+[MLPAvsLLPA4=2.00]	1.95 [-0.08, 3.99]x	0.06
+[MLPAvsLLPA4=1.00]	3.13 [0.84, 5.42]**	0.01
+MLLLPA_ME_Model1		
+Immediate memory		Sig
+[MLPAvsLLPA4=3.00]	-1.18 [-3.79, 1.43]	0.38
+[MLPAvsLLPA4=2.00]	0.89 [-1.16, 2.93]	0.40
+[MLPAvsLLPA4=1.00]	1.72 [-0.58, 4.02]	0.14
+MLLLPA_ME_Model1		
+Language		Sig
+[MLPAvsLLPA4=3.00]	-0.02 [-2.31, 2.27]	0.98
+[MLPAvsLLPA4=2.00]	0.21 [-1.59, 2.01]	0.82
+[MLPAvsLLPA4=1.00]	3.25 [1.23, 5.27]**	0.00
+MLLLPA_ME_Model1		
+Visuospatial		Sig
+[MLPAvsLLPA4=3.00]	-0.84 [-3.58, 1.90]	0.55
+[MLPAvsLLPA4=2.00]	2.27 [0.12, 4.42]*	0.04
+[MLPAvsLLPA4=1.00]	1.16 [-1.26, 3.57]	0.35

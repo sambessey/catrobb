@@ -1,0 +1,1668 @@
+﻿MIXED RBTot BY MLPAvsLLPA4 WITH Sex Age EDUpos Time TimeSqr BMI Hypertension Hypercholes Diabetes
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex Age EDUpos Time TimeSqr MLPAvsLLPA4 MLPAvsLLPA4*Time MLPAvsLLPA4*TimeSqr BMI
+    Hypertension Hypercholes Diabetes | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+
+
+Mixed Model Analysis
+Notes		
+Output Created		10-JAN-2019 20:47:03
+Comments		
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	APOE4Car
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED RBTot BY MLPAvsLLPA4 WITH Sex Age EDUpos Time TimeSqr BMI Hypertension Hypercholes Diabetes
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex Age EDUpos Time TimeSqr MLPAvsLLPA4 MLPAvsLLPA4*Time MLPAvsLLPA4*TimeSqr BMI
+    Hypertension Hypercholes Diabetes | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.31
+	Elapsed Time	00:00:01.00
+
+Warnings
+The covariance structure for random effect with only one level will be changed to Identity.
+The covariance structure for random effect with only one level will be changed to Identity.
+The covariance structure for random effect with only one level will be changed to Identity.
+
+Model Dimensiona						
+APOE4Car			Number of Levels	Covariance Structure	Number of Parameters	Subject Variables
+-99	Fixed Effects	Intercept	1		1	
+		Sex	1		1	
+		Age	1		1	
+		EDUpos	1		1	
+		Time	1		1	
+		TimeSqr	1		1	
+		MLPAvsLLPA4	4		3	
+		MLPAvsLLPA4 * Time	4		2	
+		MLPAvsLLPA4 * TimeSqr	4		2	
+		BMI	1		1	
+		Hypertension	1		1	
+		Hypercholes	1		1	
+		Diabetes	1		1	
+	Random Effects	Intercept	1	Identity	1	DummyID
+	Residual				1	
+	Total		23		19	
+non-carrier	Fixed Effects	Intercept	1		1	
+		Sex	1		1	
+		Age	1		1	
+		EDUpos	1		1	
+		Time	1		1	
+		TimeSqr	1		1	
+		MLPAvsLLPA4	4		3	
+		MLPAvsLLPA4 * Time	4		3	
+		MLPAvsLLPA4 * TimeSqr	4		3	
+		BMI	1		1	
+		Hypertension	1		1	
+		Hypercholes	1		1	
+		Diabetes	1		1	
+	Random Effects	Intercept	1	Identity	1	DummyID
+	Residual				1	
+	Total		23		21	
+Carrier	Fixed Effects	Intercept	1		1	
+		Sex	1		1	
+		Age	1		1	
+		EDUpos	1		1	
+		Time	1		1	
+		TimeSqr	1		1	
+		MLPAvsLLPA4	4		3	
+		MLPAvsLLPA4 * Time	4		3	
+		MLPAvsLLPA4 * TimeSqr	4		3	
+		BMI	1		1	
+		Hypertension	1		1	
+		Hypercholes	1		1	
+		Diabetes	1		1	
+	Random Effects	Intercept	1	Identity	1	DummyID
+	Residual				1	
+	Total		23		21	
+a Dependent Variable: Global Cog.						
+
+Information Criteriaa		
+-99	-2 Log Likelihood	826.978
+	Akaike's Information Criterion (AIC)	864.978
+	Hurvich and Tsai's Criterion (AICC)	872.895
+	Bozdogan's Criterion (CAIC)	936.297
+	Schwarz's Bayesian Criterion (BIC)	917.297
+non-carrier	-2 Log Likelihood	13303.970
+	Akaike's Information Criterion (AIC)	13345.970
+	Hurvich and Tsai's Criterion (AICC)	13346.482
+	Bozdogan's Criterion (CAIC)	13482.666
+	Schwarz's Bayesian Criterion (BIC)	13461.666
+Carrier	-2 Log Likelihood	4489.218
+	Akaike's Information Criterion (AIC)	4531.218
+	Hurvich and Tsai's Criterion (AICC)	4532.763
+	Bozdogan's Criterion (CAIC)	4645.242
+	Schwarz's Bayesian Criterion (BIC)	4624.242
+The information criteria are displayed in smaller-is-better form.		
+a Dependent Variable: Global Cog.		
+
+
+Fixed Effects
+Type III Tests of Fixed Effectsa					
+APOE4Car	Source	Numerator df	Denominator df	F	Sig.
+-99	Intercept	1	18.053	18.036	.000
+	Sex	1	36.537	3.828	.058
+	Age	1	18.302	1.075	.313
+	EDUpos	1	23.243	9.412	.005
+	Time	1	36.162	1.293	.263
+	TimeSqr	1	19.431	.240	.630
+	MLPAvsLLPA4	3	64.754	2.832	.045
+	MLPAvsLLPA4 * Time	2	35.560	.239	.789
+	MLPAvsLLPA4 * TimeSqr	2	19.431	.328	.724
+	BMI	1	29.513	.012	.912
+	Hypertension	1	23.822	.052	.821
+	Hypercholes	1	17.140	.668	.425
+	Diabetes	1	46.821	6.665	.013
+non-carrier	Intercept	1	571.967	183.915	.000
+	Sex	1	538.673	23.028	.000
+	Age	1	581.813	.753	.386
+	EDUpos	1	534.225	48.084	.000
+	Time	1	1306.120	23.149	.000
+	TimeSqr	1	1275.124	7.644	.006
+	MLPAvsLLPA4	3	735.893	3.073	.027
+	MLPAvsLLPA4 * Time	3	1307.847	2.936	.032
+	MLPAvsLLPA4 * TimeSqr	3	1275.857	2.876	.035
+	BMI	1	537.893	9.719	.002
+	Hypertension	1	539.724	.004	.949
+	Hypercholes	1	538.462	.024	.877
+	Diabetes	1	557.447	.546	.460
+Carrier	Intercept	1	196.821	71.291	.000
+	Sex	1	183.841	.358	.550
+	Age	1	199.118	5.774	.017
+	EDUpos	1	179.965	16.445	.000
+	Time	1	456.586	8.205	.004
+	TimeSqr	1	443.120	1.832	.177
+	MLPAvsLLPA4	3	240.336	.647	.586
+	MLPAvsLLPA4 * Time	3	456.815	.794	.498
+	MLPAvsLLPA4 * TimeSqr	3	443.430	.774	.509
+	BMI	1	195.690	4.354	.038
+	Hypertension	1	185.594	6.293	.013
+	Hypercholes	1	187.060	.252	.616
+	Diabetes	1	182.472	.397	.529
+a Dependent Variable: Global Cog.					
+
+Estimates of Fixed Effectsa								
+APOE4Car	Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+							Lower Bound	Upper Bound
+-99	Intercept	125.603163	29.228876	18.203	4.297	.000	64.244711	186.961614
+	Sex	4.205913	2.149675	36.537	1.957	.058	-.151608	8.563435
+	Age	-.411632	.397054	18.302	-1.037	.313	-1.244828	.421563
+	EDUpos	6.536118	2.130479	23.243	3.068	.005	2.131439	10.940797
+	Time	4.470930	2.416880	33.768	1.850	.073	-.442003	9.383863
+	TimeSqr	-.468765	.685363	20.033	-.684	.502	-1.898257	.960726
+	[MLPAvsLLPA4=1.00]	.742418	3.009363	64.699	.247	.806	-5.268226	6.753061
+	[MLPAvsLLPA4=2.00]	-8.235743	2.930553	63.467	-2.810	.007	-14.091141	-2.380345
+	[MLPAvsLLPA4=3.00]	-1.369315	4.207150	66.804	-.325	.746	-9.767272	7.028643
+	[MLPAvsLLPA4=4.00]	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * Time	4.284967	7.492761	35.210	.572	.571	-10.922903	19.492838
+	[MLPAvsLLPA4=2.00] * Time	-3.501875	10.296096	35.727	-.340	.736	-24.388862	17.385111
+	[MLPAvsLLPA4=3.00] * Time	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=4.00] * Time	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * TimeSqr	-1.830258	2.532876	19.367	-.723	.479	-7.124843	3.464328
+	[MLPAvsLLPA4=2.00] * TimeSqr	1.142800	3.510943	19.485	.325	.748	-6.193339	8.478939
+	[MLPAvsLLPA4=3.00] * TimeSqr	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=4.00] * TimeSqr	0b	0	.	.	.	.	.
+	BMI	-.031516	.283996	29.513	-.111	.912	-.611915	.548883
+	Hypertension	.564174	2.467016	23.822	.229	.821	-4.529517	5.657864
+	Hypercholes	-2.555644	3.128034	17.140	-.817	.425	-9.151102	4.039814
+	Diabetes	-8.831670	3.420904	46.821	-2.582	.013	-15.714334	-1.949006
+non-carrier	Intercept	112.585305	8.530234	571.449	13.198	.000	95.830869	129.339742
+	Sex	4.782856	.996687	538.673	4.799	.000	2.824987	6.740725
+	Age	-.101972	.117524	581.813	-.868	.386	-.332795	.128852
+	EDUpos	6.592605	.950725	534.225	6.934	.000	4.724987	8.460223
+	Time	3.327060	.478927	1318.420	6.947	.000	2.387519	4.266602
+	TimeSqr	-.584357	.109870	1280.459	-5.319	.000	-.799903	-.368811
+	[MLPAvsLLPA4=1.00]	4.013215	1.484230	731.478	2.704	.007	1.099356	6.927074
+	[MLPAvsLLPA4=2.00]	2.683987	1.334681	737.379	2.011	.045	.063760	5.304215
+	[MLPAvsLLPA4=3.00]	1.076260	1.713320	736.656	.628	.530	-2.287312	4.439832
+	[MLPAvsLLPA4=4.00]	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * Time	-2.561985	.983228	1299.218	-2.606	.009	-4.490873	-.633097
+	[MLPAvsLLPA4=2.00] * Time	-.786661	.890859	1321.850	-.883	.377	-2.534313	.960990
+	[MLPAvsLLPA4=3.00] * Time	-2.194918	1.141648	1305.166	-1.923	.055	-4.434584	.044748
+	[MLPAvsLLPA4=4.00] * Time	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * TimeSqr	.581033	.226041	1270.153	2.570	.010	.137579	1.024487
+	[MLPAvsLLPA4=2.00] * TimeSqr	.224760	.203311	1283.337	1.105	.269	-.174098	.623617
+	[MLPAvsLLPA4=3.00] * TimeSqr	.502808	.264944	1275.311	1.898	.058	-.016966	1.022583
+	[MLPAvsLLPA4=4.00] * TimeSqr	0b	0	.	.	.	.	.
+	BMI	-.352303	.113010	537.893	-3.117	.002	-.574297	-.130309
+	Hypertension	-.067784	1.053685	539.724	-.064	.949	-2.137611	2.002043
+	Hypercholes	-.220234	1.421298	538.462	-.155	.877	-3.012203	2.571735
+	Diabetes	-1.413766	1.913812	557.447	-.739	.460	-5.172930	2.345398
+Carrier	Intercept	149.019549	17.947238	196.886	8.303	.000	113.626052	184.413047
+	Sex	1.028417	1.717957	183.841	.599	.550	-2.361029	4.417863
+	Age	-.590011	.245531	199.118	-2.403	.017	-1.074186	-.105836
+	EDUpos	6.952970	1.714545	179.965	4.055	.000	3.569772	10.336168
+	Time	1.878375	.773552	457.758	2.428	.016	.358222	3.398528
+	TimeSqr	-.338592	.165437	442.716	-2.047	.041	-.663732	-.013452
+	[MLPAvsLLPA4=1.00]	.863294	2.746600	239.981	.314	.754	-4.547230	6.273817
+	[MLPAvsLLPA4=2.00]	1.690022	2.352355	240.185	.718	.473	-2.943859	6.323903
+	[MLPAvsLLPA4=3.00]	-2.734886	2.855451	240.055	-.958	.339	-8.359826	2.890054
+	[MLPAvsLLPA4=4.00]	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * Time	-.908295	1.832420	457.053	-.496	.620	-4.509307	2.692717
+	[MLPAvsLLPA4=2.00] * Time	-.760494	1.566720	455.325	-.485	.628	-3.839394	2.318406
+	[MLPAvsLLPA4=3.00] * Time	2.078628	1.740605	458.825	1.194	.233	-1.341918	5.499174
+	[MLPAvsLLPA4=4.00] * Time	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * TimeSqr	.394624	.441470	443.315	.894	.372	-.473010	1.262258
+	[MLPAvsLLPA4=2.00] * TimeSqr	.333653	.367133	442.231	.909	.364	-.387888	1.055194
+	[MLPAvsLLPA4=3.00] * TimeSqr	-.247944	.376587	444.897	-.658	.511	-.988054	.492166
+	[MLPAvsLLPA4=4.00] * TimeSqr	0b	0	.	.	.	.	.
+	BMI	-.439478	.210612	195.690	-2.087	.038	-.854839	-.024117
+	Hypertension	-4.611748	1.838431	185.594	-2.509	.013	-8.238658	-.984838
+	Hypercholes	1.181851	2.354575	187.060	.502	.616	-3.463082	5.826785
+	Diabetes	2.030272	3.221740	182.472	.630	.529	-4.326382	8.386927
+a Dependent Variable: Global Cog.								
+b This parameter is set to zero because it is redundant.								
+
+
+Covariance Parameters
+Estimates of Covariance Parametersa				
+APOE4Car	Parameter		Estimate	Std. Error
+-99	Residual		55.695664	22.492844
+	Intercept [subject = DummyID]	Variance	20.562650	29.487557
+non-carrier	Residual		45.735856	1.857141
+	Intercept [subject = DummyID]	Variance	106.094162	7.706615
+Carrier	Residual		42.916467	2.958906
+	Intercept [subject = DummyID]	Variance	111.660112	13.728707
+a Dependent Variable: Global Cog.				
+
+MIXED RBIMI BY MLPAvsLLPA4 WITH Sex Age EDUpos Time TimeSqr BMI Hypertension Hypercholes Diabetes
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex Age EDUpos Time TimeSqr MLPAvsLLPA4 MLPAvsLLPA4*Time MLPAvsLLPA4*TimeSqr BMI
+    Hypertension Hypercholes Diabetes | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+
+
+Mixed Model Analysis
+Notes		
+Output Created		10-JAN-2019 20:47:12
+Comments		
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	APOE4Car
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED RBIMI BY MLPAvsLLPA4 WITH Sex Age EDUpos Time TimeSqr BMI Hypertension Hypercholes Diabetes
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex Age EDUpos Time TimeSqr MLPAvsLLPA4 MLPAvsLLPA4*Time MLPAvsLLPA4*TimeSqr BMI
+    Hypertension Hypercholes Diabetes | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.27
+	Elapsed Time	00:00:00.00
+
+Warnings
+The covariance structure for random effect with only one level will be changed to Identity.
+The covariance structure for random effect with only one level will be changed to Identity.
+The covariance structure for random effect with only one level will be changed to Identity.
+
+Model Dimensiona						
+APOE4Car			Number of Levels	Covariance Structure	Number of Parameters	Subject Variables
+-99	Fixed Effects	Intercept	1		1	
+		Sex	1		1	
+		Age	1		1	
+		EDUpos	1		1	
+		Time	1		1	
+		TimeSqr	1		1	
+		MLPAvsLLPA4	4		3	
+		MLPAvsLLPA4 * Time	4		2	
+		MLPAvsLLPA4 * TimeSqr	4		2	
+		BMI	1		1	
+		Hypertension	1		1	
+		Hypercholes	1		1	
+		Diabetes	1		1	
+	Random Effects	Intercept	1	Identity	1	DummyID
+	Residual				1	
+	Total		23		19	
+non-carrier	Fixed Effects	Intercept	1		1	
+		Sex	1		1	
+		Age	1		1	
+		EDUpos	1		1	
+		Time	1		1	
+		TimeSqr	1		1	
+		MLPAvsLLPA4	4		3	
+		MLPAvsLLPA4 * Time	4		3	
+		MLPAvsLLPA4 * TimeSqr	4		3	
+		BMI	1		1	
+		Hypertension	1		1	
+		Hypercholes	1		1	
+		Diabetes	1		1	
+	Random Effects	Intercept	1	Identity	1	DummyID
+	Residual				1	
+	Total		23		21	
+Carrier	Fixed Effects	Intercept	1		1	
+		Sex	1		1	
+		Age	1		1	
+		EDUpos	1		1	
+		Time	1		1	
+		TimeSqr	1		1	
+		MLPAvsLLPA4	4		3	
+		MLPAvsLLPA4 * Time	4		3	
+		MLPAvsLLPA4 * TimeSqr	4		3	
+		BMI	1		1	
+		Hypertension	1		1	
+		Hypercholes	1		1	
+		Diabetes	1		1	
+	Random Effects	Intercept	1	Identity	1	DummyID
+	Residual				1	
+	Total		23		21	
+a Dependent Variable: Immediate memory.						
+
+Information Criteriaa		
+-99	-2 Log Likelihood	898.349
+	Akaike's Information Criterion (AIC)	936.349
+	Hurvich and Tsai's Criterion (AICC)	944.266
+	Bozdogan's Criterion (CAIC)	1007.667
+	Schwarz's Bayesian Criterion (BIC)	988.667
+non-carrier	-2 Log Likelihood	13961.684
+	Akaike's Information Criterion (AIC)	14003.684
+	Hurvich and Tsai's Criterion (AICC)	14004.196
+	Bozdogan's Criterion (CAIC)	14140.380
+	Schwarz's Bayesian Criterion (BIC)	14119.380
+Carrier	-2 Log Likelihood	4721.722
+	Akaike's Information Criterion (AIC)	4763.722
+	Hurvich and Tsai's Criterion (AICC)	4765.267
+	Bozdogan's Criterion (CAIC)	4877.746
+	Schwarz's Bayesian Criterion (BIC)	4856.746
+The information criteria are displayed in smaller-is-better form.		
+a Dependent Variable: Immediate memory.		
+
+
+Fixed Effects
+Type III Tests of Fixed Effectsa					
+APOE4Car	Source	Numerator df	Denominator df	F	Sig.
+-99	Intercept	1	57.954	3.792	.056
+	Sex	1	73.199	6.651	.012
+	Age	1	58.962	.021	.885
+	EDUpos	1	62.522	8.240	.006
+	Time	1	58.296	3.792	.056
+	TimeSqr	1	45.446	2.599	.114
+	MLPAvsLLPA4	3	83.899	.518	.671
+	MLPAvsLLPA4 * Time	2	57.976	.659	.521
+	MLPAvsLLPA4 * TimeSqr	2	45.420	1.067	.352
+	BMI	1	68.183	1.683	.199
+	Hypertension	1	64.608	.000	.986
+	Hypercholes	1	56.654	.011	.917
+	Diabetes	1	76.563	13.468	.000
+non-carrier	Intercept	1	554.234	131.158	.000
+	Sex	1	499.034	46.687	.000
+	Age	1	568.175	.120	.729
+	EDUpos	1	493.504	36.989	.000
+	Time	1	1322.300	33.571	.000
+	TimeSqr	1	1282.374	7.738	.005
+	MLPAvsLLPA4	3	845.019	1.756	.154
+	MLPAvsLLPA4 * Time	3	1325.065	3.422	.017
+	MLPAvsLLPA4 * TimeSqr	3	1283.462	4.432	.004
+	BMI	1	499.534	1.594	.207
+	Hypertension	1	502.181	.624	.430
+	Hypercholes	1	501.448	.514	.474
+	Diabetes	1	526.576	.573	.449
+Carrier	Intercept	1	181.522	61.099	.000
+	Sex	1	159.367	12.688	.000
+	Age	1	185.298	3.963	.048
+	EDUpos	1	154.275	15.644	.000
+	Time	1	458.790	8.211	.004
+	TimeSqr	1	438.360	1.584	.209
+	MLPAvsLLPA4	3	268.064	.639	.590
+	MLPAvsLLPA4 * Time	3	459.077	2.490	.060
+	MLPAvsLLPA4 * TimeSqr	3	438.773	3.374	.018
+	BMI	1	177.537	1.895	.170
+	Hypertension	1	161.741	2.188	.141
+	Hypercholes	1	163.137	1.482	.225
+	Diabetes	1	157.952	.053	.818
+a Dependent Variable: Immediate memory.					
+
+Estimates of Fixed Effectsa								
+APOE4Car	Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+							Lower Bound	Upper Bound
+-99	Intercept	86.116030	43.410787	58.100	1.984	.052	-.776911	173.008972
+	Sex	8.021251	3.110366	73.199	2.579	.012	1.822585	14.219917
+	Age	-.085336	.589142	58.962	-.145	.885	-1.264222	1.093551
+	EDUpos	9.001337	3.135683	62.522	2.871	.006	2.734237	15.268436
+	Time	4.356549	3.050089	56.556	1.428	.159	-1.752190	10.465287
+	TimeSqr	-.354589	.846054	45.415	-.419	.677	-2.058200	1.349022
+	[MLPAvsLLPA4=1.00]	-2.257311	4.280393	83.720	-.527	.599	-10.769758	6.255136
+	[MLPAvsLLPA4=2.00]	-5.024974	4.170193	83.521	-1.205	.232	-13.318556	3.268609
+	[MLPAvsLLPA4=3.00]	-.945986	5.977260	84.595	-.158	.875	-12.831203	10.939231
+	[MLPAvsLLPA4=4.00]	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * Time	3.065636	9.472951	57.705	.324	.747	-15.898601	22.029874
+	[MLPAvsLLPA4=2.00] * Time	14.633822	13.025582	58.130	1.123	.266	-11.438468	40.706112
+	[MLPAvsLLPA4=3.00] * Time	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=4.00] * Time	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * TimeSqr	-1.269741	3.124111	45.317	-.406	.686	-7.560808	5.021326
+	[MLPAvsLLPA4=2.00] * TimeSqr	-6.166928	4.332012	45.503	-1.424	.161	-14.889388	2.555532
+	[MLPAvsLLPA4=3.00] * TimeSqr	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=4.00] * TimeSqr	0b	0	.	.	.	.	.
+	BMI	.537244	.414096	68.183	1.297	.199	-.289031	1.363519
+	Hypertension	-.064346	3.622627	64.608	-.018	.986	-7.300063	7.171371
+	Hypercholes	-.486888	4.658518	56.654	-.105	.917	-9.816647	8.842871
+	Diabetes	-18.044511	4.916843	76.563	-3.670	.000	-27.836090	-8.252933
+non-carrier	Intercept	97.359547	8.680184	553.556	11.216	.000	80.309420	114.409675
+	Sex	6.864901	1.004701	499.034	6.833	.000	4.890936	8.838865
+	Age	.041510	.119898	568.175	.346	.729	-.193987	.277006
+	EDUpos	5.821848	.957245	493.504	6.082	.000	3.941070	7.702627
+	Time	4.984058	.612851	1341.479	8.133	.000	3.781807	6.186309
+	TimeSqr	-.879125	.141174	1290.410	-6.227	.000	-1.156081	-.602169
+	[MLPAvsLLPA4=1.00]	2.971160	1.566607	837.217	1.897	.058	-.103779	6.046098
+	[MLPAvsLLPA4=2.00]	1.926237	1.410302	847.433	1.366	.172	-.841858	4.694332
+	[MLPAvsLLPA4=3.00]	-.617347	1.810186	846.515	-.341	.733	-4.170326	2.935631
+	[MLPAvsLLPA4=4.00]	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * Time	-3.696782	1.260900	1313.280	-2.932	.003	-6.170380	-1.223184
+	[MLPAvsLLPA4=2.00] * Time	-1.982245	1.139595	1345.099	-1.739	.082	-4.217821	.253331
+	[MLPAvsLLPA4=3.00] * Time	-2.274926	1.463127	1321.094	-1.555	.120	-5.145233	.595380
+	[MLPAvsLLPA4=4.00] * Time	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * TimeSqr	.904248	.290782	1275.396	3.110	.002	.333784	1.474712
+	[MLPAvsLLPA4=2.00] * TimeSqr	.587145	.261159	1293.879	2.248	.025	.074803	1.099487
+	[MLPAvsLLPA4=3.00] * TimeSqr	.694304	.340629	1282.979	2.038	.042	.026053	1.362555
+	[MLPAvsLLPA4=4.00] * TimeSqr	0b	0	.	.	.	.	.
+	BMI	-.143834	.113911	499.534	-1.263	.207	-.367639	.079970
+	Hypertension	.839172	1.062640	502.181	.790	.430	-1.248596	2.926941
+	Hypercholes	-1.027147	1.433024	501.448	-.717	.474	-3.842618	1.788324
+	Diabetes	1.468165	1.939231	526.576	.757	.449	-2.341413	5.277744
+Carrier	Intercept	136.852226	17.894478	181.640	7.648	.000	101.544449	172.160003
+	Sex	6.020412	1.690151	159.367	3.562	.000	2.682430	9.358394
+	Age	-.488365	.245320	185.298	-1.991	.048	-.972344	-.004387
+	EDUpos	6.646458	1.680409	154.275	3.955	.000	3.326876	9.966039
+	Time	5.338204	1.005539	461.346	5.309	.000	3.362200	7.314207
+	TimeSqr	-1.024165	.216366	437.227	-4.733	.000	-1.449411	-.598918
+	[MLPAvsLLPA4=1.00]	3.429000	2.842132	267.147	1.206	.229	-2.166828	9.024828
+	[MLPAvsLLPA4=2.00]	.392670	2.434631	267.757	.161	.872	-4.400785	5.186125
+	[MLPAvsLLPA4=3.00]	-1.227008	2.955149	267.699	-.415	.678	-7.045298	4.591283
+	[MLPAvsLLPA4=4.00]	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * Time	-5.688746	2.383013	458.936	-2.387	.017	-10.371716	-1.005776
+	[MLPAvsLLPA4=2.00] * Time	-3.659919	2.038597	457.414	-1.795	.073	-7.666095	.346258
+	[MLPAvsLLPA4=3.00] * Time	-1.695181	2.261903	462.086	-.749	.454	-6.140072	2.749711
+	[MLPAvsLLPA4=4.00] * Time	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * TimeSqr	1.244945	.577241	438.088	2.157	.032	.110439	2.379450
+	[MLPAvsLLPA4=2.00] * TimeSqr	1.271946	.480182	437.597	2.649	.008	.328196	2.215696
+	[MLPAvsLLPA4=3.00] * TimeSqr	.517119	.492080	440.722	1.051	.294	-.449996	1.484235
+	[MLPAvsLLPA4=4.00] * TimeSqr	0b	0	.	.	.	.	.
+	BMI	-.288535	.209626	177.537	-1.376	.170	-.702214	.125145
+	Hypertension	-2.679690	1.811760	161.741	-1.479	.141	-6.257444	.898063
+	Hypercholes	-2.827831	2.323196	163.137	-1.217	.225	-7.415241	1.759579
+	Diabetes	.730323	3.165858	157.952	.231	.818	-5.522553	6.983199
+a Dependent Variable: Immediate memory.								
+b This parameter is set to zero because it is redundant.								
+
+
+Covariance Parameters
+Estimates of Covariance Parametersa				
+APOE4Car	Parameter		Estimate	Std. Error
+-99	Residual		80.719019	19.102831
+	Intercept [subject = DummyID]	Variance	72.710698	29.453167
+non-carrier	Residual		76.714598	3.148964
+	Intercept [subject = DummyID]	Variance	95.656003	8.118056
+Carrier	Residual		74.765202	5.280872
+	Intercept [subject = DummyID]	Variance	94.159315	14.238249
+a Dependent Variable: Immediate memory.				
+
+MIXED RBVSI BY MLPAvsLLPA4 WITH Sex Age EDUpos Time TimeSqr BMI Hypertension Hypercholes Diabetes
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex Age EDUpos Time TimeSqr MLPAvsLLPA4 MLPAvsLLPA4*Time MLPAvsLLPA4*TimeSqr BMI
+    Hypertension Hypercholes Diabetes | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+
+
+Mixed Model Analysis
+Notes		
+Output Created		10-JAN-2019 20:47:19
+Comments		
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	APOE4Car
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED RBVSI BY MLPAvsLLPA4 WITH Sex Age EDUpos Time TimeSqr BMI Hypertension Hypercholes Diabetes
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex Age EDUpos Time TimeSqr MLPAvsLLPA4 MLPAvsLLPA4*Time MLPAvsLLPA4*TimeSqr BMI
+    Hypertension Hypercholes Diabetes | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.31
+	Elapsed Time	00:00:01.00
+
+Warnings
+The covariance structure for random effect with only one level will be changed to Identity.
+For split file APOE4Car = -99, the final Hessian matrix is not positive definite although all convergence criteria are satisfied. The MIXED procedure continues despite this warning. Validity of subsequent results cannot be ascertained.
+The covariance structure for random effect with only one level will be changed to Identity.
+The covariance structure for random effect with only one level will be changed to Identity.
+
+Model Dimensiona						
+APOE4Car			Number of Levels	Covariance Structure	Number of Parameters	Subject Variables
+-99	Fixed Effects	Intercept	1		1	
+		Sex	1		1	
+		Age	1		1	
+		EDUpos	1		1	
+		Time	1		1	
+		TimeSqr	1		1	
+		MLPAvsLLPA4	4		3	
+		MLPAvsLLPA4 * Time	4		2	
+		MLPAvsLLPA4 * TimeSqr	4		2	
+		BMI	1		1	
+		Hypertension	1		1	
+		Hypercholes	1		1	
+		Diabetes	1		1	
+	Random Effects	Intercept	1	Identity	1	DummyID
+	Residual				1	
+	Total		23		19	
+non-carrier	Fixed Effects	Intercept	1		1	
+		Sex	1		1	
+		Age	1		1	
+		EDUpos	1		1	
+		Time	1		1	
+		TimeSqr	1		1	
+		MLPAvsLLPA4	4		3	
+		MLPAvsLLPA4 * Time	4		3	
+		MLPAvsLLPA4 * TimeSqr	4		3	
+		BMI	1		1	
+		Hypertension	1		1	
+		Hypercholes	1		1	
+		Diabetes	1		1	
+	Random Effects	Intercept	1	Identity	1	DummyID
+	Residual				1	
+	Total		23		21	
+Carrier	Fixed Effects	Intercept	1		1	
+		Sex	1		1	
+		Age	1		1	
+		EDUpos	1		1	
+		Time	1		1	
+		TimeSqr	1		1	
+		MLPAvsLLPA4	4		3	
+		MLPAvsLLPA4 * Time	4		3	
+		MLPAvsLLPA4 * TimeSqr	4		3	
+		BMI	1		1	
+		Hypertension	1		1	
+		Hypercholes	1		1	
+		Diabetes	1		1	
+	Random Effects	Intercept	1	Identity	1	DummyID
+	Residual				1	
+	Total		23		21	
+a Dependent Variable: Visuospatial.						
+
+Information Criteriaa		
+-99	-2 Log Likelihood	906.565
+	Akaike's Information Criterion (AIC)	944.565
+	Hurvich and Tsai's Criterion (AICC)	952.482
+	Bozdogan's Criterion (CAIC)	1015.883
+	Schwarz's Bayesian Criterion (BIC)	996.883
+non-carrier	-2 Log Likelihood	14459.257
+	Akaike's Information Criterion (AIC)	14501.257
+	Hurvich and Tsai's Criterion (AICC)	14501.770
+	Bozdogan's Criterion (CAIC)	14637.953
+	Schwarz's Bayesian Criterion (BIC)	14616.953
+Carrier	-2 Log Likelihood	4977.016
+	Akaike's Information Criterion (AIC)	5019.016
+	Hurvich and Tsai's Criterion (AICC)	5020.562
+	Bozdogan's Criterion (CAIC)	5133.041
+	Schwarz's Bayesian Criterion (BIC)	5112.041
+The information criteria are displayed in smaller-is-better form.		
+a Dependent Variable: Visuospatial.		
+
+
+Fixed Effects
+Type III Tests of Fixed Effectsa					
+APOE4Car	Source	Numerator df	Denominator df	F	Sig.
+-99	Intercept	1	116.000	18.852	.000
+	Sex	1	116.000	4.654	.033
+	Age	1	116.000	1.580	.211
+	EDUpos	1	116.000	.154	.696
+	Time	1	116.000	1.190	.278
+	TimeSqr	1	116	.576	.449
+	MLPAvsLLPA4	3	116.000	2.984	.034
+	MLPAvsLLPA4 * Time	2	116	.630	.534
+	MLPAvsLLPA4 * TimeSqr	2	116	.321	.726
+	BMI	1	116.000	1.947	.166
+	Hypertension	1	116	.019	.891
+	Hypercholes	1	116.000	1.700	.195
+	Diabetes	1	116.000	.555	.458
+non-carrier	Intercept	1	578.069	183.636	.000
+	Sex	1	500.232	6.958	.009
+	Age	1	595.153	2.363	.125
+	EDUpos	1	494.197	25.680	.000
+	Time	1	1367.180	.971	.325
+	TimeSqr	1	1327.451	.534	.465
+	MLPAvsLLPA4	3	1001.028	2.704	.044
+	MLPAvsLLPA4 * Time	3	1370.625	1.715	.162
+	MLPAvsLLPA4 * TimeSqr	3	1328.732	1.079	.357
+	BMI	1	502.682	10.320	.001
+	Hypertension	1	505.935	.507	.477
+	Hypercholes	1	506.033	.023	.881
+	Diabetes	1	535.278	.703	.402
+Carrier	Intercept	1	199.579	50.054	.000
+	Sex	1	169.251	13.680	.000
+	Age	1	204.558	1.762	.186
+	EDUpos	1	163.358	2.557	.112
+	Time	1	483.102	.820	.366
+	TimeSqr	1	462.163	1.584	.209
+	MLPAvsLLPA4	3	325.041	2.245	.083
+	MLPAvsLLPA4 * Time	3	483.374	2.102	.099
+	MLPAvsLLPA4 * TimeSqr	3	462.555	1.805	.145
+	BMI	1	192.309	7.200	.008
+	Hypertension	1	171.952	6.092	.015
+	Hypercholes	1	173.141	2.475	.117
+	Diabetes	1	167.817	.012	.914
+a Dependent Variable: Visuospatial.					
+
+Estimates of Fixed Effectsa								
+APOE4Car	Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+							Lower Bound	Upper Bound
+-99	Intercept	160.211460	35.986422	116.000	4.452	.000	88.935817	231.487103
+	Sex	-6.068947	2.813283	116.000	-2.157	.033	-11.641009	-.496885
+	Age	-.611879	.486818	116.000	-1.257	.211	-1.576083	.352325
+	EDUpos	1.057262	2.698500	116.000	.392	.696	-4.287457	6.401981
+	Time	-.042694	3.616363	116	-.012	.991	-7.205356	7.119968
+	TimeSqr	-.037378	1.060549	116	-.035	.972	-2.137930	2.063173
+	[MLPAvsLLPA4=1.00]	-2.211445	4.129667	116	-.536	.593	-10.390770	5.967880
+	[MLPAvsLLPA4=2.00]	-11.697596	4.013297	116.000	-2.915	.004	-19.646436	-3.748755
+	[MLPAvsLLPA4=3.00]	-6.328755	5.784158	116	-1.094	.276	-17.785008	5.127498
+	[MLPAvsLLPA4=4.00]	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * Time	-11.278759	11.192955	116.000	-1.008	.316	-33.447817	10.890300
+	[MLPAvsLLPA4=2.00] * Time	-8.905310	15.371334	116	-.579	.563	-39.350174	21.539553
+	[MLPAvsLLPA4=3.00] * Time	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=4.00] * Time	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * TimeSqr	2.709153	3.942756	116.000	.687	.493	-5.099972	10.518278
+	[MLPAvsLLPA4=2.00] * TimeSqr	2.453570	5.463910	116	.449	.654	-8.368393	13.275533
+	[MLPAvsLLPA4=3.00] * TimeSqr	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=4.00] * TimeSqr	0b	0	.	.	.	.	.
+	BMI	-.510124	.365543	116.000	-1.396	.166	-1.234128	.213879
+	Hypertension	.426320	3.109499	116	.137	.891	-5.732435	6.585075
+	Hypercholes	-5.000605	3.835225	116.000	-1.304	.195	-12.596751	2.595542
+	Diabetes	-3.420373	4.593221	116.000	-.745	.458	-12.517826	5.677080
+non-carrier	Intercept	118.741747	9.015694	577.300	13.171	.000	101.034186	136.449307
+	Sex	-2.728337	1.034306	500.232	-2.638	.009	-4.760455	-.696218
+	Age	-.191822	.124782	595.153	-1.537	.125	-.436889	.053246
+	EDUpos	4.989495	.984599	494.197	5.068	.000	3.054980	6.924011
+	Time	.785760	.729712	1390.532	1.077	.282	-.645696	2.217215
+	TimeSqr	-.271127	.168589	1337.045	-1.608	.108	-.601854	.059600
+	[MLPAvsLLPA4=1.00]	1.862028	1.680450	990.028	1.108	.268	-1.435626	5.159681
+	[MLPAvsLLPA4=2.00]	3.963536	1.514109	1004.236	2.618	.009	.992356	6.934716
+	[MLPAvsLLPA4=3.00]	3.132066	1.943294	1003.279	1.612	.107	-.681320	6.945452
+	[MLPAvsLLPA4=4.00]	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * Time	-2.717624	1.503886	1357.841	-1.807	.071	-5.667816	.232568
+	[MLPAvsLLPA4=2.00] * Time	-.127748	1.356652	1393.283	-.094	.925	-2.789048	2.533552
+	[MLPAvsLLPA4=3.00] * Time	-2.727218	1.744304	1365.982	-1.563	.118	-6.149022	.694586
+	[MLPAvsLLPA4=4.00] * Time	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * TimeSqr	.530072	.347565	1319.562	1.525	.127	-.151768	1.211912
+	[MLPAvsLLPA4=2.00] * TimeSqr	-.121755	.311814	1340.321	-.390	.696	-.733451	.489940
+	[MLPAvsLLPA4=3.00] * TimeSqr	.258383	.406957	1328.531	.635	.526	-.539964	1.056731
+	[MLPAvsLLPA4=4.00] * TimeSqr	0b	0	.	.	.	.	.
+	BMI	-.376800	.117292	502.682	-3.213	.001	-.607242	-.146358
+	Hypertension	-.779389	1.094649	505.935	-.712	.477	-2.930005	1.371227
+	Hypercholes	-.221588	1.476111	506.033	-.150	.881	-3.121650	2.678473
+	Diabetes	-1.681837	2.005243	535.278	-.839	.402	-5.620947	2.257273
+Carrier	Intercept	141.543882	20.179118	199.743	7.014	.000	101.752443	181.335320
+	Sex	-6.983883	1.888207	169.251	-3.699	.000	-10.711354	-3.256412
+	Age	-.367669	.277014	204.558	-1.327	.186	-.913838	.178500
+	EDUpos	2.995084	1.873168	163.358	1.599	.112	-.703659	6.693828
+	Time	-1.128062	1.275188	486.264	-.885	.377	-3.633620	1.377497
+	TimeSqr	.101583	.275368	460.403	.369	.712	-.439551	.642717
+	[MLPAvsLLPA4=1.00]	1.578821	3.288100	323.597	.480	.631	-4.889931	8.047573
+	[MLPAvsLLPA4=2.00]	1.336192	2.817087	324.586	.474	.636	-4.205861	6.878245
+	[MLPAvsLLPA4=3.00]	-7.741508	3.419383	324.703	-2.264	.024	-14.468449	-1.014566
+	[MLPAvsLLPA4=4.00]	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * Time	.819904	3.023308	482.814	.271	.786	-5.120561	6.760369
+	[MLPAvsLLPA4=2.00] * Time	.682542	2.586754	482.213	.264	.792	-4.400160	5.765244
+	[MLPAvsLLPA4=3.00] * Time	7.142772	2.868287	486.356	2.490	.013	1.507008	12.778536
+	[MLPAvsLLPA4=4.00] * Time	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * TimeSqr	.036315	.734557	461.371	.049	.961	-1.407177	1.479807
+	[MLPAvsLLPA4=2.00] * TimeSqr	-.369895	.611047	461.966	-.605	.545	-1.570670	.830880
+	[MLPAvsLLPA4=3.00] * TimeSqr	-1.424873	.625940	464.282	-2.276	.023	-2.654899	-.194847
+	[MLPAvsLLPA4=4.00] * TimeSqr	0b	0	.	.	.	.	.
+	BMI	-.633131	.235951	192.309	-2.683	.008	-1.098515	-.167746
+	Hypertension	-5.000879	2.026081	171.952	-2.468	.015	-9.000071	-1.001686
+	Hypercholes	4.089336	2.599326	173.141	1.573	.117	-1.041110	9.219782
+	Diabetes	.382950	3.534844	167.817	.108	.914	-6.595542	7.361441
+a Dependent Variable: Visuospatial.								
+b This parameter is set to zero because it is redundant.								
+
+
+Covariance Parameters
+Estimates of Covariance Parametersa				
+APOE4Car	Parameter		Estimate	Std. Error
+-99	Residual		145.087688	19.050947
+	Intercept [subject = DummyID]	Variance	.000000b	.000000
+non-carrier	Residual		110.844794	4.508582
+	Intercept [subject = DummyID]	Variance	90.376944	8.505683
+Carrier	Residual		122.470905	8.461567
+	Intercept [subject = DummyID]	Variance	106.373214	16.943786
+a Dependent Variable: Visuospatial.				
+b This covariance parameter is redundant.				
+
+MIXED RBLI BY MLPAvsLLPA4 WITH Sex Age EDUpos Time TimeSqr BMI Hypertension Hypercholes Diabetes
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex Age EDUpos Time TimeSqr MLPAvsLLPA4 MLPAvsLLPA4*Time MLPAvsLLPA4*TimeSqr BMI
+    Hypertension Hypercholes Diabetes | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+
+
+Mixed Model Analysis
+Notes		
+Output Created		10-JAN-2019 20:47:28
+Comments		
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	APOE4Car
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED RBLI BY MLPAvsLLPA4 WITH Sex Age EDUpos Time TimeSqr BMI Hypertension Hypercholes Diabetes
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex Age EDUpos Time TimeSqr MLPAvsLLPA4 MLPAvsLLPA4*Time MLPAvsLLPA4*TimeSqr BMI
+    Hypertension Hypercholes Diabetes | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.30
+	Elapsed Time	00:00:00.00
+
+Warnings
+The covariance structure for random effect with only one level will be changed to Identity.
+The covariance structure for random effect with only one level will be changed to Identity.
+The covariance structure for random effect with only one level will be changed to Identity.
+
+Model Dimensiona						
+APOE4Car			Number of Levels	Covariance Structure	Number of Parameters	Subject Variables
+-99	Fixed Effects	Intercept	1		1	
+		Sex	1		1	
+		Age	1		1	
+		EDUpos	1		1	
+		Time	1		1	
+		TimeSqr	1		1	
+		MLPAvsLLPA4	4		3	
+		MLPAvsLLPA4 * Time	4		2	
+		MLPAvsLLPA4 * TimeSqr	4		2	
+		BMI	1		1	
+		Hypertension	1		1	
+		Hypercholes	1		1	
+		Diabetes	1		1	
+	Random Effects	Intercept	1	Identity	1	DummyID
+	Residual				1	
+	Total		23		19	
+non-carrier	Fixed Effects	Intercept	1		1	
+		Sex	1		1	
+		Age	1		1	
+		EDUpos	1		1	
+		Time	1		1	
+		TimeSqr	1		1	
+		MLPAvsLLPA4	4		3	
+		MLPAvsLLPA4 * Time	4		3	
+		MLPAvsLLPA4 * TimeSqr	4		3	
+		BMI	1		1	
+		Hypertension	1		1	
+		Hypercholes	1		1	
+		Diabetes	1		1	
+	Random Effects	Intercept	1	Identity	1	DummyID
+	Residual				1	
+	Total		23		21	
+Carrier	Fixed Effects	Intercept	1		1	
+		Sex	1		1	
+		Age	1		1	
+		EDUpos	1		1	
+		Time	1		1	
+		TimeSqr	1		1	
+		MLPAvsLLPA4	4		3	
+		MLPAvsLLPA4 * Time	4		3	
+		MLPAvsLLPA4 * TimeSqr	4		3	
+		BMI	1		1	
+		Hypertension	1		1	
+		Hypercholes	1		1	
+		Diabetes	1		1	
+	Random Effects	Intercept	1	Identity	1	DummyID
+	Residual				1	
+	Total		23		21	
+a Dependent Variable: Language.						
+
+Information Criteriaa		
+-99	-2 Log Likelihood	849.022
+	Akaike's Information Criterion (AIC)	887.022
+	Hurvich and Tsai's Criterion (AICC)	894.939
+	Bozdogan's Criterion (CAIC)	958.341
+	Schwarz's Bayesian Criterion (BIC)	939.341
+non-carrier	-2 Log Likelihood	13934.382
+	Akaike's Information Criterion (AIC)	13976.382
+	Hurvich and Tsai's Criterion (AICC)	13976.894
+	Bozdogan's Criterion (CAIC)	14113.078
+	Schwarz's Bayesian Criterion (BIC)	14092.078
+Carrier	-2 Log Likelihood	4695.185
+	Akaike's Information Criterion (AIC)	4737.185
+	Hurvich and Tsai's Criterion (AICC)	4738.730
+	Bozdogan's Criterion (CAIC)	4851.209
+	Schwarz's Bayesian Criterion (BIC)	4830.209
+The information criteria are displayed in smaller-is-better form.		
+a Dependent Variable: Language.		
+
+
+Fixed Effects
+Type III Tests of Fixed Effectsa					
+APOE4Car	Source	Numerator df	Denominator df	F	Sig.
+-99	Intercept	1	62.051	2.319	.133
+	Sex	1	69.563	4.740	.033
+	Age	1	62.803	.325	.570
+	EDUpos	1	64.074	1.378	.245
+	Time	1	45.519	.007	.932
+	TimeSqr	1	39.739	.203	.655
+	MLPAvsLLPA4	3	74.130	1.482	.226
+	MLPAvsLLPA4 * Time	2	45.380	7.164	.002
+	MLPAvsLLPA4 * TimeSqr	2	39.713	7.778	.001
+	BMI	1	66.947	4.415	.039
+	Hypertension	1	65.680	.230	.633
+	Hypercholes	1	61.379	.006	.938
+	Diabetes	1	70.494	1.688	.198
+non-carrier	Intercept	1	584.876	197.102	.000
+	Sex	1	500.183	40.470	.000
+	Age	1	602.728	.154	.695
+	EDUpos	1	494.093	13.002	.000
+	Time	1	1378.820	.377	.539
+	TimeSqr	1	1340.160	.025	.875
+	MLPAvsLLPA4	3	1047.555	1.523	.207
+	MLPAvsLLPA4 * Time	3	1382.434	.528	.663
+	MLPAvsLLPA4 * TimeSqr	3	1341.484	.618	.604
+	BMI	1	503.322	1.089	.297
+	Hypertension	1	506.712	.080	.777
+	Hypercholes	1	507.088	.909	.341
+	Diabetes	1	537.226	2.785	.096
+Carrier	Intercept	1	199.901	57.421	.000
+	Sex	1	172.858	2.511	.115
+	Age	1	204.411	2.699	.102
+	EDUpos	1	167.137	10.935	.001
+	Time	1	479.396	.002	.964
+	TimeSqr	1	459.152	.029	.864
+	MLPAvsLLPA4	3	307.444	.320	.811
+	MLPAvsLLPA4 * Time	3	479.667	.677	.566
+	MLPAvsLLPA4 * TimeSqr	3	459.546	.590	.622
+	BMI	1	194.212	.081	.776
+	Hypertension	1	175.510	2.724	.101
+	Hypercholes	1	176.863	.052	.820
+	Diabetes	1	171.383	1.228	.269
+a Dependent Variable: Language.					
+
+Estimates of Fixed Effectsa								
+APOE4Car	Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+							Lower Bound	Upper Bound
+-99	Intercept	59.360742	39.137467	62.113	1.517	.134	-18.871098	137.592581
+	Sex	5.990714	2.751770	69.563	2.177	.033	.501875	11.479552
+	Age	.302555	.530343	62.803	.570	.570	-.757316	1.362425
+	EDUpos	3.299735	2.811420	64.074	1.174	.245	-2.316597	8.916067
+	Time	-7.205558	2.162323	44.652	-3.332	.002	-11.561636	-2.849479
+	TimeSqr	1.897346	.588278	39.525	3.225	.003	.707946	3.086746
+	[MLPAvsLLPA4=1.00]	3.786440	3.745360	73.971	1.011	.315	-3.676402	11.249282
+	[MLPAvsLLPA4=2.00]	-5.800175	3.649357	73.968	-1.589	.116	-13.071731	1.471380
+	[MLPAvsLLPA4=3.00]	1.681948	5.224611	74.483	.322	.748	-8.727197	12.091093
+	[MLPAvsLLPA4=4.00]	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * Time	24.958115	6.728600	45.246	3.709	.001	11.408054	38.508176
+	[MLPAvsLLPA4=2.00] * Time	-4.311746	9.258497	45.464	-.466	.644	-22.954064	14.330571
+	[MLPAvsLLPA4=3.00] * Time	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=4.00] * Time	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * TimeSqr	-7.933669	2.172640	39.652	-3.652	.001	-12.325942	-3.541397
+	[MLPAvsLLPA4=2.00] * TimeSqr	3.892488	3.013902	39.763	1.292	.204	-2.199964	9.984941
+	[MLPAvsLLPA4=3.00] * TimeSqr	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=4.00] * TimeSqr	0b	0	.	.	.	.	.
+	BMI	.774541	.368612	66.947	2.101	.039	.038777	1.510305
+	Hypertension	-1.553578	3.237022	65.680	-.480	.633	-8.017089	4.909933
+	Hypercholes	-.330818	4.208407	61.379	-.079	.938	-8.744997	8.083362
+	Diabetes	-5.634751	4.336842	70.494	-1.299	.198	-14.283244	3.013742
+non-carrier	Intercept	105.189756	7.623112	584.091	13.799	.000	90.217707	120.161806
+	Sex	5.548620	.872206	500.183	6.362	.000	3.834982	7.262258
+	Age	-.041390	.105566	602.728	-.392	.695	-.248711	.165931
+	EDUpos	2.993215	.830102	494.093	3.606	.000	1.362249	4.624181
+	Time	.937853	.637732	1403.151	1.471	.142	-.313158	2.188864
+	TimeSqr	-.131099	.147447	1350.107	-.889	.374	-.420348	.158151
+	[MLPAvsLLPA4=1.00]	2.962345	1.434170	1035.682	2.066	.039	.148136	5.776555
+	[MLPAvsLLPA4=2.00]	.360425	1.292515	1050.965	.279	.780	-2.175778	2.896629
+	[MLPAvsLLPA4=3.00]	-.158833	1.658862	1050.022	-.096	.924	-3.413895	3.096229
+	[MLPAvsLLPA4=4.00]	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * Time	.036666	1.314924	1369.549	.028	.978	-2.542818	2.616149
+	[MLPAvsLLPA4=2.00] * Time	-.695160	1.185604	1405.556	-.586	.558	-3.020904	1.630583
+	[MLPAvsLLPA4=3.00] * Time	-1.769996	1.524962	1377.651	-1.161	.246	-4.761495	1.221503
+	[MLPAvsLLPA4=4.00] * Time	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * TimeSqr	-.015662	.304053	1332.094	-.052	.959	-.612138	.580813
+	[MLPAvsLLPA4=2.00] * TimeSqr	.175540	.272698	1353.255	.644	.520	-.359418	.710497
+	[MLPAvsLLPA4=3.00] * TimeSqr	.443142	.355965	1341.393	1.245	.213	-.255166	1.141449
+	[MLPAvsLLPA4=4.00] * TimeSqr	0b	0	.	.	.	.	.
+	BMI	-.103237	.098919	503.322	-1.044	.297	-.297583	.091109
+	Hypertension	-.261902	.923297	506.712	-.284	.777	-2.075863	1.552059
+	Hypercholes	1.187257	1.245057	507.088	.954	.341	-1.258849	3.633363
+	Diabetes	-2.825674	1.693113	537.226	-1.669	.096	-6.151607	.500259
+Carrier	Intercept	123.422604	16.716043	200.047	7.383	.000	90.460349	156.384860
+	Sex	2.489903	1.571339	172.858	1.585	.115	-.611577	5.591384
+	Age	-.376747	.229324	204.411	-1.643	.102	-.828891	.075398
+	EDUpos	5.160131	1.560455	167.137	3.307	.001	2.079390	8.240873
+	Time	-.336218	1.001563	482.189	-.336	.737	-2.304185	1.631750
+	TimeSqr	.111052	.215917	457.757	.514	.607	-.313259	.535363
+	[MLPAvsLLPA4=1.00]	.820930	2.689971	306.261	.305	.760	-4.472234	6.114094
+	[MLPAvsLLPA4=2.00]	2.145933	2.304463	307.063	.931	.352	-2.388604	6.680469
+	[MLPAvsLLPA4=3.00]	1.410181	2.797144	307.080	.504	.615	-4.093813	6.914176
+	[MLPAvsLLPA4=4.00]	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * Time	1.391852	2.374077	479.329	.586	.558	-3.273031	6.056736
+	[MLPAvsLLPA4=2.00] * Time	-1.782677	2.031155	478.278	-.878	.381	-5.773768	2.208414
+	[MLPAvsLLPA4=3.00] * Time	1.574946	2.252860	482.595	.699	.485	-2.851681	6.001573
+	[MLPAvsLLPA4=4.00] * Time	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * TimeSqr	-.340846	.576004	458.642	-.592	.554	-1.472780	.791088
+	[MLPAvsLLPA4=2.00] * TimeSqr	.380632	.479162	458.661	.794	.427	-.560994	1.322258
+	[MLPAvsLLPA4=3.00] * TimeSqr	-.340023	.490924	461.358	-.693	.489	-1.304747	.624701
+	[MLPAvsLLPA4=4.00] * TimeSqr	0b	0	.	.	.	.	.
+	BMI	.055630	.195648	194.212	.284	.776	-.330238	.441497
+	Hypertension	-2.781314	1.685288	175.510	-1.650	.101	-6.107351	.544724
+	Hypercholes	-.492777	2.161639	176.863	-.228	.820	-4.758701	3.773148
+	Diabetes	3.261040	2.942402	171.383	1.108	.269	-2.546975	9.069055
+a Dependent Variable: Language.								
+b This parameter is set to zero because it is redundant.								
+
+
+Covariance Parameters
+Estimates of Covariance Parametersa				
+APOE4Car	Parameter		Estimate	Std. Error
+-99	Residual		37.309582	8.999516
+	Intercept [subject = DummyID]	Variance	79.617243	21.590039
+non-carrier	Residual		85.099965	3.452206
+	Intercept [subject = DummyID]	Variance	62.029594	6.027907
+Carrier	Residual		74.893973	5.170651
+	Intercept [subject = DummyID]	Variance	77.392004	11.664639
+a Dependent Variable: Language.				
+
+MIXED RBAI BY MLPAvsLLPA4 WITH Sex Age EDUpos Time TimeSqr BMI Hypertension Hypercholes Diabetes
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex Age EDUpos Time TimeSqr MLPAvsLLPA4 MLPAvsLLPA4*Time MLPAvsLLPA4*TimeSqr BMI
+    Hypertension Hypercholes Diabetes | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+
+
+Mixed Model Analysis
+Notes		
+Output Created		10-JAN-2019 20:47:36
+Comments		
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	APOE4Car
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED RBAI BY MLPAvsLLPA4 WITH Sex Age EDUpos Time TimeSqr BMI Hypertension Hypercholes Diabetes
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex Age EDUpos Time TimeSqr MLPAvsLLPA4 MLPAvsLLPA4*Time MLPAvsLLPA4*TimeSqr BMI
+    Hypertension Hypercholes Diabetes | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.34
+	Elapsed Time	00:00:00.00
+
+Warnings
+The covariance structure for random effect with only one level will be changed to Identity.
+The covariance structure for random effect with only one level will be changed to Identity.
+The covariance structure for random effect with only one level will be changed to Identity.
+
+Model Dimensiona						
+APOE4Car			Number of Levels	Covariance Structure	Number of Parameters	Subject Variables
+-99	Fixed Effects	Intercept	1		1	
+		Sex	1		1	
+		Age	1		1	
+		EDUpos	1		1	
+		Time	1		1	
+		TimeSqr	1		1	
+		MLPAvsLLPA4	4		3	
+		MLPAvsLLPA4 * Time	4		2	
+		MLPAvsLLPA4 * TimeSqr	4		2	
+		BMI	1		1	
+		Hypertension	1		1	
+		Hypercholes	1		1	
+		Diabetes	1		1	
+	Random Effects	Intercept	1	Identity	1	DummyID
+	Residual				1	
+	Total		23		19	
+non-carrier	Fixed Effects	Intercept	1		1	
+		Sex	1		1	
+		Age	1		1	
+		EDUpos	1		1	
+		Time	1		1	
+		TimeSqr	1		1	
+		MLPAvsLLPA4	4		3	
+		MLPAvsLLPA4 * Time	4		3	
+		MLPAvsLLPA4 * TimeSqr	4		3	
+		BMI	1		1	
+		Hypertension	1		1	
+		Hypercholes	1		1	
+		Diabetes	1		1	
+	Random Effects	Intercept	1	Identity	1	DummyID
+	Residual				1	
+	Total		23		21	
+Carrier	Fixed Effects	Intercept	1		1	
+		Sex	1		1	
+		Age	1		1	
+		EDUpos	1		1	
+		Time	1		1	
+		TimeSqr	1		1	
+		MLPAvsLLPA4	4		3	
+		MLPAvsLLPA4 * Time	4		3	
+		MLPAvsLLPA4 * TimeSqr	4		3	
+		BMI	1		1	
+		Hypertension	1		1	
+		Hypercholes	1		1	
+		Diabetes	1		1	
+	Random Effects	Intercept	1	Identity	1	DummyID
+	Residual				1	
+	Total		23		21	
+a Dependent Variable: Attention.						
+
+Information Criteriaa		
+-99	-2 Log Likelihood	882.706
+	Akaike's Information Criterion (AIC)	920.706
+	Hurvich and Tsai's Criterion (AICC)	928.623
+	Bozdogan's Criterion (CAIC)	992.025
+	Schwarz's Bayesian Criterion (BIC)	973.025
+non-carrier	-2 Log Likelihood	13933.661
+	Akaike's Information Criterion (AIC)	13975.661
+	Hurvich and Tsai's Criterion (AICC)	13976.174
+	Bozdogan's Criterion (CAIC)	14112.357
+	Schwarz's Bayesian Criterion (BIC)	14091.357
+Carrier	-2 Log Likelihood	4711.056
+	Akaike's Information Criterion (AIC)	4753.056
+	Hurvich and Tsai's Criterion (AICC)	4754.601
+	Bozdogan's Criterion (CAIC)	4867.080
+	Schwarz's Bayesian Criterion (BIC)	4846.080
+The information criteria are displayed in smaller-is-better form.		
+a Dependent Variable: Attention.		
+
+
+Fixed Effects
+Type III Tests of Fixed Effectsa					
+APOE4Car	Source	Numerator df	Denominator df	F	Sig.
+-99	Intercept	1	66.905	21.835	.000
+	Sex	1	75.050	1.139	.289
+	Age	1	67.697	4.112	.047
+	EDUpos	1	69.148	.100	.753
+	Time	1	52.220	1.708	.197
+	TimeSqr	1	45.406	.003	.957
+	MLPAvsLLPA4	3	79.989	.393	.758
+	MLPAvsLLPA4 * Time	2	52.057	.060	.942
+	MLPAvsLLPA4 * TimeSqr	2	45.377	.315	.731
+	BMI	1	72.259	5.796	.019
+	Hypertension	1	70.818	.817	.369
+	Hypercholes	1	66.165	.435	.512
+	Diabetes	1	76.136	2.281	.135
+non-carrier	Intercept	1	591.450	127.154	.000
+	Sex	1	560.064	.376	.540
+	Age	1	600.891	.028	.868
+	EDUpos	1	555.732	23.702	.000
+	Time	1	1320.139	14.954	.000
+	TimeSqr	1	1291.175	1.893	.169
+	MLPAvsLLPA4	3	744.149	1.610	.186
+	MLPAvsLLPA4 * Time	3	1321.716	.422	.737
+	MLPAvsLLPA4 * TimeSqr	3	1291.851	.493	.687
+	BMI	1	559.197	9.247	.002
+	Hypertension	1	560.949	2.250	.134
+	Hypercholes	1	559.651	.010	.921
+	Diabetes	1	578.017	.626	.429
+Carrier	Intercept	1	202.879	37.645	.000
+	Sex	1	190.133	.014	.906
+	Age	1	205.137	.591	.443
+	EDUpos	1	186.280	8.606	.004
+	Time	1	461.165	10.838	.001
+	TimeSqr	1	448.310	2.486	.116
+	MLPAvsLLPA4	3	245.195	.543	.653
+	MLPAvsLLPA4 * Time	3	461.386	.625	.599
+	MLPAvsLLPA4 * TimeSqr	3	448.608	.330	.803
+	BMI	1	201.821	6.042	.015
+	Hypertension	1	191.870	2.129	.146
+	Hypercholes	1	193.344	.305	.581
+	Diabetes	1	188.758	.474	.492
+a Dependent Variable: Attention.					
+
+Estimates of Fixed Effectsa								
+APOE4Car	Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+							Lower Bound	Upper Bound
+-99	Intercept	207.839538	44.460989	66.974	4.675	.000	119.094407	296.584669
+	Sex	3.343562	3.133231	75.050	1.067	.289	-2.898086	9.585211
+	Age	-1.221985	.602612	67.697	-2.028	.047	-2.424575	-.019394
+	EDUpos	-1.011432	3.195844	69.148	-.316	.753	-7.386722	5.363858
+	Time	6.594689	2.559894	51.219	2.576	.013	1.456022	11.733356
+	TimeSqr	-1.056304	.698195	45.180	-1.513	.137	-2.462387	.349778
+	[MLPAvsLLPA4=1.00]	1.557186	4.269995	79.831	.365	.716	-6.940651	10.055023
+	[MLPAvsLLPA4=2.00]	-3.524868	4.160533	79.815	-.847	.399	-11.804888	4.755153
+	[MLPAvsLLPA4=3.00]	-2.944445	5.957297	80.358	-.494	.622	-14.799032	8.910142
+	[MLPAvsLLPA4=4.00]	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * Time	1.007068	7.963619	51.902	.126	.900	-14.973820	16.987956
+	[MLPAvsLLPA4=2.00] * Time	-3.414957	10.956813	52.154	-.312	.757	-25.399870	18.569957
+	[MLPAvsLLPA4=3.00] * Time	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=4.00] * Time	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * TimeSqr	.674934	2.578430	45.306	.262	.795	-4.517322	5.867189
+	[MLPAvsLLPA4=2.00] * TimeSqr	2.727797	3.576608	45.435	.763	.450	-4.473959	9.929552
+	[MLPAvsLLPA4=3.00] * TimeSqr	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=4.00] * TimeSqr	0b	0	.	.	.	.	.
+	BMI	-1.009678	.419386	72.259	-2.408	.019	-1.845657	-.173699
+	Hypertension	3.328313	3.681438	70.818	.904	.369	-4.012592	10.669218
+	Hypercholes	-3.152748	4.779695	66.165	-.660	.512	-12.695270	6.389775
+	Diabetes	-7.459453	4.939432	76.136	-1.510	.135	-17.296900	2.377995
+non-carrier	Intercept	114.280508	10.386075	590.949	11.003	.000	93.882398	134.678618
+	Sex	.744608	1.214756	560.064	.613	.540	-1.641426	3.130643
+	Age	-.023756	.143049	600.891	-.166	.868	-.304692	.257181
+	EDUpos	5.642157	1.158907	555.732	4.869	.000	3.365783	7.918532
+	Time	1.960732	.563320	1331.400	3.481	.001	.855640	3.065823
+	TimeSqr	-.209025	.129164	1296.088	-1.618	.106	-.462419	.044369
+	[MLPAvsLLPA4=1.00]	3.870889	1.799758	740.049	2.151	.032	.337649	7.404129
+	[MLPAvsLLPA4=2.00]	.956766	1.618205	745.544	.591	.555	-2.220016	4.133547
+	[MLPAvsLLPA4=3.00]	1.832304	2.077312	744.848	.882	.378	-2.245779	5.910387
+	[MLPAvsLLPA4=4.00]	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * Time	-.484254	1.156185	1313.696	-.419	.675	-2.752426	1.783917
+	[MLPAvsLLPA4=2.00] * Time	.721565	1.047890	1334.660	.689	.491	-1.334126	2.777255
+	[MLPAvsLLPA4=3.00] * Time	-.741105	1.342582	1319.246	-.552	.581	-3.374934	1.892724
+	[MLPAvsLLPA4=4.00] * Time	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * TimeSqr	.115721	.265697	1286.559	.436	.663	-.405527	.636968
+	[MLPAvsLLPA4=2.00] * TimeSqr	-.136048	.239023	1298.799	-.569	.569	-.604961	.332864
+	[MLPAvsLLPA4=3.00] * TimeSqr	.254586	.311448	1291.325	.817	.414	-.356414	.865587
+	[MLPAvsLLPA4=4.00] * TimeSqr	0b	0	.	.	.	.	.
+	BMI	-.418843	.137739	559.197	-3.041	.002	-.689393	-.148293
+	Hypertension	-1.926340	1.284185	560.949	-1.500	.134	-4.448739	.596059
+	Hypercholes	-.171589	1.732288	559.651	-.099	.921	-3.574171	3.230992
+	Diabetes	-1.844856	2.331160	578.017	-.791	.429	-6.423432	2.733720
+Carrier	Intercept	131.846011	21.708119	202.943	6.074	.000	89.043630	174.648391
+	Sex	.245768	2.079133	190.133	.118	.906	-3.855362	4.346898
+	Age	-.228363	.296955	205.137	-.769	.443	-.813839	.357113
+	EDUpos	6.088348	2.075375	186.280	2.934	.004	1.994089	10.182608
+	Time	1.356134	.920832	462.263	1.473	.142	-.453402	3.165669
+	TimeSqr	-.098831	.196880	447.934	-.502	.616	-.485753	.288092
+	[MLPAvsLLPA4=1.00]	-2.696127	3.316918	244.855	-.813	.417	-9.229458	3.837205
+	[MLPAvsLLPA4=2.00]	1.408021	2.840791	245.048	.496	.621	-4.187462	7.003504
+	[MLPAvsLLPA4=3.00]	-2.335482	3.448363	244.918	-.677	.499	-9.127713	4.456749
+	[MLPAvsLLPA4=4.00]	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * Time	2.661085	2.181274	461.626	1.220	.223	-1.625372	6.947542
+	[MLPAvsLLPA4=2.00] * Time	1.136084	1.864930	459.951	.609	.543	-2.528754	4.800923
+	[MLPAvsLLPA4=3.00] * Time	1.618312	2.072049	463.304	.781	.435	-2.453466	5.690091
+	[MLPAvsLLPA4=4.00] * Time	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * TimeSqr	-.386721	.525379	448.509	-.736	.462	-1.419232	.645790
+	[MLPAvsLLPA4=2.00] * TimeSqr	-.080191	.436903	447.448	-.184	.854	-.938828	.778447
+	[MLPAvsLLPA4=3.00] * TimeSqr	-.349591	.448177	450.015	-.780	.436	-1.230371	.531189
+	[MLPAvsLLPA4=4.00] * TimeSqr	0b	0	.	.	.	.	.
+	BMI	-.626196	.254759	201.821	-2.458	.015	-1.128526	-.123865
+	Hypertension	-3.246289	2.224759	191.870	-1.459	.146	-7.634416	1.141837
+	Hypercholes	1.574481	2.849177	193.344	.553	.581	-4.044979	7.193941
+	Diabetes	-2.684571	3.899311	188.758	-.688	.492	-10.376395	5.007254
+a Dependent Variable: Attention.								
+b This parameter is set to zero because it is redundant.								
+
+
+Covariance Parameters
+Estimates of Covariance Parametersa				
+APOE4Car	Parameter		Estimate	Std. Error
+-99	Residual		52.866893	11.952159
+	Intercept [subject = DummyID]	Variance	99.202564	26.316984
+non-carrier	Residual		63.092183	2.540088
+	Intercept [subject = DummyID]	Variance	159.641631	11.208505
+Carrier	Residual		60.728208	4.156300
+	Intercept [subject = DummyID]	Variance	164.491975	19.741922
+a Dependent Variable: Attention.				
+
+MIXED RBDMI BY MLPAvsLLPA4 WITH Sex Age EDUpos Time TimeSqr BMI Hypertension Hypercholes Diabetes
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex Age EDUpos Time TimeSqr MLPAvsLLPA4 MLPAvsLLPA4*Time MLPAvsLLPA4*TimeSqr BMI
+    Hypertension Hypercholes Diabetes | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+
+
+Mixed Model Analysis
+Notes		
+Output Created		10-JAN-2019 20:47:45
+Comments		
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	APOE4Car
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED RBDMI BY MLPAvsLLPA4 WITH Sex Age EDUpos Time TimeSqr BMI Hypertension Hypercholes Diabetes
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex Age EDUpos Time TimeSqr MLPAvsLLPA4 MLPAvsLLPA4*Time MLPAvsLLPA4*TimeSqr BMI
+    Hypertension Hypercholes Diabetes | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.30
+	Elapsed Time	00:00:00.00
+
+Warnings
+The covariance structure for random effect with only one level will be changed to Identity.
+The covariance structure for random effect with only one level will be changed to Identity.
+The covariance structure for random effect with only one level will be changed to Identity.
+
+Model Dimensiona						
+APOE4Car			Number of Levels	Covariance Structure	Number of Parameters	Subject Variables
+-99	Fixed Effects	Intercept	1		1	
+		Sex	1		1	
+		Age	1		1	
+		EDUpos	1		1	
+		Time	1		1	
+		TimeSqr	1		1	
+		MLPAvsLLPA4	4		3	
+		MLPAvsLLPA4 * Time	4		2	
+		MLPAvsLLPA4 * TimeSqr	4		2	
+		BMI	1		1	
+		Hypertension	1		1	
+		Hypercholes	1		1	
+		Diabetes	1		1	
+	Random Effects	Intercept	1	Identity	1	DummyID
+	Residual				1	
+	Total		23		19	
+non-carrier	Fixed Effects	Intercept	1		1	
+		Sex	1		1	
+		Age	1		1	
+		EDUpos	1		1	
+		Time	1		1	
+		TimeSqr	1		1	
+		MLPAvsLLPA4	4		3	
+		MLPAvsLLPA4 * Time	4		3	
+		MLPAvsLLPA4 * TimeSqr	4		3	
+		BMI	1		1	
+		Hypertension	1		1	
+		Hypercholes	1		1	
+		Diabetes	1		1	
+	Random Effects	Intercept	1	Identity	1	DummyID
+	Residual				1	
+	Total		23		21	
+Carrier	Fixed Effects	Intercept	1		1	
+		Sex	1		1	
+		Age	1		1	
+		EDUpos	1		1	
+		Time	1		1	
+		TimeSqr	1		1	
+		MLPAvsLLPA4	4		3	
+		MLPAvsLLPA4 * Time	4		3	
+		MLPAvsLLPA4 * TimeSqr	4		3	
+		BMI	1		1	
+		Hypertension	1		1	
+		Hypercholes	1		1	
+		Diabetes	1		1	
+	Random Effects	Intercept	1	Identity	1	DummyID
+	Residual				1	
+	Total		23		21	
+a Dependent Variable: Delayed memory.						
+
+Information Criteriaa		
+-99	-2 Log Likelihood	858.687
+	Akaike's Information Criterion (AIC)	896.687
+	Hurvich and Tsai's Criterion (AICC)	904.604
+	Bozdogan's Criterion (CAIC)	968.006
+	Schwarz's Bayesian Criterion (BIC)	949.006
+non-carrier	-2 Log Likelihood	13100.461
+	Akaike's Information Criterion (AIC)	13142.461
+	Hurvich and Tsai's Criterion (AICC)	13142.973
+	Bozdogan's Criterion (CAIC)	13279.157
+	Schwarz's Bayesian Criterion (BIC)	13258.157
+Carrier	-2 Log Likelihood	4541.505
+	Akaike's Information Criterion (AIC)	4583.505
+	Hurvich and Tsai's Criterion (AICC)	4585.050
+	Bozdogan's Criterion (CAIC)	4697.529
+	Schwarz's Bayesian Criterion (BIC)	4676.529
+The information criteria are displayed in smaller-is-better form.		
+a Dependent Variable: Delayed memory.		
+
+
+Fixed Effects
+Type III Tests of Fixed Effectsa					
+APOE4Car	Source	Numerator df	Denominator df	F	Sig.
+-99	Intercept	1	47.593	7.072	.011
+	Sex	1	63.240	4.154	.046
+	Age	1	48.571	.077	.782
+	EDUpos	1	52.135	8.565	.005
+	Time	1	48.283	.336	.565
+	TimeSqr	1	36.125	.155	.696
+	MLPAvsLLPA4	3	75.210	1.090	.359
+	MLPAvsLLPA4 * Time	2	47.968	.849	.434
+	MLPAvsLLPA4 * TimeSqr	2	36.102	.366	.696
+	BMI	1	57.929	.622	.433
+	Hypertension	1	54.223	.142	.707
+	Hypercholes	1	46.328	.022	.883
+	Diabetes	1	66.936	.082	.776
+non-carrier	Intercept	1	563.990	244.247	.000
+	Sex	1	512.484	37.812	.000
+	Age	1	577.368	2.452	.118
+	EDUpos	1	507.038	16.134	.000
+	Time	1	1325.903	60.140	.000
+	TimeSqr	1	1287.324	26.590	.000
+	MLPAvsLLPA4	3	831.173	2.681	.046
+	MLPAvsLLPA4 * Time	3	1328.462	1.645	.177
+	MLPAvsLLPA4 * TimeSqr	3	1288.345	1.372	.250
+	BMI	1	512.675	.318	.573
+	Hypertension	1	515.213	3.065	.081
+	Hypercholes	1	514.333	.359	.549
+	Diabetes	1	538.767	.003	.954
+Carrier	Intercept	1	172.710	64.872	.000
+	Sex	1	159.898	.580	.447
+	Age	1	174.980	7.735	.006
+	EDUpos	1	156.174	7.076	.009
+	Time	1	434.856	10.966	.001
+	TimeSqr	1	419.587	3.448	.064
+	MLPAvsLLPA4	3	216.939	.372	.773
+	MLPAvsLLPA4 * Time	3	435.112	2.058	.105
+	MLPAvsLLPA4 * TimeSqr	3	419.934	2.899	.035
+	BMI	1	171.486	.016	.900
+	Hypertension	1	161.592	3.396	.067
+	Hypercholes	1	162.972	.490	.485
+	Diabetes	1	158.608	1.752	.188
+a Dependent Variable: Delayed memory.					
+
+Estimates of Fixed Effectsa								
+APOE4Car	Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+							Lower Bound	Upper Bound
+-99	Intercept	96.025874	36.528865	47.736	2.629	.011	22.569177	169.482571
+	Sex	5.336393	2.618294	63.240	2.038	.046	.104539	10.568248
+	Age	-.137759	.495757	48.571	-.278	.782	-1.134243	.858726
+	EDUpos	7.723209	2.638905	52.135	2.927	.005	2.428186	13.018233
+	Time	6.704232	2.575139	46.584	2.603	.012	1.522498	11.885967
+	TimeSqr	-1.295833	.714571	36.105	-1.813	.078	-2.744905	.153239
+	[MLPAvsLLPA4=1.00]	2.140629	3.604079	75.006	.594	.554	-5.039054	9.320312
+	[MLPAvsLLPA4=2.00]	-4.381250	3.511275	74.772	-1.248	.216	-11.376419	2.613919
+	[MLPAvsLLPA4=3.00]	4.495552	5.032933	76.015	.893	.375	-5.528370	14.519475
+	[MLPAvsLLPA4=4.00]	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * Time	-10.405677	7.997588	47.703	-1.301	.199	-26.488496	5.677142
+	[MLPAvsLLPA4=2.00] * Time	-1.972136	10.996781	48.119	-.179	.858	-24.081236	20.136965
+	[MLPAvsLLPA4=3.00] * Time	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=4.00] * Time	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * TimeSqr	2.248558	2.638613	36.009	.852	.400	-3.102750	7.599867
+	[MLPAvsLLPA4=2.00] * TimeSqr	-.116571	3.658776	36.176	-.032	.975	-7.535656	7.302514
+	[MLPAvsLLPA4=3.00] * TimeSqr	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=4.00] * TimeSqr	0b	0	.	.	.	.	.
+	BMI	.274914	.348542	57.929	.789	.433	-.422788	.972615
+	Hypertension	-1.150436	3.048869	54.223	-.377	.707	-7.262474	4.961601
+	Hypercholes	-.580702	3.919838	46.328	-.148	.883	-8.469418	7.308015
+	Diabetes	1.183223	4.139304	66.936	.286	.776	-7.079007	9.445452
+non-carrier	Intercept	107.838514	7.026973	563.329	15.346	.000	94.036246	121.640783
+	Sex	5.010326	.814801	512.484	6.149	.000	3.409564	6.611087
+	Age	-.151918	.097019	577.368	-1.566	.118	-.342471	.038634
+	EDUpos	3.118841	.776470	507.038	4.017	.000	1.593345	4.644337
+	Time	3.639249	.479313	1343.737	7.593	.000	2.698966	4.579532
+	TimeSqr	-.621461	.110336	1294.846	-5.632	.000	-.837919	-.405004
+	[MLPAvsLLPA4=1.00]	2.220232	1.259714	824.015	1.762	.078	-.252394	4.692857
+	[MLPAvsLLPA4=2.00]	2.396687	1.133810	833.419	2.114	.035	.171228	4.622145
+	[MLPAvsLLPA4=3.00]	-1.027203	1.455321	832.522	-.706	.480	-3.883733	1.829327
+	[MLPAvsLLPA4=4.00]	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * Time	-1.699152	.985780	1317.229	-1.724	.085	-3.633023	.234719
+	[MLPAvsLLPA4=2.00] * Time	-1.056618	.891325	1347.385	-1.185	.236	-2.805154	.691919
+	[MLPAvsLLPA4=3.00] * Time	.738644	1.144005	1324.735	.646	.519	-1.505615	2.982903
+	[MLPAvsLLPA4=4.00] * Time	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * TimeSqr	.397482	.227218	1280.709	1.749	.080	-.048277	.843242
+	[MLPAvsLLPA4=2.00] * TimeSqr	.229449	.204122	1298.239	1.124	.261	-.170995	.629893
+	[MLPAvsLLPA4=3.00] * TimeSqr	-.069017	.266195	1287.834	-.259	.795	-.591242	.453207
+	[MLPAvsLLPA4=4.00] * TimeSqr	0b	0	.	.	.	.	.
+	BMI	-.052107	.092380	512.675	-.564	.573	-.233597	.129382
+	Hypertension	1.508520	.861698	515.213	1.751	.081	-.184355	3.201394
+	Hypercholes	-.696660	1.162077	514.333	-.599	.549	-2.979663	1.586342
+	Diabetes	-.091363	1.571215	538.767	-.058	.954	-3.177822	2.995095
+Carrier	Intercept	143.684828	18.322165	172.775	7.842	.000	107.520733	179.848923
+	Sex	1.334546	1.751868	159.898	.762	.447	-2.125238	4.794330
+	Age	-.697246	.250706	174.980	-2.781	.006	-1.192044	-.202449
+	EDUpos	4.649181	1.747774	156.174	2.660	.009	1.196856	8.101506
+	Time	4.211864	.813917	436.240	5.175	.000	2.612177	5.811550
+	TimeSqr	-.777181	.174168	419.107	-4.462	.000	-1.119534	-.434829
+	[MLPAvsLLPA4=1.00]	2.054766	2.812824	216.563	.730	.466	-3.489251	7.598782
+	[MLPAvsLLPA4=2.00]	2.179251	2.409106	216.784	.905	.367	-2.569019	6.927520
+	[MLPAvsLLPA4=3.00]	1.336813	2.924316	216.659	.457	.648	-4.426936	7.100562
+	[MLPAvsLLPA4=4.00]	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * Time	-3.726619	1.928092	435.353	-1.933	.054	-7.516145	.062908
+	[MLPAvsLLPA4=2.00] * Time	-.201466	1.648625	433.450	-.122	.903	-3.441760	3.038828
+	[MLPAvsLLPA4=3.00] * Time	-3.280955	1.831362	437.402	-1.792	.074	-6.880318	.318408
+	[MLPAvsLLPA4=4.00] * Time	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * TimeSqr	.932873	.464758	419.775	2.007	.045	.019329	1.846417
+	[MLPAvsLLPA4=2.00] * TimeSqr	-.011312	.386515	418.615	-.029	.977	-.771064	.748439
+	[MLPAvsLLPA4=3.00] * TimeSqr	.924835	.396429	421.577	2.333	.020	.145612	1.704058
+	[MLPAvsLLPA4=4.00] * TimeSqr	0b	0	.	.	.	.	.
+	BMI	-.027159	.214990	171.486	-.126	.900	-.451526	.397208
+	Hypertension	-3.455457	1.875014	161.592	-1.843	.067	-7.158146	.247233
+	Hypercholes	1.680638	2.401734	162.972	.700	.485	-3.061891	6.423168
+	Diabetes	4.347595	3.284934	158.608	1.323	.188	-2.140261	10.835450
+a Dependent Variable: Delayed memory.								
+b This parameter is set to zero because it is redundant.								
+
+
+Covariance Parameters
+Estimates of Covariance Parametersa				
+APOE4Car	Parameter		Estimate	Std. Error
+-99	Residual		57.628153	15.528768
+	Intercept [subject = DummyID]	Variance	51.156913	24.594120
+non-carrier	Residual		46.727854	1.908924
+	Intercept [subject = DummyID]	Variance	64.360781	5.266182
+Carrier	Residual		47.645311	3.393201
+	Intercept [subject = DummyID]	Variance	114.780709	15.417514
+a Dependent Variable: Delayed memory.				
+
+MIXED EXECI BY MLPAvsLLPA4 WITH Sex Age EDUpos Time TimeSqr BMI Hypertension Hypercholes Diabetes
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex Age EDUpos Time TimeSqr MLPAvsLLPA4 MLPAvsLLPA4*Time MLPAvsLLPA4*TimeSqr BMI
+    Hypertension Hypercholes Diabetes | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+
+
+Mixed Model Analysis
+Notes		
+Output Created		10-JAN-2019 20:47:53
+Comments		
+Input	Data	/Users/catherinerobb/Documents/Phd/spss data/180907 MS data .sav shorter Long format..sav
+	Active Dataset	DataSet1
+	Filter	<none>
+	Weight	<none>
+	Split File	APOE4Car
+	N of Rows in Working Data File	5406
+Missing Value Handling	Definition of Missing	User-defined missing values are treated as missing.
+	Cases Used	Statistics are based on all cases with valid data for all variables in the model.
+Syntax		MIXED EXECI BY MLPAvsLLPA4 WITH Sex Age EDUpos Time TimeSqr BMI Hypertension Hypercholes Diabetes
+  /CRITERIA=CIN(95) MXITER(100) MXSTEP(10) SCORING(1) SINGULAR(0.000000000001) HCONVERGE(0,
+    ABSOLUTE) LCONVERGE(0, ABSOLUTE) PCONVERGE(0.000001, ABSOLUTE)
+  /FIXED=Sex Age EDUpos Time TimeSqr MLPAvsLLPA4 MLPAvsLLPA4*Time MLPAvsLLPA4*TimeSqr BMI
+    Hypertension Hypercholes Diabetes | SSTYPE(3)
+  /METHOD=ML
+  /PRINT=SOLUTION
+  /RANDOM=INTERCEPT | SUBJECT(DummyID) COVTYPE(UN).
+Resources	Processor Time	00:00:00.21
+	Elapsed Time	00:00:00.00
+
+Warnings
+The covariance structure for random effect with only one level will be changed to Identity.
+The covariance structure for random effect with only one level will be changed to Identity.
+The covariance structure for random effect with only one level will be changed to Identity.
+
+Model Dimensiona						
+APOE4Car			Number of Levels	Covariance Structure	Number of Parameters	Subject Variables
+-99	Fixed Effects	Intercept	1		1	
+		Sex	1		1	
+		Age	1		1	
+		EDUpos	1		1	
+		Time	1		1	
+		TimeSqr	1		1	
+		MLPAvsLLPA4	4		3	
+		MLPAvsLLPA4 * Time	4		2	
+		MLPAvsLLPA4 * TimeSqr	4		0	
+		BMI	1		1	
+		Hypertension	1		1	
+		Hypercholes	1		1	
+		Diabetes	1		1	
+	Random Effects	Intercept	1	Identity	1	DummyID
+	Residual				1	
+	Total		23		17	
+non-carrier	Fixed Effects	Intercept	1		1	
+		Sex	1		1	
+		Age	1		1	
+		EDUpos	1		1	
+		Time	1		1	
+		TimeSqr	1		1	
+		MLPAvsLLPA4	4		3	
+		MLPAvsLLPA4 * Time	4		3	
+		MLPAvsLLPA4 * TimeSqr	4		3	
+		BMI	1		1	
+		Hypertension	1		1	
+		Hypercholes	1		1	
+		Diabetes	1		1	
+	Random Effects	Intercept	1	Identity	1	DummyID
+	Residual				1	
+	Total		23		21	
+Carrier	Fixed Effects	Intercept	1		1	
+		Sex	1		1	
+		Age	1		1	
+		EDUpos	1		1	
+		Time	1		1	
+		TimeSqr	1		1	
+		MLPAvsLLPA4	4		3	
+		MLPAvsLLPA4 * Time	4		3	
+		MLPAvsLLPA4 * TimeSqr	4		3	
+		BMI	1		1	
+		Hypertension	1		1	
+		Hypercholes	1		1	
+		Diabetes	1		1	
+	Random Effects	Intercept	1	Identity	1	DummyID
+	Residual				1	
+	Total		23		21	
+a Dependent Variable: Executive function.						
+
+Information Criteriaa		
+-99	-2 Log Likelihood	283.499
+	Akaike's Information Criterion (AIC)	317.499
+	Hurvich and Tsai's Criterion (AICC)	344.107
+	Bozdogan's Criterion (CAIC)	363.629
+	Schwarz's Bayesian Criterion (BIC)	346.629
+non-carrier	-2 Log Likelihood	7235.697
+	Akaike's Information Criterion (AIC)	7277.697
+	Hurvich and Tsai's Criterion (AICC)	7278.743
+	Bozdogan's Criterion (CAIC)	7399.663
+	Schwarz's Bayesian Criterion (BIC)	7378.663
+Carrier	-2 Log Likelihood	2375.752
+	Akaike's Information Criterion (AIC)	2417.752
+	Hurvich and Tsai's Criterion (AICC)	2421.063
+	Bozdogan's Criterion (CAIC)	2516.601
+	Schwarz's Bayesian Criterion (BIC)	2495.601
+The information criteria are displayed in smaller-is-better form.		
+a Dependent Variable: Executive function.		
+
+
+Fixed Effects
+Type III Tests of Fixed Effectsa					
+APOE4Car	Source	Numerator df	Denominator df	F	Sig.
+-99	Intercept	1	26.427	12.160	.002
+	Sex	1	27.966	1.558	.222
+	Age	1	25.175	4.822	.038
+	EDUpos	1	28.335	6.485	.017
+	Time	1	15.628	7.445	.015
+	TimeSqr	1	15.268	10.791	.005
+	MLPAvsLLPA4	3	32.344	5.786	.003
+	MLPAvsLLPA4 * Time	0	.	.	.
+	MLPAvsLLPA4 * TimeSqr	0	.	.	.
+	BMI	1	25.503	6.154	.020
+	Hypertension	1	23.728	.064	.803
+	Hypercholes	1	22.541	.808	.378
+	Diabetes	1	30.098	.036	.851
+non-carrier	Intercept	1	508.396	114.105	.000
+	Sex	1	442.804	.789	.375
+	Age	1	510.945	2.299	.130
+	EDUpos	1	442.658	7.397	.007
+	Time	1	474.076	1.921	.166
+	TimeSqr	1	467.040	.565	.453
+	MLPAvsLLPA4	3	616.541	2.247	.082
+	MLPAvsLLPA4 * Time	3	474.245	.661	.577
+	MLPAvsLLPA4 * TimeSqr	3	467.101	1.073	.360
+	BMI	1	453.774	.148	.701
+	Hypertension	1	450.633	2.052	.153
+	Hypercholes	1	457.785	.103	.749
+	Diabetes	1	459.291	.655	.419
+Carrier	Intercept	1	155.348	26.308	.000
+	Sex	1	140.128	3.017	.085
+	Age	1	156.252	.505	.478
+	EDUpos	1	140.607	.228	.633
+	Time	1	164.926	.783	.377
+	TimeSqr	1	163.467	2.003	.159
+	MLPAvsLLPA4	3	192.100	.190	.903
+	MLPAvsLLPA4 * Time	3	165.605	.396	.756
+	MLPAvsLLPA4 * TimeSqr	3	163.966	.682	.565
+	BMI	1	146.220	1.465	.228
+	Hypertension	1	139.956	1.349	.247
+	Hypercholes	1	134.529	.039	.843
+	Diabetes	1	143.278	.086	.769
+a Dependent Variable: Executive function.					
+
+Estimates of Fixed Effectsa								
+APOE4Car	Parameter	Estimate	Std. Error	df	t	Sig.	95% Confidence Interval	
+							Lower Bound	Upper Bound
+-99	Intercept	167.626949	45.985111	26.459	3.645	.001	73.182996	262.070901
+	Sex	6.184706	4.955331	27.966	1.248	.222	-3.966392	16.335804
+	Age	-1.473667	.671107	25.175	-2.196	.038	-2.855351	-.091983
+	EDUpos	10.261465	4.029542	28.335	2.547	.017	2.011716	18.511213
+	Time	-6.907154	2.531392	15.628	-2.729	.015	-12.283853	-1.530454
+	TimeSqr	2.334989	.710821	15.268	3.285	.005	.822225	3.847753
+	[MLPAvsLLPA4=1.00]	7.480868	5.234245	32.888	1.429	.162	-3.169664	18.131400
+	[MLPAvsLLPA4=2.00]	-28.600040	8.406288	31.156	-3.402	.002	-45.741307	-11.458773
+	[MLPAvsLLPA4=3.00]	-12.208122	8.847989	32.916	-1.380	.177	-30.211245	5.795001
+	[MLPAvsLLPA4=4.00]	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * Time	.487417	3.090450	16.116	.158	.877	-6.060224	7.035057
+	[MLPAvsLLPA4=2.00] * Time	-2.819304	4.197904	15.713	-.672	.512	-11.731695	6.093088
+	[MLPAvsLLPA4=3.00] * Time	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=4.00] * Time	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * TimeSqr	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=2.00] * TimeSqr	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=3.00] * TimeSqr	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=4.00] * TimeSqr	0b	0	.	.	.	.	.
+	BMI	1.666295	.671677	25.503	2.481	.020	.284331	3.048259
+	Hypertension	-1.183917	4.698013	23.728	-.252	.803	-10.886019	8.518184
+	Hypercholes	-5.786129	6.435387	22.541	-.899	.378	-19.113758	7.541500
+	Diabetes	1.728881	9.107026	30.098	.190	.851	-16.867620	20.325382
+non-carrier	Intercept	135.836946	12.999551	508.304	10.449	.000	110.297482	161.376410
+	Sex	1.227892	1.382338	442.804	.888	.375	-1.488867	3.944651
+	Age	-.281751	.185812	510.945	-1.516	.130	-.646801	.083299
+	EDUpos	-3.535163	1.299851	442.658	-2.720	.007	-6.089809	-.980518
+	Time	-.090547	.966638	478.174	-.094	.925	-1.989930	1.808836
+	TimeSqr	.238668	.258698	469.624	.923	.357	-.269681	.747017
+	[MLPAvsLLPA4=1.00]	3.944242	1.999073	612.452	1.973	.049	.018372	7.870112
+	[MLPAvsLLPA4=2.00]	4.012802	1.879441	616.027	2.135	.033	.321913	7.703690
+	[MLPAvsLLPA4=3.00]	1.017043	2.315809	618.000	.439	.661	-3.530766	5.564852
+	[MLPAvsLLPA4=4.00]	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * Time	1.440921	1.993848	481.749	.723	.470	-2.476792	5.358635
+	[MLPAvsLLPA4=2.00] * Time	2.370078	1.746405	469.545	1.357	.175	-1.061659	5.801814
+	[MLPAvsLLPA4=3.00] * Time	.948800	2.215247	472.430	.428	.669	-3.404156	5.301757
+	[MLPAvsLLPA4=4.00] * Time	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * TimeSqr	-.392936	.528924	470.544	-.743	.458	-1.432281	.646408
+	[MLPAvsLLPA4=2.00] * TimeSqr	-.811136	.459541	464.834	-1.765	.078	-1.714172	.091901
+	[MLPAvsLLPA4=3.00] * TimeSqr	-.382478	.591726	466.527	-.646	.518	-1.545256	.780300
+	[MLPAvsLLPA4=4.00] * TimeSqr	0b	0	.	.	.	.	.
+	BMI	-.060747	.157927	453.774	-.385	.701	-.371106	.249613
+	Hypertension	-2.100185	1.465991	450.633	-1.433	.153	-4.981211	.780842
+	Hypercholes	.647217	2.019748	457.785	.320	.749	-3.321911	4.616344
+	Diabetes	-2.258464	2.790077	459.291	-.809	.419	-7.741363	3.224435
+Carrier	Intercept	145.947082	28.681029	155.545	5.089	.000	89.292507	202.601656
+	Sex	-4.149318	2.389046	140.128	-1.737	.085	-8.872552	.573917
+	Age	-.287854	.405096	156.252	-.711	.478	-1.088025	.512318
+	EDUpos	1.107678	2.317880	140.607	.478	.633	-3.474723	5.690078
+	Time	.075932	1.560021	168.551	.049	.961	-3.003766	3.155629
+	TimeSqr	.144933	.397596	164.280	.365	.716	-.640124	.929990
+	[MLPAvsLLPA4=1.00]	.507211	3.922473	191.180	.129	.897	-7.229671	8.244094
+	[MLPAvsLLPA4=2.00]	-.304380	3.201735	192.773	-.095	.924	-6.619310	6.010551
+	[MLPAvsLLPA4=3.00]	-2.624333	3.751679	193.056	-.700	.485	-10.023874	4.775208
+	[MLPAvsLLPA4=4.00]	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * Time	-3.475007	3.200277	163.548	-1.086	.279	-9.794195	2.844181
+	[MLPAvsLLPA4=2.00] * Time	-.721559	2.912147	167.540	-.248	.805	-6.470791	5.027673
+	[MLPAvsLLPA4=3.00] * Time	-.523217	3.317825	166.712	-.158	.875	-7.073585	6.027152
+	[MLPAvsLLPA4=4.00] * Time	0b	0	.	.	.	.	.
+	[MLPAvsLLPA4=1.00] * TimeSqr	1.152882	.831220	162.754	1.387	.167	-.488483	2.794247
+	[MLPAvsLLPA4=2.00] * TimeSqr	.039294	.781531	164.884	.050	.960	-1.503805	1.582392
+	[MLPAvsLLPA4=3.00] * TimeSqr	.070984	.841085	164.235	.084	.933	-1.589751	1.731718
+	[MLPAvsLLPA4=4.00] * TimeSqr	0b	0	.	.	.	.	.
+	BMI	-.384089	.317300	146.220	-1.210	.228	-1.011176	.242998
+	Hypertension	-3.042300	2.619153	139.956	-1.162	.247	-8.220520	2.135920
+	Hypercholes	.684428	3.453765	134.529	.198	.843	-6.146272	7.515129
+	Diabetes	-1.260478	4.290974	143.278	-.294	.769	-9.742272	7.221317
+a Dependent Variable: Executive function.								
+b This parameter is set to zero because it is redundant.								
+
+
+Covariance Parameters
+Estimates of Covariance Parametersa				
+APOE4Car	Parameter		Estimate	Std. Error
+-99	Residual		33.678877	12.757967
+	Intercept [subject = DummyID]	Variance	31.947158	18.563954
+non-carrier	Residual		85.674579	5.802211
+	Intercept [subject = DummyID]	Variance	140.172236	13.132888
+Carrier	Residual		74.276288	8.413660
+	Intercept [subject = DummyID]	Variance	143.697432	22.411687
+a Dependent Variable: Executive function.				
+

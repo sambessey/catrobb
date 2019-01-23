@@ -1,0 +1,112 @@
+MLLLPAxSex_Model3		
+Attention		Sig
+[MLPAvsLLPA4=3.00] * Sex * Time	3.47 [-1.23, 8.18]	0.15
+[MLPAvsLLPA4=2.00] * Sex * Time	0.65 [-3.11, 4.40]	0.73
+[MLPAvsLLPA4=1.00] * Sex * Time	0.94 [-3.17, 5.06]	0.65
+[MLPAvsLLPA4=3.00] * Sex * TimeSqr	-0.61 [-1.68, 0.47]	0.27
+[MLPAvsLLPA4=2.00] * Sex * TimeSqr	0.16 [-0.70, 1.01]	0.72
+[MLPAvsLLPA4=1.00] * Sex * TimeSqr	-0.13 [-1.09, 0.82]	0.78
+MLLLPAxSex_Model3		
+Delayed memory		Sig
+[MLPAvsLLPA4=3.00] * Sex * Time	-3.44 [-7.52, 0.65]	0.10
+[MLPAvsLLPA4=2.00] * Sex * Time	0.22 [-3.03, 3.48]	0.89
+[MLPAvsLLPA4=1.00] * Sex * Time	0.69 [-2.88, 4.27]	0.70
+[MLPAvsLLPA4=3.00] * Sex * TimeSqr	0.82 [-0.11, 1.76]	0.09
+[MLPAvsLLPA4=2.00] * Sex * TimeSqr	-0.02 [-0.76, 0.73]	0.97
+[MLPAvsLLPA4=1.00] * Sex * TimeSqr	-0.30 [-1.13, 0.54]	0.49
+MLLLPAxSex_Model3		
+Executive function		Sig
+[MLPAvsLLPA4=3.00] * Sex * Time	-6.00 [-13.68, 1.68]	0.13
+[MLPAvsLLPA4=2.00] * Sex * Time	-2.16 [-8.34, 4.02]	0.49
+[MLPAvsLLPA4=1.00] * Sex * Time	0.77 [-6.03, 7.56]	0.82
+[MLPAvsLLPA4=3.00] * Sex * TimeSqr	0.77 [-1.26, 2.80]	0.46
+[MLPAvsLLPA4=2.00] * Sex * TimeSqr	0.03 [-1.61, 1.67]	0.97
+[MLPAvsLLPA4=1.00] * Sex * TimeSqr	-0.24 [-2.03, 1.55]	0.79
+MLLLPAxSex_Model3		
+Global Cog		Sig
+[MLPAvsLLPA4=3.00] * Sex * Time	-3.41 [-7.37, 0.56]	0.09
+[MLPAvsLLPA4=2.00] * Sex * Time	-1.16 [-4.32, 2.00]	0.47
+[MLPAvsLLPA4=1.00] * Sex * Time	0.84 [-2.62, 4.31]	0.63
+[MLPAvsLLPA4=3.00] * Sex * TimeSqr	0.67 [-0.24, 1.57]	0.15
+[MLPAvsLLPA4=2.00] * Sex * TimeSqr	0.26 [-0.47, 0.98]	0.49
+[MLPAvsLLPA4=1.00] * Sex * TimeSqr	-0.08 [-0.89, 0.73]	0.85
+MLLLPAxSex_Model3		
+Immediate memory		Sig
+[MLPAvsLLPA4=3.00] * Sex * Time	-2.45 [-7.56, 2.67]	0.35
+[MLPAvsLLPA4=2.00] * Sex * Time	-0.98 [-5.06, 3.09]	0.64
+[MLPAvsLLPA4=1.00] * Sex * Time	-1.16 [-5.63, 3.32]	0.61
+[MLPAvsLLPA4=3.00] * Sex * TimeSqr	0.30 [-0.87, 1.47]	0.61
+[MLPAvsLLPA4=2.00] * Sex * TimeSqr	-0.01 [-0.95, 0.92]	0.98
+[MLPAvsLLPA4=1.00] * Sex * TimeSqr	-0.05 [-1.10, 0.99]	0.92
+MLLLPAxSex_Model3		
+Language		Sig
+[MLPAvsLLPA4=3.00] * Sex * Time	-1.97 [-7.26, 3.31]	0.46
+[MLPAvsLLPA4=2.00] * Sex * Time	-0.91 [-5.12, 3.29]	0.67
+[MLPAvsLLPA4=1.00] * Sex * Time	2.17 [-2.46, 6.80]	0.36
+[MLPAvsLLPA4=3.00] * Sex * TimeSqr	0.33 [-0.88, 1.55]	0.59
+[MLPAvsLLPA4=2.00] * Sex * TimeSqr	0.13 [-0.84, 1.10]	0.80
+[MLPAvsLLPA4=1.00] * Sex * TimeSqr	-0.21 [-1.30, 0.87]	0.70
+MLLLPAxSex_Model3		
+Visuospatial		Sig
+[MLPAvsLLPA4=3.00] * Sex * Time	-5.33 [-11.60, 0.94]	0.10
+[MLPAvsLLPA4=2.00] * Sex * Time	-3.10 [-8.09, 1.89]	0.22
+[MLPAvsLLPA4=1.00] * Sex * Time	0.66 [-4.83, 6.15]	0.81
+[MLPAvsLLPA4=3.00] * Sex * TimeSqr	0.94 [-0.51, 2.38]	0.20
+[MLPAvsLLPA4=2.00] * Sex * TimeSqr	0.73 [-0.42, 1.88]	0.21
+[MLPAvsLLPA4=1.00] * Sex * TimeSqr	0.26 [-1.02, 1.55]	0.69
+MLLLPAxSex_Model3		
+Attention		Sig
+[MLPAvsLLPA4=3.00] * Sex * Time	3.47 [-1.23, 8.18]	0.15
+[MLPAvsLLPA4=2.00] * Sex * Time	0.65 [-3.11, 4.40]	0.73
+[MLPAvsLLPA4=1.00] * Sex * Time	0.94 [-3.17, 5.06]	0.65
+[MLPAvsLLPA4=3.00] * Sex * TimeSqr	-0.61 [-1.68, 0.47]	0.27
+[MLPAvsLLPA4=2.00] * Sex * TimeSqr	0.16 [-0.70, 1.01]	0.72
+[MLPAvsLLPA4=1.00] * Sex * TimeSqr	-0.13 [-1.09, 0.82]	0.78
+MLLLPAxSex_Model3		
+Delayed memory		Sig
+[MLPAvsLLPA4=3.00] * Sex * Time	-3.44 [-7.52, 0.65]	0.10
+[MLPAvsLLPA4=2.00] * Sex * Time	0.22 [-3.03, 3.48]	0.89
+[MLPAvsLLPA4=1.00] * Sex * Time	0.69 [-2.88, 4.27]	0.70
+[MLPAvsLLPA4=3.00] * Sex * TimeSqr	0.82 [-0.11, 1.76]	0.09
+[MLPAvsLLPA4=2.00] * Sex * TimeSqr	-0.02 [-0.76, 0.73]	0.97
+[MLPAvsLLPA4=1.00] * Sex * TimeSqr	-0.30 [-1.13, 0.54]	0.49
+MLLLPAxSex_Model3		
+Executive function		Sig
+[MLPAvsLLPA4=3.00] * Sex * Time	-6.00 [-13.68, 1.68]	0.13
+[MLPAvsLLPA4=2.00] * Sex * Time	-2.16 [-8.34, 4.02]	0.49
+[MLPAvsLLPA4=1.00] * Sex * Time	0.77 [-6.03, 7.56]	0.82
+[MLPAvsLLPA4=3.00] * Sex * TimeSqr	0.77 [-1.26, 2.80]	0.46
+[MLPAvsLLPA4=2.00] * Sex * TimeSqr	0.03 [-1.61, 1.67]	0.97
+[MLPAvsLLPA4=1.00] * Sex * TimeSqr	-0.24 [-2.03, 1.55]	0.79
+MLLLPAxSex_Model3		
+Global Cog		Sig
+[MLPAvsLLPA4=3.00] * Sex * Time	-3.41 [-7.37, 0.56]	0.09
+[MLPAvsLLPA4=2.00] * Sex * Time	-1.16 [-4.32, 2.00]	0.47
+[MLPAvsLLPA4=1.00] * Sex * Time	0.84 [-2.62, 4.31]	0.63
+[MLPAvsLLPA4=3.00] * Sex * TimeSqr	0.67 [-0.24, 1.57]	0.15
+[MLPAvsLLPA4=2.00] * Sex * TimeSqr	0.26 [-0.47, 0.98]	0.49
+[MLPAvsLLPA4=1.00] * Sex * TimeSqr	-0.08 [-0.89, 0.73]	0.85
+MLLLPAxSex_Model3		
+Immediate memory		Sig
+[MLPAvsLLPA4=3.00] * Sex * Time	-2.45 [-7.56, 2.67]	0.35
+[MLPAvsLLPA4=2.00] * Sex * Time	-0.98 [-5.06, 3.09]	0.64
+[MLPAvsLLPA4=1.00] * Sex * Time	-1.16 [-5.63, 3.32]	0.61
+[MLPAvsLLPA4=3.00] * Sex * TimeSqr	0.30 [-0.87, 1.47]	0.61
+[MLPAvsLLPA4=2.00] * Sex * TimeSqr	-0.01 [-0.95, 0.92]	0.98
+[MLPAvsLLPA4=1.00] * Sex * TimeSqr	-0.05 [-1.10, 0.99]	0.92
+MLLLPAxSex_Model3		
+Language		Sig
+[MLPAvsLLPA4=3.00] * Sex * Time	-1.97 [-7.26, 3.31]	0.46
+[MLPAvsLLPA4=2.00] * Sex * Time	-0.91 [-5.12, 3.29]	0.67
+[MLPAvsLLPA4=1.00] * Sex * Time	2.17 [-2.46, 6.80]	0.36
+[MLPAvsLLPA4=3.00] * Sex * TimeSqr	0.33 [-0.88, 1.55]	0.59
+[MLPAvsLLPA4=2.00] * Sex * TimeSqr	0.13 [-0.84, 1.10]	0.80
+[MLPAvsLLPA4=1.00] * Sex * TimeSqr	-0.21 [-1.30, 0.87]	0.70
+MLLLPAxSex_Model3		
+Visuospatial		Sig
+[MLPAvsLLPA4=3.00] * Sex * Time	-5.33 [-11.60, 0.94]	0.10
+[MLPAvsLLPA4=2.00] * Sex * Time	-3.10 [-8.09, 1.89]	0.22
+[MLPAvsLLPA4=1.00] * Sex * Time	0.66 [-4.83, 6.15]	0.81
+[MLPAvsLLPA4=3.00] * Sex * TimeSqr	0.94 [-0.51, 2.38]	0.20
+[MLPAvsLLPA4=2.00] * Sex * TimeSqr	0.73 [-0.42, 1.88]	0.21
+[MLPAvsLLPA4=1.00] * Sex * TimeSqr	0.26 [-1.02, 1.55]	0.69

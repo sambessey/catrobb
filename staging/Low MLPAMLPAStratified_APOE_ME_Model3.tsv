@@ -1,0 +1,21 @@
+MLPAStratified_APOE_ME_Model3		
+Attention		Sig
+[APOE4Car=0]	2.05 [-1.02, 5.13]	0.19
+MLPAStratified_APOE_ME_Model3		
+Delayed memory		Sig
+[APOE4Car=0]	2.35 [0.15, 4.55]*	0.04
+MLPAStratified_APOE_ME_Model3		
+Executive function		Sig
+[APOE4Car=0]	-0.70 [-4.31, 2.92]	0.70
+MLPAStratified_APOE_ME_Model3		
+Global Cog		Sig
+[APOE4Car=0]	2.79 [0.21, 5.36]*	0.03
+MLPAStratified_APOE_ME_Model3		
+Immediate memory		Sig
+[APOE4Car=0]	2.01 [-0.61, 4.63]	0.13
+MLPAStratified_APOE_ME_Model3		
+Language		Sig
+[APOE4Car=0]	1.81 [-0.46, 4.08]	0.12
+MLPAStratified_APOE_ME_Model3		
+Visuospatial		Sig
+[APOE4Car=0]	1.49 [-1.11, 4.10]	0.26

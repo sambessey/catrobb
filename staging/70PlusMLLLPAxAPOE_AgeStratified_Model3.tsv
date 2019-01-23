@@ -1,0 +1,35 @@
+MLLLPAxAPOE_AgeStratified_Model3		
+Attention		Sig
+[MLPAvsLLPA4=3.00] * APOE4Car	-9.09 [-23.83, 5.65]	0.23
+[MLPAvsLLPA4=2.00] * APOE4Car	7.41 [-2.72, 17.54]	0.15
+[MLPAvsLLPA4=1.00] * APOE4Car	-8.50 [-21.44, 4.43]	0.20
+MLLLPAxAPOE_AgeStratified_Model3		
+Delayed memory		Sig
+[MLPAvsLLPA4=3.00] * APOE4Car	8.31 [-3.30, 19.92]	0.16
+[MLPAvsLLPA4=2.00] * APOE4Car	-0.05 [-8.05, 7.95]	0.99
+[MLPAvsLLPA4=1.00] * APOE4Car	-3.88 [-14.15, 6.38]	0.46
+MLLLPAxAPOE_AgeStratified_Model3		
+Executive function		Sig
+[MLPAvsLLPA4=3.00] * APOE4Car	1.30 [-16.41, 19.01]	0.89
+[MLPAvsLLPA4=2.00] * APOE4Car	-1.11 [-13.45, 11.22]	0.86
+[MLPAvsLLPA4=1.00] * APOE4Car	-0.68 [-17.86, 16.50]	0.94
+MLLLPAxAPOE_AgeStratified_Model3		
+Global Cog		Sig
+[MLPAvsLLPA4=3.00] * APOE4Car	-1.08 [-13.53, 11.38]	0.86
+[MLPAvsLLPA4=2.00] * APOE4Car	3.09 [-5.47, 11.65]	0.48
+[MLPAvsLLPA4=1.00] * APOE4Car	-3.75 [-14.67, 7.18]	0.50
+MLLLPAxAPOE_AgeStratified_Model3		
+Immediate memory		Sig
+[MLPAvsLLPA4=3.00] * APOE4Car	-0.24 [-13.29, 12.81]	0.97
+[MLPAvsLLPA4=2.00] * APOE4Car	-1.42 [-10.42, 7.58]	0.76
+[MLPAvsLLPA4=1.00] * APOE4Car	0.51 [-11.06, 12.09]	0.93
+MLLLPAxAPOE_AgeStratified_Model3		
+Language		Sig
+[MLPAvsLLPA4=3.00] * APOE4Car	4.38 [-6.49, 15.25]	0.43
+[MLPAvsLLPA4=2.00] * APOE4Car	3.69 [-3.87, 11.25]	0.34
+[MLPAvsLLPA4=1.00] * APOE4Car	2.00 [-7.81, 11.82]	0.69
+MLLLPAxAPOE_AgeStratified_Model3		
+Visuospatial		Sig
+[MLPAvsLLPA4=3.00] * APOE4Car	-8.71 [-22.20, 4.78]	0.20
+[MLPAvsLLPA4=2.00] * APOE4Car	1.53 [-7.82, 10.89]	0.75
+[MLPAvsLLPA4=1.00] * APOE4Car	-1.89 [-14.00, 10.21]	0.76

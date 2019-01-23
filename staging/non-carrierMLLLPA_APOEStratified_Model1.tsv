@@ -1,0 +1,49 @@
+MLLLPA_APOEStratified_Model1		
+Attention		Sig
+[MLPAvsLLPA4=3.00]	1.53 [-2.22, 5.29]	0.42
+[MLPAvsLLPA4=2.00]	1.59 [-1.37, 4.55]	0.29
+[MLPAvsLLPA4=1.00]	4.59 [1.30, 7.88]**	0.01
+Time	1.92 [1.14, 2.70]***	0.00
+TimeSqr	-0.19 [-0.37, -0.01]*	0.04
+MLLLPA_APOEStratified_Model1		
+Delayed memory		Sig
+[MLPAvsLLPA4=3.00]	-0.38 [-2.86, 2.10]	0.76
+[MLPAvsLLPA4=2.00]	1.73 [-0.23, 3.69]	0.08
+[MLPAvsLLPA4=1.00]	1.22 [-0.96, 3.40]	0.27
+Time	3.29 [2.63, 3.96]***	0.00
+TimeSqr	-0.53 [-0.68, -0.37]***	0.00
+MLLLPA_APOEStratified_Model1		
+Executive function		Sig
+[MLPAvsLLPA4=3.00]	-0.06 [-4.23, 4.11]	0.98
+[MLPAvsLLPA4=2.00]	3.74 [0.35, 7.14]*	0.03
+[MLPAvsLLPA4=1.00]	4.25 [0.58, 7.92]*	0.02
+Time	1.02 [-0.32, 2.37]	0.14
+TimeSqr	-0.09 [-0.44, 0.27]	0.63
+MLLLPA_APOEStratified_Model1		
+Global Cog		Sig
+[MLPAvsLLPA4=3.00]	-0.14 [-3.25, 2.96]	0.93
+[MLPAvsLLPA4=2.00]	2.72 [0.27, 5.18]*	0.03
+[MLPAvsLLPA4=1.00]	3.37 [0.65, 6.10]*	0.01
+Time	2.49 [1.83, 3.16]***	0.00
+TimeSqr	-0.38 [-0.53, -0.23]***	0.00
+MLLLPA_APOEStratified_Model1		
+Immediate memory		Sig
+[MLPAvsLLPA4=3.00]	-1.33 [-4.39, 1.74]	0.40
+[MLPAvsLLPA4=2.00]	1.25 [-1.17, 3.67]	0.31
+[MLPAvsLLPA4=1.00]	1.51 [-1.18, 4.20]	0.27
+Time	3.74 [2.90, 4.59]***	0.00
+TimeSqr	-0.53 [-0.73, -0.34]***	0.00
+MLLLPA_APOEStratified_Model1		
+Language		Sig
+[MLPAvsLLPA4=3.00]	-0.99 [-3.64, 1.65]	0.46
+[MLPAvsLLPA4=2.00]	0.47 [-1.62, 2.57]	0.66
+[MLPAvsLLPA4=1.00]	3.26 [0.94, 5.59]**	0.01
+Time	0.61 [-0.28, 1.49]	0.18
+TimeSqr	-0.04 [-0.25, 0.16]	0.69
+MLLLPA_APOEStratified_Model1		
+Visuospatial		Sig
+[MLPAvsLLPA4=3.00]	0.28 [-2.92, 3.48]	0.86
+[MLPAvsLLPA4=2.00]	3.70 [1.17, 6.23]**	0.00
+[MLPAvsLLPA4=1.00]	0.86 [-1.95, 3.66]	0.55
+Time	0.12 [-0.89, 1.14]	0.81
+TimeSqr	-0.19 [-0.43, 0.04]	0.10

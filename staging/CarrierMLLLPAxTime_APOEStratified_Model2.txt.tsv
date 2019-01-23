@@ -1,0 +1,56 @@
+MLLLPAxTime_APOEStratified_Model2.txt		
+Attention		Sig
+[MLPAvsLLPA4=3.00] * Time	1.62 [-2.45, 5.69]	0.43
+[MLPAvsLLPA4=2.00] * Time	1.14 [-2.53, 4.80]	0.54
+[MLPAvsLLPA4=1.00] * Time	2.66 [-1.63, 6.95]	0.22
+[MLPAvsLLPA4=3.00] * TimeSqr	-0.35 [-1.23, 0.53]	0.44
+[MLPAvsLLPA4=2.00] * TimeSqr	-0.08 [-0.94, 0.78]	0.85
+[MLPAvsLLPA4=1.00] * TimeSqr	-0.39 [-1.42, 0.65]	0.46
+MLLLPAxTime_APOEStratified_Model2.txt		
+Delayed memory		Sig
+[MLPAvsLLPA4=3.00] * Time	-3.28 [-6.88, 0.32]x	0.07
+[MLPAvsLLPA4=2.00] * Time	-0.20 [-3.44, 3.04]	0.90
+[MLPAvsLLPA4=1.00] * Time	-3.73 [-7.52, 0.06]x	0.05
+[MLPAvsLLPA4=3.00] * TimeSqr	0.92 [0.15, 1.70]*	0.02
+[MLPAvsLLPA4=2.00] * TimeSqr	-0.01 [-0.77, 0.75]	0.98
+[MLPAvsLLPA4=1.00] * TimeSqr	0.93 [0.02, 1.85]*	0.04
+MLLLPAxTime_APOEStratified_Model2.txt		
+Executive function		Sig
+[MLPAvsLLPA4=3.00] * Time	-0.52 [-7.07, 6.03]	0.88
+[MLPAvsLLPA4=2.00] * Time	-0.72 [-6.47, 5.03]	0.81
+[MLPAvsLLPA4=1.00] * Time	-3.48 [-9.79, 2.84]	0.28
+[MLPAvsLLPA4=3.00] * TimeSqr	0.07 [-1.59, 1.73]	0.93
+[MLPAvsLLPA4=2.00] * TimeSqr	0.04 [-1.50, 1.58]	0.96
+[MLPAvsLLPA4=1.00] * TimeSqr	1.15 [-0.49, 2.79]	0.17
+MLLLPAxTime_APOEStratified_Model2.txt		
+Global Cog		Sig
+[MLPAvsLLPA4=3.00] * Time	2.08 [-1.34, 5.50]	0.23
+[MLPAvsLLPA4=2.00] * Time	-0.76 [-3.84, 2.32]	0.63
+[MLPAvsLLPA4=1.00] * Time	-0.91 [-4.51, 2.69]	0.62
+[MLPAvsLLPA4=3.00] * TimeSqr	-0.25 [-0.99, 0.49]	0.51
+[MLPAvsLLPA4=2.00] * TimeSqr	0.33 [-0.39, 1.06]	0.36
+[MLPAvsLLPA4=1.00] * TimeSqr	0.39 [-0.47, 1.26]	0.37
+MLLLPAxTime_APOEStratified_Model2.txt		
+Immediate memory		Sig
+[MLPAvsLLPA4=3.00] * Time	-1.70 [-6.14, 2.75]	0.45
+[MLPAvsLLPA4=2.00] * Time	-3.66 [-7.67, 0.35]x	0.07
+[MLPAvsLLPA4=1.00] * Time	-5.69 [-10.37, -1.01]*	0.02
+[MLPAvsLLPA4=3.00] * TimeSqr	0.52 [-0.45, 1.48]	0.29
+[MLPAvsLLPA4=2.00] * TimeSqr	1.27 [0.33, 2.22]**	0.01
+[MLPAvsLLPA4=1.00] * TimeSqr	1.24 [0.11, 2.38]*	0.03
+MLLLPAxTime_APOEStratified_Model2.txt		
+Language		Sig
+[MLPAvsLLPA4=3.00] * Time	1.57 [-2.85, 6.00]	0.48
+[MLPAvsLLPA4=2.00] * Time	-1.78 [-5.77, 2.21]	0.38
+[MLPAvsLLPA4=1.00] * Time	1.39 [-3.27, 6.06]	0.56
+[MLPAvsLLPA4=3.00] * TimeSqr	-0.34 [-1.30, 0.62]	0.49
+[MLPAvsLLPA4=2.00] * TimeSqr	0.38 [-0.56, 1.32]	0.43
+[MLPAvsLLPA4=1.00] * TimeSqr	-0.34 [-1.47, 0.79]	0.55
+MLLLPAxTime_APOEStratified_Model2.txt		
+Visuospatial		Sig
+[MLPAvsLLPA4=3.00] * Time	7.14 [1.51, 12.78]*	0.01
+[MLPAvsLLPA4=2.00] * Time	0.68 [-4.40, 5.77]	0.79
+[MLPAvsLLPA4=1.00] * Time	0.82 [-5.12, 6.76]	0.79
+[MLPAvsLLPA4=3.00] * TimeSqr	-1.42 [-2.65, -0.19]*	0.02
+[MLPAvsLLPA4=2.00] * TimeSqr	-0.37 [-1.57, 0.83]	0.55
+[MLPAvsLLPA4=1.00] * TimeSqr	0.04 [-1.41, 1.48]	0.96
